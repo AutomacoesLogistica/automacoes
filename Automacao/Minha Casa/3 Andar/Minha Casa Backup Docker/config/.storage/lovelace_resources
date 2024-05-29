@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace_resources",
+  "data": {
+    "items": [
+      {
+        "url": "/hacsfiles/mini-graph-card/mini-graph-card-bundle.js?hacstag=1512800620110",
+        "type": "module",
+        "id": "72b8fb3b7ac74b74a897e0eac6ddc402"
+      },
+      {
+        "url": "/hacsfiles/button-card/button-card.js?hacstag=146194325342",
+        "type": "module",
+        "id": "5aef4ff7122f44738d12f2a6d509939a"
+      },
+      {
+        "url": "/hacsfiles/spotify-card/spotify-card.js?hacstag=173955605240",
+        "type": "module",
+        "id": "67a369b35ece4d05add64533cd78d836"
+      },
+      {
+        "url": "/hacsfiles/bar-card/bar-card.js?hacstag=163363577320",
+        "type": "module",
+        "id": "3b71ee2ee15e4dc7afe6f0dded57e9cd"
+      },
+      {
+        "url": "/hacsfiles/mini-media-player/mini-media-player-bundle.js?hacstag=1485208381168",
+        "type": "module",
+        "id": "0a94b250be40442d96aa989ae57a64c4"
+      }
+    ]
+  }
+}

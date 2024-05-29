@@ -1,0 +1,17 @@
+2024-05-03 14:02:37.143 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration alexa_media which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2024-05-03 14:02:37.146 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2024-05-03 14:02:37.344 WARNING (MainThread) [homeassistant.components.lovelace] Lovelace is running in storage mode. Define resources via user interface
+2024-05-03 14:02:45.344 WARNING (MainThread) [homeassistant.config_entries] Config entry 'Controller (192.168.3.220)' for heos integration not ready yet: [Errno 113] Connect call failed ('192.168.3.220', 1255); Retrying in background
+2024-05-03 14:02:51.209 ERROR (MainThread) [homeassistant.components.sensor] The dnsip platform for the sensor integration does not support platform setup. Please remove it from your config.
+2024-05-03 14:02:52.071 ERROR (MainThread) [homeassistant.components.sensor] Platform upnp does not generate unique IDs. ID uuid:060b7353-fca6-4070-85f4-1fbfb9add62c_ip already exists - ignoring sensor.wireless_router_tl_wr740n_external_ip
+2024-05-03 14:02:52.073 ERROR (MainThread) [homeassistant.components.sensor] Platform upnp does not generate unique IDs. ID uuid:060b7353-fca6-4070-85f4-1fbfb9add62c_KiB/sec_received already exists - ignoring sensor.wireless_router_tl_wr740n_kib_s_received
+2024-05-03 14:02:52.075 ERROR (MainThread) [homeassistant.components.sensor] Platform upnp does not generate unique IDs. ID uuid:060b7353-fca6-4070-85f4-1fbfb9add62c_KiB/sec_sent already exists - ignoring sensor.wireless_router_tl_wr740n_kib_s_sent
+2024-05-03 14:02:56.069 WARNING (MainThread) [homeassistant.config_entries] Config entry 'HomeCinema' for denonavr integration not ready yet: NetworkError: All connection attempts failed; Retrying in background
+2024-05-03 14:03:05.528 ERROR (MainThread) [custom_components.hacs] ikaruswill/lovelace-fan-xiaomi - Repostitory structure for 2.2.4 is not compliant
+2024-05-03 14:03:06.160 ERROR (MainThread) [custom_components.hacs] Makin-Things/platinum-weather-card - Repostitory structure for 1.0.5 is not compliant
+2024-05-03 14:55:51.762 WARNING (SyncWorker_11) [homeassistant.components.systemmonitor.sensor] Failed to load process with ID: 28955, old name: None
+2024-05-03 16:07:31.391 ERROR (MainThread) [frontend.js.latest.202301100] http://192.168.3.200:8123/config/devices/dashboard:0:0 ResizeObserver loop completed with undelivered notifications.
+2024-05-03 16:07:36.377 ERROR (MainThread) [frontend.js.latest.202301100] http://192.168.3.200:8123/config/entities:0:0 ResizeObserver loop completed with undelivered notifications.
+2024-05-03 16:07:36.887 ERROR (MainThread) [frontend.js.latest.202301100] http://192.168.3.200:8123/config/entities:0:0 ResizeObserver loop completed with undelivered notifications.
+2024-05-03 16:07:37.300 ERROR (MainThread) [frontend.js.latest.202301100] http://192.168.3.200:8123/config/entities:0:0 ResizeObserver loop completed with undelivered notifications.
+2024-05-03 16:07:38.064 ERROR (MainThread) [frontend.js.latest.202301100] http://192.168.3.200:8123/config/entities:0:0 ResizeObserver loop completed with undelivered notifications.

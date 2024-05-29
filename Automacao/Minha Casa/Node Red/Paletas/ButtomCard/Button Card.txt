@@ -1,0 +1,24 @@
+// Exemplo para um card com alerta de algum status e outra condicao para outro
+
+type: 'custom:button-card'
+color_type: card
+entity: light.disj_iluminacao_sala
+tap_action: false
+state:
+  - value: 'off'
+    color: red
+    name: Desligado!
+    icon: 'mdi:alert'
+    styles:
+      card:
+        - height: 50px
+        - width: 100px
+        - animation: blink 2s ease infinite
+  - operator: default
+    name: Ligado!
+    color: green
+    icon: 'mdi:shield-check'
+    styles:
+      card:
+        - height: 50px
+        - width: 100px

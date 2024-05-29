@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "camera",
+  "data": {
+    "camera.portao_profile000": {
+      "preload_stream": true
+    },
+    "camera.portao": {
+      "preload_stream": false
+    },
+    "camera.visaoruasantana_mediaprofile_channel1_substream1": {
+      "preload_stream": true
+    }
+  }
+}

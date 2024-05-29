@@ -1,0 +1,1273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lampadas1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lampadas1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FUNDOcanais" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FUNDOcanais.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boomerang" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boomerang.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="educacao0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\educacao0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cortina1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cortina1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="globoMinas1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\globoMinas1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spaceHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\spaceHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tvEscola" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tvEscola.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="foxLifeHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\foxLifeHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maxUPHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maxUPHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="disneyChanelHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\disneyChanelHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="81" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\81.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tvRaTimBum" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tvRaTimBum.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sbt1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sbt1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="globoNewsHD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\globoNewsHD1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bisHD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bisHD1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bandSportsHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bandSportsHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maisGlobosatHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maisGlobosatHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="universalChannelHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\universalChannelHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="globoSPHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\globoSPHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="disneyXD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\disneyXD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="record" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\record.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lampadas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lampadas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pfc1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pfc1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="record1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\record1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="canaisTV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\canaisTV.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pfc5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pfc5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cnt1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cnt1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pfcHD2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pfcHD2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="espn+" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\espn+.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tvNovoTempo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tvNovoTempo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="canalSonyHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\canalSonyHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vh1HD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vh1HD1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="i-sat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\i-sat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="globoRJHD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\globoRJHD1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="espn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\espn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hboSignatureHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hboSignatureHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="premiere9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\premiere9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="disneyJunior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\disneyJunior.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gnt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gnt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mtvHD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mtvHD1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="historyChannelHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\historyChannelHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="61" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\61.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hboPlus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hboPlus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="telecineCultHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\telecineCultHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hboHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hboHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="espnBrasil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\espnBrasil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="musica1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\musica.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RedeTVHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RedeTVHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="redeBrasil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\redeBrasil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maisGlobosat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maisGlobosat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maxHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maxHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="canalBrasil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\canalBrasil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="premiere7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\premiere7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="recordNewsHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\recordNewsHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pfc6HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pfc6HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="filmes0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\filmes0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cortinaA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cortinaA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cnnEspanhol1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cnnEspanhol1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persianaF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\persianaF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sportTV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sportTV.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tntHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tntHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="controle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\controle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jornalismo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jornalismo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cftv" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cftv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mute" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mute.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="91" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\91.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="animais1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\animais1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cnt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cnt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="telecinePipoca" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\telecinePipoca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="primeBoxBrasil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\primeBoxBrasil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gloob" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gloob.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fundo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fundo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="source" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\source.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="warnerChannelHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\warnerChannelHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pfc9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pfc9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tv" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="combate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\combate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="space" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\space.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="globoRJ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\globoRJ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="warnerChannel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\warnerChannel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="globoMinasHD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\globoMinasHD1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="filmes1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\filmes1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="musicBoxBrasil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\musicBoxBrasil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="globoNews" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\globoNews.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="h2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\h2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="canalOffHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\canalOffHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pfc8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pfc8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="discoveryTheaterHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\discoveryTheaterHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="globoSP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\globoSP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hboSignature" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hboSignature.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="canalOff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\canalOff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bandNews" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bandNews.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="energia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\energia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="multishowHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\multishowHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="futura" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\futura.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arte1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arte1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="multishow2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\multishow2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="band1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\band1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terraViva" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terraViva.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="megapixHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\megapixHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tntSeries" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tntSeries.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="primeBoxBrasilHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\primeBoxBrasilHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="redeVidaHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\redeVidaHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maxPrimeHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maxPrimeHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bandNews1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bandNews1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hboPlusHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hboPlusHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IMG_4149" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IMG_4149.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RBI" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RBI.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="recordNews" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\recordNews.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vh1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vh1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sportTV31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sportTV31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pfc5HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pfc5HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="combateHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\combateHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="truTV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\truTV.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="discoveryIDHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\discoveryIDHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tvRaTimBumHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tvRaTimBumHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pfc2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pfc2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pfcHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pfcHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pfc2HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pfc2HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="foxSports2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\foxSports2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="historyChannel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\historyChannel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="studio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\studio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EI2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EI2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="e!HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e!HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="premiere6HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\premiere6HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cnnEspanhol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cnnEspanhol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="globoMinasHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\globoMinasHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="discoveryChannelHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\discoveryChannelHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ok" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="premiere5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\premiere5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gloobHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gloobHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="globoRJHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\globoRJHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="premiere8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\premiere8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="canalOffHD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\canalOffHD1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="h2HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\h2HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bandNewsHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bandNewsHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="esportes0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\esportes0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="prox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\prox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="discoveryCivilization" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\discoveryCivilization.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="discoveryChannel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\discoveryChannel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tbs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tbs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tvSenado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tvSenado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="globoSPHD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\globoSPHD1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="premiere3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\premiere3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="premiere6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\premiere6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="discoveryTLCHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\discoveryTLCHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="globo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\globo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zoom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zoom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="telecineCult" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\telecineCult.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="recordNewsHD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\recordNewsHD1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="premiere4HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\premiere4HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="telecineActionHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\telecineActionHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="espnHD2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\espnHD2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="multishow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\multishow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fishTV1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fishTV1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="premiere3HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\premiere3HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="baixo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\baixo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="foodNewtwork" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\foodNewtwork.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="polishop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\polishop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="max" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\max.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nickJunior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nickJunior.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="espnMaisHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\espnMaisHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="discoveryWorldHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\discoveryWorldHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="redeTV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\redeTV.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="espnHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\espnHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cima1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cima1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="foodNewtworkHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\foodNewtworkHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pfc6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pfc6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="redeTV1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\redeTV1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hbo2HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hbo2HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DisjuntorOFF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DisjuntorOFF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="globoRJ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\globoRJ1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="espn+1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\espn+1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="projetor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\projetor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="premiereHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\premiereHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="esquerda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\esquerda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sportTVHD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sportTVHD1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cortinaF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cortinaF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cortina" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cortina.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="canalBrasilHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\canalBrasilHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="studioHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\studioHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="musicBoxBrasilHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\musicBoxBrasilHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bandNewsHD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bandNewsHD1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vh1Megahits" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vh1Megahits.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="baixo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\baixo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="espn+HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\espn+HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="telecineAction" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\telecineAction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fundo21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fundo21.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="foxSportsHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\foxSportsHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hbo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hbo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="portao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\portao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tvJustica" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tvJustica.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EI" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EI.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="globoSP1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\globoSP1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="discoveryScienceHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\discoveryScienceHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cartoonNetworkHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cartoonNetworkHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="canalSony" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\canalSony.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bisHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bisHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hboFamilyHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hboFamilyHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bis1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bis1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="foxPremium1HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\foxPremium1HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sportTV3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sportTV3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bandSports" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bandSports.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tnt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tnt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tooncastHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tooncastHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pfcHD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pfcHD1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\41.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cinemaxHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cinemaxHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="e!" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e!.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sportTV21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sportTV21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="educacao1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\educacao1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sbt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sbt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bandHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bandHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ponto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ponto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="axn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\axn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="curta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\curta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="foxSports2HD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\foxSports2HD1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boaVontadeTV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boaVontadeTV.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="globoNews1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\globoNews1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sportTV3HD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sportTV3HD1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vh1HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vh1HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="comedyCentral" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\comedyCentral.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nickJuniorHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nickJuniorHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maxPrimeE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maxPrimeE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="foxSportsHD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\foxSportsHD1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sportTV3HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sportTV3HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persianaA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\persianaA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="premiere4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\premiere4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="recordNews1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\recordNews1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nbr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nbr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="babyTV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\babyTV.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="natGepWild" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\natGepWild.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="premiere2HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\premiere2HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sportTV2HD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sportTV2HD1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="52" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\52.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="curtaHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\curtaHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pfc4HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pfc4HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="foxPremium2HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\foxPremium2HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="discoveryCivilization1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\discoveryCivilization1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="musica0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\musica0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="premiere7HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\premiere7HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="axnHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\axnHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sportTVHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sportTVHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="premiere2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\premiere2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tbsHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tbsHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hboFamily" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hboFamily.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cnnInternacional" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cnnInternacional.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="diversos0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\diversos0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lifeTime" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lifeTime.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="musica" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\musica.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="discoveryTurboHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\discoveryTurboHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EI2HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EI2HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="telecineFunHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\telecineFunHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="power1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\power1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="comedyCentralHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\comedyCentralHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lifeTimeHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lifeTimeHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tuner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tuner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="foxSports" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\foxSports.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lampadasL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lampadasL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="natGeo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\natGeo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="premiere" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\premiere.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maxUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maxUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pfc3HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pfc3HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cartoonNetwork" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cartoonNetwork.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="premiere5HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\premiere5HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="redeVida" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\redeVida.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tvCultura" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tvCultura.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paramount" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paramount.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="foxSports2HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\foxSports2HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="animalPlanetHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\animalPlanetHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boaVontadeTV1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boaVontadeTV1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="discoveryKidsHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\discoveryKidsHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="direita" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\direita.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cnnInternacional1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cnnInternacional1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="syfyHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syfyHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pfc7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pfc7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="animais0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\animais0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="foxLife" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\foxLife.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="esportes1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\esportes1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cima" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cima.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="espn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\espn1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nickelodeonHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nickelodeonHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maxPrime" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maxPrime.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="telecineTouch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\telecineTouch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="natGepWildHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\natGepWildHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fundo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fundo2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="discoveryTurbo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\discoveryTurbo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tntSeriesHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tntSeriesHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cenario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cenario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="e" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="multishowHD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\multishowHD1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="universalChannel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\universalChannel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="telecinePipocaHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\telecinePipocaHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fishTV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fishTV.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="discoveryKids" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\discoveryKids.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="multishow1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\multishow1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bandHD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bandHD1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="espnMais" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\espnMais.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancaoNova" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancaoNova.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sportTV1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sportTV1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pfc3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pfc3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="globoMinas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\globoMinas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pfc4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pfc4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tcm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tcm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="canalRural" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\canalRural.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="71" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\71.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="51" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\51.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="disneyChanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\disneyChanel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="discoveryID" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\discoveryID.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="megapix" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\megapix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arte1HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arte1HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="foxSports1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\foxSports1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tvAparecida" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tvAparecida.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mtv" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mtv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tvCamara" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tvCamara.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EIHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EIHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="telecineTouchHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\telecineTouchHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fxHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fxHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="som" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\som.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FUNDOcanais1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FUNDOcanais1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="futuraHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\futuraHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="discoveryCivilizationHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\discoveryCivilizationHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sky" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sky.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="diversos1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\diversos1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="globoNewsHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\globoNewsHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pfc7HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pfc7HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sportTV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sportTV2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mtv1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mtv1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boomerangHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boomerangHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pfc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pfc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paramountHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paramountHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="telecinePremiumHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\telecinePremiumHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cinemax" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cinemax.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hboPlusE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hboPlusE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="musica11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\musica1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jornalismo0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jornalismo0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sportTV2HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sportTV2HD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gntHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gntHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cortina2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cortina2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="discoveryhehHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\discoveryhehHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="telecineFun" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\telecineFun.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="band" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\band.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="telecinePremium" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\telecinePremium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hbo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hbo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="foxHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\foxHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="espnBrasilHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\espnBrasilHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="espnHD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\espnHD1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="foxSports21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\foxSports21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mtvHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mtvHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="discoveryTLC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\discoveryTLC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tooncast" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tooncast.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="natGeoHD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\natGeoHD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="V" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\V.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DisjuntorON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DisjuntorON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nickelodeon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nickelodeon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="discoveryheh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\discoveryheh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="power" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\power.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="validado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\validado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

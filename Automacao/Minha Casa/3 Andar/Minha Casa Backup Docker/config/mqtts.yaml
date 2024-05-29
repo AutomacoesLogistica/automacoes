@@ -1,0 +1,2022 @@
+  # VARIAVEIS APENAS PARA AUTOMACOES
+light:
+  - name: "Dormir"
+    state_topic: "dev/test/minhacasa/automacao"
+    command_topic: "dev/test/minhacasa/automacao"
+    qos: 1
+    payload_on: "on"
+    payload_off: "off"
+    optimistic: false
+    #Variavel para habilitar automacao externo
+  - name: "Externo"
+    state_topic: "dev/test/minhacasa/externo"
+    command_topic: "dev/test/minhacasa/externo"
+    qos: 1
+    payload_on: "on"
+    payload_off: "off"
+    optimistic: false
+    #Variavel para habilitar alexa falar interfone
+  - name: "Alexa Notificar Interfone"
+    state_topic: "dev/test/minhacasa/interfone/comando"
+    command_topic: "dev/test/minhacasa/interfone/comando"
+    qos: 1
+    payload_on: "on"
+    payload_off: "off"
+    optimistic: false    
+    #Variavel para habilitar desligar lampadas internas a noite
+  - name: "Automacao Noturna"
+    state_topic: "dev/test/minhacasa/noturna"
+    command_topic: "dev/test/minhacasa/noturna"
+    qos: 1
+    payload_on: "on"
+    payload_off: "off"
+    optimistic: false
+    #Variavel para habilitar desligar lampadas RGB
+  - name: "Ambientes RGB"
+    state_topic: "dev/test/minhacasa/rgb"
+    command_topic: "dev/test/minhacasa/rgb"
+    qos: 1
+    payload_on: "on"
+    payload_off: "off"
+    optimistic: false
+
+  - name: "Iluminacao da Sala"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "sala_1"
+    payload_off: "sala_0"
+    optimistic: false
+
+  - name: "Iluminacao do Lustre"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "slustre_1"
+    payload_off: "slustre_0"
+    optimistic: false
+
+  - name: "Iluminacao da Sacada"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "svaranda_1"
+    payload_off: "svaranda_0"
+    optimistic: false
+
+  - name: "Painel TV da Sala"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "spainel_1"
+    payload_off: "spainel_0"
+    optimistic: false
+
+  - name: "Tela Automacao"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "scorti_1"
+    payload_off: "scorti_0"
+    optimistic: false
+
+  - name: "Sanca RGB Sala"
+    state_topic: "sala/rbg1/luz/status"
+    command_topic: "sala/rbg1/luz/switch"
+    brightness_state_topic: 'sala/rbg1/brilho/status'
+    brightness_command_topic: 'sala/rbg1/brilho/set'
+    rgb_state_topic: 'sala/rbg1/rgb/status'
+    rgb_command_topic: 'sala/rbg1/rgb/set'
+    brightness_scale: 100
+    optimistic: false
+
+  - name: "Arvore de Natal"
+    state_topic: "dev/test/minhacasa/status_arvore"
+    command_topic: "dev/test/minhacasa/arvore"
+    qos: 1
+    payload_on: "ligada"
+    payload_off: "desligada"
+    optimistic: false
+
+  - name: "Iluminacao do Quarto 1"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "quarto1_1"
+    payload_off: "quarto1_0"
+    optimistic: false
+
+  - name: "Painel TV do Quarto 1"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "q1painel_1"
+    payload_off: "q1painel_0"
+    optimistic: false
+
+  - name: "Cortineiro do Quarto 1"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "q1corti_1"
+    payload_off: "q1corti_0"
+    optimistic: false
+
+  - name: "Iluminacao do Quarto 2"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "quarto2_1"
+    payload_off: "quarto2_0"
+    optimistic: false
+
+  - name: "Painel TV do Quarto 2"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "q2painel_1"
+    payload_off: "q2painel_0"
+    optimistic: false
+
+  - name: "Cortineiro do Quarto 2"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "q2corti_1"
+    payload_off: "q2corti_0"
+    optimistic: false
+
+
+
+
+# COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA
+# COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA
+# COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA
+# COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA
+# COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA
+
+
+
+
+  - name: "Iluminacao da Cozinha"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "cozinha_1"
+    payload_off: "cozinha_0"
+    optimistic: false
+
+  - name: "Iluminacao do Corredor"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "czcorredor_1"
+    payload_off: "czcorredor_0"
+    optimistic: false
+
+  - name: "Corredor_RGB_Cozinha"
+    state_topic: 'dev/test/minhacasa/cz/corredor/status'
+    command_topic: 'dev/test/minhacasa/cz/corredor/comando'
+    brightness_state_topic: 'dev/test/minhacasa/cz/corredor/brilho/status'
+    brightness_command_topic: 'dev/test/minhacasa/cz/corredor/brilho/setar'
+    rgb_state_topic: 'dev/test/minhacasa/cz/corredor/rgb/status'
+    rgb_command_topic: 'dev/test/minhacasa/cz/corredor/rgb/setar'
+    brightness_scale: 100
+    optimistic: false
+
+  - name: "Balizadores_RGB_Cozinha"
+    state_topic: 'dev/test/minhacasa/cz/balizadores/status'
+    command_topic: 'dev/test/minhacasa/cz/balizadores/comando'
+    brightness_state_topic: 'dev/test/minhacasa/cz/balizadores/brilho/status'
+    brightness_command_topic: 'dev/test/minhacasa/cz/balizadores/brilho/setar'
+    rgb_state_topic: 'dev/test/minhacasa/cz/balizadores/rgb/status'
+    rgb_command_topic: 'dev/test/minhacasa/cz/balizadores/rgb/setar'
+    brightness_scale: 100
+    optimistic: false
+
+  - name: "Bancada_da_Cozinha"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "czpendente_1"
+    payload_off: "czpendente_0"
+    optimistic: false
+
+  - name: "Ilha_RGB_Cozinha"
+    state_topic: 'dev/test/minhacasa/cz/ilha/status'
+    command_topic: 'dev/test/minhacasa/cz/ilha/comando'
+    brightness_state_topic: 'dev/test/minhacasa/cz/ilha/brilho/status'
+    brightness_command_topic: 'dev/test/minhacasa/cz/ilha/brilho/setar'
+    rgb_state_topic: 'dev/test/minhacasa/cz/ilha/rgb/status'
+    rgb_command_topic: 'dev/test/minhacasa/cz/ilha/rgb/setar'
+    brightness_scale: 100
+    optimistic: false
+
+  - name: "Pia_RGB_Cozinha"
+    state_topic: 'dev/test/minhacasa/cz/pia/status'
+    command_topic: 'dev/test/minhacasa/cz/pia/comando'
+    brightness_state_topic: 'dev/test/minhacasa/cz/pia/brilho/status'
+    brightness_command_topic: 'dev/test/minhacasa/cz/pia/brilho/setar'
+    rgb_state_topic: 'dev/test/minhacasa/cz/pia/rgb/status'
+    rgb_command_topic: 'dev/test/minhacasa/cz/pia/rgb/setar'
+    brightness_scale: 100
+    optimistic: false
+
+  - name: "Geladeira_RGB_Cozinha"
+    state_topic: 'dev/test/minhacasa/cz/geladeira/status'
+    command_topic: 'dev/test/minhacasa/cz/geladeira/comando'
+    brightness_state_topic: 'dev/test/minhacasa/cz/geladeira/brilho/status'
+    brightness_command_topic: 'dev/test/minhacasa/cz/geladeira/brilho/setar'
+    rgb_state_topic: 'dev/test/minhacasa/cz/geladeira/rgb/status'
+    rgb_command_topic: 'dev/test/minhacasa/cz/geladeira/rgb/setar'
+    brightness_scale: 100
+    optimistic: false
+
+  - name: "Ambiente da Cozinha"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "czpia_1"
+    payload_off: "czpia_0"
+    optimistic: false
+
+  - name: "Persiana da Cozinha"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "czpersi_1"
+    payload_off: "czpersi_0"
+    optimistic: false
+
+  - name: "Painel TV da Cozinha"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "czpainel_1"
+    payload_off: "czpainel_0"
+    optimistic: false
+
+
+
+
+# QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL
+# QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL
+# QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL
+# QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL
+
+
+
+
+  - name: "Iluminacao do Quarto C"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "quartocasal_1"
+    payload_off: "quartocasal_0"
+    optimistic: false
+
+  - name: "Painel TV do Quarto C"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "qcpainel_1"
+    payload_off: "qcpainel_0"
+    optimistic: false
+
+  - name: "Cortineiro do Quarto C"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "qccorti_1"
+    payload_off: "qccorti_0"
+    optimistic: false
+
+  - name: "Iluminacao do Closet"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "closet_1"
+    payload_off: "closet_0"
+    optimistic: false
+
+  - name: "Iluminacao Ambiente"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "clinter_1"
+    payload_off: "clinter_0"
+    optimistic: false
+
+  - name: "Iluminacao do Espelho"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "clesp_1"
+    payload_off: "clesp_0"
+    optimistic: false
+
+  - name: "Iluminacao do Teto"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "espgourmet_1"
+    payload_off: "espgourmet_0"
+    optimistic: false
+
+  - name: "Pia_RGB_EspacoGourmet"
+    state_topic: 'dev/test/minhacasa/espgourmet/pia/status'
+    command_topic: 'dev/test/minhacasa/espgourmet/pia/comando'
+    brightness_state_topic: 'dev/test/minhacasa/espgourmet/pia/brilho/status'
+    brightness_command_topic: 'dev/test/minhacasa/espgourmet/pia/brilho/setar'
+    rgb_state_topic: 'dev/test/minhacasa/espgourmet/pia/rgb/status'
+    rgb_command_topic: 'dev/test/minhacasa/espgourmet/pia/rgb/setar'
+    brightness_scale: 100
+    optimistic: false
+
+  - name: "Iluminacao da Bancada"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "egpendente_1"
+    payload_off: "egpendente_0"
+    optimistic: false
+
+  - name: "Bancada_RGB"
+    state_topic: 'dev/test/minhacasa/espgourmet/bancada/status'
+    command_topic: 'dev/test/minhacasa/espgourmet/bancada/comando'
+    brightness_state_topic: 'dev/test/minhacasa/espgourmet/bancada/brilho/status'
+    brightness_command_topic: 'dev/test/minhacasa/espgourmet/bancada/brilho/setar'
+    rgb_state_topic: 'dev/test/minhacasa/espgourmet/bancada/rgb/status'
+    rgb_command_topic: 'dev/test/minhacasa/espgourmet/bancada/rgb/setar'
+    brightness_scale: 100
+    optimistic: false
+
+  - name: "Iluminacao da Churrasqueira"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "egchurras_1"
+    payload_off: "egchurras_0"
+    optimistic: false
+
+  - name: "Iluminacao da Persiana"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "egpersi_1"
+    payload_off: "egpersi_0"
+    optimistic: false
+    
+  - name: "Persianas_RGB_EspacoGourmet"
+    state_topic: 'dev/test/minhacasa/espgourmet/persiana/status'
+    command_topic: 'dev/test/minhacasa/espgourmet/persiana/comando'
+    brightness_state_topic: 'dev/test/minhacasa/espgourmet/persiana/brilho/status'
+    brightness_command_topic: 'dev/test/minhacasa/espgourmet/persiana/brilho/setar'
+    rgb_state_topic: 'dev/test/minhacasa/espgourmet/persiana/rgb/status'
+    rgb_command_topic: 'dev/test/minhacasa/espgourmet/persiana/rgb/setar'
+    brightness_scale: 100
+    optimistic: false
+
+  - name: "Iluminacao da Area Servico"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "espgourmet2_1"
+    payload_off: "espgourmet2_0"
+    optimistic: false
+
+  - name: "Lampada do Laboratorio"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "laboratorio_1"
+    payload_off: "laboratorio_0"
+    optimistic: false
+
+
+  - name: "Persiana do Laboratorio"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "lbpersi_1"
+    payload_off: "lbpersi_0"
+    optimistic: false
+
+  - name: "Ambiente do Laboratorio"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "lbventi_1"
+    payload_off: "lbventi_0"
+    optimistic: false
+
+  - name: "Comando Computador"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "cpu_1"
+    payload_off: "cpu_0"
+    optimistic: false
+
+  - name: "Iluminação Mesa Escritorio"
+    state_topic: 'dev/test/minhacasa/escritorio/mesa/status'
+    command_topic: 'dev/test/minhacasa/escritorio/mesa/comando'
+    brightness_state_topic: 'dev/test/minhacasa/escritorio/mesa/brilho/status'
+    brightness_command_topic: 'dev/test/minhacasa/escritorio/mesa/brilho/setar'
+    rgb_state_topic: 'dev/test/minhacasa/escritorio/mesa/rgb/status'
+    rgb_command_topic: 'dev/test/minhacasa/escritorio/mesa/rgb/setar'
+    brightness_scale: 100
+    optimistic: false
+
+  - name: "Iluminação Luminaria"
+    state_topic: 'dev/test/minhacasa/escritorio/luminaria/status'
+    command_topic: 'dev/test/minhacasa/escritorio/luminaria/comando'
+    brightness_state_topic: 'dev/test/minhacasa/escritorio/luminaria/brilho/status'
+    brightness_command_topic: 'dev/test/minhacasa/escritorio/luminaria/brilho/setar'
+    rgb_state_topic: 'dev/test/minhacasa/escritorio/luminaria/rgb/status'
+    rgb_command_topic: 'dev/test/minhacasa/escritorio/luminaria/rgb/setar'
+    brightness_scale: 100
+    optimistic: false
+
+
+
+
+
+
+
+
+
+
+
+
+  - name: "Lampada do Banheiro Social"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "banhsocial_1"
+    payload_off: "banhsocial_0"
+    optimistic: false
+
+  - name: "Espelho do Banheiro Social"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "soesp_1"
+    payload_off: "soesp_0"
+    optimistic: false
+
+  - name: "Ambiente do Banheiro Social"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "soambi_1"
+    payload_off: "soambi_0"
+    optimistic: false
+
+  - name: "Lampada do Banheiro Suite"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "banhsuite_1"
+    payload_off: "banhsuite_0"
+    optimistic: false
+
+  - name: "Espelho do Banheiro Suite"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "suesp_1"
+    payload_off: "suesp_0"
+    optimistic: false
+
+  - name: "Ambiente do Banheiro Suite"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "suambi_1"
+    payload_off: "suambi_0"
+    optimistic: false
+
+  - name: "Andar 1 e 2"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "acesso1_1"
+    payload_off: "acesso1_0"
+    optimistic: false
+
+  - name: "Andar 3 e 4"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "acesso2_1"
+    payload_off: "acesso2_0"
+    optimistic: false
+
+  - name: "Amb Andar 3 e 4"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "ac1ambi_1"
+    payload_off: "ac1ambi_0"
+    optimistic: false
+
+  - name: "Garagem 1 Andar G1"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/portao_eletronico"
+    qos: 1
+    payload_on: "gi_teto1_1"
+    payload_off: "gi_teto1_0"
+    optimistic: false
+
+  - name: "Garagem 1 Andar G2"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/portao_eletronico"
+    qos: 1
+    payload_on: "gi_teto2_1"
+    payload_off: "gi_teto2_0"
+    optimistic: false
+
+  - name: "Portao Acesso 1 Andar"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/portao_eletronico"
+    qos: 1
+    payload_on: "gi_portaopequeno"
+    payload_off: "---"
+    optimistic: false
+
+  - name: "Portao Acesso 2 Andar"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "gi_portaopequeno2"
+    payload_off: "---"
+    optimistic: false
+
+
+
+
+
+  - name: "Ilum Garagem 1"
+    state_topic: "dev/test/garagem/externa/central"
+    command_topic: "dev/test/garagem/externa"
+    qos: 1
+    payload_on: "liga1"
+    payload_off: "desliga1"
+    optimistic: true
+
+  - name: "Ilum Garagem 2"
+    state_topic: "dev/test/garagem/externa/central"
+    command_topic: "dev/test/garagem/externa"
+    qos: 1
+    payload_on: "liga2"
+    payload_off: "desliga2"
+    optimistic: true
+
+  - name: "Ilum Garagem 3"
+    state_topic: "dev/test/garagem/externa/central"
+    command_topic: "dev/test/garagem/externa"
+    qos: 1
+    payload_on: "liga3"
+    payload_off: "desliga3"
+    optimistic: true
+
+  - name: "Ilum Area Churrasco"
+    state_topic: "dev/test/garagem/externa/central"
+    command_topic: "dev/test/garagem/externa"
+    qos: 1
+    payload_on: "teto_1"
+    payload_off: "teto_0"
+    optimistic: true
+
+  - name: "Ilum Pentende A Churrasco"
+    state_topic: "dev/test/garagem/externa/central"
+    command_topic: "dev/test/garagem/externa"
+    qos: 1
+    payload_on: "pendente_1"
+    payload_off: "pendente_0"
+    optimistic: true
+
+  - name: "Ilum Ambiente A Churrasco"
+    state_topic: "dev/test/garagem/externa/central"
+    command_topic: "dev/test/garagem/externa"
+    qos: 1
+    payload_on: "quadro_1"
+    payload_off: "quadro_0"
+    optimistic: true
+
+  - name: "Ilum Arandelas M Churrasco"
+    state_topic: "dev/test/garagem/externa/central"
+    command_topic: "dev/test/garagem/externa"
+    qos: 1
+    payload_on: "muro_ch_1"
+    payload_off: "muro_ch_0"
+    optimistic: true
+
+  - name: "Ilum Arandelas Carros"
+    state_topic: "dev/test/garagem/externa/central"
+    command_topic: "dev/test/garagem/externa"
+    qos: 1
+    payload_on: "muro_ca_1"
+    payload_off: "muro_ca_0"
+    optimistic: true
+
+  - name: "Ilum Jardim Vertical"
+    state_topic: "dev/test/garagem/externa/central"
+    command_topic: "dev/test/garagem/externa"
+    qos: 1
+    payload_on: "jardim_v_1"
+    payload_off: "jardim_v_1"
+    optimistic: true
+
+  - name: "Ilum Jardim Horizontal"
+    state_topic: "dev/test/garagem/externa/central"
+    command_topic: "dev/test/garagem/externa"
+    qos: 1
+    payload_on: "jardim_h_1"
+    payload_off: "jardim_h_0"
+    optimistic: true
+
+  - name: "Ilum Oficina"
+    state_topic: "dev/test/garagem/externa/central"
+    command_topic: "dev/test/garagem/externa"
+    qos: 1
+    payload_on: "oficina_1"
+    payload_off: "oficina_0"
+    optimistic: true
+
+  - name: "Ilum Arandelas da Casa"
+    state_topic: "dev/test/garagem/externa/central"
+    command_topic: "dev/test/garagem/externa"
+    qos: 1
+    payload_on: "frente_1"
+    payload_off: "frente_0"
+    optimistic: true
+
+
+
+#DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES
+#DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES
+#DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES
+#DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES
+#DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES
+
+  - name: "Disj Iluminacao Sala"
+    state_topic: "dev/test/minhacasa/disjilumin/sala"
+    command_topic: "dev/test/minhacasa/disjilumin/sala"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Iluminacao Quarto1"
+    state_topic: "dev/test/minhacasa/disjilumin/quarto1"
+    command_topic: "dev/test/minhacasa/disjilumin/quarto1"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Iluminacao Quarto2"
+    state_topic: "dev/test/minhacasa/disjilumin/quarto2"
+    command_topic: "dev/test/minhacasa/disjilumin/quarto2"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Iluminacao Cozinha"
+    state_topic: "dev/test/minhacasa/disjilumin/cozinha"
+    command_topic: "dev/test/minhacasa/disjilumin/cozinha"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Iluminacao QuartoC"
+    state_topic: "dev/test/minhacasa/disjilumin/quartoc"
+    command_topic: "dev/test/minhacasa/disjilumin/quartoc"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Iluminacao EspacoG"
+    state_topic: "dev/test/minhacasa/disjilumin/espacog"
+    command_topic: "dev/test/minhacasa/disjilumin/espacog"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Iluminacao Laboratorio"
+    state_topic: "dev/test/minhacasa/disjilumin/laboratorio"
+    command_topic: "dev/test/minhacasa/disjilumin/laboratorio"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Iluminacao Acesso"
+    state_topic: "dev/test/minhacasa/disjilumin/acesso"
+    command_topic: "dev/test/minhacasa/disjilumin/acesso"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Tomada Sala"
+    state_topic: "dev/test/minhacasa/disjtom/sala"
+    command_topic: "dev/test/minhacasa/disjtom/sala"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Tomada Quarto1"
+    state_topic: "dev/test/minhacasa/disjtom/quarto1"
+    command_topic: "dev/test/minhacasa/disjtom/quarto1"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Tomada Quarto2"
+    state_topic: "dev/test/minhacasa/disjtom/quarto2"
+    command_topic: "dev/test/minhacasa/disjtom/quarto2"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Tomada Cozinha"
+    state_topic: "dev/test/minhacasa/disjtom/cozinha"
+    command_topic: "dev/test/minhacasa/disjtom/cozinha"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Tomada QuartoC"
+    state_topic: "dev/test/minhacasa/tomada/quartoc"
+    command_topic: "dev/test/minhacasa/tomada/quartoc"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Tomada EspacoG"
+    state_topic: "dev/test/minhacasa/disjtom/espacog"
+    command_topic: "dev/test/minhacasa/disjtom/espacog"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Tomada Laboratorio"
+    state_topic: "dev/test/minhacasa/disjtom/laboratorio"
+    command_topic: "dev/test/minhacasa/disjtom/laboratorio"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Tomada Aux"
+    state_topic: "dev/test/minhacasa/disjtom/aux"
+    command_topic: "dev/test/minhacasa/disjtom/aux"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Tomada Automacoes"
+    state_topic: "dev/test/minhacasa/disjtom/auto"
+    command_topic: "dev/test/minhacasa/disjtom/auto"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Geral Casa"
+    state_topic: "dev/test/minhacasa/disj/geral"
+    command_topic: "dev/test/minhacasa/disj/geral"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Chuv B Social"
+    state_topic: "dev/test/minhacasa/disj/chbso"
+    command_topic: "dev/test/minhacasa/disj/chbso"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Chuv B Suite"
+    state_topic: "dev/test/minhacasa/disj/chbsu"
+    command_topic: "dev/test/minhacasa/disj/chbsu"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Guincho"
+    state_topic: "dev/test/minhacasa/disj/guincho"
+    command_topic: "dev/test/minhacasa/disj/guincho"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Reserva1"
+    state_topic: "dev/test/minhacasa/disj/reserva1"
+    command_topic: "dev/test/minhacasa/disj/reserva1"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Reserva2"
+    state_topic: "dev/test/minhacasa/disj/reserva2"
+    command_topic: "dev/test/minhacasa/disj/reserva2"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Reserva3"
+    state_topic: "dev/test/minhacasa/disj/reserva3"
+    command_topic: "dev/test/minhacasa/disj/reserva3"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false  # VARIAVEIS APENAS PARA AUTOMACOES
+
+  - name: "Dormir"
+    state_topic: "dev/test/minhacasa/automacao"
+    command_topic: "dev/test/minhacasa/automacao"
+    qos: 1
+    payload_on: "on"
+    payload_off: "off"
+    optimistic: false
+    
+    #Variavel para habilitar automacao externo
+  - name: "Externo"
+    state_topic: "dev/test/minhacasa/externo"
+    command_topic: "dev/test/minhacasa/externo"
+    qos: 1
+    payload_on: "on"
+    payload_off: "off"
+    optimistic: false
+    
+    #Variavel para habilitar desligar lampadas internas a noite
+  - name: "Automacao Noturna"
+    state_topic: "dev/test/minhacasa/noturna"
+    command_topic: "dev/test/minhacasa/noturna"
+    qos: 1
+    payload_on: "on"
+    payload_off: "off"
+    optimistic: false
+    
+    #Variavel para habilitar desligar controle lampadas
+  - name: "Controle Lampadas Automatico"
+    state_topic: "dev/test/minhacasa/consumo/gestao_lampadas"
+    command_topic: "dev/test/minhacasa/consumo/gestao_lampadas"
+    qos: 1
+    payload_on: "on"
+    payload_off: "off"
+    optimistic: false    
+    
+    #Variavel para habilitar desligar lampadas RGB
+  - name: "Ambientes RGB"
+    state_topic: "dev/test/minhacasa/rgb"
+    command_topic: "dev/test/minhacasa/rgb"
+    qos: 1
+    payload_on: "on"
+    payload_off: "off"
+    optimistic: false
+
+  - name: "Iluminacao da Sala"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "sala_1"
+    payload_off: "sala_0"
+    optimistic: false
+
+  - name: "Iluminacao do Lustre"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "slustre_1"
+    payload_off: "slustre_0"
+    optimistic: false
+
+  - name: "Iluminacao da Sacada"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "svaranda_1"
+    payload_off: "svaranda_0"
+    optimistic: false
+
+  - name: "Painel TV da Sala"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "spainel_1"
+    payload_off: "spainel_0"
+    optimistic: false
+
+  - name: "Tela Automacao"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "scorti_1"
+    payload_off: "scorti_0"
+    optimistic: false
+
+  - name: "Sanca RGB Sala"
+    state_topic: "sala/rbg1/luz/status"
+    command_topic: "sala/rbg1/luz/switch"
+    brightness_state_topic: 'sala/rbg1/brilho/status'
+    brightness_command_topic: 'sala/rbg1/brilho/set'
+    rgb_state_topic: 'sala/rbg1/rgb/status'
+    rgb_command_topic: 'sala/rbg1/rgb/set'
+    brightness_scale: 100
+    optimistic: false
+
+  - name: "Arvore de Natal"
+    state_topic: "dev/test/minhacasa/status_arvore"
+    command_topic: "dev/test/minhacasa/arvore"
+    qos: 1
+    payload_on: "ligada"
+    payload_off: "desligada"
+    optimistic: false
+
+  - name: "Iluminacao do Quarto 1"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "quarto1_1"
+    payload_off: "quarto1_0"
+    optimistic: false
+
+  - name: "Painel TV do Quarto 1"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "q1painel_1"
+    payload_off: "q1painel_0"
+    optimistic: false
+
+  - name: "Cortineiro do Quarto 1"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "q1corti_1"
+    payload_off: "q1corti_0"
+    optimistic: false
+
+  - name: "Iluminacao do Quarto 2"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "quarto2_1"
+    payload_off: "quarto2_0"
+    optimistic: false
+
+  - name: "Painel TV do Quarto 2"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "q2painel_1"
+    payload_off: "q2painel_0"
+    optimistic: false
+
+  - name: "Cortineiro do Quarto 2"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "q2corti_1"
+    payload_off: "q2corti_0"
+    optimistic: false
+
+
+
+
+# COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA
+# COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA
+# COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA
+# COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA
+# COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA   COZINHA
+
+
+
+
+  - name: "Iluminacao da Cozinha"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "cozinha_1"
+    payload_off: "cozinha_0"
+    optimistic: false
+
+  - name: "Iluminacao do Corredor"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "czcorredor_1"
+    payload_off: "czcorredor_0"
+    optimistic: false
+
+  - name: "Corredor_RGB_Cozinha"
+    state_topic: 'dev/test/minhacasa/cz/corredor/status'
+    command_topic: 'dev/test/minhacasa/cz/corredor/comando'
+    brightness_state_topic: 'dev/test/minhacasa/cz/corredor/brilho/status'
+    brightness_command_topic: 'dev/test/minhacasa/cz/corredor/brilho/setar'
+    rgb_state_topic: 'dev/test/minhacasa/cz/corredor/rgb/status'
+    rgb_command_topic: 'dev/test/minhacasa/cz/corredor/rgb/setar'
+    brightness_scale: 100
+    optimistic: false
+
+  - name: "Balizadores_RGB_Cozinha"
+    state_topic: 'dev/test/minhacasa/cz/balizadores/status'
+    command_topic: 'dev/test/minhacasa/cz/balizadores/comando'
+    brightness_state_topic: 'dev/test/minhacasa/cz/balizadores/brilho/status'
+    brightness_command_topic: 'dev/test/minhacasa/cz/balizadores/brilho/setar'
+    rgb_state_topic: 'dev/test/minhacasa/cz/balizadores/rgb/status'
+    rgb_command_topic: 'dev/test/minhacasa/cz/balizadores/rgb/setar'
+    brightness_scale: 100
+    optimistic: false
+
+  - name: "Bancada_da_Cozinha"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "czpendente_1"
+    payload_off: "czpendente_0"
+    optimistic: false
+
+  - name: "Ilha_RGB_Cozinha"
+    state_topic: 'dev/test/minhacasa/cz/ilha/status'
+    command_topic: 'dev/test/minhacasa/cz/ilha/comando'
+    brightness_state_topic: 'dev/test/minhacasa/cz/ilha/brilho/status'
+    brightness_command_topic: 'dev/test/minhacasa/cz/ilha/brilho/setar'
+    rgb_state_topic: 'dev/test/minhacasa/cz/ilha/rgb/status'
+    rgb_command_topic: 'dev/test/minhacasa/cz/ilha/rgb/setar'
+    brightness_scale: 100
+    optimistic: false
+
+  - name: "Pia_RGB_Cozinha"
+    state_topic: 'dev/test/minhacasa/cz/pia/status'
+    command_topic: 'dev/test/minhacasa/cz/pia/comando'
+    brightness_state_topic: 'dev/test/minhacasa/cz/pia/brilho/status'
+    brightness_command_topic: 'dev/test/minhacasa/cz/pia/brilho/setar'
+    rgb_state_topic: 'dev/test/minhacasa/cz/pia/rgb/status'
+    rgb_command_topic: 'dev/test/minhacasa/cz/pia/rgb/setar'
+    brightness_scale: 100
+    optimistic: false
+
+  - name: "Geladeira_RGB_Cozinha"
+    state_topic: 'dev/test/minhacasa/cz/geladeira/status'
+    command_topic: 'dev/test/minhacasa/cz/geladeira/comando'
+    brightness_state_topic: 'dev/test/minhacasa/cz/geladeira/brilho/status'
+    brightness_command_topic: 'dev/test/minhacasa/cz/geladeira/brilho/setar'
+    rgb_state_topic: 'dev/test/minhacasa/cz/geladeira/rgb/status'
+    rgb_command_topic: 'dev/test/minhacasa/cz/geladeira/rgb/setar'
+    brightness_scale: 100
+    optimistic: false
+
+  - name: "Ambiente da Cozinha"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "czpia_1"
+    payload_off: "czpia_0"
+    optimistic: false
+
+  - name: "Persiana da Cozinha"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "czpersi_1"
+    payload_off: "czpersi_0"
+    optimistic: false
+
+  - name: "Painel TV da Cozinha"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "czpainel_1"
+    payload_off: "czpainel_0"
+    optimistic: false
+
+
+
+
+# QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL
+# QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL
+# QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL
+# QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL    QUARTO DE CASAL
+
+
+
+
+  - name: "Iluminacao do Quarto C"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "quartocasal_1"
+    payload_off: "quartocasal_0"
+    optimistic: false
+
+  - name: "Painel TV do Quarto C"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "qcpainel_1"
+    payload_off: "qcpainel_0"
+    optimistic: false
+
+  - name: "Cortineiro do Quarto C"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "qccorti_1"
+    payload_off: "qccorti_0"
+    optimistic: false
+
+  - name: "Iluminacao do Closet"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "closet_1"
+    payload_off: "closet_0"
+    optimistic: false
+
+  - name: "Iluminacao Ambiente"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "clinter_1"
+    payload_off: "clinter_0"
+    optimistic: false
+
+  - name: "Iluminacao do Espelho"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "clesp_1"
+    payload_off: "clesp_0"
+    optimistic: false
+
+  - name: "Iluminacao do Teto"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "espgourmet_1"
+    payload_off: "espgourmet_0"
+    optimistic: false
+
+  - name: "Pia_RGB_EspacoGourmet"
+    state_topic: 'dev/test/minhacasa/espgourmet/pia/status'
+    command_topic: 'dev/test/minhacasa/espgourmet/pia/comando'
+    brightness_state_topic: 'dev/test/minhacasa/espgourmet/pia/brilho/status'
+    brightness_command_topic: 'dev/test/minhacasa/espgourmet/pia/brilho/setar'
+    rgb_state_topic: 'dev/test/minhacasa/espgourmet/pia/rgb/status'
+    rgb_command_topic: 'dev/test/minhacasa/espgourmet/pia/rgb/setar'
+    brightness_scale: 100
+    optimistic: false
+
+  - name: "Iluminacao da Bancada"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "egpendente_1"
+    payload_off: "egpendente_0"
+    optimistic: false
+
+  - name: "Bancada_RGB"
+    state_topic: 'dev/test/minhacasa/espgourmet/bancada/status'
+    command_topic: 'dev/test/minhacasa/espgourmet/bancada/comando'
+    brightness_state_topic: 'dev/test/minhacasa/espgourmet/bancada/brilho/status'
+    brightness_command_topic: 'dev/test/minhacasa/espgourmet/bancada/brilho/setar'
+    rgb_state_topic: 'dev/test/minhacasa/espgourmet/bancada/rgb/status'
+    rgb_command_topic: 'dev/test/minhacasa/espgourmet/bancada/rgb/setar'
+    brightness_scale: 100
+    optimistic: false
+
+  - name: "Iluminacao da Churrasqueira"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "egchurras_1"
+    payload_off: "egchurras_0"
+    optimistic: false
+
+  - name: "Iluminacao da Persiana"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "egpersi_1"
+    payload_off: "egpersi_0"
+    optimistic: false
+    
+  - name: "Persianas_RGB_EspacoGourmet"
+    state_topic: 'dev/test/minhacasa/espgourmet/persiana/status'
+    command_topic: 'dev/test/minhacasa/espgourmet/persiana/comando'
+    brightness_state_topic: 'dev/test/minhacasa/espgourmet/persiana/brilho/status'
+    brightness_command_topic: 'dev/test/minhacasa/espgourmet/persiana/brilho/setar'
+    rgb_state_topic: 'dev/test/minhacasa/espgourmet/persiana/rgb/status'
+    rgb_command_topic: 'dev/test/minhacasa/espgourmet/persiana/rgb/setar'
+    brightness_scale: 100
+    optimistic: false
+
+  - name: "Iluminacao da Area Servico"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "espgourmet2_1"
+    payload_off: "espgourmet2_0"
+    optimistic: false
+
+  - name: "Lampada do Laboratorio"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "laboratorio_1"
+    payload_off: "laboratorio_0"
+    optimistic: false
+
+
+  - name: "Persiana do Laboratorio"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "lbpersi_1"
+    payload_off: "lbpersi_0"
+    optimistic: false
+
+  - name: "Ambiente do Laboratorio"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "lbventi_1"
+    payload_off: "lbventi_0"
+    optimistic: false
+
+  - name: "Lampada do Banheiro Social"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "banhsocial_1"
+    payload_off: "banhsocial_0"
+    optimistic: false
+
+  - name: "Espelho do Banheiro Social"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "soesp_1"
+    payload_off: "soesp_0"
+    optimistic: false
+
+  - name: "Ambiente do Banheiro Social"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "soambi_1"
+    payload_off: "soambi_0"
+    optimistic: false
+
+  - name: "Lampada do Banheiro Suite"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "banhsuite_1"
+    payload_off: "banhsuite_0"
+    optimistic: false
+
+  - name: "Espelho do Banheiro Suite"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "suesp_1"
+    payload_off: "suesp_0"
+    optimistic: false
+
+  - name: "Ambiente do Banheiro Suite"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "suambi_1"
+    payload_off: "suambi_0"
+    optimistic: false
+
+  - name: "Andar 1 e 2"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "acesso1_1"
+    payload_off: "acesso1_0"
+    optimistic: false
+
+  - name: "Andar 3 e 4"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "acesso2_1"
+    payload_off: "acesso2_0"
+    optimistic: false
+
+  - name: "Amb Andar 3 e 4"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "ac1ambi_1"
+    payload_off: "ac1ambi_0"
+    optimistic: false
+
+  - name: "Garagem 1 Andar G1"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/portao_eletronico"
+    qos: 1
+    payload_on: "gi_teto1_1"
+    payload_off: "gi_teto1_0"
+    optimistic: false
+
+  - name: "Garagem 1 Andar G2"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/portao_eletronico"
+    qos: 1
+    payload_on: "gi_teto2_1"
+    payload_off: "gi_teto2_0"
+    optimistic: false
+
+  - name: "Portao Acesso 1 Andar"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/portao_eletronico"
+    qos: 1
+    payload_on: "gi_portaopequeno"
+    payload_off: "---"
+    optimistic: false
+
+  - name: "Portao Acesso 2 Andar"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "gi_portaopequeno2"
+    payload_off: "---"
+    optimistic: false
+
+
+
+
+
+  - name: "Ilum Garagem 1"
+    state_topic: "dev/test/garagem/externa/central"
+    command_topic: "dev/test/garagem/externa"
+    qos: 1
+    payload_on: "liga1"
+    payload_off: "desliga1"
+    optimistic: true
+
+  - name: "Ilum Garagem 2"
+    state_topic: "dev/test/garagem/externa/central"
+    command_topic: "dev/test/garagem/externa"
+    qos: 1
+    payload_on: "liga2"
+    payload_off: "desliga2"
+    optimistic: true
+
+  - name: "Ilum Garagem 3"
+    state_topic: "dev/test/garagem/externa/central"
+    command_topic: "dev/test/garagem/externa"
+    qos: 1
+    payload_on: "liga3"
+    payload_off: "desliga3"
+    optimistic: true
+
+  - name: "Ilum Area Churrasco"
+    state_topic: "dev/test/garagem/externa/central"
+    command_topic: "dev/test/garagem/externa"
+    qos: 1
+    payload_on: "teto_1"
+    payload_off: "teto_0"
+    optimistic: true
+
+  - name: "Ilum Pentende A Churrasco"
+    state_topic: "dev/test/garagem/externa/central"
+    command_topic: "dev/test/garagem/externa"
+    qos: 1
+    payload_on: "pendente_1"
+    payload_off: "pendente_0"
+    optimistic: true
+
+  - name: "Ilum Ambiente A Churrasco"
+    state_topic: "dev/test/garagem/externa/central"
+    command_topic: "dev/test/garagem/externa"
+    qos: 1
+    payload_on: "quadro_1"
+    payload_off: "quadro_0"
+    optimistic: true
+
+  - name: "Ilum Arandelas M Churrasco"
+    state_topic: "dev/test/garagem/externa/central"
+    command_topic: "dev/test/garagem/externa"
+    qos: 1
+    payload_on: "muro_ch_1"
+    payload_off: "muro_ch_0"
+    optimistic: true
+
+  - name: "Ilum Arandelas Carros"
+    state_topic: "dev/test/garagem/externa/central"
+    command_topic: "dev/test/garagem/externa"
+    qos: 1
+    payload_on: "muro_ca_1"
+    payload_off: "muro_ca_0"
+    optimistic: true
+
+  - name: "Ilum Jardim Vertical"
+    state_topic: "dev/test/garagem/externa/central"
+    command_topic: "dev/test/garagem/externa"
+    qos: 1
+    payload_on: "jardim_v_1"
+    payload_off: "jardim_v_1"
+    optimistic: true
+
+  - name: "Ilum Jardim Horizontal"
+    state_topic: "dev/test/garagem/externa/central"
+    command_topic: "dev/test/garagem/externa"
+    qos: 1
+    payload_on: "jardim_h_1"
+    payload_off: "jardim_h_0"
+    optimistic: true
+
+  - name: "Ilum Oficina"
+    state_topic: "dev/test/garagem/externa/central"
+    command_topic: "dev/test/garagem/externa"
+    qos: 1
+    payload_on: "oficina_1"
+    payload_off: "oficina_0"
+    optimistic: true
+
+  - name: "Ilum Arandelas da Casa"
+    state_topic: "dev/test/garagem/externa/central"
+    command_topic: "dev/test/garagem/externa"
+    qos: 1
+    payload_on: "frente_1"
+    payload_off: "frente_0"
+    optimistic: true
+
+
+
+#DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES
+#DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES
+#DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES
+#DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES
+#DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES    DISJUNTORES
+
+  - name: "Disj Iluminacao Sala"
+    state_topic: "dev/test/minhacasa/disjilumin/sala"
+    command_topic: "dev/test/minhacasa/disjilumin/sala"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Iluminacao Quarto1"
+    state_topic: "dev/test/minhacasa/disjilumin/quarto1"
+    command_topic: "dev/test/minhacasa/disjilumin/quarto1"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Iluminacao Quarto2"
+    state_topic: "dev/test/minhacasa/disjilumin/quarto2"
+    command_topic: "dev/test/minhacasa/disjilumin/quarto2"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Iluminacao Cozinha"
+    state_topic: "dev/test/minhacasa/disjilumin/cozinha"
+    command_topic: "dev/test/minhacasa/disjilumin/cozinha"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Iluminacao QuartoC"
+    state_topic: "dev/test/minhacasa/disjilumin/quartoc"
+    command_topic: "dev/test/minhacasa/disjilumin/quartoc"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Iluminacao EspacoG"
+    state_topic: "dev/test/minhacasa/disjilumin/espacog"
+    command_topic: "dev/test/minhacasa/disjilumin/espacog"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Iluminacao Laboratorio"
+    state_topic: "dev/test/minhacasa/disjilumin/laboratorio"
+    command_topic: "dev/test/minhacasa/disjilumin/laboratorio"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Iluminacao Acesso"
+    state_topic: "dev/test/minhacasa/disjilumin/acesso"
+    command_topic: "dev/test/minhacasa/disjilumin/acesso"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Tomada Sala"
+    state_topic: "dev/test/minhacasa/disjtom/sala"
+    command_topic: "dev/test/minhacasa/disjtom/sala"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Tomada Quarto1"
+    state_topic: "dev/test/minhacasa/disjtom/quarto1"
+    command_topic: "dev/test/minhacasa/disjtom/quarto1"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Tomada Quarto2"
+    state_topic: "dev/test/minhacasa/disjtom/quarto2"
+    command_topic: "dev/test/minhacasa/disjtom/quarto2"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Tomada Cozinha"
+    state_topic: "dev/test/minhacasa/disjtom/cozinha"
+    command_topic: "dev/test/minhacasa/disjtom/cozinha"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Tomada QuartoC"
+    state_topic: "dev/test/minhacasa/tomada/quartoc"
+    command_topic: "dev/test/minhacasa/tomada/quartoc"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Tomada EspacoG"
+    state_topic: "dev/test/minhacasa/disjtom/espacog"
+    command_topic: "dev/test/minhacasa/disjtom/espacog"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Tomada Laboratorio"
+    state_topic: "dev/test/minhacasa/disjtom/laboratorio"
+    command_topic: "dev/test/minhacasa/disjtom/laboratorio"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Tomada Aux"
+    state_topic: "dev/test/minhacasa/disjtom/aux"
+    command_topic: "dev/test/minhacasa/disjtom/aux"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Tomada Automacoes"
+    state_topic: "dev/test/minhacasa/disjtom/auto"
+    command_topic: "dev/test/minhacasa/disjtom/auto"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Geral Casa"
+    state_topic: "dev/test/minhacasa/disj/geral"
+    command_topic: "dev/test/minhacasa/disj/geral"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Chuv B Social"
+    state_topic: "dev/test/minhacasa/disj/chbso"
+    command_topic: "dev/test/minhacasa/disj/chbso"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Chuv B Suite"
+    state_topic: "dev/test/minhacasa/disj/chbsu"
+    command_topic: "dev/test/minhacasa/disj/chbsu"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Guincho"
+    state_topic: "dev/test/minhacasa/disj/guincho"
+    command_topic: "dev/test/minhacasa/disj/guincho"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Reserva1"
+    state_topic: "dev/test/minhacasa/disj/reserva1"
+    command_topic: "dev/test/minhacasa/disj/reserva1"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Reserva2"
+    state_topic: "dev/test/minhacasa/disj/reserva2"
+    command_topic: "dev/test/minhacasa/disj/reserva2"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+  - name: "Disj Reserva3"
+    state_topic: "dev/test/minhacasa/disj/reserva3"
+    command_topic: "dev/test/minhacasa/disj/reserva3"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+sensor:
+    # SENSOR PARA MONITORAR O STATUS DO INTERFONE
+  - name: "Interfone"
+    state_topic: "dev/test/interfone/status"
+    
+  - name: "Potencia KW"
+    state_topic: "dev/test/minhacasa/consumo/potencia_kwh"
+
+  - name: "Valor KW"
+    state_topic: "dev/test/minhacasa/consumo/valor_kwh"
+
+  - name: "Consumo KWh"
+    state_topic: "dev/test/minhacasa/consumo/consumo_kwh"
+
+  - name: "Consumo Acumulado KWh"
+    state_topic: "dev/test/minhacasa/consumo/consumoa_kwh"
+
+  - name: "Previsao Conta"
+    state_topic: "dev/test/minhacasa/consumo/previsao_conta"
+
+  - name: "Gas"
+    state_topic: "dev/test/minhacasa/gas2"
+  
+  - name: "Kg_Gas"
+    state_topic: "dev/test/minhacasa/kg_gas"
+
+  - name: "temp1"
+    state_topic: "dev/test/minhacasa/monitor_temperatura/status/temp1"
+
+  - name: "temp2"
+    state_topic: "dev/test/minhacasa/monitor_temperatura/status/temp2"
+
+  - name: "previsao_banho"
+    state_topic: "dev/test/minhacasa/banheiro/previsao_banho"
+
+  - name: "intensidade_chuva"
+    state_topic: "dev/test/minhacasa/monitor_chuva/status/intensidade"
+
+  - name: "valor_chuva"
+    state_topic: "dev/test/minhacasa/monitor_chuva/status/valor"
+
+  - name: "status_chuva"
+    state_topic: "dev/test/minhacasa/monitor_chuva/status/chuva"
+
+
+  - name: "tensao_1"
+    state_topic: "dev/test/minhacasa/monitor_tensao/tensao1"
+
+  - name: "tensao_2"
+    state_topic: "dev/test/minhacasa/monitor_tensao/tensao2"
+
+  - name: "irms_1"
+    state_topic: "dev/test/minhacasa/monitor_corrente/corrente1"
+
+  - name: "irms_2"
+    state_topic: "dev/test/minhacasa/monitor_corrente/corrente2"
+
+  - name: "potencia_1"
+    state_topic: "dev/test/minhacasa/monitor_potencia/potencia_1"
+
+
+  - name: "potencia_2"
+    state_topic: "dev/test/minhacasa/monitor_potencia/potencia_2"
+
+  - name: "potencia_t"
+    state_topic: "dev/test/minhacasa/monitor_potencia/potencia_t"
+
+  - name: "potencia_total_automacoes"
+    state_topic: "dev/test/minhacasa/energia/consumo_automacoes"
+
+  - name: "potencia_total_pc"
+    state_topic: "dev/test/minhacasa/energia/consumo_pc"
+
+  - name: "potencia_total_nobreak"
+    state_topic: "dev/test/minhacasa/energia/consumo_nobreak"
+
+  - name: "potencia_total_apenas_casa"
+    state_topic: "dev/test/minhacasa/energia/consumo_apenas_casa"
+
+
+
+
+
+
+
+  - name: "Cond Portao Garagem Principal"
+    state_topic: "dev/test/minhacasa/acesso/garagem1/state"
+
+  - name: "Cond Portao Acesso 1 Andar"
+    state_topic: "dev/test/minhacasa/acesso/portaop/state1"
+
+  - name: "Cond Portao Acesso 2 Andar"
+    state_topic: "dev/test/minhacasa/acesso/portaop/state2"
+
+    #Corrente dos Disjuntores
+  - name: "Corrente Disj Ilum Sala"
+    state_topic: "dev/test/minhacasa/corrente/disj_ilumin_sala"
+
+  - name: "Corrente Disj Ilum Quarto1"
+    state_topic: "dev/test/minhacasa/corrente/disj_ilumin_quarto1"
+
+  - name: "Corrente Disj Ilum Quarto2"
+    state_topic: "dev/test/minhacasa/corrente/disj_ilumin_quarto2"
+
+  - name: "Corrente Disj Ilum Cozinha"
+    state_topic: "dev/test/minhacasa/corrente/disj_ilumin_cozinha"
+
+  - name: "Corrente Disj Ilum QuartoC"
+    state_topic: "dev/test/minhacasa/corrente/disj_ilumin_quartoc"
+
+  - name: "Corrente Disj Ilum EspacoG"
+    state_topic: "dev/test/minhacasa/corrente/disj_ilumin_espacog"
+
+  - name: "Corrente Disj Ilum Laboratorio"
+    state_topic: "dev/test/minhacasa/corrente/disj_ilumin_laboratorio"
+
+  - name: "Corrente Disj Ilum Acesso"
+    state_topic: "dev/test/minhacasa/corrente/disj_ilumin_acesso"
+
+  - name: "Corrente Disj Tom Sala"
+    state_topic: "dev/test/minhacasa/corrente/disj_tomada_sala"
+
+  - name: "Corrente Disj Tom Quarto1"
+    state_topic: "dev/test/minhacasa/corrente/disj_tomada_quarto1"
+
+  - name: "Corrente Disj Tom Quarto2"
+    state_topic: "dev/test/minhacasa/corrente/disj_tomada_quarto2"
+
+  - name: "Corrente Disj Tom Cozinha"
+    state_topic: "dev/test/minhacasa/corrente/disj_tomada_cozinha"
+
+  - name: "Corrente Disj Tom QuartoC"
+    state_topic: "dev/test/minhacasa/corrente/disj_tomada_quartoc"
+
+  - name: "Corrente Disj Tom EspacoG"
+    state_topic: "dev/test/minhacasa/corrente/disj_tomada_espacog"
+
+  - name: "Corrente Disj Tom Laboratorio"
+    state_topic: "dev/test/minhacasa/corrente/disj_tomada_laboratorio"
+
+  - name: "Corrente Disj Tom Acesso"
+    state_topic: "dev/test/minhacasa/corrente/disj_tomada_acesso"
+
+  - name: "Corrente Total Iluminacao"
+    state_topic: "dev/test/minhacasa/corrente/total_iluminacao"
+
+  - name: "Corrente Total Tomadas"
+    state_topic: "dev/test/minhacasa/corrente/total_tomada"
+
+  - name: "Corrente Total Casa"
+    state_topic: "dev/test/minhacasa/corrente/total_casa"
+
+  - name: "Modo Iluminacao Atual"
+    state_topic: "dev/test/minhacasa/modo_iluminacao"
+
+  - name: "Potencia Iluminacao"
+    state_topic: "dev/test/minhacasa/potencia_iluminacao"
+
+  - name: "Temperatura Churrasqueira"
+    state_topic: "dev/test/minhacasa/espg_temp2"
+
+cover:
+  - name: "Cortina da Sala"
+    command_topic: "dev/test/minhacasa/sala/cortina/set"
+    state_topic: "dev/test/minhacasa/sala/cortina/state"
+    qos: 1
+    retain: true
+    payload_open: "abrir"
+    payload_close: "fechar"
+    payload_stop: "parar"
+    state_open: "Aberta"
+    state_closed: "Fechada"
+    optimistic: false
+    value_template: '{{ value.x }}'
+    tilt_command_topic: "dev/test/minhacasa/sala/cortina/tilt/set"
+    tilt_status_topic: "dev/test/minhacasa/sala/cortina/tilt/state"
+    tilt_min: 0
+    tilt_max: 100
+    tilt_closed_value: 0
+    tilt_opened_value: 100
+
+  - name: "Cortina Quarto 1"
+    command_topic: "dev/test/minhacasa/quarto1/cortina/set"
+    state_topic: "dev/test/minhacasa/quarto1/cortina/state"
+    qos: 1
+    retain: true
+    payload_open: "abrir"
+    payload_close: "fechar"
+    payload_stop: "parar"
+    state_open: "Aberta"
+    state_closed: "Fechada"
+    optimistic: false
+    value_template: '{{ value.x }}'
+
+  - name: "Cortina Quarto 2"
+    command_topic: "dev/test/minhacasa/quarto2/cortina/set"
+    state_topic: "dev/test/minhacasa/quarto2/cortina/state"
+    qos: 1
+    retain: true
+    payload_open: "abrir"
+    payload_close: "fechar"
+    payload_stop: "parar"
+    state_open: "Aberta"
+    state_closed: "Fechada"
+    optimistic: false
+    value_template: '{{ value.x }}'
+
+  - name: "Persiana da Cozinha"
+    command_topic: "dev/test/minhacasa/cozinha/persiana/set"
+    state_topic: "dev/test/minhacasa/cozinha/persiana/state"
+    qos: 1
+    retain: true
+    payload_open: "abrir"
+    payload_close: "fechar"
+    payload_stop: "parar"
+    state_open: "Aberta"
+    state_closed: "Fechada"
+    optimistic: false
+    value_template: '{{ value.x }}'
+
+  - name: "Janela da Cozinha"
+    command_topic: "dev/test/minhacasa/cozinha/janela/set"
+    state_topic: "dev/test/minhacasa/cozinha/janela/state"
+    qos: 1
+    retain: true
+    payload_open: "abrir"
+    payload_close: "fechar"
+    payload_stop: "parar"
+    state_open: "Aberta"
+    state_closed: "Fechada"
+    optimistic: false
+    value_template: '{{ value.x }}'
+
+  - name: "Cortina Quarto C"
+    command_topic: "dev/test/minhacasa/quartoc/cortina/set"
+    state_topic: "dev/test/minhacasa/quartoc/cortina/state"
+    qos: 1
+    retain: true
+    payload_open: "abrir"
+    payload_close: "fechar"
+    payload_stop: "parar"
+    state_open: "Aberta"
+    state_closed: "Fechada"
+    optimistic: false
+    value_template: '{{ value.x }}'
+
+  - name: "Persiana1 Espaco Gourmet"
+    command_topic: "dev/test/minhacasa/espgour/persiana/set1"
+    state_topic: "dev/test/minhacasa/espgour/persiana/state1"
+    qos: 1
+    retain: true
+    payload_open: "abrir"
+    payload_close: "fechar"
+    payload_stop: "parar"
+    state_open: "Aberta"
+    state_closed: "Fechada"
+    optimistic: false
+    value_template: '{{ value.x }}'
+
+  - name: "Janela1 Espaco Gourmet"
+    command_topic: "dev/test/minhacasa/espgour/janela/set1"
+    state_topic: "dev/test/minhacasa/espgour/janela/state1"
+    qos: 1
+    retain: true
+    payload_open: "abrir"
+    payload_close: "fechar"
+    payload_stop: "parar"
+    state_open: "Aberta"
+    state_closed: "Fechada"
+    optimistic: false
+    value_template: '{{ value.x }}'
+
+  - name: "Persiana2 Espaco Gourmet"
+    command_topic: "dev/test/minhacasa/espgour/persiana/set2"
+    state_topic: "dev/test/minhacasa/espgour/persiana/state2"
+    qos: 1
+    retain: true
+    payload_open: "abrir"
+    payload_close: "fechar"
+    payload_stop: "parar"
+    state_open: "Aberta"
+    state_closed: "Fechada"
+    optimistic: false
+    value_template: '{{ value.x }}'
+
+  - name: "Janela2 Espaco Gourmet"
+    command_topic: "dev/test/minhacasa/espgour/janela/set2"
+    state_topic: "dev/test/minhacasa/espgour/janela/state2"
+    qos: 1
+    retain: true
+    payload_open: "abrir"
+    payload_close: "fechar"
+    payload_stop: "parar"
+    state_open: "Aberta"
+    state_closed: "Fechada"
+    optimistic: false
+    value_template: '{{ value.x }}'
+
+  - name: "Janela3 Espaco Gourmet"
+    command_topic: "dev/test/minhacasa/espgour/janela/set3"
+    state_topic: "dev/test/minhacasa/espgour/janela/state3"
+    qos: 1
+    retain: true
+    payload_open: "abrir"
+    payload_close: "fechar"
+    payload_stop: "parar"
+    state_open: "Aberta"
+    state_closed: "Fechada"
+    optimistic: false
+    value_template: '{{ value.x }}'
+
+  - name: "Persiana Laboratorio"
+    command_topic: "dev/test/minhacasa/lab/persiana/set"
+    state_topic: "dev/test/minhacasa/lab/persiana/state"
+    qos: 1
+    retain: true
+    payload_open: "abrir"
+    payload_close: "fechar"
+    payload_stop: "parar"
+    state_open: "Aberta"
+    state_closed: "Fechada"
+    optimistic: false
+    value_template: '{{ value.x }}'
+
+  - name: "Janela Laboratorio"
+    command_topic: "dev/test/minhacasa/lab/janela/set"
+    state_topic: "dev/test/minhacasa/lab/janela/state"
+    qos: 1
+    retain: true
+    payload_open: "abrir"
+    payload_close: "fechar"
+    payload_stop: "parar"
+    state_open: "Aberta"
+    state_closed: "Fechada"
+    optimistic: false
+    value_template: '{{ value.x }}'
+
+  - name: "Portao Garagem Principal"
+    command_topic: "dev/test/minhacasa/portao_eletronico"
+    state_topic: "dev/test/minhacasa/acesso/garagem1/state"
+    qos: 1
+    retain: true
+    payload_open: "abrir"
+    payload_close: "fechar"
+    payload_stop: "parar"
+    state_open: "Aberto!"
+    state_closed: "Fechado!"
+    optimistic: false
+    value_template: '{{ value.x }}'
