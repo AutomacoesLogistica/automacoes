@@ -1,0 +1,52 @@
+Abra o cmd e digite
+
+Instale o netplan.io
+>sudo apt-get install -y netplan.io
+
+Agora vamos criar o profile
+> sudo touch /etc/netplan/01-ethernet.yaml
+
+
+Aora editar o arquivo de configuracoes de rede
+> sudo nano /etc/netplan/01-ethernet.yaml
+
+OBS: para esse exemplo iremos usar ip: 192.168.10.35 com gateway 192.168.10.78
+
+********************************************
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    eth0:
+      addresses:
+        - 192.168.10.35/24
+      gateway4: 192.168.10.78
+      nameservers:
+        addresses:
+          - "192.168.10.78"
+          - "8.8.8.8"
+
+********************************************
+
+Dê um control +x e confirma para salvar
+
+Agora vamos confirmar e aplicar os dados configurados
+
+> sudo netplan apply
+
+Agora podemos verificar se deu tudo certo com o comando abaixo
+
+> sudo ip addr show dev eth0
+
+RESPOSTA ALGO PROXIMO A ISSO!
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
+    link/ether 7e:92:59:de:33:f6 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.10.35/24 brd 192.168.10.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet 169.254.7.171/16 brd 169.254.255.255 scope global noprefixroute eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::7c92:59ff:fede:33f6/64 scope link
+       valid_lft forever preferred_lft forever
+
+
+Feito!

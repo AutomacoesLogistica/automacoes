@@ -1,0 +1,22 @@
+Abra o terminal
+
+Atualize o sistema
+> sudo apt update && sudo apt upgrade -y
+
+Instalando php
+
+>sudo apt install php -y
+
+Com o apache ja instalado, damos seguencia a instalação do php
+
+>sudo rm index.html && sudo nano index.php
+
+Ao abrir o arquivo insira os dados abaixo
+
+<?php echo "hello world"; ?>
+
+Dê um control+X e salve
+
+Agora abra o navegador no ip do rock pi, deve retornar na tela "hello world"
+
+Feito!

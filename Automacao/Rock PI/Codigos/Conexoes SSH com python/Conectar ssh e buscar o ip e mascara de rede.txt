@@ -1,0 +1,46 @@
+#para instalar basta digitar >>>> sudo apt install python3-paramiko
+import paramiko #importa para criar a conexao ssh
+
+address = '192.168.10.35'
+username = 'root'
+password = 'logistica2019@@'
+
+ssh = paramiko.SSHClient()
+ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+ssh.connect(hostname=address,username=username,password=password)
+stdin, stdout, stderr = ssh.exec_command('ifconfig')
+stdin.close() # Deixar para evitar erros 
+x = 0
+v = 0
+IP_address = ""
+Netmask = ""
+
+linha_desejada = 0
+for line in stdout.readlines():
+    result = (line.replace('\n',''))
+    #print(result)
+    if x == linha_desejada:
+        msg = result
+    if 'eth0' in line:
+        #print(result )
+        #print('valor X = ' + str(x))
+        linha_desejada = x + 1
+        #print('linha desejada e = ' + str(x))
+    x = x+1    
+msg = msg.replace(' ',',')
+msg = msg.split(',')
+    
+for a in range(len(msg)):
+    #print(msg[(a)])
+    if msg[(a)] == 'inet':
+        IP_address = "IP = " + str(msg[(a + 1)])
+    if msg[(a)] == 'netmask':
+        Netmask = "Mascara = " + str(msg[(a + 1)])
+    
+if(IP_address != ''):
+    print(IP_address)
+if(Netmask != ''):
+    print(Netmask)
+    
+    
+    

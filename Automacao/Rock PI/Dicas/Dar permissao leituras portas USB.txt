@@ -1,0 +1,20 @@
+Para dar permissao a leitura da porta USB0
+> sudo chmod a+rw /dev/ttyUSB0
+
+Para dar permissao a leitura da porta USB1
+> sudo chmod a+rw /dev/ttyUSB1
+
+Para dar permissao a leitura da porta USB2
+> sudo chmod a+rw /dev/ttyUSB2
+
+Para dar permissao a leitura da porta USB3
+> sudo chmod a+rw /dev/ttyUSB3
+
+
+Faça tambem a insercao do usuario "rock" dentro do dialout
+
+com o comando
+
+> sudo usermod -a -G dialout rock
+
+> sudo adduser rock dialout

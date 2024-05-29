@@ -1,0 +1,53 @@
+Vamos criar um exemplo para rodar um arquivo python dentro da pasta
+
+/home/rock/automacao
+
+e o arquivo chama poste_balanca1.py
+
+
+Abra o teminal e entre em
+
+> cd /etc/systemd/system/
+
+crie agora o arquivo do service, que vamos chamar de balanca_poste.service
+
+
+>sudo nano balanca_poste.service
+
+Cole isso dentro do editor e salve
+
+
+********************************************************************************
+[Unit]
+Description=Executa ler USB do reader
+After=network.target
+
+[Service]
+ExecStart=/bin/bash -c 'python3 -u /home/rock/automacao/poste_balanca1.py'
+WorkingDirectory=/home/rock/automacao
+Restart=always
+User=rock
+
+[Install]
+WantedBy=multi-user.target
+
+*********************************************************************************
+
+Agora vamos ativar o service
+
+estando dentro desta pasta 
+
+> sudo systemctl enable balanca_poste.service
+
+Agora vamos iniciar ele
+
+> sudo systemctl start balanca_poste.service 
+
+Agora vamos ver o status dele
+
+> sudo systemctl status balanca_poste.service
+OBS: Deve retornar Active: active (running) em verde!
+
+
+Feito!
+                    

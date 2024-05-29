@@ -1,0 +1,57 @@
+#para instalar basta digitar >>>> sudo apt install python3-paramiko
+import paramiko #importa para criar a conexao ssh
+import time # biblioteca nativa para ter delay
+
+
+address = '192.168.10.35'
+username = 'root'
+password = 'logistica2019@@'
+
+
+
+# Comando pre definidos
+_status = 'systemctl status '
+_stop = 'systemctl stop '
+_start = 'systemctl start '
+_caminho = 'cd /etc/systemd/system'
+
+while(1):
+    try:
+        # Verifica o primeiro script *********************************************************************************************************
+        #Nome do script desejado a verificar!
+        script = 'servidor_socket_poste_balanca1.service'
+        ssh = paramiko.SSHClient()
+        ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+        ssh.connect(hostname=address,username=username,password=password)
+        ssh.exec_command('sudo su') # Entro em modo root
+        time.sleep(1)
+        ssh.exec_command(_caminho) # Entro na pasta
+        stdin, stdout, stderr = ssh.exec_command(_status + ' ' + script) #Executo o comando completo status+script
+        stdin.close() # Deixar para evitar erros 
+        for line in stdout.readlines():
+            result = (line.replace('\n',''))
+            #print(result)
+            if 'Active' in result:
+                msg = line
+                #print(line)
+                msg = msg.replace(' ',',')
+                msg = msg.split(',')
+                if( msg[7] == '(running)' ):
+                    print("Rodando OK!")
+                else:
+                    print("Erro ou desativado, precisa reiniciar!")
+                    ssh.exec_command(_stop + ' ' + script) #Executo o comando completo stop+script
+                    print("Desativando o script e aguardando 3 segundos para ativa-lo!")
+                    time.sleep(3)
+                    ssh.exec_command(_start + ' ' + script) #Executo o comando completo start+script
+                    print("Script " + script + " foi ativado, no proximo loop sera verificado!")
+                    time.sleep(3)
+        ssh.exec_command('exit') # Saio do modo root
+        ssh.close() #Fecho a conexao!
+    except Exception as e:
+          print("Requisicao deu erro:", e)
+    print('Aguardando tempo entre scripts!')
+    time.sleep(5)
+    
+    # ***********************************************************************************************************************************
+                           

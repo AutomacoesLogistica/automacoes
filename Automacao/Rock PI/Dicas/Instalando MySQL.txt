@@ -1,0 +1,20 @@
+Abra o terminal
+
+>sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt install mariadb-server php-mysql -y && sudo service apache2 restart && sudo mysql_secure_installation && sudo apt install phpmyadmin -y && sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin && ls && ls -lh /var/www/ && sudo chown -R rock:www-data /var/www/html/ && sudo chmod -R 770 /var/www/html/
+
+> sudo mysql --user=root mysql
+
+
+CREATE USER 'admin'@'localhost' IDENTIFIED BY 'logistica2019@@';GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost' WITH GRANT OPTION;FLUSH PRIVILEGES;
+CREATE USER 'admin'@'%' IDENTIFIED BY 'logistica2019@@';GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%' WITH GRANT OPTION;FLUSH PRIVILEGES;
+
+Digite exit ou Control+C para sair
+
+>sudo nano /etc/dbconfig-common/phpmyadmin.conf
+
+Procure por dbc_dbuser='phpmyadmin' e altere para dbc_dbuser='admin'
+
+A senha ja definida fica em dbc_dbpass='logistica2019@@'
+
+
+Feito, para acessar basta usar o ip do rock/phpmyadmin e logar com admin e senha logistica2019@@
