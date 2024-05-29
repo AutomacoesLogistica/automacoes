@@ -1,0 +1,14 @@
+Abra cmd como administrador
+
+Execute os comandos abaixo, um por vez
+
+netsh winsock reset
+netsh winhttp reset proxy
+netsh winhttp reset tracing
+netsh winsock reset catalog
+netsh int ipv4 reset catalog
+netsh int ipv6 reset catalog
+
+
+
+Reinicie o computador!

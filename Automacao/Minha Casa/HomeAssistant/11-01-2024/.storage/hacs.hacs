@@ -1,0 +1,10 @@
+{
+  "version": "6",
+  "minor_version": 1,
+  "key": "hacs.hacs",
+  "data": {
+    "view": "Grid",
+    "compact": false,
+    "onboarding_done": false
+  }
+}

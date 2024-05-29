@@ -1,0 +1,12 @@
+Abra a pasta C:\xampp\apache\conf
+
+Edite o arquivo httpd.conf
+
+Procure por 
+DocumentRoot "C:/xampp/htdocs"
+<Directory "C:/xampp/htdocs">
+
+
+E altere nos dois valores o caminho desejado agora para a pasta
+
+Salve e reinicie o serviço do apache no sistema!

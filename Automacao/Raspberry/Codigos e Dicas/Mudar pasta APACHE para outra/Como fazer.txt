@@ -1,0 +1,75 @@
+****OBS: Nesse exemplo ja vou usar um caminho que nesse caso ja foi montado um HD Externo com montagem automática ( Tem tutorial ) e chama /mnt/servidor_hd
+
+
+Abra o terminal e digite
+
+cd /etc/apache2
+
+agora de um ls para verificar os arquivos
+
+Agora digite o comando abaixo para abrir o editor de texto e vamos editar o arquivo
+
+sudo nano apache2.conf
+
+Com o arquivo aberto procure por <Directory /var/www/html>
+
+e agora vamos alterar para a pasta desejada, nesse caso o hd externo ja montado
+
+<Directory /mnt/servidor_hd/www/html>
+
+
+OBS: Dentro do HD (Ou pasta desejada), crie a pasta www e dentro dela a html
+
+Dentro da pasta html fica os dados do servidor, por exemplo vamos criar um para o sistema GAGF ai ficaria dentro do HD
+
+
+www > html > gagf 
+
+e dentro da pasta gagf ficam os dados do sistema para o gagf
+
+
+Agora dê um control X e confirme para salvar
+
+
+Agora vamos editar outro arquivo com o comando
+
+cd /etc/apache2/sites-available e  dê enter
+
+agora pode dar um ls para verificar os dados dentro da pasta, agora vamos editar o arquivo com o comando abaixo
+
+sudo nano 000-default.conf 
+
+Procure por DocumentRoot /var/www/html e altere para o caminho da pasta desejada
+
+DocumentRoot /mnt/servidor_hd/www/html    <<<No meu caso o exemplo do HD montado
+
+OBS: Deve ser o mesmo caminho usado no arquivo anteriormente
+
+
+Agora de um control+X e salve o arquivo
+
+
+Agora para que tenha efeito, devemos reiniciar o apache com o comando
+
+
+
+Agora vamos clonar a pasta do phpmyadmin para jogar para nosso servidor pelo HD
+
+Vamos usar o comando abaixo
+
+> sudo cp /usr/share/phpmyadmin /mnt/servidor_hd/www/html/ -Rp
+ATENÇÃO: Pode ignorar as mensagens de erro como Função não implementada!
+
+Agora para verificar se deu certo vamos listar os dados e verificar se esta la 
+
+> cd /mnt/servidor_hd/www/html
+> ls
+
+Deve conter a pasta phpmyadmin agora e sendo possivel usar para logar no navegador!
+
+
+service apache2 restart
+
+
+
+Pronto!

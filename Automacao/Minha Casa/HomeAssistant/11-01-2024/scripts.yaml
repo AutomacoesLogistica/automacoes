@@ -1,0 +1,221 @@
+controle_sky_mudo:
+  alias: 'Ativa o mudo da SKY'
+  sequence:
+    - service: mqtt.publish
+      data:
+        topic: "dev/test/sky/comando"
+        payload: 'mudo'
+
+
+
+controle_sky_power:
+  alias: 'Ativa o power da SKY'
+  sequence:
+    - service: mqtt.publish
+      data:
+        topic: "dev/test/sky/comando"
+        payload: 'power'
+
+
+controle_sky_1:
+  alias: 'Ativa o 1 da SKY'
+  sequence:
+    - service: mqtt.publish
+      data:
+        topic: "dev/test/sky/comando"
+        payload: '1'
+
+
+controle_sky_2:
+  alias: 'Ativa o 2 da SKY'
+  sequence:
+    - service: mqtt.publish
+      data:
+        topic: "dev/test/sky/comando"
+        payload: '2'
+
+
+controle_sky_3:
+  alias: 'Ativa o 3 da SKY'
+  sequence:
+    - service: mqtt.publish
+      data:
+        topic: "dev/test/sky/comando"
+        payload: '3'
+
+
+controle_sky_4:
+  alias: 'Ativa o 4 da SKY'
+  sequence:
+    - service: mqtt.publish
+      data:
+        topic: "dev/test/sky/comando"
+        payload: '4'
+
+
+controle_sky_5:
+  alias: 'Ativa o 5 da SKY'
+  sequence:
+    - service: mqtt.publish
+      data:
+        topic: "dev/test/sky/comando"
+        payload: '5'
+
+
+
+controle_sky_6:
+  alias: 'Ativa o 6 da SKY'
+  sequence:
+    - service: mqtt.publish
+      data:
+        topic: "dev/test/sky/comando"
+        payload: '6'
+
+
+
+controle_sky_7:
+  alias: 'Ativa o 7 da SKY'
+  sequence:
+    - service: mqtt.publish
+      data:
+        topic: "dev/test/sky/comando"
+        payload: '7'
+
+
+
+controle_sky_8:
+  alias: 'Ativa o 8 da SKY'
+  sequence:
+    - service: mqtt.publish
+      data:
+        topic: "dev/test/sky/comando"
+        payload: '8'
+
+
+
+controle_sky_9:
+  alias: 'Ativa o 9 da SKY'
+  sequence:
+    - service: mqtt.publish
+      data:
+        topic: "dev/test/sky/comando"
+        payload: '9'
+
+
+
+controle_sky_0:
+  alias: 'Ativa o 0 da SKY'
+  sequence:
+    - service: mqtt.publish
+      data:
+        topic: "dev/test/sky/comando"
+        payload: '0'
+
+
+
+controle_sky_ch_cima:
+  alias: 'Pagina CH cima da SKY'
+  sequence:
+    - service: mqtt.publish
+      data:
+        topic: "dev/test/sky/comando"
+        payload: 'ch_cima'
+
+
+
+controle_sky_seta_cima:
+  alias: 'Pagina seta cima da SKY'
+  sequence:
+    - service: mqtt.publish
+      data:
+        topic: "dev/test/sky/comando"
+        payload: 'seta_cima'
+
+
+controle_sky_vol_up:
+  alias: 'Volume da SKY Mais'
+  sequence:
+    - service: mqtt.publish
+      data:
+        topic: "dev/test/sky/comando"
+        payload: 'vol_mais'
+
+
+
+controle_sky_ch_baixo:
+  alias: 'Pagina CH baixo da SKY'
+  sequence:
+    - service: mqtt.publish
+      data:
+        topic: "dev/test/sky/comando"
+        payload: 'ch_baixo'
+
+
+
+
+controle_sky_seta_esquerda:
+  alias: 'Pagina seta esquerda da SKY'
+  sequence:
+    - service: mqtt.publish
+      data:
+        topic: "dev/test/sky/comando"
+        payload: 'seta_esquerda'
+
+
+
+
+controle_sky_ok:
+  alias: 'ok da SKY'
+  sequence:
+    - service: mqtt.publish
+      data:
+        topic: "dev/test/sky/comando"
+        payload: 'ok'
+
+
+
+
+controle_sky_seta_direita:
+  alias: 'Pagina seta direita da SKY'
+  sequence:
+    - service: mqtt.publish
+      data:
+        topic: "dev/test/sky/comando"
+        payload: 'seta_direita'
+
+
+
+
+controle_sky_vol_down:
+  alias: 'Volume da SKY Menos'
+  sequence:
+    - service: mqtt.publish
+      data:
+        topic: "dev/test/sky/comando"
+        payload: 'vol_menos'
+        
+        
+        
+
+
+
+controle_sky_voltar:
+  alias: 'Voltar SKY'
+  sequence:
+    - service: mqtt.publish
+      data:
+        topic: "dev/test/sky/comando"
+        payload: 'voltar'
+
+
+
+controle_sky_seta_baixo:
+  alias: 'Pagina seta baixo da SKY'
+  sequence:
+    - service: mqtt.publish
+      data:
+        topic: "dev/test/sky/comando"
+        payload: 'seta_baixo'
+
+
+

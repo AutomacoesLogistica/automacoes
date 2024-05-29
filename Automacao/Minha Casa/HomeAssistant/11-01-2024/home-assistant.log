@@ -1,0 +1,50 @@
+2024-01-11 09:04:38.455 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration alexa_media which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2024-01-11 09:04:38.458 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2024-01-11 09:04:38.654 WARNING (MainThread) [homeassistant.components.lovelace] Lovelace is running in storage mode. Define resources via user interface
+2024-01-11 09:04:53.157 ERROR (MainThread) [homeassistant.components.sensor] The dnsip platform for the sensor integration does not support platform setup. Please remove it from your config.
+2024-01-11 09:04:53.392 WARNING (MainThread) [homeassistant.config_entries] Config entry 'Controller (192.168.3.220)' for heos integration not ready yet: [Errno 113] Connect call failed ('192.168.3.220', 1255); Retrying in background
+2024-01-11 09:04:53.427 WARNING (MainThread) [homeassistant.config_entries] Config entry 'HomeCinema' for denonavr integration not ready yet: TimeoutException: ; Retrying in background
+2024-01-11 09:04:53.516 WARNING (MainThread) [homeassistant.setup] Setup of hacs is taking over 10 seconds.
+2024-01-11 09:04:53.803 ERROR (MainThread) [homeassistant.components.sensor] Platform upnp does not generate unique IDs. ID uuid:060b7353-fca6-4070-85f4-1fbfb9add62c_ip already exists - ignoring sensor.wireless_router_tl_wr740n_external_ip
+2024-01-11 09:04:53.806 ERROR (MainThread) [homeassistant.components.sensor] Platform upnp does not generate unique IDs. ID uuid:060b7353-fca6-4070-85f4-1fbfb9add62c_KiB/sec_received already exists - ignoring sensor.wireless_router_tl_wr740n_kib_s_received
+2024-01-11 09:04:53.808 ERROR (MainThread) [homeassistant.components.sensor] Platform upnp does not generate unique IDs. ID uuid:060b7353-fca6-4070-85f4-1fbfb9add62c_KiB/sec_sent already exists - ignoring sensor.wireless_router_tl_wr740n_kib_s_sent
+2024-01-11 09:04:58.256 WARNING (MainThread) [homeassistant.components.media_player] Setup of media_player platform dlna_dmr is taking over 10 seconds.
+2024-01-11 09:04:58.262 WARNING (MainThread) [homeassistant.components.media_player] Setup of media_player platform dlna_dmr is taking over 10 seconds.
+2024-01-11 09:04:58.266 WARNING (MainThread) [homeassistant.components.media_player] Setup of media_player platform dlna_dmr is taking over 10 seconds.
+2024-01-11 09:05:03.907 ERROR (MainThread) [custom_components.hacs] ikaruswill/lovelace-fan-xiaomi - Repostitory structure for 2.2.4 is not compliant
+2024-01-11 09:05:04.725 ERROR (MainThread) [custom_components.hacs] Makin-Things/platinum-weather-card - Repostitory structure for 1.0.5 is not compliant
+2024-01-11 09:21:52.480 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
+2024-01-11 09:21:52.492 WARNING (MainThread) [haffmpeg.tools] Timeout reading image.
+2024-01-11 14:08:36.151 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.pc_gamer_bruno_asus_tuf_gaming_b760m_plus_d4_nuvoton_nct6798d_voltages_cpu_vcore is taking over 10 seconds
+2024-01-11 14:57:17.793 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2024-01-11 14:59:41.389 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2024-01-11 15:03:17.879 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2024-01-11 15:04:15.777 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2024-01-11 15:11:15.142 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 334, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 551, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message="Bad status line 'Invalid method encountered'"
+2024-01-11 18:33:37.696 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.pc_gamer_bruno_asus_tuf_gaming_b760m_plus_d4_nuvoton_nct6798d_voltages_cpu_vcore is taking over 10 seconds
+2024-01-11 18:33:57.657 WARNING (MainThread) [homeassistant.components.sensor] Updating openhardwaremonitor sensor took longer than the scheduled update interval 0:00:30

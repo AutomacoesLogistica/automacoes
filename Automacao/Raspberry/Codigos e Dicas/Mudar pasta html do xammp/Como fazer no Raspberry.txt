@@ -1,0 +1,29 @@
+1. Primeiro: "apache2.conf", faça o seguinte como root.
+
+# cd /etc/apache2
+# nano apache2.conf
+
+Procure pela linha: <Directory /var/www/>
+Ficando assim:
+
+<Directory /home/usuario/diretorio_que_vc_quiser/>
+              Options Indexes FollowSymLinks
+              AllowOverride All
+              Require all granted
+</Directory>
+
+Salve e feche o arquivo.
+
+2. Depois, na mesma pasta "apache2", vá até o arquivo "000-default.conf", ou "default.conf", e faça assim:
+
+# cd sites-available
+# nano 000-default.conf
+
+Procure pela linha: DocumentRoot /var/www
+Altere para o seguinte:
+
+DocumentRoot /home/usuario/diretorio_que_vc_quiser/
+
+Agora reinicie o Apache2 com o seguinte comando:
+
+# service apache2 restart

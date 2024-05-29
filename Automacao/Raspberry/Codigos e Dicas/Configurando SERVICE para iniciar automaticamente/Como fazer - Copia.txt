@@ -1,0 +1,89 @@
+Para criar um arquivo que ao iniciar chame um script do python e seja possivel ver se está sendo executado ou nao remotamente
+
+Logue no terminal e de duas vezes cd por segurança
+
+Vamor criar o arquivo "lora.sh" para ser o serviço que chamara o script "enviarmensagem.py" que está dentro da pasta "/home/pi/automacao_rom"
+>sudo nano lora.sh
+
+Irá abrir um arquivo e coloque os dados abaixo dentro dele
+
+*****************************
+
+#!/bin/bash
+/usr/bin/python3 /home/pi/automacao_rom/enviamensagens.py
+
+*****************************
+
+Dê um control+X e confirme com S e enter para salvar!
+
+Agora devemos alterar a permissão desse arquivo com o comando
+> sudo chmod +x lora.sh
+
+
+Podemos testar o arquivo .sh criado com o comando
+>sudo sh lora.sh
+
+OBS: O arquivo que ele chama .py deve rodar, e para sair dê um control+c
+
+
+
+
+Agora entre na pasta de inicalização do sistema atraves do comando abaixo
+> cd /lib/systemd/system
+
+Em seguid crie e edite o arquivo
+> sudo nano lora.service
+
+Dentro do arquivo coloque 
+
+
+*****************************
+
+[Unit]
+Description=Executar_o_lora
+
+[Service]
+Type=simple
+ExecStart=/home/pi/lora.sh
+
+
+SuccessExitStatus=143
+TimeoutStopSec=10
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+
+
+*****************************
+
+
+
+
+
+
+
+
+
+
+
+
+Dê um control+X e confirme com S e enter para salvar!
+
+Agora devemos ativar o service com o comando abaixo
+>sudo systemctl enable lora.service
+
+Em seguida devemos ativar o service com o comando
+>sudo systemctl start lora.service
+
+
+Podemos ver o status do serviço atraves do comando
+>sudo systemctl status lora.service
+
+
+E caso deseje parar o serviço no momento use o comando
+>sudo systemctl stop lora.service
+
+E caso queira desativar permanentemente o serviço até ativá-lo posteriormente use o comando abaixo
+>sudo systemctl disable lora.service

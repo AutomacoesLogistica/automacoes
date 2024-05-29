@@ -1,0 +1,19 @@
+abra o cmd
+
+sudo nano /boot/config.txt
+
+Adicione o codigo abaixo no fim do arquivo
+
+avoid_warnings=1
+
+agora de um control+X, S e enter para salvar
+
+
+Agora digite o comando abaixo
+
+sudo apt remove lxplug-ptbatt e dê entrer
+
+confirme com S para executar a exclusão do plugin de notificação de bateria baixa
+
+
+agora basta reiniciar com sudo reboot 

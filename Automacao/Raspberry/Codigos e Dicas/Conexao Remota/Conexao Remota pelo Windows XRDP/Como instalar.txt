@@ -1,0 +1,7 @@
+sudo apt-get install xrdp
+
+
+porta usada e 3389
+
+
+Para efetuar a conexao abra conexao remota no windows e digite o ip ou roteamento que aponte para a porta interna 3389

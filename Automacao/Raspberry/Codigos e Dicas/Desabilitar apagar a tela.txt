@@ -1,0 +1,35 @@
+Abra o terminal e digite o comando abaixo
+
+sudo nano /etc/lightdm/lightdm.conf
+
+
+Irá abrir o arquivo, basta adicionar essas duas linhas no fim do arquivo
+
+[SeatDefaults]
+xserver-command=X -s 0 -dpms
+
+
+Dar control+X
+Confirmar com S para salvar e dê enter para manter o nome do arquivo!
+
+
+em seguida digite no terminal
+
+sudo nano /etc/lightdm/lightdm.conf
+
+Irá abrir o editor
+
+dê Control+w e pesquise por #xserver-command=X 
+OBS: Ele está comentado, retire esta linha e substitua a mesma por
+
+xserver-command=X -s 0 dpms
+
+
+Dar control+X 
+Confirmar com S para salvar e dê enter para manter o nome do arquivo!
+
+
+sudo reboot
+
+
+Pronto!

@@ -1,0 +1,93 @@
+Comandos usados no vídeo:
+Parte 1 - IP Fixo:
+
+ifconfig
+netstat -nr
+sudo nano /etc/dhcpcd.conf
+
+No topo do arquivo dhcpcd.conf, digite estas linhas:
+# STATIC IP
+interface eth0
+static ip_address=192.168.25.81/24
+static routers=192.168.25.1
+static domain_name_servers=192.168.25.1 8.8.8.8 8.8.4.4
+
+Salve o arquivo pressionando CTRL + X, depois S para salvar e Enter para sair do editor de arquivos Nano.
+
+Reinicie a RPi para o novo IP entrar em uso:
+sudo reboot
+
+
+Parte 2 - Broker MQTT Mosquitto:
+
+sudo apt-get update
+sudo apt-get upgrade
+
+sudo apt-get install mosquitto -y
+obs:
+Caso dê algum erro na instalação do mosquito, executar o procedimento abaixo dos ***, caso contrario, somente prosseguir
+
+sudo apt-get install mosquitto-clients -y
+
+sudo nano /etc/mosquitto/mosquitto.conf
+
+Dentro deste arquivo, localize a apague a seguinte linha:
+include_dir /etc/mosquitto/conf.d
+
+Após isto, inclua estas linhas:
+allow_anonymous false
+password_file /etc/mosquitto/pwfile
+listener 1883
+
+Depois de control+x
+s
+enter
+
+
+sudo mosquitto_passwd -c /etc/mosquitto/pwfile {seu_nome_de_usuario}
+sudo reboot
+
+
+Efetuando testes
+
+Para receber mensagem
+mosquitto_sub -d -u brunogon -P 268300 -t "dev/test"
+
+para enviar mensagem
+mosquitto_pub -d -u brunogon -P 268300 -t "dev/test" -m "Primeiro Comando"
+
+
+
+***********************************************************************************************************************************************************
+
+PROCEDIMENTO PARA RESOLVER ERRO NA INSTALAÇÃO DO MQTT
+
+digite cd até chegar na pasta home
+em seguida digite
+
+wget http://repo.mosquitto.org/debian/mosquitto-repo.gpg.key
+
+sudo apt-key add mosquitto-repo.gpg.key
+
+>Em seguida digite o caminho abaixo e dê enter
+cd /etc/apt/sources.list.d/
+
+>Digite o codigo abaixo e dê enter novamente
+sudo wget http: //repo.mosquitto.org/debian/mosquitto-stretch.list
+caso dê erro tente estes dois comandos, um de cada vez
+	>wget http://repo.mosquitto.org/debian/mosquitto-stretch.list
+	>rm mosquitto-jessie.list
+>Atualize as informações do pacote digitando o comando abaixo e dê enter
+apt-get update
+
+>Digite o comando abaixo para que o raspberry descubra os pacotes instalado do mosquitto
+apt-cache search mosquitto
+
+>Digite o comando para instalar o mosquitto e em seguida voltar para a parte do procedimento acima pra dar prosseguimento
+apt-get install mosquitto -y
+
+depois dê cd cd cd 
+volte ao tutorial la em cima e continue em
+
+>sudo apt-get install mosquitto-clients -y
+**************************************************************************************************************************************************************

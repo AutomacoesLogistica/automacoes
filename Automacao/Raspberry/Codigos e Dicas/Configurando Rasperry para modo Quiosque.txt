@@ -1,0 +1,182 @@
+Para configurar o raspberry em modo QUIOSQUE
+
+
+Necessário liberar espaço na memória do dispositivo, para isto execute os comandos abaixo
+
+
+> sudo apt-get purge wolfram-engine scratch scratch2 nuscratch sonic-pi idle3 -y
+
+> sudo apt-get purge smartsim java-common minecraft-pi libreoffice* -y
+
+Agora que os pacotes não utilizado foram removidos é necessário executar comandos para realizar a limpeza dos mesmos
+
+
+> sudo apt-get clean && sudo apt-get autoremove -y
+
+
+Agora antes de instalar é necessário verificar se está tudo atualizado nos repositórios do raspberry
+
+
+> sudo apt-get update -y
+
+> sudo apt-get upgrade -y
+
+Feito isto, partiremos para a instalação propriamente dita do modo QUIOSQUE
+
+
+Agora precisamos instalar o xdotool e o unclutter. O xdotool permite que o nosso script faça o pressionamento das teclas sem que ninguém esteja usando o dispositivo. E o unclutter permite esconder o mouse da tela.
+
+Digite o comando abaixo
+
+> sudo apt-get install xdotool unclutter sed
+
+Para que o raspberry execute o login de modo automático entre nas configurações do raspberry digitando o comando
+
+> sudo raspi-config
+
+Entre na opção 3 > Boot Options , depois selecione B1 > Desktokp/ CLI , em seguinda, selecione B4 > Desktop Autologin.
+
+Agora feche as configurações clicando em finish e não reinicie ainda
+
+
+Agora o raspberry está preparado para o modo quiosque
+
+Vamos agora configurar os arquivos para que tudo opere perfeitamente
+
+Vamos iniciar criando um script de configuração, para isto digite no terminal
+
+
+> sudo nano /home/pi/kiosk.sh
+
+OBS: Irá abrir um editor de texto, cole o codigo conforme abaixo e altere o/os site conforme sua necessidade
+
+
+**************************************************************************************************************************************
+
+#!/bin/bash
+ 
+xset s noblank
+xset s off
+xset -dpms
+ 
+unclutter -idle 0.5 -root &
+ 
+sed -i 's/"exited_cleanly":false/"exited_cleanly":true/' /home/pi/.config/chromium/Default/Preferences
+sed -i 's/"exit_type":"Crashed"/"exit_type":"Normal"/' /home/pi/.config/chromium/Default/Preferences
+ 
+/usr/bin/chromium-browser --noerrdialogs --disable-infobars --incognito --disable-translate --kiosk https://www.filipeflop.com https://www.raspberrypi.org &
+ 
+while true; do
+xdotool keydown ctrl+Tab; xdotool keyup ctrl+Tab;
+sleep 20
+done
+
+
+
+
+*************************************************************************************************************************************8
+ATENCAO: Se estiver usando firefox 
+#!/bin/bash
+ 
+xset s noblank
+xset s off
+xset -dpms
+ 
+unclutter -idle 0.5 -root &
+ 
+/usr/bin/firefox --noerrdialogs --disable-infobars --incognito --disable-translate --kiosk https://www.filipeflop.com https://www.raspberrypi.org &
+ 
+while true; do
+xdotool keydown ctrl+Tab; xdotool keyup ctrl+Tab;
+sleep 20
+done
+
+
+
+
+
+Obs: Onde está https://www.filipeflop.com e https://www.raspberrypi.org são os sites que poderão abrir, caso for apenas um site, digite o primeiro apenas e no fim do nome do site dê um espaço e coloque o & como no comando acima.
+
+GAGF: https://ya7da335bbb3.us2.hana.ondemand.com/gagf/ui/index.html
+Portal: http://10.10.25.229:8229/GAGF/login.php
+
+Pressione control+x e aperte S para salvar e dê enter para confirmar o nome.
+
+
+Agora configurando o raspberry para iniciar em modo QUIOSQUE
+
+
+Digite o comando abaixo para configurar outro script , copie conforme abaixo e cole no arquivo
+
+> sudo nano /lib/systemd/system/kiosk.service
+
+
+***********************************************************************************************************************************
+
+[Unit]
+Description=Chromium Kiosk
+Wants=graphical.target
+After=graphical.target
+ 
+[Service]
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/pi/.Xauthority
+Type=simple
+ExecStart=/bin/bash /home/pi/kiosk.sh
+Restart=on-abort
+User=pi
+Group=pi
+ 
+[Install]
+WantedBy=graphical.target
+
+
+***********************************************************************************************************************************
+
+Pressione control+x e aperte S para salvar e dê enter para confirmar o nome.
+
+
+
+Agora precisamos ativar o serviço de modo QUIOSQUE digitando o comando abaixo
+
+> sudo systemctl enable kiosk.service
+
+
+Agora para iniciar o modo QUIOSQUE digite o comando abaixo
+
+> sudo systemctl start kiosk.service
+
+
+
+FIM
+
+
+*********************************************************************************************************************************
+
+Caso você deseje parar o Modo Quiosque, abra o terminal (crtl+alt+t) e execute o seguinte comando:
+
+?
+sudo systemctl stop kiosk.service
+E se quiser desabilitar o Modo Quiosque, execute o comando a seguir:
+
+?
+sudo systemctl disable kiosk.service
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

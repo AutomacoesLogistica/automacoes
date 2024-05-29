@@ -1,0 +1,14 @@
+Server para listar as portas que o raspberry reconheceu e seu respectivo nome
+
+abre o console e digite
+
+>>>> python3 -m serial.tools.list_ports
+
+Deve receber algo parecido com
+
+/dev/ttyACM0     onde essa é porta USB reconhecida   
+/dev/ttyAMA0     onde essa é a conexao bluetooth nativa   
+2 ports found
+
+
+OBS: pode vir tambem com /dev/ttyUSB0

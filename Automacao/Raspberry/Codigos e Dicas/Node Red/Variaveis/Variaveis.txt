@@ -1,0 +1,17 @@
+Para criar uma variavel e salvar
+
+
+// CODIGO ONDE CRIA A VARIAVEL E SALVA INCREMENTANDO
+let contagem = flow.get ('contagem') || 0; // Cria a variavel, busca nela e caso nao tenha valor atribui 0
+contagem+=1; // Incrementa o valor da variavel contagem
+msg.payload = contagem; // coloca o valor em payload
+flow.set('contagem',contagem); // pega o valor atual de contagem e salva na variavel global 'contagem'
+return msg;
+
+
+
+// CASO QUERA APENAS BUSCAR O VALOR DA VARIAVEL NO SISTEMA E USAR PARA ALGO
+let contagem = flow.get ('contagem') || 0; // Cria a variavel, busca nela e caso nao tenha valor atribui 0
+msg.payload = contagem; // coloca o valor em payload
+global 'contagem'
+return msg;

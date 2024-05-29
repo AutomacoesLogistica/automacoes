@@ -1,0 +1,6 @@
+# Configurando MQTT
+mqtt:
+  broker: 192.168.2.200 # Seu ip do raspberry
+  port: 1883 # porta de MQTT configurada pelo mosquitto
+  username: brunogon # Usuario do mosquitto
+  password: 268300 # Senha do mosquito

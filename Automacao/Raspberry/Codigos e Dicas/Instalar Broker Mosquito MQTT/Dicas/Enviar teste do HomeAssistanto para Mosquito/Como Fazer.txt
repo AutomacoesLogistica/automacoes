@@ -1,0 +1,16 @@
+Vai para a aba "Services" do home assistant
+
+em Domain coloque "mqtt"
+em Service coloque "publish"
+
+em Service Data(JSO,optional) coloque o seguine
+
+{
+ "topic":"dev/test",
+  "payload":"Ola"
+}
+
+
+
+e enviem clicando em CALL SERVICE , se tudo ocorrer bem deverá chegar a mensagem Ola no mosquitto e pelo topico dev/test
+

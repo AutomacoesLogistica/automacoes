@@ -1,0 +1,19 @@
+>sudo apt update
+
+>sudo apt install firefox-esr
+
+
+>Agora abra manualmente o mozilla e faça as configuracoes iniciais
+
+
+Agora para definir qual sera o navagador padrao
+> sudo update-alternatives --config x-www-browser
+
+>>>>Digite a opcao desejada e dê enter
+OBS: para mim nao deu muito certo isso, continuou abrindo o crhomium
+
+Optei em desisntalar o crhomium 
+
+
+DESISNTALAR O CRHOMIUM BROWSER
+>sudo apt-get remove chromium-browser

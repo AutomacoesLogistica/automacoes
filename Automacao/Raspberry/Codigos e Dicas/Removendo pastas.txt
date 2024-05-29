@@ -1,0 +1,23 @@
+Vamos supor que queremos apagar uma pasta dentro de /var/www/html que se chama Teste
+
+
+Para tal vamos fazer o seguinte
+
+Abra o cmd e vamos acessar primeiro apasta
+
+> cd /var/www/html
+
+Agora vamos listar os dados da pasta com 
+
+> ls
+
+
+Verifique se esta aqui a pasta Teste
+
+
+Agora vamos removê-la com o comando abaixo
+
+> sudo rm -Rf Teste
+
+
+Fim!

@@ -1,0 +1,2 @@
+sudo apt-get install – g — unsafe – perm homebridge
+sudo apt-get install bignum

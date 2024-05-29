@@ -1,0 +1,6160 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.restore_state",
+  "data": [
+    {
+      "state": {
+        "entity_id": "person.bruno",
+        "state": "unknown",
+        "attributes": {
+          "editable": true,
+          "id": "bruno",
+          "user_id": "4cd9726ab18749459d9c9985df3547da",
+          "friendly_name": "Bruno"
+        },
+        "last_changed": "2024-01-11T12:04:40.312189+00:00",
+        "last_updated": "2024-01-11T12:05:00.816883+00:00",
+        "context": {
+          "id": "01HKW6JM8G6EEV6CWA93BX42PK",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "input_number.tempo_modo_viagem",
+        "state": "0.0",
+        "attributes": {
+          "initial": null,
+          "editable": false,
+          "min": 0.0,
+          "max": 60.0,
+          "step": 5.0,
+          "mode": "slider",
+          "unit_of_measurement": "step",
+          "icon": "mdi:target",
+          "friendly_name": "Valor Selecionado"
+        },
+        "last_changed": "2024-01-11T12:04:43.316348+00:00",
+        "last_updated": "2024-01-11T12:04:43.316348+00:00",
+        "context": {
+          "id": "01HKW6J35MF5K15DZKHM2EXNGF",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "input_number.tempo_hora_inicial",
+        "state": "0.0",
+        "attributes": {
+          "initial": null,
+          "editable": false,
+          "min": 0.0,
+          "max": 23.0,
+          "step": 1.0,
+          "mode": "slider",
+          "unit_of_measurement": "step",
+          "icon": "mdi:target",
+          "friendly_name": "Hora Inicial"
+        },
+        "last_changed": "2024-01-11T12:04:43.316700+00:00",
+        "last_updated": "2024-01-11T12:04:43.316700+00:00",
+        "context": {
+          "id": "01HKW6J35MDXZ8JWMXGW4Q7XS4",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "input_number.tempo_minuto_inicial",
+        "state": "1.0",
+        "attributes": {
+          "initial": null,
+          "editable": false,
+          "min": 1.0,
+          "max": 59.0,
+          "step": 1.0,
+          "mode": "slider",
+          "unit_of_measurement": "step",
+          "icon": "mdi:target",
+          "friendly_name": "Minuto Inicial"
+        },
+        "last_changed": "2024-01-11T12:04:43.316985+00:00",
+        "last_updated": "2024-01-11T12:04:43.316985+00:00",
+        "context": {
+          "id": "01HKW6J35M5VNTPW5EQ1GM435A",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "input_number.tempo_hora_final",
+        "state": "0.0",
+        "attributes": {
+          "initial": null,
+          "editable": false,
+          "min": 0.0,
+          "max": 23.0,
+          "step": 1.0,
+          "mode": "slider",
+          "unit_of_measurement": "step",
+          "icon": "mdi:target",
+          "friendly_name": "Hora final"
+        },
+        "last_changed": "2024-01-11T12:04:43.317255+00:00",
+        "last_updated": "2024-01-11T12:04:43.317255+00:00",
+        "context": {
+          "id": "01HKW6J35NHG6560DDKFF70A2A",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "input_number.tempo_minuto_final",
+        "state": "1.0",
+        "attributes": {
+          "initial": null,
+          "editable": false,
+          "min": 1.0,
+          "max": 59.0,
+          "step": 1.0,
+          "mode": "slider",
+          "unit_of_measurement": "step",
+          "icon": "mdi:target",
+          "friendly_name": "Minuto Final"
+        },
+        "last_changed": "2024-01-11T12:04:43.317522+00:00",
+        "last_updated": "2024-01-11T12:04:43.317522+00:00",
+        "context": {
+          "id": "01HKW6J35NER2Q8NQD0YD0AXTW",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "input_number.hora_inicial_jardim",
+        "state": "0.0",
+        "attributes": {
+          "initial": null,
+          "editable": false,
+          "min": 0.0,
+          "max": 23.0,
+          "step": 1.0,
+          "mode": "slider",
+          "unit_of_measurement": "step",
+          "icon": "mdi:target",
+          "friendly_name": "Hora Inicial Jardim"
+        },
+        "last_changed": "2024-01-11T12:04:43.317785+00:00",
+        "last_updated": "2024-01-11T12:04:43.317785+00:00",
+        "context": {
+          "id": "01HKW6J35NYA9G8DCFTP2YXZ24",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "input_number.minuto_inicial_jardim",
+        "state": "1.0",
+        "attributes": {
+          "initial": null,
+          "editable": false,
+          "min": 1.0,
+          "max": 59.0,
+          "step": 1.0,
+          "mode": "slider",
+          "unit_of_measurement": "step",
+          "icon": "mdi:target",
+          "friendly_name": "Minuto Inicial Jardim"
+        },
+        "last_changed": "2024-01-11T12:04:43.318045+00:00",
+        "last_updated": "2024-01-11T12:04:43.318045+00:00",
+        "context": {
+          "id": "01HKW6J35PXFJ7EXY4DRFZ6XNS",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "input_number.hora_final_jardim",
+        "state": "0.0",
+        "attributes": {
+          "initial": null,
+          "editable": false,
+          "min": 0.0,
+          "max": 23.0,
+          "step": 1.0,
+          "mode": "slider",
+          "unit_of_measurement": "step",
+          "icon": "mdi:target",
+          "friendly_name": "Hora Final Jardim"
+        },
+        "last_changed": "2024-01-11T12:04:43.318308+00:00",
+        "last_updated": "2024-01-11T12:04:43.318308+00:00",
+        "context": {
+          "id": "01HKW6J35PBCCVXTDCPE6KMWYE",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "input_number.minuto_final_jardim",
+        "state": "1.0",
+        "attributes": {
+          "initial": null,
+          "editable": false,
+          "min": 1.0,
+          "max": 59.0,
+          "step": 1.0,
+          "mode": "slider",
+          "unit_of_measurement": "step",
+          "icon": "mdi:target",
+          "friendly_name": "Minuto Final Jardim"
+        },
+        "last_changed": "2024-01-11T12:04:43.318570+00:00",
+        "last_updated": "2024-01-11T12:04:43.318570+00:00",
+        "context": {
+          "id": "01HKW6J35PA4WJ4WEQ1GTQC6H1",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "input_select.canais_sala",
+        "state": "A&E",
+        "attributes": {
+          "options": [
+            "A&E",
+            "A&E HD",
+            "AMC",
+            "AMC HD",
+            "Animal Planet",
+            "Animal Planet HD",
+            "Aparecida",
+            "Arte1",
+            "Arte1 HD",
+            "AXN",
+            "AXN HD",
+            "Baby TV",
+            "Band HD",
+            "Band News",
+            "Band News HD",
+            "Band Sports",
+            "Band Sports HD",
+            "Bandeirantes",
+            "BIS",
+            "BIS HD",
+            "Boa Vontade TV",
+            "Boa Vontade TV HD",
+            "Boomerang",
+            "Boomerang HD",
+            "Canal Brasil",
+            "Canal Brasil HD",
+            "Canal do Boi",
+            "Canal Rural",
+            "Canal Sony",
+            "Canal Sony HD",
+            "Cancao Nova",
+            "Cartoon HD",
+            "Cartoon Network",
+            "Cinemax",
+            "Cinemax HD",
+            "CNN Espanhol",
+            "CNN Internacional",
+            "CNT",
+            "Combate",
+            "Combate HD",
+            "Comedy Central",
+            "Comedy Central HD",
+            "Curta!",
+            "Curta! HD",
+            "Discovery H&H HD",
+            "Discovery Channel",
+            "Discovery Channel HD",
+            "Discovery Civilization",
+            "Discovery H&H",
+            "Discovery Kids",
+            "Discovery Kids HD",
+            "Discovery Science HD",
+            "Discovery Theater HD",
+            "Discovery Turbo",
+            "Discovery Turbo HD",
+            "Discovery Wold HD",
+            "Disney",
+            "Disney Channel HD",
+            "Disney Junior",
+            "Disney XD",
+            "DW",
+            "E!",
+            "E! HD",
+            "EPTV Campinas",
+            "EPTV Campinas HD",
+            "EPTV Ribeirao Preto",
+            "EPTV Sao Carlos",
+            "ESPN",
+            "ESPN Brasil",
+            "ESPN Brasil HD",
+            "ESPN HD",
+            "ESPN2",
+            "ESPN2 HD"
+          ],
+          "editable": false,
+          "friendly_name": "Sky da Sala"
+        },
+        "last_changed": "2024-01-11T12:04:43.478197+00:00",
+        "last_updated": "2024-01-11T12:04:43.478197+00:00",
+        "context": {
+          "id": "01HKW6J3APDYSV9J4N90W0P9XX",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "input_select.canais_quartoc",
+        "state": "BIS HD",
+        "attributes": {
+          "options": [
+            "BIS HD",
+            "E HD"
+          ],
+          "editable": false,
+          "friendly_name": "Sky do QuartoC"
+        },
+        "last_changed": "2024-01-11T12:04:43.478553+00:00",
+        "last_updated": "2024-01-11T12:04:43.478553+00:00",
+        "context": {
+          "id": "01HKW6J3AP3QW41YGMQ21WRZPH",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.controle_sky_mudo",
+        "state": "off",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "friendly_name": "Ativa o mudo da SKY"
+        },
+        "last_changed": "2024-01-11T12:04:53.763353+00:00",
+        "last_updated": "2024-01-11T12:04:53.763353+00:00",
+        "context": {
+          "id": "01HKW6JDC304QR412RA2GWAP5X",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.controle_sky_power",
+        "state": "off",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "friendly_name": "Ativa o power da SKY"
+        },
+        "last_changed": "2024-01-11T12:04:53.763923+00:00",
+        "last_updated": "2024-01-11T12:04:53.763923+00:00",
+        "context": {
+          "id": "01HKW6JDC3ZFJ01FJXH7K5V4YH",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.controle_sky_1",
+        "state": "off",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "friendly_name": "Ativa o 1 da SKY"
+        },
+        "last_changed": "2024-01-11T12:04:53.764351+00:00",
+        "last_updated": "2024-01-11T12:04:53.764351+00:00",
+        "context": {
+          "id": "01HKW6JDC44VPBFZ7CV51CHNYH",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.controle_sky_2",
+        "state": "off",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "friendly_name": "Ativa o 2 da SKY"
+        },
+        "last_changed": "2024-01-11T12:04:53.764762+00:00",
+        "last_updated": "2024-01-11T12:04:53.764762+00:00",
+        "context": {
+          "id": "01HKW6JDC4YD4FAKBBGZD9X2YT",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.controle_sky_3",
+        "state": "off",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "friendly_name": "Ativa o 3 da SKY"
+        },
+        "last_changed": "2024-01-11T12:04:53.765181+00:00",
+        "last_updated": "2024-01-11T12:04:53.765181+00:00",
+        "context": {
+          "id": "01HKW6JDC5W8VA1ZDBB2NJNN07",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.controle_sky_4",
+        "state": "off",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "friendly_name": "Ativa o 4 da SKY"
+        },
+        "last_changed": "2024-01-11T12:04:53.766545+00:00",
+        "last_updated": "2024-01-11T12:04:53.766545+00:00",
+        "context": {
+          "id": "01HKW6JDC617KSXK9WE7M4HDBS",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.controle_sky_5",
+        "state": "off",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "friendly_name": "Ativa o 5 da SKY"
+        },
+        "last_changed": "2024-01-11T12:04:53.766976+00:00",
+        "last_updated": "2024-01-11T12:04:53.766976+00:00",
+        "context": {
+          "id": "01HKW6JDC6C47CAPRB0PXCGSEJ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.controle_sky_6",
+        "state": "off",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "friendly_name": "Ativa o 6 da SKY"
+        },
+        "last_changed": "2024-01-11T12:04:53.767389+00:00",
+        "last_updated": "2024-01-11T12:04:53.767389+00:00",
+        "context": {
+          "id": "01HKW6JDC7QTQR4B7MWQNJSDR3",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.controle_sky_7",
+        "state": "off",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "friendly_name": "Ativa o 7 da SKY"
+        },
+        "last_changed": "2024-01-11T12:04:53.767888+00:00",
+        "last_updated": "2024-01-11T12:04:53.767888+00:00",
+        "context": {
+          "id": "01HKW6JDC785JEZFERW4MD689D",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.controle_sky_8",
+        "state": "off",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "friendly_name": "Ativa o 8 da SKY"
+        },
+        "last_changed": "2024-01-11T12:04:53.768371+00:00",
+        "last_updated": "2024-01-11T12:04:53.768371+00:00",
+        "context": {
+          "id": "01HKW6JDC8J8R1TPVB3CB6SFSF",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.controle_sky_9",
+        "state": "off",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "friendly_name": "Ativa o 9 da SKY"
+        },
+        "last_changed": "2024-01-11T12:04:53.768789+00:00",
+        "last_updated": "2024-01-11T12:04:53.768789+00:00",
+        "context": {
+          "id": "01HKW6JDC8Z3H99D3N4DK14K0Q",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.controle_sky_0",
+        "state": "off",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "friendly_name": "Ativa o 0 da SKY"
+        },
+        "last_changed": "2024-01-11T12:04:53.769200+00:00",
+        "last_updated": "2024-01-11T12:04:53.769200+00:00",
+        "context": {
+          "id": "01HKW6JDC9Y1HSW4QQ87KKAH2K",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.controle_sky_ch_cima",
+        "state": "off",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "friendly_name": "Pagina CH cima da SKY"
+        },
+        "last_changed": "2024-01-11T12:04:53.769627+00:00",
+        "last_updated": "2024-01-11T12:04:53.769627+00:00",
+        "context": {
+          "id": "01HKW6JDC9BYQ290RNHVS717X0",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.controle_sky_seta_cima",
+        "state": "off",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "friendly_name": "Pagina seta cima da SKY"
+        },
+        "last_changed": "2024-01-11T12:04:53.770077+00:00",
+        "last_updated": "2024-01-11T12:04:53.770077+00:00",
+        "context": {
+          "id": "01HKW6JDCAA6AQ2W8WFBYDHZ74",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.controle_sky_vol_up",
+        "state": "off",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "friendly_name": "Volume da SKY Mais"
+        },
+        "last_changed": "2024-01-11T12:04:53.770487+00:00",
+        "last_updated": "2024-01-11T12:04:53.770487+00:00",
+        "context": {
+          "id": "01HKW6JDCABAHS92NA7NWFYMYJ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.controle_sky_ch_baixo",
+        "state": "off",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "friendly_name": "Pagina CH baixo da SKY"
+        },
+        "last_changed": "2024-01-11T12:04:53.770878+00:00",
+        "last_updated": "2024-01-11T12:04:53.770878+00:00",
+        "context": {
+          "id": "01HKW6JDCAC0SBHZ55KP4EW5FC",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.controle_sky_seta_esquerda",
+        "state": "off",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "friendly_name": "Pagina seta esquerda da SKY"
+        },
+        "last_changed": "2024-01-11T12:04:53.771291+00:00",
+        "last_updated": "2024-01-11T12:04:53.771291+00:00",
+        "context": {
+          "id": "01HKW6JDCBRAABM1S4D1V3M9WY",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.controle_sky_ok",
+        "state": "off",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "friendly_name": "ok da SKY"
+        },
+        "last_changed": "2024-01-11T12:04:53.771727+00:00",
+        "last_updated": "2024-01-11T12:04:53.771727+00:00",
+        "context": {
+          "id": "01HKW6JDCB23M0H2A007Q78K19",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.controle_sky_seta_direita",
+        "state": "off",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "friendly_name": "Pagina seta direita da SKY"
+        },
+        "last_changed": "2024-01-11T12:04:53.772145+00:00",
+        "last_updated": "2024-01-11T12:04:53.772145+00:00",
+        "context": {
+          "id": "01HKW6JDCCD64SZ1SSRFP21D2B",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.controle_sky_vol_down",
+        "state": "off",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "friendly_name": "Volume da SKY Menos"
+        },
+        "last_changed": "2024-01-11T12:04:53.772542+00:00",
+        "last_updated": "2024-01-11T12:04:53.772542+00:00",
+        "context": {
+          "id": "01HKW6JDCC1T029R83XYTN1P8A",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.controle_sky_voltar",
+        "state": "off",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "friendly_name": "Voltar SKY"
+        },
+        "last_changed": "2024-01-11T12:04:53.772946+00:00",
+        "last_updated": "2024-01-11T12:04:53.772946+00:00",
+        "context": {
+          "id": "01HKW6JDCCJJZ7J6MGS8NTK9XE",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.controle_sky_seta_baixo",
+        "state": "off",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "friendly_name": "Pagina seta baixo da SKY"
+        },
+        "last_changed": "2024-01-11T12:04:53.773353+00:00",
+        "last_updated": "2024-01-11T12:04:53.773353+00:00",
+        "context": {
+          "id": "01HKW6JDCDN22S6649N9C8CSEG",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.dormir",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Dormir",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:53.841354+00:00",
+        "last_updated": "2024-01-11T12:04:53.841354+00:00",
+        "context": {
+          "id": "01HKW6JDEHDG4Y19WVP7EQ30BC",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.externo_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Externo",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:53.863124+00:00",
+        "last_updated": "2024-01-11T12:04:53.863124+00:00",
+        "context": {
+          "id": "01HKW6JDF72A6NJAT9FJAXW7Y5",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.externo",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Externo",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:53.863527+00:00",
+        "last_updated": "2024-01-11T12:04:53.863527+00:00",
+        "context": {
+          "id": "01HKW6JDF7VXD95QGJYFGAN440",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.alexa_notificar_interfone",
+        "state": "off",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Alexa Notificar Interfone",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:53.999310+00:00",
+        "last_updated": "2024-01-11T12:04:53.999310+00:00",
+        "context": {
+          "id": "01HKW6JDKFHV0G2VYF8C0JEEDW",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.automacao_noturna_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Automacao Noturna",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.024926+00:00",
+        "last_updated": "2024-01-11T12:04:54.024926+00:00",
+        "context": {
+          "id": "01HKW6JDM8JDX786KQS6YXSGT3",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.automacao_noturna",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Automacao Noturna",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.025347+00:00",
+        "last_updated": "2024-01-11T12:04:54.025347+00:00",
+        "context": {
+          "id": "01HKW6JDM9KV9SQFNHAN32A1EZ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ambientes_rgb",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Ambientes RGB",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.071911+00:00",
+        "last_updated": "2024-01-11T12:04:54.071911+00:00",
+        "context": {
+          "id": "01HKW6JDNQCPM9SXD4WFME4JCZ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.portao_acesso_2_andar_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Portao Acesso 2 Andar",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.087230+00:00",
+        "last_updated": "2024-01-11T12:04:54.087230+00:00",
+        "context": {
+          "id": "01HKW6JDP7VMTJSQQ7BYN4XREC",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.portao_acesso_1_andar_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Portao Acesso 1 Andar",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.087629+00:00",
+        "last_updated": "2024-01-11T12:04:54.087629+00:00",
+        "context": {
+          "id": "01HKW6JDP7RJ3TNV5C1DMGBDAX",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.garagem_1_andar_g2_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Garagem 1 Andar G2",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.087962+00:00",
+        "last_updated": "2024-01-11T12:04:54.087962+00:00",
+        "context": {
+          "id": "01HKW6JDP702WXV3RR703WHZE4",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.garagem_1_andar_g1_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Garagem 1 Andar G1",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.088209+00:00",
+        "last_updated": "2024-01-11T12:04:54.088209+00:00",
+        "context": {
+          "id": "01HKW6JDP8X4KYZP77D832DZH3",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.amb_andar_3_e_4_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Amb Andar 3 e 4",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.089130+00:00",
+        "last_updated": "2024-01-11T12:04:54.089130+00:00",
+        "context": {
+          "id": "01HKW6JDP9009S3D7D3CH510S3",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.andar_3_e_4_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Andar 3 e 4",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.089409+00:00",
+        "last_updated": "2024-01-11T12:04:54.089409+00:00",
+        "context": {
+          "id": "01HKW6JDP93TPYCQ604X8JJ3CB",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.andar_1_e_2_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Andar 1 e 2",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.089645+00:00",
+        "last_updated": "2024-01-11T12:04:54.089645+00:00",
+        "context": {
+          "id": "01HKW6JDP9MTXAMPCS1P0TYQZJ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ambiente_do_banheiro_suite_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Ambiente do Banheiro Suite",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.089894+00:00",
+        "last_updated": "2024-01-11T12:04:54.089894+00:00",
+        "context": {
+          "id": "01HKW6JDP9Q481F1HJR83EB9W8",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.espelho_do_banheiro_suite_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Espelho do Banheiro Suite",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.090127+00:00",
+        "last_updated": "2024-01-11T12:04:54.090127+00:00",
+        "context": {
+          "id": "01HKW6JDPA4WXJDPPE3Z4HSZRJ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.lampada_do_banheiro_suite_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Lampada do Banheiro Suite",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.090360+00:00",
+        "last_updated": "2024-01-11T12:04:54.090360+00:00",
+        "context": {
+          "id": "01HKW6JDPAYB7TBY665MSFZ70D",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ambiente_do_banheiro_social_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Ambiente do Banheiro Social",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.090594+00:00",
+        "last_updated": "2024-01-11T12:04:54.090594+00:00",
+        "context": {
+          "id": "01HKW6JDPABSVAZ1A2WPM5PFEY",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.espelho_do_banheiro_social_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Espelho do Banheiro Social",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.090835+00:00",
+        "last_updated": "2024-01-11T12:04:54.090835+00:00",
+        "context": {
+          "id": "01HKW6JDPA8PG39TDN744AWV2F",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.lampada_do_banheiro_social_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Lampada do Banheiro Social",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.091066+00:00",
+        "last_updated": "2024-01-11T12:04:54.091066+00:00",
+        "context": {
+          "id": "01HKW6JDPBBTMGFPF8HYC9BDRS",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ambiente_do_laboratorio_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Ambiente do Laboratorio",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.091295+00:00",
+        "last_updated": "2024-01-11T12:04:54.091295+00:00",
+        "context": {
+          "id": "01HKW6JDPB323GP85N8R4QCN50",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.persiana_do_laboratorio_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Persiana do Laboratorio",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.091518+00:00",
+        "last_updated": "2024-01-11T12:04:54.091518+00:00",
+        "context": {
+          "id": "01HKW6JDPBMYEYPQRBDZ3N6RWZ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.lampada_do_laboratorio_2",
+        "state": "off",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Lampada do Laboratorio",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T21:34:40.026152+00:00",
+        "last_updated": "2024-01-11T21:34:40.026152+00:00",
+        "context": {
+          "id": "01HKX75PCTSPDTDXYAWC2WTT76",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_da_area_servico_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Iluminacao da Area Servico",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.092052+00:00",
+        "last_updated": "2024-01-11T12:04:54.092052+00:00",
+        "context": {
+          "id": "01HKW6JDPC73KSSERZQXHKG36Y",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_da_persiana_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Iluminacao da Persiana",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.092288+00:00",
+        "last_updated": "2024-01-11T12:04:54.092288+00:00",
+        "context": {
+          "id": "01HKW6JDPC6W2S55WRFGPRYB75",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_da_churrasqueira_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Iluminacao da Churrasqueira",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.092514+00:00",
+        "last_updated": "2024-01-11T12:04:54.092514+00:00",
+        "context": {
+          "id": "01HKW6JDPC7MKFZVJ9Y9SA4T36",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_da_bancada_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Iluminacao da Bancada",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.092738+00:00",
+        "last_updated": "2024-01-11T12:04:54.092738+00:00",
+        "context": {
+          "id": "01HKW6JDPCNKHB4AJ34WXCYZWJ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_do_teto_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Iluminacao do Teto",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.092971+00:00",
+        "last_updated": "2024-01-11T12:04:54.092971+00:00",
+        "context": {
+          "id": "01HKW6JDPCAXJB0WYH5DZ7D6X7",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_do_espelho_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Iluminacao do Espelho",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.093201+00:00",
+        "last_updated": "2024-01-11T12:04:54.093201+00:00",
+        "context": {
+          "id": "01HKW6JDPDF9S2TABRANCYBX3W",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_ambiente_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Iluminacao Ambiente",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.093434+00:00",
+        "last_updated": "2024-01-11T12:04:54.093434+00:00",
+        "context": {
+          "id": "01HKW6JDPDJ2QQZMEPPWJMCA40",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_do_closet_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Iluminacao do Closet",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.093668+00:00",
+        "last_updated": "2024-01-11T12:04:54.093668+00:00",
+        "context": {
+          "id": "01HKW6JDPDJE84CZKYTW775WX7",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.cortineiro_do_quarto_c_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Cortineiro do Quarto C",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.093894+00:00",
+        "last_updated": "2024-01-11T12:04:54.093894+00:00",
+        "context": {
+          "id": "01HKW6JDPDDXK60KGNAKPY8TW5",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.painel_tv_do_quarto_c_2",
+        "state": "on",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "color_mode": "onoff",
+          "friendly_name": "Painel TV do Quarto C",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T20:37:42.855706+00:00",
+        "last_updated": "2024-01-11T20:37:42.855706+00:00",
+        "context": {
+          "id": "01HKX3XDA7MTSYC93YX0VXKMZZ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_do_quarto_c_2",
+        "state": "off",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Iluminacao do Quarto C",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T20:56:11.847918+00:00",
+        "last_updated": "2024-01-11T20:56:11.847918+00:00",
+        "context": {
+          "id": "01HKX4Z8A7RZJX3G28E4YYH5QG",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.painel_tv_da_cozinha_2",
+        "state": "on",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "color_mode": "onoff",
+          "friendly_name": "Painel TV da Cozinha",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T21:00:00.256155+00:00",
+        "last_updated": "2024-01-11T21:00:00.256155+00:00",
+        "context": {
+          "id": "01HKX567C0YBVEAVND7N5MC7FW",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.persiana_da_cozinha_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Persiana da Cozinha",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.095301+00:00",
+        "last_updated": "2024-01-11T12:04:54.095301+00:00",
+        "context": {
+          "id": "01HKW6JDPF8QWPCVCYW8MCH4Z4",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ambiente_da_cozinha_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Ambiente da Cozinha",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.095569+00:00",
+        "last_updated": "2024-01-11T12:04:54.095569+00:00",
+        "context": {
+          "id": "01HKW6JDPF8E12ENJYE162JAJT",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.bancada_da_cozinha_2",
+        "state": "off",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Bancada_da_Cozinha",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T17:46:42.814423+00:00",
+        "last_updated": "2024-01-11T17:46:42.814423+00:00",
+        "context": {
+          "id": "01HKWT49QYPPNWPT01XZXNH5GY",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_do_corredor_2",
+        "state": "off",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Iluminacao do Corredor",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T17:46:51.167277+00:00",
+        "last_updated": "2024-01-11T17:46:51.167277+00:00",
+        "context": {
+          "id": "01HKWT4HWZ68H2P8EBZRAXQDGV",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_da_cozinha_2",
+        "state": "off",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Iluminacao da Cozinha",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T17:46:45.380949+00:00",
+        "last_updated": "2024-01-11T17:46:45.380949+00:00",
+        "context": {
+          "id": "01HKWT4C8478TM6CCYH8HSV792",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.cortineiro_do_quarto_2_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Cortineiro do Quarto 2",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.096753+00:00",
+        "last_updated": "2024-01-11T12:04:54.096753+00:00",
+        "context": {
+          "id": "01HKW6JDPG4QMVEWC2RK6VSK1J",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.painel_tv_do_quarto_2_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Painel TV do Quarto 2",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.097028+00:00",
+        "last_updated": "2024-01-11T12:04:54.097028+00:00",
+        "context": {
+          "id": "01HKW6JDPHNKWGVH6VNK3N54AD",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_do_quarto_2_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Iluminacao do Quarto 2",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.097299+00:00",
+        "last_updated": "2024-01-11T12:04:54.097299+00:00",
+        "context": {
+          "id": "01HKW6JDPHV35R9CQ6RZ41HV5Z",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.cortineiro_do_quarto_1_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Cortineiro do Quarto 1",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.097730+00:00",
+        "last_updated": "2024-01-11T12:04:54.097730+00:00",
+        "context": {
+          "id": "01HKW6JDPHP6KMM2ABBDBEJCFX",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.painel_tv_do_quarto_1_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Painel TV do Quarto 1",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.097974+00:00",
+        "last_updated": "2024-01-11T12:04:54.097974+00:00",
+        "context": {
+          "id": "01HKW6JDPHGF8SMYT86AHTW19F",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_do_quarto_1_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Iluminacao do Quarto 1",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.098203+00:00",
+        "last_updated": "2024-01-11T12:04:54.098203+00:00",
+        "context": {
+          "id": "01HKW6JDPJ7EZA47KY8S0ANC8C",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.tela_automacao_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Tela Automacao",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.098430+00:00",
+        "last_updated": "2024-01-11T12:04:54.098430+00:00",
+        "context": {
+          "id": "01HKW6JDPJN0WE522FD3VW5V01",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.painel_tv_da_sala_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Painel TV da Sala",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.098671+00:00",
+        "last_updated": "2024-01-11T12:04:54.098671+00:00",
+        "context": {
+          "id": "01HKW6JDPJ6ANTNRY8K932S0PN",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_da_sacada_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Iluminacao da Sacada",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.098905+00:00",
+        "last_updated": "2024-01-11T12:04:54.098905+00:00",
+        "context": {
+          "id": "01HKW6JDPJKYCXQD993W7212PP",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_do_lustre_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Iluminacao do Lustre",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.099135+00:00",
+        "last_updated": "2024-01-11T12:04:54.099135+00:00",
+        "context": {
+          "id": "01HKW6JDPKXH9WFT6HZEKXJ13R",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_da_sala_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Iluminacao da Sala",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.099483+00:00",
+        "last_updated": "2024-01-11T12:04:54.099483+00:00",
+        "context": {
+          "id": "01HKW6JDPK8ZWG2C9JXFXYQRZQ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.portao_acesso_2_andar",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Portao Acesso 2 Andar",
+          "supported_features": 0,
+          "icon": "mdi:walk"
+        },
+        "last_changed": "2024-01-11T12:04:54.099828+00:00",
+        "last_updated": "2024-01-11T12:04:54.099828+00:00",
+        "context": {
+          "id": "01HKW6JDPKA3D7GQ5AKMGEPRYK",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.portao_acesso_1_andar",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Portao Acesso 1 Andar",
+          "supported_features": 0,
+          "icon": "mdi:walk"
+        },
+        "last_changed": "2024-01-11T12:04:54.100079+00:00",
+        "last_updated": "2024-01-11T12:04:54.100079+00:00",
+        "context": {
+          "id": "01HKW6JDPM1GKZAF81R6S40D5P",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.garagem_1_andar_g2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Garagem 1 Andar G2",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.100335+00:00",
+        "last_updated": "2024-01-11T12:04:54.100335+00:00",
+        "context": {
+          "id": "01HKW6JDPMRRSE6Y2TY0FYEF3Q",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.garagem_1_andar_g1",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Garagem 1 Andar G1",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.100576+00:00",
+        "last_updated": "2024-01-11T12:04:54.100576+00:00",
+        "context": {
+          "id": "01HKW6JDPMER47FYFC5KXGN7E2",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.amb_andar_3_e_4",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Amb Andar 3 e 4",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.100806+00:00",
+        "last_updated": "2024-01-11T12:04:54.100806+00:00",
+        "context": {
+          "id": "01HKW6JDPMRGFKT4XX2QWAF5CM",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.andar_3_e_4",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Andar 3 e 4",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.101034+00:00",
+        "last_updated": "2024-01-11T12:04:54.101034+00:00",
+        "context": {
+          "id": "01HKW6JDPN125TESHB5MW9GZT7",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.andar_1_e_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Andar 1 e 2",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.101257+00:00",
+        "last_updated": "2024-01-11T12:04:54.101257+00:00",
+        "context": {
+          "id": "01HKW6JDPNAWXDM0YTJ24NY5VX",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ambiente_do_banheiro_suite",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Ambiente do Banheiro Suite",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.101496+00:00",
+        "last_updated": "2024-01-11T12:04:54.101496+00:00",
+        "context": {
+          "id": "01HKW6JDPNV95QP6MMY0TSF6G5",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.espelho_do_banheiro_suite",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Espelho do Banheiro Suite",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.101726+00:00",
+        "last_updated": "2024-01-11T12:04:54.101726+00:00",
+        "context": {
+          "id": "01HKW6JDPNG6ACX9XWJEHXHFNY",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.lampada_do_banheiro_suite",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Lampada do Banheiro Suite",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.101963+00:00",
+        "last_updated": "2024-01-11T12:04:54.101963+00:00",
+        "context": {
+          "id": "01HKW6JDPNZAHAW6SG99FANJNS",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ambiente_do_banheiro_social",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Ambiente do Banheiro Social",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.102207+00:00",
+        "last_updated": "2024-01-11T12:04:54.102207+00:00",
+        "context": {
+          "id": "01HKW6JDPPTQNRBXPNHE1JKN9J",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.espelho_do_banheiro_social",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Espelho do Banheiro Social",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.102436+00:00",
+        "last_updated": "2024-01-11T12:04:54.102436+00:00",
+        "context": {
+          "id": "01HKW6JDPPPFFQ4N39Z1GS8CXD",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.lampada_do_banheiro_social",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Lampada do Banheiro Social",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.102664+00:00",
+        "last_updated": "2024-01-11T12:04:54.102664+00:00",
+        "context": {
+          "id": "01HKW6JDPP79J2NJJBN3KNF8BP",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.comando_computador",
+        "state": "on",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "color_mode": "onoff",
+          "friendly_name": "Comando Computador",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T21:32:35.516534+00:00",
+        "last_updated": "2024-01-11T21:32:35.516534+00:00",
+        "context": {
+          "id": "01HKX71WNVS91NMT188AN7BJ0P",
+          "parent_id": null,
+          "user_id": "5f1d323ec3d74fe1922e11901862a69e"
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ambiente_do_laboratorio",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Ambiente do Laboratorio",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.103366+00:00",
+        "last_updated": "2024-01-11T12:04:54.103366+00:00",
+        "context": {
+          "id": "01HKW6JDPQ0W11KG28XVQYMYCX",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.persiana_do_laboratorio",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Persiana do Laboratorio",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.103601+00:00",
+        "last_updated": "2024-01-11T12:04:54.103601+00:00",
+        "context": {
+          "id": "01HKW6JDPQKKH0WC5RMKQYBTJ9",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.lampada_do_laboratorio",
+        "state": "off",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Lampada do Laboratorio",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T21:34:40.029696+00:00",
+        "last_updated": "2024-01-11T21:34:40.029696+00:00",
+        "context": {
+          "id": "01HKX75P3WW6J2ZDKATQBTGBAB",
+          "parent_id": null,
+          "user_id": "5f1d323ec3d74fe1922e11901862a69e"
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_da_area_servico",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Iluminacao da Area Servico",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.104131+00:00",
+        "last_updated": "2024-01-11T12:04:54.104131+00:00",
+        "context": {
+          "id": "01HKW6JDPR1TA35WJPPCQS49KJ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_da_persiana",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Iluminacao da Persiana",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.104364+00:00",
+        "last_updated": "2024-01-11T12:04:54.104364+00:00",
+        "context": {
+          "id": "01HKW6JDPRP0KEX9XZ2Z3PWXYM",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_da_churrasqueira",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Iluminacao da Churrasqueira",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.104783+00:00",
+        "last_updated": "2024-01-11T12:04:54.104783+00:00",
+        "context": {
+          "id": "01HKW6JDPR2NSFCGJ83KZT3BWE",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_da_bancada",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Iluminacao da Bancada",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.105053+00:00",
+        "last_updated": "2024-01-11T12:04:54.105053+00:00",
+        "context": {
+          "id": "01HKW6JDPS5NB66ZWGH30PS2N0",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_do_teto",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Iluminacao do Teto",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.105293+00:00",
+        "last_updated": "2024-01-11T12:04:54.105293+00:00",
+        "context": {
+          "id": "01HKW6JDPSCNVGBFJSFHG2TXZB",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_do_espelho",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Iluminacao do Espelho",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.105529+00:00",
+        "last_updated": "2024-01-11T12:04:54.105529+00:00",
+        "context": {
+          "id": "01HKW6JDPS24EV2R2WYMXCJEW4",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_ambiente",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Iluminacao Ambiente",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.109246+00:00",
+        "last_updated": "2024-01-11T12:04:54.109246+00:00",
+        "context": {
+          "id": "01HKW6JDPXK5HB3AW175YH2Z17",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_do_closet",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Iluminacao do Closet",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.109636+00:00",
+        "last_updated": "2024-01-11T12:04:54.109636+00:00",
+        "context": {
+          "id": "01HKW6JDPX0W49V5M0W11DY27Q",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.cortineiro_do_quarto_c",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Cortineiro do Quarto C",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.109893+00:00",
+        "last_updated": "2024-01-11T12:04:54.109893+00:00",
+        "context": {
+          "id": "01HKW6JDPXBVBV2JN7M7819JYN",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.painel_tv_do_quarto_c",
+        "state": "on",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "color_mode": "onoff",
+          "friendly_name": "Painel TV do Quarto C",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T20:37:42.858662+00:00",
+        "last_updated": "2024-01-11T20:37:42.858662+00:00",
+        "context": {
+          "id": "01HKX3XDAA940Y1093HESV2JJ9",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_do_quarto_c",
+        "state": "off",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Iluminacao do Quarto C",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T20:56:11.851242+00:00",
+        "last_updated": "2024-01-11T20:56:11.851242+00:00",
+        "context": {
+          "id": "01HKX4Z8AB858ANRW2VX7RSNBX",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.painel_tv_da_cozinha",
+        "state": "on",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "color_mode": "onoff",
+          "friendly_name": "Painel TV da Cozinha",
+          "supported_features": 0,
+          "icon": "mdi:set-right"
+        },
+        "last_changed": "2024-01-11T21:00:00.259737+00:00",
+        "last_updated": "2024-01-11T21:00:00.259737+00:00",
+        "context": {
+          "id": "01HKX567C3XJ4931BKJ3QBZMA9",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.persiana_da_cozinha",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Persiana da Cozinha",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.111375+00:00",
+        "last_updated": "2024-01-11T12:04:54.111375+00:00",
+        "context": {
+          "id": "01HKW6JDPZBN5ZE36M7JNB0KRZ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ambiente_da_cozinha",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Ambiente da Cozinha",
+          "supported_features": 0,
+          "icon": "mdi:set-right"
+        },
+        "last_changed": "2024-01-11T12:04:54.111615+00:00",
+        "last_updated": "2024-01-11T12:04:54.111615+00:00",
+        "context": {
+          "id": "01HKW6JDPZH1JY92Z0AFE7NZQS",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.bancada_da_cozinha",
+        "state": "off",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Bancada_da_Cozinha",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T17:46:42.817952+00:00",
+        "last_updated": "2024-01-11T17:46:42.817952+00:00",
+        "context": {
+          "id": "01HKWT498T032YJ866V7BZPFFN",
+          "parent_id": null,
+          "user_id": "5f1d323ec3d74fe1922e11901862a69e"
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_do_corredor",
+        "state": "off",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Iluminacao do Corredor",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T17:46:51.171009+00:00",
+        "last_updated": "2024-01-11T17:46:51.171009+00:00",
+        "context": {
+          "id": "01HKWT4HM4SZXZW8Z6NDM27HY5",
+          "parent_id": null,
+          "user_id": "5f1d323ec3d74fe1922e11901862a69e"
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_da_cozinha",
+        "state": "off",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Iluminacao da Cozinha",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T17:46:45.384485+00:00",
+        "last_updated": "2024-01-11T17:46:45.384485+00:00",
+        "context": {
+          "id": "01HKWT4BRFZQP0C6KAQM9TWG4Y",
+          "parent_id": null,
+          "user_id": "5f1d323ec3d74fe1922e11901862a69e"
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.cortineiro_do_quarto_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Cortineiro do Quarto 2",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.112624+00:00",
+        "last_updated": "2024-01-11T12:04:54.112624+00:00",
+        "context": {
+          "id": "01HKW6JDQ07PNMSH0XQ3FSGRRJ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.painel_tv_do_quarto_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Painel TV do Quarto 2",
+          "supported_features": 0,
+          "icon": "mdi:set-right"
+        },
+        "last_changed": "2024-01-11T12:04:54.112874+00:00",
+        "last_updated": "2024-01-11T12:04:54.112874+00:00",
+        "context": {
+          "id": "01HKW6JDQ07RHE98QA41CCZ4VQ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_do_quarto_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Iluminacao do Quarto 2",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.113112+00:00",
+        "last_updated": "2024-01-11T12:04:54.113112+00:00",
+        "context": {
+          "id": "01HKW6JDQ1ZZQRSVFZB0PBJK9M",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.cortineiro_do_quarto_1",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Cortineiro do Quarto 1",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.113346+00:00",
+        "last_updated": "2024-01-11T12:04:54.113346+00:00",
+        "context": {
+          "id": "01HKW6JDQ1BRSGHGZP14GJGT9C",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.painel_tv_do_quarto_1",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Painel TV do Quarto 1",
+          "supported_features": 0,
+          "icon": "mdi:set-right"
+        },
+        "last_changed": "2024-01-11T12:04:54.113577+00:00",
+        "last_updated": "2024-01-11T12:04:54.113577+00:00",
+        "context": {
+          "id": "01HKW6JDQ1N25FHH5T8KKTZBT7",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_do_quarto_1",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Iluminacao do Quarto 1",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.113805+00:00",
+        "last_updated": "2024-01-11T12:04:54.113805+00:00",
+        "context": {
+          "id": "01HKW6JDQ1V1PSB0XA5WV21EC9",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.tela_automacao",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Tela Automacao",
+          "supported_features": 0,
+          "icon": "mdi:monitor-screenshot"
+        },
+        "last_changed": "2024-01-11T12:04:54.114051+00:00",
+        "last_updated": "2024-01-11T12:04:54.114051+00:00",
+        "context": {
+          "id": "01HKW6JDQ23SNHZEF45XESFD05",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.painel_tv_da_sala",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Painel TV da Sala",
+          "supported_features": 0,
+          "icon": "mdi:set-right"
+        },
+        "last_changed": "2024-01-11T12:04:54.114282+00:00",
+        "last_updated": "2024-01-11T12:04:54.114282+00:00",
+        "context": {
+          "id": "01HKW6JDQ2CBCJAJWVPWTYV13P",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_da_sacada",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Iluminacao da Sacada",
+          "supported_features": 0,
+          "icon": "mdi:set-right"
+        },
+        "last_changed": "2024-01-11T12:04:54.114518+00:00",
+        "last_updated": "2024-01-11T12:04:54.114518+00:00",
+        "context": {
+          "id": "01HKW6JDQ2PXW1VNPXKM6MJFDR",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_do_lustre",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Iluminacao do Lustre",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.114744+00:00",
+        "last_updated": "2024-01-11T12:04:54.114744+00:00",
+        "context": {
+          "id": "01HKW6JDQ2HZRW0JN0N3V3AH5F",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_da_sala",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Iluminacao da Sala",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.114968+00:00",
+        "last_updated": "2024-01-11T12:04:54.114968+00:00",
+        "context": {
+          "id": "01HKW6JDQ2WY0J7GS7SFD14WYN",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.arvore_de_natal",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Arvore de Natal",
+          "supported_features": 0,
+          "icon": "mdi:pine-tree"
+        },
+        "last_changed": "2024-01-11T12:04:54.287416+00:00",
+        "last_updated": "2024-01-11T12:04:54.287416+00:00",
+        "context": {
+          "id": "01HKW6JDWF483TCHCDCNY3ECQM",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.corredor_rgb_cozinha_2",
+        "state": "off",
+        "attributes": {
+          "supported_color_modes": [
+            "rgb"
+          ],
+          "friendly_name": "Corredor_RGB_Cozinha",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.410431+00:00",
+        "last_updated": "2024-01-11T12:04:54.410431+00:00",
+        "context": {
+          "id": "01HKW6JE0A0SGRAK23E0HNG2KB",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.corredor_rgb_cozinha",
+        "state": "off",
+        "attributes": {
+          "supported_color_modes": [
+            "rgb"
+          ],
+          "friendly_name": "Corredor_RGB_Cozinha",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.410826+00:00",
+        "last_updated": "2024-01-11T12:04:54.410826+00:00",
+        "context": {
+          "id": "01HKW6JE0ANFK7S96AP3YA33AX",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ilha_rgb_cozinha_2",
+        "state": "off",
+        "attributes": {
+          "supported_color_modes": [
+            "rgb"
+          ],
+          "friendly_name": "Ilha_RGB_Cozinha",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.443223+00:00",
+        "last_updated": "2024-01-11T12:04:54.443223+00:00",
+        "context": {
+          "id": "01HKW6JE1BGT25VQX2AG7AWZ2F",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ilha_rgb_cozinha",
+        "state": "off",
+        "attributes": {
+          "supported_color_modes": [
+            "rgb"
+          ],
+          "friendly_name": "Ilha_RGB_Cozinha",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.443963+00:00",
+        "last_updated": "2024-01-11T12:04:54.443963+00:00",
+        "context": {
+          "id": "01HKW6JE1BESE9ECV4DPKMDP9E",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_mesa_escritorio",
+        "state": "off",
+        "attributes": {
+          "supported_color_modes": [
+            "rgb"
+          ],
+          "friendly_name": "Iluminação Mesa Escritorio",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:54.858410+00:00",
+        "last_updated": "2024-01-11T12:04:54.858410+00:00",
+        "context": {
+          "id": "01HKW6JEEA74F9ZS3QVYG6FJ2Q",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.iluminacao_luminaria",
+        "state": "on",
+        "attributes": {
+          "supported_color_modes": [
+            "rgb"
+          ],
+          "color_mode": "rgb",
+          "brightness": 64,
+          "hs_color": [
+            0.0,
+            0.0
+          ],
+          "rgb_color": [
+            255,
+            255,
+            255
+          ],
+          "xy_color": [
+            0.323,
+            0.329
+          ],
+          "friendly_name": "Iluminação Luminaria",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T21:27:51.287547+00:00",
+        "last_updated": "2024-01-11T21:27:51.287547+00:00",
+        "context": {
+          "id": "01HKX6S77443FA7XK48777DDBA",
+          "parent_id": null,
+          "user_id": "5f1d323ec3d74fe1922e11901862a69e"
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ilum_garagem_1",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "assumed_state": true,
+          "friendly_name": "Ilum Garagem 1",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:55.064990+00:00",
+        "last_updated": "2024-01-11T12:04:55.064990+00:00",
+        "context": {
+          "id": "01HKW6JEMRJZ8M7TSVCNB8FZTT",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ilum_garagem_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "assumed_state": true,
+          "friendly_name": "Ilum Garagem 2",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:55.144557+00:00",
+        "last_updated": "2024-01-11T12:04:55.144557+00:00",
+        "context": {
+          "id": "01HKW6JEQ8VB52PVYGWBKQVJMD",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ilum_garagem_3",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "assumed_state": true,
+          "friendly_name": "Ilum Garagem 3",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:55.145155+00:00",
+        "last_updated": "2024-01-11T12:04:55.145155+00:00",
+        "context": {
+          "id": "01HKW6JEQ9GCDC19ZPB6ATBK4D",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ilum_area_churrasco",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "assumed_state": true,
+          "friendly_name": "Ilum Area Churrasco",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:55.164530+00:00",
+        "last_updated": "2024-01-11T12:04:55.164530+00:00",
+        "context": {
+          "id": "01HKW6JEQWGJ13KQF0MEXD6GQG",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ilum_pentende_a_churrasco",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "assumed_state": true,
+          "friendly_name": "Ilum Pentende A Churrasco",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:55.168884+00:00",
+        "last_updated": "2024-01-11T12:04:55.168884+00:00",
+        "context": {
+          "id": "01HKW6JER0C2TZNKC5Y91PB90V",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ilum_ambiente_a_churrasco",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "assumed_state": true,
+          "friendly_name": "Ilum Ambiente A Churrasco",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:55.169421+00:00",
+        "last_updated": "2024-01-11T12:04:55.169421+00:00",
+        "context": {
+          "id": "01HKW6JER15S35N9JR1AFW9Q0T",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ilum_arandelas_m_churrasco",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "assumed_state": true,
+          "friendly_name": "Ilum Arandelas M Churrasco",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:55.169796+00:00",
+        "last_updated": "2024-01-11T12:04:55.169796+00:00",
+        "context": {
+          "id": "01HKW6JER1E6Z58ENSD8AR5DXW",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ilum_arandelas_carros",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "assumed_state": true,
+          "friendly_name": "Ilum Arandelas Carros",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:55.170162+00:00",
+        "last_updated": "2024-01-11T12:04:55.170162+00:00",
+        "context": {
+          "id": "01HKW6JER23FZQYDE8KFA90YHQ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ilum_jardim_vertical",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "assumed_state": true,
+          "friendly_name": "Ilum Jardim Vertical",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:55.170597+00:00",
+        "last_updated": "2024-01-11T12:04:55.170597+00:00",
+        "context": {
+          "id": "01HKW6JER2JBR7C9K8P18D2PY7",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ilum_jardim_horizontal",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "assumed_state": true,
+          "friendly_name": "Ilum Jardim Horizontal",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:55.171040+00:00",
+        "last_updated": "2024-01-11T12:04:55.171040+00:00",
+        "context": {
+          "id": "01HKW6JER34B8R5HJXZSQQ0YFR",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ilum_oficina",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "assumed_state": true,
+          "friendly_name": "Ilum Oficina",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:55.171422+00:00",
+        "last_updated": "2024-01-11T12:04:55.171422+00:00",
+        "context": {
+          "id": "01HKW6JER3973SN2FJM2TXEN5T",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ilum_arandelas_da_casa",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "assumed_state": true,
+          "friendly_name": "Ilum Arandelas da Casa",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:55.171889+00:00",
+        "last_updated": "2024-01-11T12:04:55.171889+00:00",
+        "context": {
+          "id": "01HKW6JER3K6NQCZJ3SM5ASAFF",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_iluminacao_sala",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Iluminacao Sala",
+          "supported_features": 0,
+          "icon": "mdi:power-plug"
+        },
+        "last_changed": "2024-01-11T12:04:55.172379+00:00",
+        "last_updated": "2024-01-11T12:04:55.172379+00:00",
+        "context": {
+          "id": "01HKW6JER448CMBJGFAGK7E1HE",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_iluminacao_quarto1",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Iluminacao Quarto1",
+          "supported_features": 0,
+          "icon": "mdi:power-plug"
+        },
+        "last_changed": "2024-01-11T12:04:55.177767+00:00",
+        "last_updated": "2024-01-11T12:04:55.177767+00:00",
+        "context": {
+          "id": "01HKW6JER9R8W6YFS6GZ028QAK",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_iluminacao_quarto2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Iluminacao Quarto2",
+          "supported_features": 0,
+          "icon": "mdi:power-plug"
+        },
+        "last_changed": "2024-01-11T12:04:55.180547+00:00",
+        "last_updated": "2024-01-11T12:04:55.180547+00:00",
+        "context": {
+          "id": "01HKW6JERCPKTTP947XR880MK6",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_iluminacao_cozinha",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Iluminacao Cozinha",
+          "supported_features": 0,
+          "icon": "mdi:power-plug"
+        },
+        "last_changed": "2024-01-11T12:04:55.184434+00:00",
+        "last_updated": "2024-01-11T12:04:55.184434+00:00",
+        "context": {
+          "id": "01HKW6JERGMC8KDRGVKV5QX2TH",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_iluminacao_quartoc",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Iluminacao QuartoC",
+          "supported_features": 0,
+          "icon": "mdi:power-plug"
+        },
+        "last_changed": "2024-01-11T12:04:55.245817+00:00",
+        "last_updated": "2024-01-11T12:04:55.245817+00:00",
+        "context": {
+          "id": "01HKW6JETDFWCBMFYCAHFHJ1ZY",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_iluminacao_espacog",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Iluminacao EspacoG",
+          "supported_features": 0,
+          "icon": "mdi:power-plug"
+        },
+        "last_changed": "2024-01-11T12:04:55.495190+00:00",
+        "last_updated": "2024-01-11T12:04:55.495190+00:00",
+        "context": {
+          "id": "01HKW6JF27BBBWH1TJEXK3BFYY",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_iluminacao_laboratorio",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Iluminacao Laboratorio",
+          "supported_features": 0,
+          "icon": "mdi:power-plug"
+        },
+        "last_changed": "2024-01-11T12:04:55.511697+00:00",
+        "last_updated": "2024-01-11T12:04:55.511697+00:00",
+        "context": {
+          "id": "01HKW6JF2Q2KATN3WMSZ2076JE",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_iluminacao_acesso",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Iluminacao Acesso",
+          "supported_features": 0,
+          "icon": "mdi:power-plug"
+        },
+        "last_changed": "2024-01-11T12:04:55.517509+00:00",
+        "last_updated": "2024-01-11T12:04:55.517509+00:00",
+        "context": {
+          "id": "01HKW6JF2XRDQF4VFTHNR5M5BV",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_tomada_sala",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Tomada Sala",
+          "supported_features": 0,
+          "icon": "mdi:power-plug"
+        },
+        "last_changed": "2024-01-11T12:04:55.522799+00:00",
+        "last_updated": "2024-01-11T12:04:55.522799+00:00",
+        "context": {
+          "id": "01HKW6JF32B5EHEZY63CV5C2WG",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_tomada_quarto1",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Tomada Quarto1",
+          "supported_features": 0,
+          "icon": "mdi:power-plug"
+        },
+        "last_changed": "2024-01-11T12:04:55.526025+00:00",
+        "last_updated": "2024-01-11T12:04:55.526025+00:00",
+        "context": {
+          "id": "01HKW6JF36N6EMQNQYBF98CYHK",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_tomada_quarto2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Tomada Quarto2",
+          "supported_features": 0,
+          "icon": "mdi:power-plug"
+        },
+        "last_changed": "2024-01-11T12:04:55.532002+00:00",
+        "last_updated": "2024-01-11T12:04:55.532002+00:00",
+        "context": {
+          "id": "01HKW6JF3CMVFZJQJV3ZJXJXWR",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_tomada_cozinha",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Tomada Cozinha",
+          "supported_features": 0,
+          "icon": "mdi:power-plug"
+        },
+        "last_changed": "2024-01-11T12:04:55.534593+00:00",
+        "last_updated": "2024-01-11T12:04:55.534593+00:00",
+        "context": {
+          "id": "01HKW6JF3EJVA42KM5MHHFVYJ6",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_tomada_quartoc",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Tomada QuartoC",
+          "supported_features": 0,
+          "icon": "mdi:power-plug"
+        },
+        "last_changed": "2024-01-11T12:04:55.539559+00:00",
+        "last_updated": "2024-01-11T12:04:55.539559+00:00",
+        "context": {
+          "id": "01HKW6JF3K77D354R8DSKSNTWM",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_tomada_espacog",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Tomada EspacoG",
+          "supported_features": 0,
+          "icon": "mdi:power-plug"
+        },
+        "last_changed": "2024-01-11T12:04:55.545405+00:00",
+        "last_updated": "2024-01-11T12:04:55.545405+00:00",
+        "context": {
+          "id": "01HKW6JF3S83ZE7Y1E947HKNR3",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_tomada_laboratorio",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Tomada Laboratorio",
+          "supported_features": 0,
+          "icon": "mdi:power-plug"
+        },
+        "last_changed": "2024-01-11T12:04:55.552488+00:00",
+        "last_updated": "2024-01-11T12:04:55.552488+00:00",
+        "context": {
+          "id": "01HKW6JF40X6NWFVAXN5H2ZXCT",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_tomada_aux",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Tomada Aux",
+          "supported_features": 0,
+          "icon": "mdi:power-plug"
+        },
+        "last_changed": "2024-01-11T12:04:55.558914+00:00",
+        "last_updated": "2024-01-11T12:04:55.558914+00:00",
+        "context": {
+          "id": "01HKW6JF46CVP730PQ1DCF1A9F",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_tomada_automacoes",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Tomada Automacoes",
+          "supported_features": 0,
+          "icon": "mdi:power-plug"
+        },
+        "last_changed": "2024-01-11T12:04:55.559488+00:00",
+        "last_updated": "2024-01-11T12:04:55.559488+00:00",
+        "context": {
+          "id": "01HKW6JF47WKC725E7RZVQC9AG",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_geral_casa",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Geral Casa",
+          "supported_features": 0,
+          "icon": "mdi:power-plug"
+        },
+        "last_changed": "2024-01-11T12:04:55.566252+00:00",
+        "last_updated": "2024-01-11T12:04:55.566252+00:00",
+        "context": {
+          "id": "01HKW6JF4EJ6E5JSF7G34Z8HZF",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_chuv_b_social",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Chuv B Social",
+          "supported_features": 0,
+          "icon": "mdi:power-plug"
+        },
+        "last_changed": "2024-01-11T12:04:55.573703+00:00",
+        "last_updated": "2024-01-11T12:04:55.573703+00:00",
+        "context": {
+          "id": "01HKW6JF4N2244WAN9415W8JWV",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_chuv_b_suite",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Chuv B Suite",
+          "supported_features": 0,
+          "icon": "mdi:power-plug"
+        },
+        "last_changed": "2024-01-11T12:04:55.577884+00:00",
+        "last_updated": "2024-01-11T12:04:55.577884+00:00",
+        "context": {
+          "id": "01HKW6JF4SJZN3JX0JQP8BSD5R",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_guincho",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Guincho",
+          "supported_features": 0,
+          "icon": "mdi:power-plug"
+        },
+        "last_changed": "2024-01-11T12:04:55.578438+00:00",
+        "last_updated": "2024-01-11T12:04:55.578438+00:00",
+        "context": {
+          "id": "01HKW6JF4TSV3NKZ56N3D92TG8",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_reserva1",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Reserva1",
+          "supported_features": 0,
+          "icon": "mdi:power-plug"
+        },
+        "last_changed": "2024-01-11T12:04:55.585514+00:00",
+        "last_updated": "2024-01-11T12:04:55.585514+00:00",
+        "context": {
+          "id": "01HKW6JF51XB54J8QGEM9MAWQ3",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_reserva2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Reserva2",
+          "supported_features": 0,
+          "icon": "mdi:power-plug"
+        },
+        "last_changed": "2024-01-11T12:04:55.592220+00:00",
+        "last_updated": "2024-01-11T12:04:55.592220+00:00",
+        "context": {
+          "id": "01HKW6JF5833FDM0SXWC8GZ0AZ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_reserva3",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Reserva3",
+          "supported_features": 0,
+          "icon": "mdi:power-plug"
+        },
+        "last_changed": "2024-01-11T12:04:55.592813+00:00",
+        "last_updated": "2024-01-11T12:04:55.592813+00:00",
+        "context": {
+          "id": "01HKW6JF582Z744Q7SDWM5EQEX",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.dormir_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Dormir",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:55.615722+00:00",
+        "last_updated": "2024-01-11T12:04:55.615722+00:00",
+        "context": {
+          "id": "01HKW6JF5Z3ZJ3QZZMZXNHC3AY",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.controle_lampadas_automatico",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Controle Lampadas Automatico",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:55.658819+00:00",
+        "last_updated": "2024-01-11T12:04:55.658819+00:00",
+        "context": {
+          "id": "01HKW6JF7AZ60JH8093SY93ZAH",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ambientes_rgb_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Ambientes RGB",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:55.677611+00:00",
+        "last_updated": "2024-01-11T12:04:55.677611+00:00",
+        "context": {
+          "id": "01HKW6JF7XJX8YCSHKYNY0GWFR",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.arvore_de_natal_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Arvore de Natal",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:55.776199+00:00",
+        "last_updated": "2024-01-11T12:04:55.776199+00:00",
+        "context": {
+          "id": "01HKW6JFB04N6GVQGG2K0RM5V3",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ilum_garagem_1_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "assumed_state": true,
+          "friendly_name": "Ilum Garagem 1",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.384495+00:00",
+        "last_updated": "2024-01-11T12:04:56.384495+00:00",
+        "context": {
+          "id": "01HKW6JFY07DKAKX4SZK3H5CHY",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ilum_garagem_2_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "assumed_state": true,
+          "friendly_name": "Ilum Garagem 2",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.389405+00:00",
+        "last_updated": "2024-01-11T12:04:56.389405+00:00",
+        "context": {
+          "id": "01HKW6JFY5R4K2Y0EGAN231FBV",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ilum_garagem_3_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "assumed_state": true,
+          "friendly_name": "Ilum Garagem 3",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.394627+00:00",
+        "last_updated": "2024-01-11T12:04:56.394627+00:00",
+        "context": {
+          "id": "01HKW6JFYAWZT43G34QXKA15ZD",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ilum_area_churrasco_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "assumed_state": true,
+          "friendly_name": "Ilum Area Churrasco",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.395141+00:00",
+        "last_updated": "2024-01-11T12:04:56.395141+00:00",
+        "context": {
+          "id": "01HKW6JFYB9W52C81DGTWDDSSD",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ilum_pentende_a_churrasco_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "assumed_state": true,
+          "friendly_name": "Ilum Pentende A Churrasco",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.395533+00:00",
+        "last_updated": "2024-01-11T12:04:56.395533+00:00",
+        "context": {
+          "id": "01HKW6JFYBSBAPK5Y8EFPKAF41",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ilum_ambiente_a_churrasco_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "assumed_state": true,
+          "friendly_name": "Ilum Ambiente A Churrasco",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.398631+00:00",
+        "last_updated": "2024-01-11T12:04:56.398631+00:00",
+        "context": {
+          "id": "01HKW6JFYEXKT4AA2B0F1CB475",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ilum_arandelas_m_churrasco_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "assumed_state": true,
+          "friendly_name": "Ilum Arandelas M Churrasco",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.402181+00:00",
+        "last_updated": "2024-01-11T12:04:56.402181+00:00",
+        "context": {
+          "id": "01HKW6JFYJW29ABSF16TS8MQQ2",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ilum_arandelas_carros_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "assumed_state": true,
+          "friendly_name": "Ilum Arandelas Carros",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.402663+00:00",
+        "last_updated": "2024-01-11T12:04:56.402663+00:00",
+        "context": {
+          "id": "01HKW6JFYJXHEJ68040DHT9F12",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ilum_jardim_vertical_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "assumed_state": true,
+          "friendly_name": "Ilum Jardim Vertical",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.403467+00:00",
+        "last_updated": "2024-01-11T12:04:56.403467+00:00",
+        "context": {
+          "id": "01HKW6JFYK4PK0P0XHF7VZP43E",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ilum_jardim_horizontal_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "assumed_state": true,
+          "friendly_name": "Ilum Jardim Horizontal",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.406567+00:00",
+        "last_updated": "2024-01-11T12:04:56.406567+00:00",
+        "context": {
+          "id": "01HKW6JFYP569MNMNKPTHXFMXQ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ilum_oficina_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "assumed_state": true,
+          "friendly_name": "Ilum Oficina",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.411083+00:00",
+        "last_updated": "2024-01-11T12:04:56.411083+00:00",
+        "context": {
+          "id": "01HKW6JFYVRCY4YEBQYK294009",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.ilum_arandelas_da_casa_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "assumed_state": true,
+          "friendly_name": "Ilum Arandelas da Casa",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.411571+00:00",
+        "last_updated": "2024-01-11T12:04:56.411571+00:00",
+        "context": {
+          "id": "01HKW6JFYVXYFP9GJYVPV7AF5B",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_iluminacao_sala_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Iluminacao Sala",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.414260+00:00",
+        "last_updated": "2024-01-11T12:04:56.414260+00:00",
+        "context": {
+          "id": "01HKW6JFYYTZJT5RFC0157QX8R",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_iluminacao_quarto1_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Iluminacao Quarto1",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.414727+00:00",
+        "last_updated": "2024-01-11T12:04:56.414727+00:00",
+        "context": {
+          "id": "01HKW6JFYY89W0JRMMJ3012ZB5",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_iluminacao_quarto2_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Iluminacao Quarto2",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.415095+00:00",
+        "last_updated": "2024-01-11T12:04:56.415095+00:00",
+        "context": {
+          "id": "01HKW6JFYZCAZVRX4JMNRC4WFY",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_iluminacao_cozinha_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Iluminacao Cozinha",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.419146+00:00",
+        "last_updated": "2024-01-11T12:04:56.419146+00:00",
+        "context": {
+          "id": "01HKW6JFZ33DASW1BWTKEQQEED",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_iluminacao_quartoc_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Iluminacao QuartoC",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.419619+00:00",
+        "last_updated": "2024-01-11T12:04:56.419619+00:00",
+        "context": {
+          "id": "01HKW6JFZ3FBMR50JQHNE7Y4PD",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_iluminacao_espacog_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Iluminacao EspacoG",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.423843+00:00",
+        "last_updated": "2024-01-11T12:04:56.423843+00:00",
+        "context": {
+          "id": "01HKW6JFZ7A51AB9JZKR29ZDQV",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_iluminacao_laboratorio_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Iluminacao Laboratorio",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.424347+00:00",
+        "last_updated": "2024-01-11T12:04:56.424347+00:00",
+        "context": {
+          "id": "01HKW6JFZ8Z993SJXF8KFS7E84",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_iluminacao_acesso_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Iluminacao Acesso",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.430107+00:00",
+        "last_updated": "2024-01-11T12:04:56.430107+00:00",
+        "context": {
+          "id": "01HKW6JFZEDWVY87GKH5GYTZN3",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_tomada_sala_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Tomada Sala",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.430593+00:00",
+        "last_updated": "2024-01-11T12:04:56.430593+00:00",
+        "context": {
+          "id": "01HKW6JFZEADJ14K7HM7RN2FY2",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_tomada_quarto1_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Tomada Quarto1",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.433225+00:00",
+        "last_updated": "2024-01-11T12:04:56.433225+00:00",
+        "context": {
+          "id": "01HKW6JFZHYDWPMFK1SPKXPFD7",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_tomada_quarto2_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Tomada Quarto2",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.433705+00:00",
+        "last_updated": "2024-01-11T12:04:56.433705+00:00",
+        "context": {
+          "id": "01HKW6JFZH0FJ5XKNYE7NXR4V8",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_tomada_cozinha_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Tomada Cozinha",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.434080+00:00",
+        "last_updated": "2024-01-11T12:04:56.434080+00:00",
+        "context": {
+          "id": "01HKW6JFZJ2GJJMX5MPVKEVBM3",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_tomada_quartoc_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Tomada QuartoC",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.434441+00:00",
+        "last_updated": "2024-01-11T12:04:56.434441+00:00",
+        "context": {
+          "id": "01HKW6JFZJ4Z2HVEQC7VNZB7XV",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_tomada_espacog_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Tomada EspacoG",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.434800+00:00",
+        "last_updated": "2024-01-11T12:04:56.434800+00:00",
+        "context": {
+          "id": "01HKW6JFZJV7FBTRNB1PWNFNG7",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_tomada_laboratorio_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Tomada Laboratorio",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.439619+00:00",
+        "last_updated": "2024-01-11T12:04:56.439619+00:00",
+        "context": {
+          "id": "01HKW6JFZQXSAV6D2TP3X7BFNV",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_tomada_aux_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Tomada Aux",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.440186+00:00",
+        "last_updated": "2024-01-11T12:04:56.440186+00:00",
+        "context": {
+          "id": "01HKW6JFZRFVV9CFRAS4875SJG",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_tomada_automacoes_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Tomada Automacoes",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.440558+00:00",
+        "last_updated": "2024-01-11T12:04:56.440558+00:00",
+        "context": {
+          "id": "01HKW6JFZR3MQZAPQX05Z5WMKB",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_geral_casa_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Geral Casa",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.445370+00:00",
+        "last_updated": "2024-01-11T12:04:56.445370+00:00",
+        "context": {
+          "id": "01HKW6JFZX181Q6RZ5QE21RBTV",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_chuv_b_social_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Chuv B Social",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.445987+00:00",
+        "last_updated": "2024-01-11T12:04:56.445987+00:00",
+        "context": {
+          "id": "01HKW6JFZX32M8YW5ECGEP2R5K",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_chuv_b_suite_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Chuv B Suite",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.446510+00:00",
+        "last_updated": "2024-01-11T12:04:56.446510+00:00",
+        "context": {
+          "id": "01HKW6JFZYNSR59CGSW7WP11GX",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_guincho_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Guincho",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.447047+00:00",
+        "last_updated": "2024-01-11T12:04:56.447047+00:00",
+        "context": {
+          "id": "01HKW6JFZZ0KNTENVGATSERWFZ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_reserva1_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Reserva1",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.458246+00:00",
+        "last_updated": "2024-01-11T12:04:56.458246+00:00",
+        "context": {
+          "id": "01HKW6JG0AZT2GKM23EWPZPPAY",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_reserva2_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Reserva2",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.458801+00:00",
+        "last_updated": "2024-01-11T12:04:56.458801+00:00",
+        "context": {
+          "id": "01HKW6JG0ABSZEHRZT18FPC4SR",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.disj_reserva3_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "friendly_name": "Disj Reserva3",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.461745+00:00",
+        "last_updated": "2024-01-11T12:04:56.461745+00:00",
+        "context": {
+          "id": "01HKW6JG0DT5DHH38XVQ9D94VC",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.interfone",
+        "state": "No gancho!",
+        "attributes": {
+          "friendly_name": "Interfone"
+        },
+        "last_changed": "2024-01-11T12:04:56.474896+00:00",
+        "last_updated": "2024-01-11T12:04:56.474896+00:00",
+        "context": {
+          "id": "01HKW6JG0TFVK1KNPT7JTK1KVG",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "No gancho!",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.potencia_kw",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Potencia KW",
+          "icon": "mdi:menu-right"
+        },
+        "last_changed": "2024-01-11T12:04:56.483610+00:00",
+        "last_updated": "2024-01-11T12:04:56.483610+00:00",
+        "context": {
+          "id": "01HKW6JG13MH4T85SB8DB0Y7TT",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.valor_kw",
+        "state": "1.10124712",
+        "attributes": {
+          "friendly_name": "Valor KW",
+          "icon": "mdi:menu-right"
+        },
+        "last_changed": "2024-01-11T12:04:56.494910+00:00",
+        "last_updated": "2024-01-11T12:04:56.494910+00:00",
+        "context": {
+          "id": "01HKW6JG1E37HEG540C1NCM4CM",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "1.10124712",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.consumo_kwh",
+        "state": "2195.96",
+        "attributes": {
+          "friendly_name": "Consumo KWh",
+          "icon": "mdi:menu-right"
+        },
+        "last_changed": "2024-01-11T21:34:29.542221+00:00",
+        "last_updated": "2024-01-11T21:34:29.542221+00:00",
+        "context": {
+          "id": "01HKX75C56QG8VS4CQQZKZ2918",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "2195.96",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.consumo_acumulado_kwh",
+        "state": "157.68",
+        "attributes": {
+          "friendly_name": "Consumo Acumulado KWh"
+        },
+        "last_changed": "2024-01-11T21:34:37.359953+00:00",
+        "last_updated": "2024-01-11T21:34:37.359953+00:00",
+        "context": {
+          "id": "01HKX75KSFMMJNXCEBQFJX3MNB",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "157.68",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gas",
+        "state": "53.85",
+        "attributes": {
+          "friendly_name": "Gas"
+        },
+        "last_changed": "2024-01-11T12:57:20.046403+00:00",
+        "last_updated": "2024-01-11T12:57:20.046403+00:00",
+        "context": {
+          "id": "01HKW9JDXE4M9QXGGRABBKAPFV",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "53.85",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.previsao_conta",
+        "state": "R$ 173.65",
+        "attributes": {
+          "friendly_name": "Previsao Conta",
+          "icon": "mdi:menu-right"
+        },
+        "last_changed": "2024-01-11T21:34:53.699413+00:00",
+        "last_updated": "2024-01-11T21:34:53.699413+00:00",
+        "context": {
+          "id": "01HKX763R39E6H1CSX0V8NXNVP",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "R$ 173.65",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.kg_gas",
+        "state": "7",
+        "attributes": {
+          "friendly_name": "Kg_Gas"
+        },
+        "last_changed": "2024-01-11T12:57:19.945662+00:00",
+        "last_updated": "2024-01-11T12:57:19.945662+00:00",
+        "context": {
+          "id": "01HKW9JDT9TQQRB15GSGDGMK9J",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "7",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.temp1",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "temp1"
+        },
+        "last_changed": "2024-01-11T12:04:56.529548+00:00",
+        "last_updated": "2024-01-11T12:04:56.529548+00:00",
+        "context": {
+          "id": "01HKW6JG2H3FBGCB9BADE8WZPK",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.temp2",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "temp2"
+        },
+        "last_changed": "2024-01-11T12:04:56.530111+00:00",
+        "last_updated": "2024-01-11T12:04:56.530111+00:00",
+        "context": {
+          "id": "01HKW6JG2JSM4HYYW4P2X6RD0G",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.previsao_banho",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "previsao_banho"
+        },
+        "last_changed": "2024-01-11T12:04:56.533289+00:00",
+        "last_updated": "2024-01-11T12:04:56.533289+00:00",
+        "context": {
+          "id": "01HKW6JG2NXKFTPM7Q101TQTDM",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.intensidade_chuva",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "intensidade_chuva"
+        },
+        "last_changed": "2024-01-11T12:04:56.537800+00:00",
+        "last_updated": "2024-01-11T12:04:56.537800+00:00",
+        "context": {
+          "id": "01HKW6JG2S7FHPMWVGJB8154KT",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.valor_chuva",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "valor_chuva"
+        },
+        "last_changed": "2024-01-11T12:04:56.543106+00:00",
+        "last_updated": "2024-01-11T12:04:56.543106+00:00",
+        "context": {
+          "id": "01HKW6JG2ZQ9DBPNPZ99W9H6GF",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.status_chuva",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "status_chuva"
+        },
+        "last_changed": "2024-01-11T12:04:56.546288+00:00",
+        "last_updated": "2024-01-11T12:04:56.546288+00:00",
+        "context": {
+          "id": "01HKW6JG32JCT68KFJSX4QH3HN",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.tensao_1",
+        "state": "125.74",
+        "attributes": {
+          "friendly_name": "tensao_1"
+        },
+        "last_changed": "2024-01-11T21:35:00.629676+00:00",
+        "last_updated": "2024-01-11T21:35:00.629676+00:00",
+        "context": {
+          "id": "01HKX76AGN38ZV01W7EFCKYJPY",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "125.74",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.tensao_2",
+        "state": "123.92",
+        "attributes": {
+          "friendly_name": "tensao_2"
+        },
+        "last_changed": "2024-01-11T21:35:00.729061+00:00",
+        "last_updated": "2024-01-11T21:35:00.729061+00:00",
+        "context": {
+          "id": "01HKX76AKSNTF864DAXVS86ZNF",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "123.92",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.irms_1",
+        "state": "0.9",
+        "attributes": {
+          "friendly_name": "irms_1"
+        },
+        "last_changed": "2024-01-11T21:34:42.674261+00:00",
+        "last_updated": "2024-01-11T21:34:42.674261+00:00",
+        "context": {
+          "id": "01HKX75RZJZAMTZXPMBARP3KK3",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "0.9",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.irms_2",
+        "state": "9.8",
+        "attributes": {
+          "friendly_name": "irms_2"
+        },
+        "last_changed": "2024-01-11T21:34:58.922971+00:00",
+        "last_updated": "2024-01-11T21:34:58.922971+00:00",
+        "context": {
+          "id": "01HKX768VA08YY90YGEH5H16F7",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "9.8",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.potencia_1",
+        "state": "112.4",
+        "attributes": {
+          "friendly_name": "potencia_1"
+        },
+        "last_changed": "2024-01-11T21:34:59.017684+00:00",
+        "last_updated": "2024-01-11T21:34:59.017684+00:00",
+        "context": {
+          "id": "01HKX768Y97VNZBH7TJ0R3X8AC",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "112.4",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.potencia_2",
+        "state": "1209.4",
+        "attributes": {
+          "friendly_name": "potencia_2"
+        },
+        "last_changed": "2024-01-11T21:34:59.121142+00:00",
+        "last_updated": "2024-01-11T21:34:59.121142+00:00",
+        "context": {
+          "id": "01HKX7691H8Q56J9HWJ3YFDP6M",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "1209.4",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.potencia_t",
+        "state": "1321.7",
+        "attributes": {
+          "friendly_name": "potencia_t"
+        },
+        "last_changed": "2024-01-11T21:34:59.221309+00:00",
+        "last_updated": "2024-01-11T21:34:59.221309+00:00",
+        "context": {
+          "id": "01HKX7694NSPDGWAEM46GKG4SD",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "1321.7",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.cond_portao_garagem_principal",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Cond Portao Garagem Principal",
+          "icon": "mdi:menu-right"
+        },
+        "last_changed": "2024-01-11T12:04:56.601859+00:00",
+        "last_updated": "2024-01-11T12:04:56.601859+00:00",
+        "context": {
+          "id": "01HKW6JG4SGWCCER17JPXATTKG",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.cond_portao_acesso_1_andar",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Cond Portao Acesso 1 Andar",
+          "icon": "mdi:menu-right"
+        },
+        "last_changed": "2024-01-11T12:04:56.602293+00:00",
+        "last_updated": "2024-01-11T12:04:56.602293+00:00",
+        "context": {
+          "id": "01HKW6JG4TED6S1TKGCFWZZYB4",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.cond_portao_acesso_2_andar",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Cond Portao Acesso 2 Andar",
+          "icon": "mdi:menu-right"
+        },
+        "last_changed": "2024-01-11T12:04:56.604968+00:00",
+        "last_updated": "2024-01-11T12:04:56.604968+00:00",
+        "context": {
+          "id": "01HKW6JG4WHEY6J3M6X52XF6ZH",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.corrente_disj_ilum_sala",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Corrente Disj Ilum Sala",
+          "icon": "mdi:menu-right"
+        },
+        "last_changed": "2024-01-11T12:04:56.606883+00:00",
+        "last_updated": "2024-01-11T12:04:56.606883+00:00",
+        "context": {
+          "id": "01HKW6JG4YW5RGM3DP0CRFWZ32",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.corrente_disj_ilum_quarto1",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Corrente Disj Ilum Quarto1",
+          "icon": "mdi:menu-right"
+        },
+        "last_changed": "2024-01-11T12:04:56.611504+00:00",
+        "last_updated": "2024-01-11T12:04:56.611504+00:00",
+        "context": {
+          "id": "01HKW6JG539ES19FEAAX4CWJ5G",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.corrente_disj_ilum_quarto2",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Corrente Disj Ilum Quarto2",
+          "icon": "mdi:menu-right"
+        },
+        "last_changed": "2024-01-11T12:04:56.614520+00:00",
+        "last_updated": "2024-01-11T12:04:56.614520+00:00",
+        "context": {
+          "id": "01HKW6JG56XNP4TMD76M4T0WKZ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.corrente_disj_ilum_cozinha",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Corrente Disj Ilum Cozinha",
+          "icon": "mdi:menu-right"
+        },
+        "last_changed": "2024-01-11T12:04:56.617846+00:00",
+        "last_updated": "2024-01-11T12:04:56.617846+00:00",
+        "context": {
+          "id": "01HKW6JG59EM24SG9TA5NBCB3B",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.corrente_disj_ilum_quartoc",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Corrente Disj Ilum QuartoC",
+          "icon": "mdi:menu-right"
+        },
+        "last_changed": "2024-01-11T12:04:56.621323+00:00",
+        "last_updated": "2024-01-11T12:04:56.621323+00:00",
+        "context": {
+          "id": "01HKW6JG5D30XQY9HXSD0F5NM7",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.corrente_disj_ilum_espacog",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Corrente Disj Ilum EspacoG",
+          "icon": "mdi:menu-right"
+        },
+        "last_changed": "2024-01-11T12:04:56.621884+00:00",
+        "last_updated": "2024-01-11T12:04:56.621884+00:00",
+        "context": {
+          "id": "01HKW6JG5DWR32TMQYVDX6VMQC",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.corrente_disj_ilum_laboratorio",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Corrente Disj Ilum Laboratorio",
+          "icon": "mdi:menu-right"
+        },
+        "last_changed": "2024-01-11T12:04:56.626234+00:00",
+        "last_updated": "2024-01-11T12:04:56.626234+00:00",
+        "context": {
+          "id": "01HKW6JG5JSPN5FADGMYM2AQQY",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.corrente_disj_ilum_acesso",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Corrente Disj Ilum Acesso",
+          "icon": "mdi:menu-right"
+        },
+        "last_changed": "2024-01-11T12:04:56.628209+00:00",
+        "last_updated": "2024-01-11T12:04:56.628209+00:00",
+        "context": {
+          "id": "01HKW6JG5MXYW1CBJT7E0N1WRJ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.corrente_disj_tom_sala",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Corrente Disj Tom Sala",
+          "icon": "mdi:menu-right"
+        },
+        "last_changed": "2024-01-11T12:04:56.630445+00:00",
+        "last_updated": "2024-01-11T12:04:56.630445+00:00",
+        "context": {
+          "id": "01HKW6JG5P1VDBWS31KSGSD4FV",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.corrente_disj_tom_quarto1",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Corrente Disj Tom Quarto1",
+          "icon": "mdi:menu-right"
+        },
+        "last_changed": "2024-01-11T12:04:56.633291+00:00",
+        "last_updated": "2024-01-11T12:04:56.633291+00:00",
+        "context": {
+          "id": "01HKW6JG5SD2PAHNATZHJHWSHV",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.corrente_disj_tom_quarto2",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Corrente Disj Tom Quarto2",
+          "icon": "mdi:menu-right"
+        },
+        "last_changed": "2024-01-11T12:04:56.636069+00:00",
+        "last_updated": "2024-01-11T12:04:56.636069+00:00",
+        "context": {
+          "id": "01HKW6JG5WJM7AARFTTVRMS3EN",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.corrente_disj_tom_cozinha",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Corrente Disj Tom Cozinha",
+          "icon": "mdi:menu-right"
+        },
+        "last_changed": "2024-01-11T12:04:56.644837+00:00",
+        "last_updated": "2024-01-11T12:04:56.644837+00:00",
+        "context": {
+          "id": "01HKW6JG64ZY5R9QPYH76JJ7S4",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.corrente_disj_tom_quartoc",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Corrente Disj Tom QuartoC",
+          "icon": "mdi:menu-right"
+        },
+        "last_changed": "2024-01-11T12:04:56.649129+00:00",
+        "last_updated": "2024-01-11T12:04:56.649129+00:00",
+        "context": {
+          "id": "01HKW6JG69EVW917D870JN4VG7",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.corrente_disj_tom_espacog",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Corrente Disj Tom EspacoG",
+          "icon": "mdi:menu-right"
+        },
+        "last_changed": "2024-01-11T12:04:56.649589+00:00",
+        "last_updated": "2024-01-11T12:04:56.649589+00:00",
+        "context": {
+          "id": "01HKW6JG69EFSJYBWQGGFXDJAH",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.corrente_disj_tom_laboratorio",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Corrente Disj Tom Laboratorio",
+          "icon": "mdi:menu-right"
+        },
+        "last_changed": "2024-01-11T12:04:56.649990+00:00",
+        "last_updated": "2024-01-11T12:04:56.649990+00:00",
+        "context": {
+          "id": "01HKW6JG69CBAQBTF4032KV2XX",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.corrente_disj_tom_acesso",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Corrente Disj Tom Acesso",
+          "icon": "mdi:menu-right"
+        },
+        "last_changed": "2024-01-11T12:04:56.653935+00:00",
+        "last_updated": "2024-01-11T12:04:56.653935+00:00",
+        "context": {
+          "id": "01HKW6JG6DMWQPR0QJD9QBSPXV",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.corrente_total_iluminacao",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Corrente Total Iluminacao",
+          "icon": "mdi:menu-right"
+        },
+        "last_changed": "2024-01-11T12:04:56.654358+00:00",
+        "last_updated": "2024-01-11T12:04:56.654358+00:00",
+        "context": {
+          "id": "01HKW6JG6EV4QPNV8PXQ5PV6P7",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.corrente_total_tomadas",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Corrente Total Tomadas",
+          "icon": "mdi:menu-right"
+        },
+        "last_changed": "2024-01-11T12:04:56.654692+00:00",
+        "last_updated": "2024-01-11T12:04:56.654692+00:00",
+        "context": {
+          "id": "01HKW6JG6ETBBC8RRCQ1HMVQHH",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.corrente_total_casa",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Corrente Total Casa",
+          "icon": "mdi:menu-right"
+        },
+        "last_changed": "2024-01-11T12:04:56.658513+00:00",
+        "last_updated": "2024-01-11T12:04:56.658513+00:00",
+        "context": {
+          "id": "01HKW6JG6JFB701P0W27TJZ5NF",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.modo_iluminacao_atual",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Modo Iluminacao Atual",
+          "icon": "mdi:menu-right"
+        },
+        "last_changed": "2024-01-11T12:04:56.660457+00:00",
+        "last_updated": "2024-01-11T12:04:56.660457+00:00",
+        "context": {
+          "id": "01HKW6JG6MR091WAQ1HZD4XK7B",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.potencia_iluminacao",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Potencia Iluminacao",
+          "icon": "mdi:menu-right"
+        },
+        "last_changed": "2024-01-11T12:04:56.665453+00:00",
+        "last_updated": "2024-01-11T12:04:56.665453+00:00",
+        "context": {
+          "id": "01HKW6JG6SV9H7ZAZS47ZC2A9S",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.temperatura_churrasqueira",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Temperatura Churrasqueira",
+          "icon": "mdi:thermometer-lines"
+        },
+        "last_changed": "2024-01-11T12:04:56.667866+00:00",
+        "last_updated": "2024-01-11T12:04:56.667866+00:00",
+        "context": {
+          "id": "01HKW6JG6VQW3RRMT9SRW5ZCC6",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.sanca_rgb_sala",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "rgb"
+          ],
+          "friendly_name": "Sanca RGB Sala",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.760236+00:00",
+        "last_updated": "2024-01-11T12:04:56.760236+00:00",
+        "context": {
+          "id": "01HKW6JG9R9QGV8BXT7355ZX6E",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.balizadores_rgb_cozinha",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "rgb"
+          ],
+          "friendly_name": "Balizadores_RGB_Cozinha",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.770029+00:00",
+        "last_updated": "2024-01-11T12:04:56.770029+00:00",
+        "context": {
+          "id": "01HKW6JGA2DRRHPMH1CKDYJEBS",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.pia_rgb_cozinha",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "rgb"
+          ],
+          "friendly_name": "Pia_RGB_Cozinha",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.778844+00:00",
+        "last_updated": "2024-01-11T12:04:56.778844+00:00",
+        "context": {
+          "id": "01HKW6JGAAXCE96M9RC1KWRQCX",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.geladeira_rgb_cozinha",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "rgb"
+          ],
+          "friendly_name": "Geladeira_RGB_Cozinha",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.789847+00:00",
+        "last_updated": "2024-01-11T12:04:56.789847+00:00",
+        "context": {
+          "id": "01HKW6JGANQMX83S8DW2KXM11Y",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.pia_rgb_espacogourmet",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "rgb"
+          ],
+          "friendly_name": "Pia_RGB_EspacoGourmet",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.790381+00:00",
+        "last_updated": "2024-01-11T12:04:56.790381+00:00",
+        "context": {
+          "id": "01HKW6JGAPZWFVM0WQKRHAH07Y",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.bancada_rgb",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "rgb"
+          ],
+          "friendly_name": "Bancada_RGB",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.790762+00:00",
+        "last_updated": "2024-01-11T12:04:56.790762+00:00",
+        "context": {
+          "id": "01HKW6JGAP18888DEQEE8EYMV3",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.persianas_rgb_espacogourmet",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "rgb"
+          ],
+          "friendly_name": "Persianas_RGB_EspacoGourmet",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.793620+00:00",
+        "last_updated": "2024-01-11T12:04:56.793620+00:00",
+        "context": {
+          "id": "01HKW6JGASACFHC4ZVHVWRGG6A",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.sanca_rgb_sala_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "rgb"
+          ],
+          "friendly_name": "Sanca RGB Sala",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.805461+00:00",
+        "last_updated": "2024-01-11T12:04:56.805461+00:00",
+        "context": {
+          "id": "01HKW6JGB550W012KQXQBXDQXT",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.balizadores_rgb_cozinha_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "rgb"
+          ],
+          "friendly_name": "Balizadores_RGB_Cozinha",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.807980+00:00",
+        "last_updated": "2024-01-11T12:04:56.807980+00:00",
+        "context": {
+          "id": "01HKW6JGB7BENKNSK7ZBAM9NAJ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.pia_rgb_cozinha_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "rgb"
+          ],
+          "friendly_name": "Pia_RGB_Cozinha",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.809978+00:00",
+        "last_updated": "2024-01-11T12:04:56.809978+00:00",
+        "context": {
+          "id": "01HKW6JGB9V1RF9TG59F61140G",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.geladeira_rgb_cozinha_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "rgb"
+          ],
+          "friendly_name": "Geladeira_RGB_Cozinha",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.810424+00:00",
+        "last_updated": "2024-01-11T12:04:56.810424+00:00",
+        "context": {
+          "id": "01HKW6JGBA658TPAVH07A9XNQR",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.pia_rgb_espacogourmet_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "rgb"
+          ],
+          "friendly_name": "Pia_RGB_EspacoGourmet",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.810789+00:00",
+        "last_updated": "2024-01-11T12:04:56.810789+00:00",
+        "context": {
+          "id": "01HKW6JGBABRBQXCXF8PEGC04F",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.bancada_rgb_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "rgb"
+          ],
+          "friendly_name": "Bancada_RGB",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.814013+00:00",
+        "last_updated": "2024-01-11T12:04:56.814013+00:00",
+        "context": {
+          "id": "01HKW6JGBE7EAB13TVFD6ZHA43",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "light.persianas_rgb_espacogourmet_2",
+        "state": "unknown",
+        "attributes": {
+          "supported_color_modes": [
+            "rgb"
+          ],
+          "friendly_name": "Persianas_RGB_EspacoGourmet",
+          "supported_features": 0
+        },
+        "last_changed": "2024-01-11T12:04:56.814462+00:00",
+        "last_updated": "2024-01-11T12:04:56.814462+00:00",
+        "context": {
+          "id": "01HKW6JGBE4VRJJQD1WRAP1JYD",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-01-11T21:35:00.907422+00:00"
+    }
+  ]
+}

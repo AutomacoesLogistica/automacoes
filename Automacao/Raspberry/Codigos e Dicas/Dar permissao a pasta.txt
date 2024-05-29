@@ -1,0 +1,14 @@
+Entrar em modo root
+sudo su
+
+Depois entrar no caminho da pasta com comando cd /...diretorio da pasta
+Ex   cd /home/homeassistant/.homeassistant e dÊ enter
+
+Dentro desta pasta queremos dar permissão ao arquivo customize.yaml
+
+faremos 
+
+sudo chmod a+rw customize.yaml e dê enter
+
+agora com o fileZilla pode clicar com botao direito e alterar as permissoes da pasta
+

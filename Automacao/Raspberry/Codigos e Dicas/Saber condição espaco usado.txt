@@ -1,0 +1,3 @@
+Abra o terminal e digite
+
+df -h

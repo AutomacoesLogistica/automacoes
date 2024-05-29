@@ -1,0 +1,273 @@
+OBS: Referencia: https://hs2bmi.medium.com/freeradius-mysql-on-raspberry-pi-1bb904939af6
+
+
+Vamos iniciar instalando o servidor FreeRadius no raspberry que sera nosso servidor
+
+Para isso abra o cmd e digite e atualizar o sistema
+
+NAO PULE
+sudo apt-get update -y
+
+sudo apt-get upgrade -y
+
+
+sudo apt-get install freeradius freeradius-mysql mariadb-server
+
+Agora vamos ver o status do sistema se esta ok
+
+sudo service freeradius status
+
+Deve retornar Active! , dê control+c para sair
+
+Dando continuidade
+
+Vamor para o servidor e rodar em modo debug
+
+sudo service freeradius stop
+
+agora vamos iniciar em modo debug
+
+sudo freeradius -X
+
+OBS: Caso dê erro informando que esta em uso, use o comando
+sudo killall freeradius
+
+
+
+Dando continuidade
+
+
+Agora adiciona a biblioteca padrao para mikrotik
+
+Use o comando
+
+sudo nano /etc/freeradius/3.0/dictionary
+
+No fim da linha adicione a linha abaixo e salve
+
+$INCLUDE /usr/share/freeradius/dictionary.mikrotik
+
+
+
+** Se for usar via linha de comando os acessos siga essa etapa, caso for usar via mysql pular para a parte mysql *************************************
+
+Agora vamos criar um usuario
+
+sudo nano /etc/freeradius/3.0/mods-config/files/authorize
+
+No inicio do arquivo vamos criar um usuario teste chamado bruno com senha Bru2683@@
+
+bruno Cleartext-Password := "Bru2683@@"
+      Mikrotik-Group = 'full'
+
+Dê um control+X + S + Enter
+
+Agora vamos reiniciar o serviço
+
+sudo service freeradius restart
+
+Podemos testar se o usuario esta ok
+
+radtest bruno Bru2683@@ 127.0.0.1 1812 testing123
+
+Caso ocorra tudo bem o retorno deve ser algo proximo a isso
+
+        User-Name = "bruno"
+        User-Password = "Bru2683@@"
+        NAS-IP-Address = 127.0.1.1
+        NAS-Port = 1812
+        Message-Authenticator = 0x00
+        Cleartext-Password = "bruno123"
+        Received Access-Accept Id 10 from 127.0.0.1:1812 to 127.0.0.1:57636 length 20
+
+
+
+
+Vamos configurar os radios (SXT,RB,etc) no sistema
+
+sudo nano /etc/freeradius/3.0/clients.conf
+
+client Groove_QC{
+  ipaddr=192.168.80.1 # IP do equipamento em campo
+  secret=logistica # Senha padrao para conexao com o sistema,NAO e a senha do radio
+}
+
+Agora adicionando no radio mikrotik
+
+Abra via winbox e va em radius
+Clique em +
+Em Service maque apenas login
+Em Address: Coloque o IP do servidor (192.168.3.221 nesse caso)
+Protocol: udp
+Secret: Coloque a senha configurada em secret no client (logistica2019@@ nesse caso)
+
+Agora clique em Incoming e marque o flag Accept
+Clique em salvar
+
+Agora vá em System>Users > Na aba User clique em AAA e marque Use Radius e salve
+
+
+
+*********************************************************************
+Agora vamos configurar o radius operando com mysql
+
+
+Cria um banco de dados para o radius, nesse exemplo sera radius
+
+no phpmyadmin configure o usuario e senha, nesse exemplo sera admin e logistica2019@@
+
+
+Entre em modo root com o comando sudo su
+
+agora digite 
+
+cd /etc/freeradius/3.0/mods-config/sql/main/mysql
+
+E cole os dados abaixo referente ao banco de dados e ao usuario criado
+
+mysql -u admin -p radius < schema.sql
+
+Deve pedir a senha do usuario, basta digita-la, que nesse caso foi logistica2019@@
+
+OBS: Automaticamente ele irá criar varias tabelas dentro do nosso banco criado
+
+Agora vamos configurar para que o Freeradius se conecte ao nosso mysql
+
+Digitamos o comando
+
+sudo nano /etc/freeradius/3.0/mods-available/sql
+
+Após aberto o editor de texto, entre e procure por
+
+driver = "rlm_sql_null" e altere para driver = "rlm_sql_mysql"
+
+Agora ainda nesse arquivo localize  #      driver = "rlm_sql......"
+  e modifique para  driver = "rlm_sql_${dialect}"
+
+Em mysql{  ..... comente tudo dentro de { } ficando igual abaixo
+
+        mysql {
+                # If any of the files below are set, TLS encryption is enabled
+                #tls {
+                #       ca_file = "/etc/ssl/certs/my_ca.crt"
+                #       ca_path = "/etc/ssl/certs/"
+                #       certificate_file = "/etc/ssl/certs/private/client.crt"
+                #       private_key_file = "/etc/ssl/certs/private/client.key"
+                #       cipher = "DHE-RSA-AES256-SHA:AES128-SHA"
+                #
+                #       tls_required = yes
+                #       tls_check_cert = no
+                #       tls_check_cert_cn = no
+                #}
+
+                # If yes, (or auto and libmysqlclient reports warnings are
+                # available), will retrieve and log additional warnings from
+                # the server if an error has occured. Defaults to 'auto'
+                warnings = auto
+        }
+
+
+
+
+
+
+
+
+
+Configure mais abaixo tambem os dados de conexao do banco de dados
+OBS: Retire o # da frente para deixar de ser um comentario
+Para nosso exemplo ficara
+
+server = "localhost"
+port = 3306
+login = "admin"
+password = "Logistica2019@@"
+
+
+Agora dê um Control+X, um S e dê enter para confirmar as alterações
+
+
+Agora devemos habilitar um modulo que permite o freeradius trabalhar com mysql, para isso
+digite o comando abaixo
+
+cd /etc/freeradius/3.0/mods-enabled para acessar a pasta que tem essas configurações
+e podemos dar um ls -l para verificar se existe algum modulo habilitado
+
+Vamos habilitar utilizando o comando criando um link para comunicação com mysql
+
+ln -s ../mods-available/sql sql
+
+Agora vamos alterar as permissoes das pastas com os dois comandos abaixo
+
+chgrp -h freerad sql 
+
+Agora esse comando
+
+chown -R freerad:freerad sql
+
+Dando sequencia,podemos verificar nomavente com ls -l se tudo ocorreu bem e existe agora sql
+
+Agora vamos habilitar o serviço do freeradius para começarmos a usar
+
+systemctl enable --now freeradius.service
+
+
+Vamos testar agora se esta em operação, para tal vamos usar o comando abaixo testando um usuario que ainda nao esta cadastrado no banco
+
+Teste para usuario: mee 
+Senha: hs2bmi
+
+radtest mee hs2bmi localhost 1812 testing123 
+
+Cadastrando usuario:
+
+Entre no banco de dados radius criado e vá na tabela "radcheck"
+Em username: nome do usuario desejado
+Em attribute: coloque >>>   Cleartext-Password    <<<<<<
+Em op: coloque >>>>        :=          <<<<<
+Em value: coloque a senha desejada para acesso
+
+Agora vamos cadastrar a qual grupo esse usuario pertence
+
+Entre no banco de dados radius criado e vá na tabela "radreply"
+Em username: nome do usuario cadastrado em radcheck
+Em attribute: coloque >>>   Mikrotik-Group    <<<<<<
+Em op: coloque >>>>        =          <<<<<
+Em value: coloque o nome do grupo criado no mikrotik que sera associado por la em alguma skin
+OBS: para exemplo vou usar o full, caso tenha criado alguma skin so associar ela aqui para o nivel da permissao desse usuaio
+
+
+
+
+
+
+
+Agora vamos criar usuarios para a faixa da rede
+
+Vamos configurar os radios (SXT,RB,etc) no sistema
+
+sudo nano /etc/freeradius/3.0/clients.conf
+
+Ao abrir o arquivo insira no inicio 
+
+client localnetwork{
+  ipaddr=192.168.20.0/24 #Faixa dos IPS em campo
+  secret=logistica # Senha padrao para conexao com o sistema,NAO e a senha do radio
+}
+
+Agora reinicie o freeradius
+
+service freeradius restart
+
+
+Agora podemos testar o usuario criado no banco
+
+radtest mee hs2bmi localhost 1812 testing123 
+
+
+Pronto!
+
+
+
+
+

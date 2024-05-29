@@ -1,0 +1,54 @@
+Conecte via putty
+
+
+digite no terminal
+cd e dê entrar duas vezes por segurança
+
+agora digite
+
+sudo nano launcher.sh
+ dentro do arquivo coloque o comando abaixo
+
+****************
+
+#!bin/sh
+
+cd /home/pi/automacao
+sudo python3 NOME_DO_ARQUIVO.py
+
+*************
+
+Dê controlX para salvar
+
+agora altere a permissao da pasta com o comando
+
+sudo chmod 755 launcher.sh
+
+Para verificar se esta tudo certo, vamos rodar o arquivo manualmente com o comando
+
+sudo sh launcher.sh 
+
+o script deve rodar, para cancelar, dê controlC
+
+continuando..
+
+de um cd 
+agora
+
+sudo mkdir logs para criar a pasta logs
+
+em seguida
+
+sudo crontab -e
+
+dentro do arquivo role para o fim e coloque
+
+*************
+@reboot sh /home/pi/launcher.sh >/home/pi/logs/cronlog 2>&1
+
+*************
+
+salve com controlX
+e reinicie o raspberry
+
+tudo pronto, ira reinicar e rodar automaticamente o script!

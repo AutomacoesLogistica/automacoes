@@ -1,0 +1,48 @@
+*** Fazendo considerando que ja foi seguido o tutorial de colocar o HD como uma unidade externa e ja com montagem automatica
+
+criada a pasta /mnt/servidor_hd/
+
+Agora vamos primeiramente criar uma pasta para salvar o banco de dados
+
+Digite o comando
+
+> sudo mkdir /mnt/servidor_hd/Banco_de_Dados
+
+Agora vamos dar permissao ao usuario mysql para ela
+sudo chown -R mysql:mysql /mnt/servidor_hd/Bando_de_Dados
+ATENÇÃO: Pode ignorar algum erro de mensagem permissao negada!
+
+Agora vamos parar o serviço do maria db/mysql
+
+Use o comando abaixo
+
+> sudo systemctl stop mariadb
+> sudo service mysql stop
+
+Agora vamos copiar a pasta atual do /var/lib/mysql para a pasta dentro do hd com o comando abaixo
+
+> sudo cp /var/lib/mysql /mnt/servidor_hd/Banco_de_Dados/ -Rp
+ATENÇÃO: Pode ignorar as mensagens de erro Permissao negada!
+
+OBS: Caso tenha mudado o nome de alguma pasta mudar aqui tb
+
+Agora vamos mudar o nome da pasta original com o comando abaixo
+
+> mv /var/lib/mysql /var/lib/mysql-backup  
+
+Agora temos que verificar se deu certo listando a pasta e verificar se a pasta antiga mysql agora se chama mysql-backup
+
+> cd /var/lib
+> ls
+
+Agora vamos criar um link com a pasta dentro do hd externo atraves do comando abaixo
+
+> sudo ln -s /mnt/servidor_hd/Banco_de_Dados/mysql mysql
+ATENÇÃO: Pode ignorar as mensagens de erro Permissao negada!
+
+
+Agora reinicie os serviços parados anteriormente
+
+
+> sudo systemctl start mariadb
+> sudo service mysql start

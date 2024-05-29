@@ -1,0 +1,66 @@
+Abra o cmd do raspberry e digite
+
+sudo curl -L https://install.pivpn.io | bash     
+
+Irá abrir uma tela Azul de configuração
+
+Confirme com barra duas vezes
+
+irá perguntar se deseja manter o IP Fixo e Gateway, caso esteja certo, confirme novamente com barra de espaço
+
+Vá confirmando com barra
+
+para navegar utilize TAB
+
+Confirme pi
+
+Confirme UDP
+
+Selecione a porta desejada, padrao é 1194
+
+Nivel do certificado pode ser o 256
+
+Marque o IP Public
+Servidor DNS do Google
+entre com o nome que deseja acessar como dominio EX : automacaologisticambvl.com
+
+confirme e reinicie o raspberry ao finalizar
+
+
+2 Parte
+CADASTRAR USUARIOS
+
+Abra o cmd do raspberry e digite
+
+pivpn add e de enter
+
+Obs: Irá te pedir para inserir o nome do usuario, em seguida confirmar o nivel do protocolo e depois senha e confirmar senha
+
+Dê enter e ira aparecer Done e avisar que o certificado se encontra em /home/pi/ovpns
+
+
+
+
+
+Conecte usando o Filezilla e entre na pasta /home/pi/ovpns e pegue o arquivo e envie por email.
+
+
+Instale o app OpenVPN  no Iphone.
+
+Entre no email, baixe o arquivo do certificado e mande abrir com o app OpenVPN, basta acessar com os dados criados
+usuario e senha
+
+
+
+Para usar, habilite a conexão e ira aparecer VPN no alto do telefone 
+Basta abrir o homeassistant que terá acesso ao raspiberry de qualquer rede externa
+
+
+
+3 REMOVER USUARIOS
+caso tenha criado um perfil chamado bruno
+
+para remover este perfil basta digitar
+pivpn -r bruno  e da enter
+
+ 

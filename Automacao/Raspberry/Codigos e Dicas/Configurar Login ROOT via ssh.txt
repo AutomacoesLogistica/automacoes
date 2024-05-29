@@ -1,0 +1,25 @@
+Abra o terminal
+
+
+digite sudo nano /etc/ssh/sshd_config
+
+procure por #PermitRootLogin 
+
+Retire o # para deixar de ser um comentario e apague o que esta depois de Login, deixando yes
+
+ficara da seguinte forma 
+PermitRootLogin yes
+
+Dê um control+X, depois sim e enter
+
+Agora reinicie o serviço com o comando
+
+sudo /etc/init.d/ssh restart
+
+
+Agora caso não tenha alterado a senha do root digite
+
+sudo passwd root e digite a senha, depois confirme a mesma.
+
+
+Pronto, agora pode logar via shh em modo root!

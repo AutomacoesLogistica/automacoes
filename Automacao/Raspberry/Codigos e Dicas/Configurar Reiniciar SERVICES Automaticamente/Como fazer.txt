@@ -1,0 +1,82 @@
+OBS : NAO TESTADO AINDA
+
+
+sudo nano /opt/launch-crashed-services.sh
+
+Irá abrir o editor de texto
+
+
+*********************************************
+
+#!/bin/bash
+
+service mysql status | grep 'active (running)' > /dev/null 2>&1
+
+if [ $? != 0 ]
+then
+        sudo service mysql restart > /dev/null
+fi
+
+service nginx status | grep 'active (running)' > /dev/null 2>&1
+
+if [ $? != 0 ]
+then
+        sudo service nginx restart > /dev/null
+fi
+
+service php7.2-fpm status | grep 'active (running)' > /dev/null 2>&1
+
+if [ $? != 0 ]
+then
+        sudo service php7.2-fpm restart > /dev/null
+fi
+
+
+service saidas status | grep 'active (running)' > /dev/null 2>&1
+
+if [ $? != 0 ]
+then
+        sudo service saidas restart > /dev/null
+fi
+
+
+service gscs status | grep 'active (running)' > /dev/null 2>&1
+
+if [ $? != 0 ]
+then
+        sudo service gscs restart > /dev/null
+fi
+
+
+service lora status | grep 'active (running)' > /dev/null 2>&1
+
+if [ $? != 0 ]
+then
+        sudo service lora restart > /dev/null
+fi
+
+
+
+********************************************
+
+OBS: Para adicionar outro serviços, basta inserir a linha com o nome do respectivo serviço
+
+Altere a permissão do arquivo com o comando abaixo
+
+>sudo chmod +x /opt/launch-crashed-services.sh
+
+Agora agendaremos de iniciar ao inicar o raspberry e verificar a cada minuto
+
+>crontab -e
+
+confirme 1 para nano caso pergunte
+
+adiocione a linha
+
+* / 1 * * * * /opt/launch-crashed-services.sh> / dev / null 2>
+
+Agora dê control X + S depois enter para salvar
+
+Em seguida reinicie com 
+
+>sudo reboot

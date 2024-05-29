@@ -1,0 +1,17 @@
+Abra o terminal e digite
+
+sudo nano crontab -e
+
+vamos usar como exemplo os arquivos que estao dentro de /home/pi e que se chamam led.py,led1.py e led2.py
+
+
+Para configurar a raspberry pra iniciar ja executando este script basta adicionar no final do arquivo do crontab a seguinte linha
+
+
+@reboot python3 /home/pi/*.py &
+
+ATENCAO: Nao esquecer do & no fim do comando
+
+Aperte Control+X em seguida Y para confirmar e de enter para salvar
+
+Sudo reboot para reiniciar e esta pronto!

@@ -1,0 +1,29 @@
+Abra o terminal
+
+sudo dphys-swapfile swapoff
+
+Em seguida
+
+sudo nano /etc/dphys-swapfile
+
+Agora altere o valor para 1024
+
+CONF_SWAPSIZE=1024
+
+
+Agora dê um control+X e S para confirmar
+
+Agora dê o comando
+
+sudo dphys-swapfile setup
+
+
+Em seguida o comando
+
+sudo dphys-swapfile swapon
+
+
+Pronto!
+
+
+Para verificiar pode usar "free -m" ou "htop"

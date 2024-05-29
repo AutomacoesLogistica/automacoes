@@ -1,0 +1,4 @@
+Abra o servidor pelo filezilla
+
+e va ate a pasta
+www e coloque a permissao dela para 777 e incluir pastas e subpastas!

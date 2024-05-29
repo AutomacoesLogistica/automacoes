@@ -1,0 +1,7 @@
+/opt/vc/bin/vcgencmd measure_temp
+
+
+
+mais detalhado , digite no console 'htop'
+ 
+> htop    

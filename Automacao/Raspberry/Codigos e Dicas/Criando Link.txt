@@ -1,0 +1,35 @@
+Para criar um link de uma pasta em outro diretorio vamos fazer supondo o seguinte
+
+
+Vamos fazer um link da pasta /var/www/html/teste1 para /home/pi
+
+Vamos primeiro acessar a pasta onde tem o lugar que sera o link
+
+Primeiro teremos que mudar o nome da pasta teste1 para teste-backup para conseguir fazer o link
+
+
+Para isso vamos usar o comando abaixo
+
+Acessamos a pasta com o comando
+
+> cd /var/www/html
+
+Agora listamos para aparecer os arquivos e inclusive a pasta teste1
+
+> ls
+
+Agora vamos mudar o nome da pasta para conseguirmos fazer o link, usando o comando
+
+> sudo mv teste1 teste-backup
+
+Dê um ls novamente para verificar se alterou o nome, agora prosseguindo
+
+Vamos agora criar o link de teste1 para /home/pi
+
+> sudo ln -sf /home/pi /mnt/servidor_hd/www/html/teste1
+
+Onde: /home/pi > Destino que vai apontar o link simbolico
+      /mnt/servidor_hd/www/html/teste1 > Vai criar uma pasta com link chamada teste1 que ao clicar nela acessa /home/pi
+
+
+Fim!

@@ -1,0 +1,103 @@
+Primeiramente coloque o HD externo na rasperry
+
+
+Agora abra o cmd e digite o comando abaixo para detectar os dados do HD
+
+sudo lsblk -o UUID,NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL,MODEL
+
+OBS: Com as informações dadas nos campos SIZE, LABEL e MODEL você consegue identificar seu disco, geralmente é sda1 ou sda2.
+
+Agora temos que instalar a biblioteca abaixo
+
+sudo apt install exfat-fuse -y
+
+Agora instale essa outra biblioteca abaixo
+
+sudo apt install ntfs-3g -y
+
+OBS: Da um erro no fim msm, pode seguir
+
+
+Agora vamos listar os dados do HD ja preparado para o sistema com o comando abaixo
+
+sudo blkid
+
+o Retorno deve ser algo proximo a 
+
+> /dev/sda1: LABEL="Expansion" UUID="5C39-72D3" TYPE="exfat" PARTUUID="010a2a3f-01"
+
+
+Agora vamos criar uma pasta pra virtualizar o acesso externo no hd e vamos chamar o HD de servidor_hd
+
+Usamos o comando abaixo
+
+sudo mkdir /mnt/servidor_hd
+
+Agora vamos montar o hd usando o caminho virtualizado da pasta associado ao nome do hd acima, nesse meu caso reconheceu como sda1.
+
+sudo mount /dev/sda1 /mnt/servidor_hd
+*Substitua /dev/sda1 do comando de exemplo pelo caminho correto do seu disco.
+
+ATENÇÃO: Caso retorne a mensagem abaixo, significa que o hd ja foi montado automatico pelo sistema como Expansion, vamos desmontar ele e depois retornar o comando para monta-lo.
+
+FUSE exfat 1.3.0
+WARN: volume was not unmounted cleanly.
+fuse: mount failed: Device or resource busy
+
+Vamos desmonta-lo primeiro e em seguida tentar o comando novamente
+
+Para desmontar vamos usar o comando abaixo
+
+sudo umount /dev/sda1   (OBS: usar o nome reconhecido para seu hd externo, no meu caso foi sda1)
+
+Agora vamos monta-lo novamente com o comando
+
+sudo mount /dev/sda1 /mnt/servidor_hd
+*Substitua /dev/sda1 do comando de exemplo pelo caminho correto do seu disco.
+
+ATENÇÃO: O Retorno deve ser algo proximo disso! Caso contrario volte e avalie tudo!
+
+FUSE exfat 1.3.0
+WARN: volume was not unmounted cleanly.
+
+Dando continuidade, para verificar se esta ok, vamos listar os dados dentro do hd atraver da pasta virtualizada criada, para tal, vamos usar o comando abaixo
+
+ls /mnt/servidor_hd
+
+ATENÇÃO: Deve listar os dados que estão dentro do seu hd externo!
+
+Agora vamos descobrir o UUID do hd para cadastrar ele como montagem automatica
+
+Para tal usamos novamente o comando abaixo
+
+sudo blkid
+
+O retorno deve ser proximo disso
+
+/dev/sda1: LABEL="Expansion" UUID="5C39-72D3" TYPE="exfat" PARTUUID="010a2a3f-01"
+
+Vamos anotar o numero UUID desse hd >   5C39-72D3 e tambem o tipo da extenso em TYPE, nesse caso ele esta como "exfat"
+
+Agora vamos editar o arquivo abaixo para cadastrar nosso hd
+
+sudo nano /etc/fstab
+
+Agora vamos acrescentar uma nova linha com os dados do nosso HD
+
+UUID=5C39-72D3 /mnt/servidor_hd exfat defaults,auto,users,rw,nofail 0 0
+OBS: Colocar o UUID do seu hd
+Onde /mnt/servidor_hd alterar para a pasta que foi criada virtualizada
+Em exfat coloque o TYPE que esta seu hd
+
+Dê um control X, e salve
+
+Agora tudo esta pronto, vamos reiniciar o raspberry e em seguida testar listar os dados da pasta criada virtualizada e verificar se lista os dados do hd, caso sim, esta tudo ok!
+
+sudo reboot
+
+Agora apos ligar novamente vamos listar usando o caminho da pasta criada
+
+ls /mnt/servidor_hd
+
+
+FIM!

@@ -1,0 +1,17 @@
+digite o comando no terminal
+
+> sudo nano /boot/config.txt
+
+irá abrir uma tela e descomente e ajuste os valores para
+
+framebuffer_width=1366
+framebuffer_height=768
+
+
+dê um control + x e confirme com S e enter para salvar
+depois
+
+> sudo reboot
+
+
+Agora conexão remota abre em full screen

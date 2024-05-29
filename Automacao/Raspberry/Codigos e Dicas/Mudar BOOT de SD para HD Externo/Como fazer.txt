@@ -1,0 +1,41 @@
+Para alterar o boot de SD para HD Externo no raspberry pi3 B+
+
+
+Inicie o raspberry a primeira vez com um sistema operacionar raspbian para acessar a linha de comandos
+
+
+Abra o terminal e digite
+
+cd /boot
+
+Agora vamos editar o arquivo config.txt
+
+sudo nano config.txt
+
+Role ate embaixo onde temos [all]
+
+e insira a linha program_usb_boot_mode=1   ficando assim
+
+[all]
+program_usb_boot_mode=1
+
+Agora dê um Control+X , Confirma com S para salvar e dê enter
+
+
+
+OBS: Para instalar no HD Externo sistema operacional que deseja, utilize o RaspberryPi Imager
+O balena etcher não aceita pelo tamanho alto do HD
+
+Para instalar, selecione sistema operacional desejado, mude e selecione o HD e clique em salvar
+
+Caso nao tenha o Raspberry Pi Imager
+https://www.raspberrypi.com/software/
+
+Desligue o raspberry PI, insira o HD gravado em uma das portas USB do raspberry
+e retire o SD Card
+
+
+Basta Iniciar o raspberry que ele ira rodar pelo HD Externo!
+
+
+Pronto!

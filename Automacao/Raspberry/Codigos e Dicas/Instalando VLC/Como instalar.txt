@@ -1,0 +1,5 @@
+abra o cmd e digite
+
+sudo apt-get install vlc
+
+

@@ -1,0 +1,9 @@
+Abra o cmd e digite
+
+sudo apt-get install filezilla
+
+
+depois de instalado, para executar basta digitar
+
+
+filezilla no cmd e dar enter!

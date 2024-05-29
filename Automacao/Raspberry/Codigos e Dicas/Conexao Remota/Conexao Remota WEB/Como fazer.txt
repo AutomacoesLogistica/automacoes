@@ -1,0 +1,175 @@
+>>>video https://www.youtube.com/watch?v=CWs88VPBJ94&ab_channel=UlasDikme
+
+
+
+MODO RESUMIDO
+> git clone https://github.com/novnc/noVNC.git e dê enter
+
+Pare, acesse a tela e troca tipo de acesso do VNC
+Segurança e tipo de criptografia, marque , preferir desativa e tipo de senha coloque senha VNC e coloque a senha desejada ( Ex: gerdau10 )
+
+> ps aux | grep web e dê enter
+> sudo nano /etc/systemd/system/noVnc.service e dê enter
+Cola isso
+****************
+[Unit]
+Description=noVnc
+After=graphical.target
+
+[Service]
+Type=Simple
+User=pi
+ExecStart=/home/pi/noVNC/utils/novnc_proxy --vnc localhost:5900 > /dev/null 2>&1 &
+
+[Install]
+WantedBy=graphical.target
+****************
+
+> sudo systemctl daemon-reload e dê enter
+> sudo systemctl restart noVnc.service e dê enter
+> sudo systemctl status noVnc.service ( Caso queira ver se rodou, retona Active!
+> sudo systemctl enable noVnc.service e dê enter
+> sudo reboot e dê enter
+
+
+
+**********************************************************************************
+MODO DETALHADO
+
+
+
+abra o terminal e digite
+
+> git clone https://github.com/novnc/noVNC.git e dê enter
+
+ao acabar digite
+> cd noVNC e dê enter
+
+em seguida 
+> ls e dê enter para listar a pasta
+
+em seguida digite
+
+> ./utils/launch.sh --vnc localhost:5900 e dê enter
+se não der tente por 
+> ./utils/novnc_proxy --vnc localhost:5901 ( Novo modelo )
+
+ATENÇÃO: Caso nao rode, coloque com a porta 5900
+> ./utils/novnc_proxy --vnc localhost:5900 ( Novo modelo )
+
+irá aparecer a url para acessar, não preocupe agora. Dê um Control+C para cancelar
+
+ATENÇÃO:
+Faça esta parte senão não irá funcionar
+
+Conececte via VNC normal ou via uma tela e clica com botão direito no icone do VNC na barra em cima perto do ícone do bluetooth e clicar em opções. Irá abrir uma tela e em segurança 
+
+Criptografia: Colocar Preferir desativada
+e em 
+Autenticacao : Colocar Senha do VNC e clicar em Aplicar, irá abrir uma tela e digite a senha e confirme novamente
+
+Agora vamos habilitar para iniciar automáticamente no reboot
+
+Digite por segurança cd cd cd
+agora
+
+> ps aux | grep web e dê enter
+
+agora digite
+
+> sudo nano /etc/systemd/system/noVnc.service e dê enter, irá abrir uma tela em branco
+
+coloque os dados abaixo
+
+**************************************************************************
+
+[Unit]
+Description=noVnc
+After=graphical.target
+
+[Service]
+Type=Simple
+User=pi
+ExecStart=/home/pi/noVNC/utils/launch.sh --vnc localhost:5900 > /dev/null 2>&1 &
+
+[Install]
+WantedBy=graphical.target
+
+
+******************************************************************
+
+
+
+
+
+
+
+ATENÇÃO! caso tenha sido o novo modelo, alterar o script para
+
+[Unit]
+Description=noVnc
+After=graphical.target
+
+[Service]
+Type=Simple
+User=pi
+ExecStart=/home/pi/noVNC/utils/novnc_proxy --vnc localhost:5901 > /dev/null 2>&1 &
+
+[Install]
+WantedBy=graphical.target
+
+
+
+
+ATENÇÃO : Caso não tenha rodado no novo modelo, altera a porta para 5900 la em cima e aqui tb
+
+[Unit]
+Description=noVnc
+After=graphical.target
+
+[Service]
+Type=Simple
+User=pi
+ExecStart=/home/pi/noVNC/utils/novnc_proxy --vnc localhost:5900 > /dev/null 2>&1 &
+
+[Install]
+WantedBy=graphical.target
+
+
+
+Agora dê Control+X e S para confirmar e dê enter para salvar
+
+Agora dê o comando
+
+> sudo systemctl daemon-reload e dê enter
+
+Em seguida reiniciamos o serviço criado
+
+> sudo systemctl restart noVnc.service e dê enter
+
+Agora verificando se deu tudo certo, digite o comando abaixo
+
+>sudo systemctl status noVnc.service
+
+OBS: Deve retornar como "Active!"
+
+Dê um Control + C para sair 
+
+Agora devemos habilitar o serviço com o seguinte comando
+
+> sudo systemctl enable noVnc.service
+
+Para finalizar basta reinicar!
+
+> sudo reboot
+
+Para acessar via web basta agora abrir a URL
+
+>>>>> http://IP_RASPBERRY:6080/vnc.html?host=IP_RASPBERRY&port=6080
+
+
+ATENÇÃO!
+abra o navegador do raspberry e digite
+ >chrome://settings/content/cookies em seguida dê enter
+
+Deixe marcado permitir todos os cokies para evitar erros de acessos!

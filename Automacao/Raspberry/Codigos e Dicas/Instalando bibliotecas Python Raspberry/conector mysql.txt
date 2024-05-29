@@ -1,0 +1,5 @@
+>sudo apt-get -y install python3-mysql.connector
+ou
+>sudo pip3 install mysql-connector-python
+ou
+>pip install mysql-connector-python

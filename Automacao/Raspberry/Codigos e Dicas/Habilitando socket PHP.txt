@@ -1,0 +1,11 @@
+Abra o XAMPP e clique em config do apache, abra o PHP.ini
+
+Dê um control+F e pesquise por extension=sockets
+
+ele vai estar assim ;extension=sockets
+
+Retire o ; ficando apenas extension=sockets
+
+Dê um control+S para salvar e agora renicie o apache
+
+cliando em stop, em seguida start!

@@ -1,0 +1,498 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.dashboard_teste",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "theme": "Backend-selected",
+          "title": "Controles",
+          "badges": [],
+          "cards": [
+            {
+              "type": "gauge",
+              "entity": "sensor.potencia_t",
+              "min": 0,
+              "max": 6000,
+              "unit": "W",
+              "name": "Potência Total Consumida"
+            },
+            {
+              "type": "horizontal-stack",
+              "cards": [
+                {
+                  "type": "custom:mini-graph-card",
+                  "entities": [
+                    "sensor.irms_1"
+                  ],
+                  "name": "Corrente Fase R",
+                  "hours_to_show": 24,
+                  "aggregate_func": "max",
+                  "group_by": "hours",
+                  "decimals": 1,
+                  "bar_spacing": 4,
+                  "unit": "A",
+                  "line_color": "rgb(0,100,255)",
+                  "font_size": 100,
+                  "icon": "mdi:chart-bell-curve-cumulative",
+                  "font_size_header": 15,
+                  "animate": true,
+                  "show": {
+                    "graph": "line"
+                  }
+                },
+                {
+                  "type": "custom:mini-graph-card",
+                  "entities": [
+                    "sensor.irms_2"
+                  ],
+                  "name": "Corrente Fase S",
+                  "hours_to_show": 24,
+                  "aggregate_func": "max",
+                  "group_by": "hours",
+                  "decimals": 1,
+                  "bar_spacing": 4,
+                  "unit": "A",
+                  "line_color": "rgb(0,100,255)",
+                  "font_size": 100,
+                  "icon": "mdi:chart-bell-curve-cumulative",
+                  "font_size_header": 15,
+                  "animate": true,
+                  "show": {
+                    "graph": "line"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "vertical-stack",
+              "cards": [
+                {
+                  "type": "horizontal-stack",
+                  "cards": [
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "toggle"
+                      },
+                      "entity": "light.comando_computador",
+                      "show_state": true,
+                      "icon_height": "120px",
+                      "name": "Computador",
+                      "icon": "mdi:desktop-classic"
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "toggle"
+                      },
+                      "entity": "light.lampada_do_laboratorio",
+                      "show_state": true,
+                      "name": "Iluminação Escritorio",
+                      "icon_height": "120px"
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal-stack",
+                  "cards": [
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "toggle"
+                      },
+                      "entity": "light.smart_fita_led_rgb_wi_fi",
+                      "show_state": true,
+                      "icon_height": "90px",
+                      "name": "RGB Mesa"
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "toggle"
+                      },
+                      "entity": "light.iluminacao_luminaria",
+                      "show_state": true,
+                      "name": "Luminaria",
+                      "icon_height": "90px"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "theme": "Backend-selected",
+          "title": "PC Gamer",
+          "path": "pc-gamer",
+          "badges": [],
+          "cards": [
+            {
+              "type": "horizontal-stack",
+              "cards": [
+                {
+                  "type": "gauge",
+                  "entity": "sensor.pc_gamer_bruno_12th_gen_intel_core_i5_12400_load_cpu_total",
+                  "min": 0,
+                  "max": 100,
+                  "severity": {
+                    "green": 0,
+                    "yellow": 45,
+                    "red": 85
+                  },
+                  "unit": null,
+                  "name": "Consumo da CPU"
+                },
+                {
+                  "type": "gauge",
+                  "entity": "sensor.pc_gamer_bruno_generic_memory_load_memory",
+                  "min": 0,
+                  "max": 100,
+                  "severity": {
+                    "green": 0,
+                    "yellow": 45,
+                    "red": 85
+                  },
+                  "unit": null,
+                  "name": "Utilização de RAM"
+                }
+              ]
+            },
+            {
+              "type": "horizontal-stack",
+              "cards": [
+                {
+                  "type": "gauge",
+                  "entity": "sensor.pc_gamer_bruno_generic_hard_disk_load_used_space",
+                  "min": 0,
+                  "max": 100,
+                  "severity": {
+                    "green": 0,
+                    "yellow": 45,
+                    "red": 85
+                  },
+                  "unit": null,
+                  "name": "Uso do Disco"
+                },
+                {
+                  "type": "gauge",
+                  "entity": "sensor.pc_gamer_bruno_nvidia_nvidia_geforce_rtx_3060_powers_gpu_power",
+                  "min": 0,
+                  "max": 170,
+                  "severity": {
+                    "green": 0,
+                    "yellow": 90,
+                    "red": 120
+                  },
+                  "unit": null,
+                  "name": "Consumo da GPU"
+                }
+              ]
+            },
+            {
+              "type": "horizontal-stack",
+              "cards": [
+                {
+                  "type": "gauge",
+                  "entity": "sensor.pc_gamer_bruno_asus_tuf_gaming_b760m_plus_d4_nuvoton_nct6798d_controls_fan_control_1",
+                  "min": 0,
+                  "max": 100,
+                  "severity": {
+                    "green": 0,
+                    "yellow": 45,
+                    "red": 85
+                  },
+                  "unit": null,
+                  "name": "Utilização Cooler 1"
+                },
+                {
+                  "type": "gauge",
+                  "entity": "sensor.pc_gamer_bruno_asus_tuf_gaming_b760m_plus_d4_nuvoton_nct6798d_controls_fan_control_2",
+                  "min": 0,
+                  "max": 100,
+                  "severity": {
+                    "green": 0,
+                    "yellow": 45,
+                    "red": 85
+                  },
+                  "unit": null,
+                  "name": "Utilização Cooler 2"
+                }
+              ]
+            },
+            {
+              "type": "horizontal-stack",
+              "cards": [
+                {
+                  "type": "gauge",
+                  "entity": "sensor.pc_gamer_bruno_asus_tuf_gaming_b760m_plus_d4_nuvoton_nct6798d_controls_fan_control_5",
+                  "min": 0,
+                  "max": 100,
+                  "severity": {
+                    "green": 0,
+                    "yellow": 45,
+                    "red": 85
+                  },
+                  "unit": null,
+                  "name": "Utilização Cooler 5"
+                },
+                {
+                  "type": "gauge",
+                  "entity": "sensor.pc_gamer_bruno_asus_tuf_gaming_b760m_plus_d4_nuvoton_nct6798d_controls_fan_control_6",
+                  "min": 0,
+                  "max": 100,
+                  "severity": {
+                    "green": 0,
+                    "yellow": 45,
+                    "red": 85
+                  },
+                  "unit": null,
+                  "name": "Utilização Cooler 6"
+                }
+              ]
+            },
+            {
+              "type": "horizontal-stack",
+              "cards": [
+                {
+                  "type": "gauge",
+                  "entity": "sensor.pc_gamer_bruno_asus_tuf_gaming_b760m_plus_d4_nuvoton_nct6798d_controls_fan_control_3",
+                  "min": 0,
+                  "max": 100,
+                  "severity": {
+                    "green": 0,
+                    "yellow": 45,
+                    "red": 85
+                  },
+                  "unit": null,
+                  "name": "Utilização Cooler 3"
+                },
+                {
+                  "type": "gauge",
+                  "entity": "sensor.pc_gamer_bruno_asus_tuf_gaming_b760m_plus_d4_nuvoton_nct6798d_controls_fan_control_4",
+                  "min": 0,
+                  "max": 100,
+                  "severity": {
+                    "green": 0,
+                    "yellow": 45,
+                    "red": 85
+                  },
+                  "unit": null,
+                  "name": "Utilização Cooler 4"
+                }
+              ]
+            },
+            {
+              "type": "horizontal-stack",
+              "cards": [
+                {
+                  "type": "gauge",
+                  "entity": "sensor.pc_gamer_bruno_asus_tuf_gaming_b760m_plus_d4_nuvoton_nct6798d_temperatures_temperature_1",
+                  "min": 0,
+                  "max": 100,
+                  "severity": {
+                    "green": 0,
+                    "yellow": 45,
+                    "red": 85
+                  },
+                  "unit": null,
+                  "name": "Temperatura ponto 1"
+                },
+                {
+                  "type": "gauge",
+                  "entity": "sensor.pc_gamer_bruno_asus_tuf_gaming_b760m_plus_d4_nuvoton_nct6798d_temperatures_temperature_2",
+                  "min": 0,
+                  "max": 100,
+                  "severity": {
+                    "green": 0,
+                    "yellow": 45,
+                    "red": 85
+                  },
+                  "unit": null,
+                  "name": "Temperatura ponto 2"
+                }
+              ]
+            },
+            {
+              "type": "horizontal-stack",
+              "cards": [
+                {
+                  "type": "gauge",
+                  "entity": "sensor.pc_gamer_bruno_nvidia_nvidia_geforce_rtx_3060_load_gpu_core",
+                  "min": 0,
+                  "max": 100,
+                  "severity": {
+                    "green": 0,
+                    "yellow": 45,
+                    "red": 85
+                  },
+                  "unit": null,
+                  "name": "Consumo da GPU"
+                },
+                {
+                  "type": "gauge",
+                  "entity": "sensor.pc_gamer_bruno_nvidia_nvidia_geforce_rtx_3060_load_gpu_memory",
+                  "min": 0,
+                  "max": 100,
+                  "severity": {
+                    "green": 0,
+                    "yellow": 45,
+                    "red": 85
+                  },
+                  "unit": null,
+                  "name": "Consumo de Ram GPU"
+                }
+              ]
+            },
+            {
+              "type": "horizontal-stack",
+              "cards": [
+                {
+                  "type": "gauge",
+                  "entity": "sensor.pc_gamer_bruno_asus_tuf_gaming_b760m_plus_d4_nuvoton_nct6798d_temperatures_temperature_3",
+                  "min": 0,
+                  "max": 100,
+                  "severity": {
+                    "green": 0,
+                    "yellow": 45,
+                    "red": 85
+                  },
+                  "unit": null,
+                  "name": "Temperatura ponto 3"
+                },
+                {
+                  "type": "gauge",
+                  "entity": "sensor.pc_gamer_bruno_asus_tuf_gaming_b760m_plus_d4_nuvoton_nct6798d_temperatures_temperature_4",
+                  "min": 0,
+                  "max": 100,
+                  "severity": {
+                    "green": 0,
+                    "yellow": 45,
+                    "red": 85
+                  },
+                  "unit": null,
+                  "name": "Temperatura ponto 4"
+                }
+              ]
+            },
+            {
+              "type": "horizontal-stack",
+              "cards": [
+                {
+                  "type": "gauge",
+                  "entity": "sensor.pc_gamer_bruno_asus_tuf_gaming_b760m_plus_d4_nuvoton_nct6798d_temperatures_temperature_5",
+                  "min": 0,
+                  "max": 100,
+                  "severity": {
+                    "green": 0,
+                    "yellow": 45,
+                    "red": 85
+                  },
+                  "unit": null,
+                  "name": "Temperatura ponto 5"
+                },
+                {
+                  "type": "gauge",
+                  "entity": "sensor.pc_gamer_bruno_asus_tuf_gaming_b760m_plus_d4_nuvoton_nct6798d_temperatures_temperature_6",
+                  "min": 0,
+                  "max": 100,
+                  "severity": {
+                    "green": 0,
+                    "yellow": 45,
+                    "red": 85
+                  },
+                  "unit": null,
+                  "name": "Temperatura ponto 6"
+                }
+              ]
+            },
+            {
+              "type": "horizontal-stack",
+              "cards": [
+                {
+                  "type": "gauge",
+                  "entity": "sensor.pc_gamer_bruno_nvidia_nvidia_geforce_rtx_3060_fans_gpu",
+                  "min": 0,
+                  "max": 100,
+                  "severity": {
+                    "green": 0,
+                    "yellow": 45,
+                    "red": 85
+                  },
+                  "unit": null,
+                  "name": "Cooler GPU"
+                },
+                {
+                  "type": "gauge",
+                  "entity": "sensor.pc_gamer_bruno_nvidia_nvidia_geforce_rtx_3060_powers_gpu_power",
+                  "min": 0,
+                  "max": 170,
+                  "severity": {
+                    "green": 0,
+                    "yellow": 90,
+                    "red": 120
+                  },
+                  "unit": null,
+                  "name": "Consumo GPU"
+                }
+              ]
+            },
+            {
+              "type": "horizontal-stack",
+              "cards": [
+                {
+                  "type": "gauge",
+                  "entity": "sensor.pc_gamer_bruno_asus_tuf_gaming_b760m_plus_d4_nuvoton_nct6798d_fans_fan_2",
+                  "min": 0,
+                  "max": 2000,
+                  "severity": {
+                    "green": 0,
+                    "yellow": 450,
+                    "red": 850
+                  },
+                  "unit": "RPM",
+                  "name": "Water Cooler"
+                },
+                {
+                  "type": "gauge",
+                  "entity": "sensor.pc_gamer_bruno_asus_tuf_gaming_b760m_plus_d4_nuvoton_nct6798d_fans_fan_6",
+                  "min": 0,
+                  "max": 2000,
+                  "severity": {
+                    "green": 0,
+                    "yellow": 450,
+                    "red": 850
+                  },
+                  "unit": "RPM",
+                  "name": "Bomba Water Cooler"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "theme": "Backend-selected",
+          "title": "Audio",
+          "path": "audio",
+          "badges": [],
+          "cards": [
+            {
+              "type": "media-control",
+              "entity": "media_player.spotify_brunogoncalves170889"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

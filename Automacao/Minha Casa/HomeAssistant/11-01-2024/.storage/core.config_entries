@@ -1,0 +1,316 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.config_entries",
+  "data": {
+    "entries": [
+      {
+        "entry_id": "1f7efa1c7bf20cb0a975d35f0679365d",
+        "version": 1,
+        "domain": "sun",
+        "title": "Sun",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "import",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "f47d480b58cd591afbf86374d2c1564c",
+        "version": 1,
+        "domain": "mqtt",
+        "title": "192.168.3.186",
+        "data": {
+          "broker": "192.168.3.186",
+          "port": 1883,
+          "username": "brunogon",
+          "password": "268300",
+          "keepalive": 60,
+          "tls_insecure": false,
+          "protocol": "3.1.1",
+          "transport": "tcp",
+          "client_id": "HomeAssistantDocker_JetsonNano",
+          "discovery": true,
+          "discovery_prefix": "homeassistant"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "2dd56a4e5225ed9a1f0ceb850cfee1ae",
+        "version": 1,
+        "domain": "uptime",
+        "title": "Time Online",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "import",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "37318a88f7f947f7205110d13564115b",
+        "version": 1,
+        "domain": "dlna_dmr",
+        "title": "DESKTOP-B3CIOAE",
+        "data": {
+          "url": "http://192.168.3.241:2869/upnphost/udhisapi.dll?content=uuid:7ea58d46-22f5-4b12-ae22-f0325d5a1204",
+          "device_id": "uuid:7ea58d46-22f5-4b12-ae22-f0325d5a1204",
+          "type": "urn:schemas-upnp-org:device:MediaRenderer:1",
+          "mac": "d0:df:9a:24:99:30"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "ssdp",
+        "unique_id": "uuid:7ea58d46-22f5-4b12-ae22-f0325d5a1204",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "1759bc95fd7b588fde882fa97f0f05f7",
+        "version": 1,
+        "domain": "hue",
+        "title": "Philips Hue",
+        "data": {
+          "host": "192.168.3.186"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "ignore",
+        "unique_id": "93eadbeef13",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "f1b936778ccdc1a44d74fc584de8ef85",
+        "version": 1,
+        "domain": "denonavr",
+        "title": "HomeCinema",
+        "data": {
+          "host": "192.168.3.220",
+          "type": "avr-x-2016",
+          "model": "Denon AVR-S930H",
+          "manufacturer": "Denon",
+          "serial_number": "ALT36180123026"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "ssdp",
+        "unique_id": "Denon AVR-S930H-ALT36180123026",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "bccdde56b31b2f442ab939f1305d5689",
+        "version": 1,
+        "domain": "upnp",
+        "title": "Wireless Router TL-WR740N",
+        "data": {
+          "udn": "uuid:060b7353-fca6-4070-85f4-1fbfb9add62c",
+          "st": "urn:schemas-upnp-org:device:InternetGatewayDevice:1",
+          "original_udn": "uuid:060b7353-fca6-4070-85f4-1fbfb9add62c",
+          "location": "http://192.168.3.167:1900/igd.xml",
+          "mac_address": "64:66:b3:84:d2:06",
+          "host": "192.168.3.167"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "ssdp",
+        "unique_id": "uuid:060b7353-fca6-4070-85f4-1fbfb9add62c::urn:schemas-upnp-org:device:InternetGatewayDevice:1",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "37cd7cc563752bc9542c4249b649a210",
+        "version": 1,
+        "domain": "dlna_dms",
+        "title": "Archer_C5",
+        "data": {
+          "url": "http://192.168.3.3:40227/description.xml",
+          "device_id": "uuid:898f9738-d930-4db4-a3cf-68ff7bbdd733::urn:schemas-upnp-org:device:MediaServer:1",
+          "source_id": "archer_c5"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "ssdp",
+        "unique_id": "uuid:898f9738-d930-4db4-a3cf-68ff7bbdd733::urn:schemas-upnp-org:device:MediaServer:1",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "90a1e3a341195f1d508e82fc19d866e6",
+        "version": 1,
+        "domain": "upnp",
+        "title": "Wireless Router TL-WR740N",
+        "data": {
+          "udn": "uuid:060b7353-fca6-4070-85f4-1fbfb9add62c",
+          "st": "urn:schemas-upnp-org:device:InternetGatewayDevice:1",
+          "original_udn": "uuid:060b7353-fca6-4070-85f4-1fbfb9add62c",
+          "location": "http://192.168.3.3:1900/gatedesc.xml",
+          "mac_address": "68:ff:7b:bd:d7:33",
+          "host": "192.168.3.3"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "ssdp",
+        "unique_id": "uuid:9f0865b3-f5da-4ad5-85b7-7404637fdf37::urn:schemas-upnp-org:device:InternetGatewayDevice:1",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "d1451a05c1f768e46d65b6fd99a44c08",
+        "version": 1,
+        "domain": "heos",
+        "title": "Controller (192.168.3.220)",
+        "data": {
+          "host": "192.168.3.220"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "ssdp",
+        "unique_id": "heos",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "3ea02079f10fb417c6f324a3c05f56a3",
+        "version": 1,
+        "domain": "dlna_dms",
+        "title": "FXLITE1_8010(HiMediaServer)",
+        "data": {
+          "url": "http://192.168.3.250:25806/description.xml",
+          "device_id": "uuid:bb5e-21ce-2222-11b2-f918-0000-0000-0000-::urn:schemas-upnp-org:device:MediaServer:1",
+          "source_id": "fxlite1_8010_himediaserver"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "ssdp",
+        "unique_id": "uuid:bb5e-21ce-2222-11b2-f918-0000-0000-0000-::urn:schemas-upnp-org:device:MediaServer:1",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "35cbc6a566b997cd9a0950f69fecc888",
+        "version": 1,
+        "domain": "dlna_dmr",
+        "title": "FXLITE1_8010(HiDMR)",
+        "data": {
+          "url": "http://192.168.3.250:25826/description.xml",
+          "device_id": "uuid:bb5e-21ce-1111-11b2-f918-0000-0000-0000-",
+          "type": "urn:schemas-upnp-org:device:MediaRenderer:1",
+          "mac": "78:d9:5e:5c:e0:65"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "ssdp",
+        "unique_id": "uuid:bb5e-21ce-1111-11b2-f918-0000-0000-0000-",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "4cdc77914937f480b1e80f1c4e145750",
+        "version": 1,
+        "domain": "dlna_dmr",
+        "title": "65PUG6794/78",
+        "data": {
+          "url": "http://192.168.3.87:2870/dmr.xml",
+          "device_id": "uuid:1396c880-d8b7-129d-ad5f-f0a3b2a6563b",
+          "type": "urn:schemas-upnp-org:device:MediaRenderer:3",
+          "mac": "f0:a3:b2:a6:56:3b"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "ssdp",
+        "unique_id": "uuid:1396c880-d8b7-129d-ad5f-f0a3b2a6563b",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "e925113ab363ea90318667748a9e8fa6",
+        "version": 3,
+        "domain": "zha",
+        "title": "/dev/ttyACM0",
+        "data": {
+          "device": {
+            "path": "/dev/ttyACM0",
+            "baudrate": 115200,
+            "flow_control": null
+          },
+          "radio_type": "znp"
+        },
+        "options": {
+          "custom_configuration": {
+            "zha_options": {
+              "enhanced_light_transition": true,
+              "default_light_transition": 2,
+              "light_transitioning_flag": true,
+              "always_prefer_xy_color_mode": true,
+              "enable_identify_on_join": true,
+              "consider_unavailable_mains": 7200,
+              "consider_unavailable_battery": 21600
+            }
+          }
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "3059ecb3b9139c9cd2d0594c1a7a2d25",
+        "version": 1,
+        "domain": "tuya",
+        "title": "brunogoncalves170889@gmail.com",
+        "data": {
+          "endpoint": "https://openapi.tuyaus.com",
+          "auth_type": 0,
+          "access_id": "e7mnmg7v5uss3e93waqa",
+          "access_secret": "f80d37f1ac524574977e584ab64c9b18",
+          "username": "brunogoncalves170889@gmail.com",
+          "password": "Bru2683@@",
+          "country_code": "55",
+          "tuya_app_type": "smartlife"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "abdc9a1c894098415b826f7017cf3bf4",
+        "version": 1,
+        "domain": "spotify",
+        "title": "brunogoncalves170889",
+        "data": {
+          "auth_implementation": "spotify_78a3427e33734832b524c766c74b8654",
+          "token": {
+            "access_token": "BQBKGC8z3HzrJO5xM7GOSIZHTjioDLfbxWGht8vLO-AtwQ8PUu937oOHIsYYMOO12NrfjeiU5JgrDgNchfhwi1CWCo6vw1UJ4WNmXNGUS9DeDRagyf2In9M3g5vf2Z8YgMjTaBKUJpypsjmIaLtZnkXCzXCZk9w7XClsU5XFHWyc6L7uFd6WD8Jsk7Xnt_bRBbGKZFftxTPoyqqWifHFsGgPvvK5-_DR6gbxekV_HaMgDoaNOiKTc8SxUHQ",
+            "token_type": "Bearer",
+            "expires_in": 3600,
+            "refresh_token": "AQCZmTUAkWY7TF_sHTAvXwEBCX1uwLabOodEeZJotGFCe_hamvV0h8y5TTLLkxpiEf8pcgHNh0aadOC49ZY6lI0hSTgteMpaKHni2Rjah031QOKBFkDhzGG3xJF5MLpSAwY",
+            "scope": "playlist-read-private playlist-read-collaborative user-modify-playback-state user-library-read user-follow-read user-read-playback-state user-read-recently-played user-read-playback-position user-read-private user-top-read",
+            "expires_at": 1705012739.0990593
+          },
+          "id": "brunogoncalves170889",
+          "name": "brunogoncalves170889"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "brunogoncalves170889",
+        "disabled_by": null
+      }
+    ]
+  }
+}

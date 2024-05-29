@@ -1,0 +1,37 @@
+Conecta no mysql pelo terminal
+> sudo mysql --user=root mysql
+
+Crie o usuario e os privilegios
+ATENCAO! Ter privilegio localmente o primeiro e o segundo tambem remoto
+
+
+LOCALMENTE digite os comandos abaixo
+**********
+CREATE USER 'admin'@'localhost' IDENTIFIED BY 'logistica2019@@';
+GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+**********
+
+
+LOCALMENT EE REMOTAMENTE digite os comandos abaixo
+**********
+CREATE USER 'admin'@'%' IDENTIFIED BY 'logistica2019@@';
+GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+**********
+
+Agora deve atualizar dentro do PHPMYADMIN com o seguinte comando
+
+>sudo nano /etc/dbconfig-common/phpmyadmin.conf
+
+irá abrir um arquivo e localize
+
+dbc_dbuser='phpmyadmin'
+
+troque pelo usuario que criou, neste exemplo "admin"
+dbc_dbuser='admin'
+
+e tambem localize 
+dbc_dbpass='AQUI TEM QUE ESTAR A SENHA CRIADA PARA O USUARIO'
+
+Depois dê CONTROL+X e S para salvar!

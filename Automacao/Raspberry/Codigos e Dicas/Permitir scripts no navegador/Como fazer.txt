@@ -1,0 +1,7 @@
+
+
+ATENÇÃO!
+abra o navegador do raspberry e digite
+ >chrome://settings/content/cookies em seguida dê enter
+
+Deixe marcado permitir todos os cokies para evitar erros de acessos!

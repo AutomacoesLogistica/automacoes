@@ -1,0 +1,8 @@
+ATENÇÃO: Deve logar como root para conseguir
+
+
+Raspberry
+/var/lib/mysql
+
+Windows XAMPP
+C:\xampp\mysql\data
