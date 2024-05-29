@@ -1,0 +1,1345 @@
+
+#lb_desenvolvedor{
+    margin-left: 0px;
+    position: absolute;
+    left: 40%;
+    top: 95%;
+    font: normal 12pt verdana;
+    color: rgba(0,0,0,0.7);
+}
+IMG#voltar{
+    margin-left: 0px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+}
+IMG#img_alerta{
+    margin-left: 0px;
+    position: absolute;
+    left:94%;
+    top: 4.3%;
+    width: 42px;
+    height: 46px;
+    cursor: pointer;
+
+}
+LABEL#lb_n_alertas{
+    position: absolute;
+    left: 96%;
+    top: 8%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 12px;
+	font-family: arial, sans-serif;
+    background-color: #FF4500;
+    width: 26px;
+    padding-top: 5px;
+   
+    height: 22px;
+    text-align: center;
+    color: rgb(255,255,255);
+    border-radius: 14px!important;
+}
+
+IMG#configuracoes{
+    margin-left: 0px;
+    position: absolute;
+    left: 64%;
+    top: 4.3%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+}
+
+
+IMG#atualizacao{
+    margin-left: 0px;
+    position: absolute;
+    left: 67.5%;
+    top: 4.3%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+}
+IMG#alerta{
+    margin-left: 0px;
+    position: absolute;
+    left: 5%;
+    top: 4%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+}
+IMG#cavalo{
+    margin-left: 0px;
+    position: absolute;
+    left: 3%;
+    top: 30%;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+
+}
+IMG#carreta{
+    margin-left: 0px;
+    position: absolute;
+    left: 3%;
+    top: 60%;
+    width: 58px;
+    height: 32px;
+    cursor: pointer;
+
+}
+DIV#grafico_coluna{
+    margin-left: 0px;
+    position: absolute;
+    left: 3%;
+    top: 2%;
+    width: 95%;
+    height: 45%;
+    cursor: pointer;
+    border-radius: 10px!important;
+    border: 6px #000000 solid!important;
+
+}
+
+DIV#alerta_tags{
+    margin-left: 0px;
+    position: absolute;
+    left: 88%;
+    top: 4%;
+    width: 9%;
+    height: 20%;
+    cursor: pointer;
+    background-color: #E6E6FA;
+    border-radius: 10px!important;
+    border: 4px #000000 solid!important;
+
+}
+LABEL#titulo_alerta1{
+    position: absolute;
+    left: 35%;
+    top: 6%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: arial, sans-serif;
+}
+
+
+
+
+DIV#grafico_permanencia{
+    margin-left: 0px;
+    position: absolute;
+    left: 63%;
+    top: 50%;
+    width: 35%;
+    height: 45%;
+    margin: 0px;
+    padding-left: 0px;
+    cursor: pointer;
+    border-radius: 10px!important;
+    border: 6px #000000 solid!important;
+
+}
+
+
+
+
+
+DIV#outros{
+    margin-left: 0px;
+    position: absolute;
+    left: 3%;
+    top: 50%;
+    width: 58.3%;
+    height: 45%;
+    cursor: pointer;
+    background-color: rgb(255,255,255);
+    border-radius: 10px!important;
+    border: 6px #000000 solid!important;
+
+}
+
+DIV#tempos_medios{
+    margin-left: 0px;
+    position: absolute;
+    left: 5%;
+    top: 52%;
+    width: 55.3%;
+    height: 30%;
+    cursor: pointer;
+    background-color: transparent;
+
+
+}
+
+DIV#fundo{
+    margin-left: 0px;
+    position: absolute;
+    left: -1%;
+    top: 15%;
+    width: 101.5%;
+    height: 93%;
+    cursor: pointer;
+    background-color:  #E6E6FA;
+    border-radius: 2px!important;
+    border: 2px #000000 solid!important;
+
+
+}
+LABEL#titulo_tm{
+    position: absolute;
+    left: 4%;
+    top: -2%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 27px;
+	font-family: arial, sans-serif;
+}
+
+LABEL#titulo_enc_antena{
+    position: absolute;
+    left: 52%;
+    top: -2%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 27px;
+	font-family: arial, sans-serif;
+}
+LABEL#titulo_enc_job{
+    position: absolute;
+    left: 80%;
+    top: -2%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 27px;
+	font-family: arial, sans-serif;
+}
+LABEL#titulo_enc_job2{
+    position: absolute;
+    left: 89%;
+    top: -2%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 27px;
+	font-family: arial, sans-serif;
+}
+
+LABEL#titulo_tm_turno{
+    position: absolute;
+    left: 37%;
+    top: 18%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 25px;
+	font-family: arial, sans-serif;
+}
+LABEL#titulo_tm_dia{
+    position: absolute;
+    left: 57%;
+    top: 18%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 25px;
+	font-family: arial, sans-serif;
+}
+LABEL#titulo_tm_mes{
+    position: absolute;
+    left: 73%;
+    top: 18%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 25px;
+	font-family: arial, sans-serif;
+}
+LABEL#titulo_tm_ano{
+    position: absolute;
+    left: 89%;
+    top: 18%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 25px;
+	font-family: arial, sans-serif;
+}
+
+
+IMG#img_tm_1{
+    margin-left: 0px;
+    position: absolute;
+    left: 0%;
+    top: 35%;
+    width: 39px;
+    height: 28px;
+    cursor: pointer;
+
+}
+IMG#img_status_1{
+    margin-left: 0px;
+    position: absolute;
+    left: 31%;
+    top: 37%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+}
+IMG#img_status_1_1{
+    margin-left: 0px;
+    position: absolute;
+    left: 50%;
+    top: 37%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+}
+LABEL#tm_1{
+    position: absolute;
+    left: 7%;
+    top: 35%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: arial, sans-serif;
+}
+LABEL#tm_1_turno{
+    position: absolute;
+    left: 34.5%;
+    top: 34%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: arial, sans-serif;
+    border-radius: 0px!important;
+    border: 2px #000000 solid!important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 12.9%;
+    text-align:center;
+    
+}
+LABEL#tm_1_dia{
+    position: absolute;
+    left: 53%;
+    top: 34%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: arial, sans-serif;
+    border-radius: 0px!important;
+    border: 2px #000000 solid!important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 12.9%;
+    text-align:center;
+
+}
+LABEL#tm_1_mes{
+    position: absolute;
+    left: 69.5%;
+    top: 34%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: arial, sans-serif;
+    border-radius: 0px!important;
+    border: 2px #000000 solid!important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 12.9%;
+    text-align:center;
+    
+}
+LABEL#tm_1_ano{
+    position: absolute;
+    left: 86%;
+    top: 34%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: arial, sans-serif;
+    border-radius: 0px!important;
+    border: 2px #000000 solid!important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 12.9%;
+    text-align:center;
+
+}
+
+
+IMG#img_tm_2{
+    margin-left: 0px;
+    position: absolute;
+    left: 0%;
+    top: 54%;
+    width: 39px;
+    height: 28px;
+    cursor: pointer;
+
+}
+IMG#img_status_2{
+    margin-left: 0px;
+    position: absolute;
+    left: 31%;
+    top: 56%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+}
+IMG#img_status_2_1{
+    margin-left: 0px;
+    position: absolute;
+    left: 50%;
+    top: 56%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+}
+LABEL#tm_2{
+    position: absolute;
+    left: 7%;
+    top: 54%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: arial, sans-serif;
+}
+LABEL#tm_2_turno{
+    position: absolute;
+    left: 34.5%;
+    top: 51%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: arial, sans-serif;
+    border-radius: 0px!important;
+    border: 2px #000000 solid!important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 12.9%;
+    text-align:center;
+
+}
+LABEL#tm_2_dia{
+    position: absolute;
+    left: 53%;
+    top: 51%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: arial, sans-serif;
+    border-radius: 0px!important;
+    border: 2px #000000 solid!important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 12.9%;
+    text-align:center;
+
+}
+LABEL#tm_2_mes{
+    position: absolute;
+    left: 69.5%;
+    top: 51%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: arial, sans-serif;
+    border-radius: 0px!important;
+    border: 2px #000000 solid!important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 12.9%;
+    text-align:center;
+
+}
+LABEL#tm_2_ano{
+    position: absolute;
+    left: 86%;
+    top: 51%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: arial, sans-serif;
+    border-radius: 0px!important;
+    border: 2px #000000 solid!important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 12.9%;
+    text-align:center;
+
+
+}
+
+
+IMG#img_tm_3{
+    margin-left: 0px;
+    position: absolute;
+    left: 0%;
+    top: 72%;
+    width: 39px;
+    height: 28px;
+    cursor: pointer;
+
+}
+IMG#img_status_3{
+    margin-left: 0px;
+    position: absolute;
+    left: 31%;
+    top: 73%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+}
+IMG#img_status_3_1{
+    margin-left: 0px;
+    position: absolute;
+    left: 50%;
+    top: 73%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+}
+LABEL#tm_3{
+    position: absolute;
+    left: 7%;
+    top: 72%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: arial, sans-serif;
+}
+LABEL#tm_3_turno{
+    position: absolute;
+    left: 34.5%;
+    top: 68%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: arial, sans-serif;
+    border-radius: 0px!important;
+    border: 2px #000000 solid!important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 12.9%;
+    text-align:center;
+
+}
+LABEL#tm_3_dia{
+    position: absolute;
+    left: 53%;
+    top: 68%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: arial, sans-serif;
+    border-radius: 0px!important;
+    border: 2px #000000 solid!important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 12.9%;
+    text-align:center;
+
+}
+LABEL#tm_3_mes{
+    position: absolute;
+    left: 69.5%;
+    top: 68%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: arial, sans-serif;
+    border-radius: 0px!important;
+    border: 2px #000000 solid!important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 12.9%;
+    text-align:center;
+
+}
+LABEL#tm_3_ano{
+    position: absolute;
+    left: 86%;
+    top: 68%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: arial, sans-serif;
+    border-radius: 0px!important;
+    border: 2px #000000 solid!important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 12.9%;
+    text-align:center;
+
+
+}
+
+IMG#img_tm_4{
+    margin-left: 0px;
+    position: absolute;
+    left: 0%;
+    top: 90%;
+    width: 39px;
+    height: 28px;
+    cursor: pointer;
+
+}
+IMG#img_status_4{
+    margin-left: 0px;
+    position: absolute;
+    left: 31%;
+    top: 89%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+}
+IMG#img_status_4_1{
+    margin-left: 0px;
+    position: absolute;
+    left: 50%;
+    top: 89%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+}
+LABEL#tm_4{
+    position: absolute;
+    left: 7%;
+    top: 90%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: arial, sans-serif;
+}
+LABEL#tm_4_turno{
+    position: absolute;
+    left: 34.5%;
+    top: 85%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: arial, sans-serif;
+    border-radius: 0px!important;
+    border: 2px #000000 solid!important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 12.9%;
+    text-align:center;
+
+}
+LABEL#tm_4_dia{
+    position: absolute;
+    left: 53%;
+    top: 85%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: arial, sans-serif;
+    border-radius: 0px!important;
+    border: 2px #000000 solid!important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 12.9%;
+    text-align:center;
+
+}
+LABEL#tm_4_mes{
+    position: absolute;
+    left: 69.5%;
+    top: 85%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: arial, sans-serif;
+    border-radius: 0px!important;
+    border: 2px #000000 solid!important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 12.9%;
+    text-align:center;
+
+}
+LABEL#tm_4_ano{
+    position: absolute;
+    left: 86%;
+    top: 85%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: arial, sans-serif;
+    border-radius: 0px!important;
+    border: 2px #000000 solid!important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 12.9%;
+    text-align:center;
+
+
+}
+
+
+LABEL#titulo_movimentacoes_turno{
+    position: absolute;
+    left: 7%;
+    top: 113%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: arial, sans-serif;
+}
+LABEL#titulo_movimentacoes_turno_1{
+    position: absolute;
+    left: 3%;
+    top: 124%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+    font-family: arial, sans-serif;
+    border-radius: 10px!important;
+    border: 2px #000000 solid!important;
+    padding-top: 1px;
+    padding-bottom: 8px;
+    padding-left: 17px;
+    padding-right: 17px;
+    width: 15%;
+    height: 15%;
+    background-color: #E6E6FA;
+}
+LABEL#titulo_movimentacoes_turno_1_ant{
+    position: absolute;
+    left: 4.5%;
+    top: 134%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+    font-family: arial, sans-serif;
+}
+LABEL#titulo_movimentacoes_turno_1_job{
+    position: absolute;
+    left: 12.5%;
+    top: 134%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+    font-family: arial, sans-serif;
+}
+LABEL#titulo_movimentacoes_turno2{
+    position: absolute;
+    left: 27%;
+    top: 113%;
+    text-align: center;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: arial, sans-serif;
+}
+LABEL#titulo_movimentacoes_turno_2{
+    position: absolute;
+    left: 23.5%;
+    top: 124%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 18px;
+    text-align: center;
+	font-family: arial, sans-serif;
+    border-radius: 10px!important;
+    border: 2px #000000 solid!important;
+    padding-top: 1px;
+    padding-bottom: 8px;
+    padding-left: 17px;
+    padding-right: 17px;
+    width: 15%;
+    height: 15%;
+    background-color: #E6E6FA;
+}
+LABEL#titulo_movimentacoes_turno_2_ant{
+    position: absolute;
+    left: 25%;
+    top: 134%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+    font-family: arial, sans-serif;
+}
+LABEL#titulo_movimentacoes_turno_2_job{
+    position: absolute;
+    left: 33%;
+    top: 134%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+    font-family: arial, sans-serif;
+}
+
+
+
+
+LABEL#titulo_movimentacoes_turno3{
+    position: absolute;
+    left: 47%;
+    top: 113%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: arial, sans-serif;
+}
+LABEL#titulo_movimentacoes_turno_3{
+    position: absolute;
+    left: 44%;
+    top: 124%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 18px;
+    text-align: center;
+	font-family: arial, sans-serif;
+    border-radius: 10px!important;
+    border: 2px #000000 solid!important;
+    padding-top: 1px;
+    padding-bottom: 8px;
+    padding-left: 17px;
+    padding-right: 17px;
+    width: 15%;
+    height: 15%;
+    background-color: #E6E6FA;
+}
+LABEL#titulo_movimentacoes_turno_3_ant{
+    position: absolute;
+    left: 45.5%;
+    top: 134%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+    font-family: arial, sans-serif;
+}
+LABEL#titulo_movimentacoes_turno_3_job{
+    position: absolute;
+    left: 53.5%;
+    top: 134%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+    font-family: arial, sans-serif;
+}
+
+LABEL#titulo_movimentacoes_dia{
+    position: absolute;
+    left: 70%;
+    top: 113%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: arial, sans-serif;
+}
+LABEL#titulo_movimentacoes_dia_1{
+    position: absolute;
+    left: 71%;
+    top: 124%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+    text-align: center;
+	font-family: arial, sans-serif;
+    border-radius: 10px!important;
+    border: 2px #000000 solid!important;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 17px;
+    padding-right: 17px;
+    width: 15%;
+    background-color: #E6E6FA;
+}
+
+DIV#ttp{
+    margin-left: 0px;
+    position: absolute;
+    left: 85.5%;
+    top: 72%;
+    width: 11%;
+    height: 17%;
+    background-color: red;
+    cursor: pointer;
+    border-radius: 8px!important;
+    border: 4px #000000 solid!important;
+
+}
+
+
+LABEL#alerta_cavalo{
+    position: absolute;
+    left: 58%;
+    top: 27%;
+    font-style: italic;
+    color: #00008B;
+	font-weight: bold;
+	font-size: 36px;
+	font-family: arial;
+}
+
+LABEL#alerta_carreta{
+    position: absolute;
+    left: 58%;
+    top: 55%;
+    font-style: italic;
+    color: #00008B;
+	font-weight: bold;
+	font-size: 36px;
+	font-family: arial;
+}
+
+
+LABEL#titulo_ttp{
+    position: absolute;
+    left: -195%;
+    top: -115%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 25px;
+	font-family: arial, sans-serif;
+}
+LABEL#titulo_ttp_agora{
+    position: absolute;
+    left: 5%;
+    top: 3%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: arial, sans-serif;
+}
+LABEL#titulo_ttp_agora1{
+    position: absolute;
+    left: 13%;
+    top: 16%;
+    font-style: normal;
+	font-weight: bold;
+    color: #FF6347;
+	font-size: 30px;
+	font-family: arial, sans-serif;
+}
+
+LABEL#titulo_ttp_mes{
+    position: absolute;
+    left: 5%;
+    top: 40%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: arial, sans-serif;
+}
+LABEL#titulo_ttp_mes1{
+    position: absolute;
+    left: 13%;
+    top: 54%;
+    font-style: normal;
+	font-weight: bold;
+    color: #32CD32;
+	font-size: 30px;
+	font-family: arial, sans-serif;
+}
+LABEL#titulo_giro{
+    position: absolute;
+    left: 5%;
+    top: 60%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: arial, sans-serif;
+}
+LABEL#titulo_giro1{
+    position: absolute;
+    left: 13%;
+    top: 64%;
+    font-style: normal;
+	font-weight: bold;
+    color: #32CD32;
+	font-size: 30px;
+	font-family: arial, sans-serif;
+}
+
+
+
+
+
+LABEL#titulo{
+    position: absolute;
+    left: 42%;
+    top: 5%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 30px;
+	font-family: arial, sans-serif;
+
+
+}
+
+LABEL#lb_turno_atual{
+    position: absolute;
+    left: 15%;
+    top: 5%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 30px;
+	font-family: arial, sans-serif;
+
+
+}
+
+LABEL#lb_atualizacao{
+    position: absolute;
+    left: 71.4%;
+    top: 5%;
+    font-style: italic;
+	font-weight: bold;
+	font-size: 30px;
+	font-family: arial, sans-serif;
+
+
+}
+DIV#ultima_placa_entrada_co{
+    margin-left: 0px;
+    position: absolute;
+    left: 7.5%;
+    top: 40%;
+    width: 130px;
+    height: 28px;
+    font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+    text-align: center;
+	font-family: arial;
+    cursor: pointer;
+    background-color: #E6E6FA;
+    border-radius: 0px!important;
+    border: 4px #000000 solid!important;
+}
+LABEL#lb_ultima_placa_entrada_co{
+    margin-left: 0px;
+    position: absolute;
+    left: 7.5%;
+    top: 44.5%;
+	width: 130px;
+    height: 30px;
+	text-align: center;
+    font-style: normal;
+	font-weight: bold;
+	font-size: 22px;
+	color: rgb(20,80,30);
+    text-align: center;
+	font-family: arial;
+
+}
+
+
+DIV#ultima_placa_entrada_bh{
+    margin-left: 0px;
+    position: absolute;
+    left: 17.2%;
+    top: 40%;
+    width: 130px;
+    height: 28px;
+    font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+    text-align: center;
+	font-family: arial;
+    cursor: pointer;
+    background-color: #E6E6FA;
+    border-radius: 0px!important;
+    border: 4px #000000 solid!important;
+}
+LABEL#lb_ultima_placa_entrada_bh{
+    margin-left: 0px;
+    position: absolute;
+    left: 17.2%;
+    top: 44.5%;
+	width: 130px;
+    height: 30px;
+	text-align: center;
+    font-style: normal;
+	font-weight: bold;
+	font-size: 22px;
+	color: rgb(20,80,30);
+    text-align: center;
+	font-family: arial;
+
+}
+DIV#ultima_placa_controles{
+    margin-left: 0px;
+    position: absolute;
+    left: 26.8%;
+    top: 40%;
+    width: 130px;
+    height: 28px;
+    font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+    text-align: center;
+	font-family: arial;
+    cursor: pointer;
+    background-color: #E6E6FA;
+    border-radius: 0px!important;
+    border: 4px #000000 solid!important;
+}
+LABEL#lb_ultima_placa_controles{
+    margin-left: 0px;
+    position: absolute;
+    left: 26.8%;
+    top: 44.5%;
+	width: 130px;
+    height: 30px;
+	text-align: center;
+    font-style: normal;
+	font-weight: bold;
+	font-size: 22px;
+	color: rgb(20,80,30);
+    text-align: center;
+	font-family: arial;
+
+}
+
+
+
+DIV#ultima_placa_estoques{
+    margin-left: 0px;
+    position: absolute;
+    left: 36.5%;
+    top: 40%;
+    width: 130px;
+    height: 28px;
+    font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+    text-align: center;
+	font-family: arial;
+    cursor: pointer;
+    background-color: #E6E6FA;
+    border-radius: 0px!important;
+    border: 4px #000000 solid!important;
+}
+LABEL#lb_ultima_placa_estoques{
+    margin-left: 0px;
+    position: absolute;
+    left: 37%;
+    top: 44.5%;
+	width: 130px;
+    height: 30px;
+	text-align: center;
+    font-style: normal;
+	font-weight: bold;
+	font-size: 22px;
+	color: rgb(20,80,30);
+    text-align: center;
+	font-family: arial;
+
+}
+
+
+
+DIV#ultima_placa_Excesso{
+    margin-left: 0px;
+    position: absolute;
+    left: 46.2%;
+    top: 40%;
+    width: 130px;
+    height: 28px;
+    font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+    text-align: center;
+	font-family: arial;
+    cursor: pointer;
+    background-color: #E6E6FA;
+    border-radius: 0px!important;
+    border: 4px #000000 solid!important;
+}
+LABEL#lb_ultima_placa_excesso{
+    margin-left: 0px;
+    position: absolute;
+    left: 46.2%;
+    top: 44.5%;
+	width: 130px;
+    height: 30px;
+	text-align: center;
+    font-style: normal;
+	font-weight: bold;
+	font-size: 22px;
+	color: rgb(20,80,30);
+    text-align: center;
+	font-family: arial;
+
+}
+
+
+DIV#ultima_placa_amostragem{
+    margin-left: 0px;
+    position: absolute;
+    left: 56%;
+    top: 40%;
+    width: 130px;
+    height: 28px;
+    font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+    text-align: center;
+	font-family: arial;
+    cursor: pointer;
+    background-color: #E6E6FA;
+    border-radius: 0px!important;
+    border: 4px #000000 solid!important;
+}
+LABEL#lb_ultima_placa_amostragem{
+    margin-left: 0px;
+    position: absolute;
+    left: 56%;
+    top: 44.5%;
+	width: 130px;
+    height: 30px;
+	text-align: center;
+    font-style: normal;
+	font-weight: bold;
+	font-size: 22px;
+	color: rgb(20,80,30);
+    text-align: center;
+	font-family: arial;
+
+}
+
+
+DIV#ultima_placa_balancas{
+    margin-left: 0px;
+    position: absolute;
+    left: 65.8%;
+    top: 40%;
+    width: 130px;
+    height: 28px;
+    font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+    text-align: center;
+	font-family: arial;
+    cursor: pointer;
+    background-color: #E6E6FA;
+    border-radius: 0px!important;
+    border: 4px #000000 solid!important;
+}
+
+LABEL#lb_ultima_placa_balancas{
+    margin-left: 0px;
+    position: absolute;
+    left: 66%;
+    top: 44.5%;
+	width: 130px;
+    height: 30px;
+	text-align: center;
+    font-style: normal;
+	font-weight: bold;
+	font-size: 22px;
+	color: rgb(20,80,30);
+    text-align: center;
+	font-family: arial;
+
+}
+
+DIV#ultima_placa_saida_co{
+    margin-left: 0px;
+    position: absolute;
+    left: 75.5%;
+    top: 40%;
+    width: 130px;
+    height: 28px;
+    font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+    text-align: center;
+	font-family: arial;
+    cursor: pointer;
+    background-color: #E6E6FA;
+    border-radius: 0px!important;
+    border: 4px #000000 solid!important;
+}
+LABEL#lb_ultima_placa_saida_co{
+    margin-left: 0px;
+    position: absolute;
+    left: 76%;
+    top: 44.5%;
+	width: 130px;
+    height: 30px;
+	text-align: center;
+    font-style: normal;
+	font-weight: bold;
+	font-size: 22px;
+	color: rgb(20,80,30);
+    text-align: center;
+	font-family: arial;
+
+}
+
+
+DIV#ultima_placa_saida_bh{
+    margin-left: 0px;
+    position: absolute;
+    left: 85.2%;
+    top: 40%;
+    width: 130px;
+    height: 28px;
+    font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+    text-align: center;
+	font-family: arial;
+    cursor: pointer;
+    background-color: #E6E6FA;
+    border-radius: 0px!important;
+    border: 4px #000000 solid!important;
+}
+LABEL#lb_ultima_placa_saida_bh{
+    margin-left: 0px;
+    position: absolute;
+    left: 85.5%;
+    top: 44.5%;
+	width: 130px;
+    height: 30px;
+	text-align: center;
+    font-style: normal;
+	font-weight: bold;
+	font-size: 22px;
+	color: rgb(20,80,30);
+    text-align: center;
+	font-family: arial;
+
+}
+
+
+
+body{
+
+margin-top: 0px;
+}
+html{
+background: url("../images/tela_gerdau_logo.png")center;
+margin-top: 0px !important;
+background-size: 160%;
+
+}

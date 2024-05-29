@@ -1,0 +1,3 @@
+criar um novo banco chamado bd_gagf  como utf8_general_ci
+
+depois entre no banco e importe as tabelas

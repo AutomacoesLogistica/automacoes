@@ -1,0 +1,665 @@
+
+
+INPUT#btn_cancelamento_processos_gagf
+{
+    width: 190px;
+    height: 30px;
+    color: #FFFFFF;
+    margin-left: 0px;
+    position: absolute;
+    font: normal 13pt verdana;
+    left:95px;
+    top: 80px;
+    width:320px;
+    height:100px;
+    padding-left: 5px;
+    background-color: rgba(0,0,139,.7);
+    border-radius: 16px!important;
+    border: 4px #000000 solid!important;
+    cursor: pointer;
+
+}
+INPUT#btn_cancelamento_processos_gagf:hover
+{
+ background-color: #555555; /* Preto */
+ color: white;
+}
+INPUT#btn_cancelamento_processos_gagf:active {
+  background-color: #00008B;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+INPUT#btn_cancelamento_tickets
+{
+    width: 190px;
+    height: 30px;
+    color: #FFFFFF;
+    margin-left: 0px;
+    position: absolute;
+    font: normal 13pt verdana;
+    left:425px;
+    top: 80px;
+    width:320px;
+    height:100px;
+    padding-left: 5px;
+    background-color: rgba(0,0,139,.7);
+    border-radius: 16px!important;
+    border: 4px #000000 solid!important;
+    cursor: pointer
+}
+INPUT#btn_cancelamento_tickets:hover
+{
+ background-color: #555555; /* Preto */
+ color: white;
+}
+INPUT#btn_cancelamento_tickets:active {
+  background-color: #00008B;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+
+
+INPUT#btn_controle_ttp
+{
+    width: 190px;
+    height: 30px;
+    color: #FFFFFF;
+    margin-left: 0px;
+    position: absolute;
+    font: normal 13pt verdana;
+    left:755px;
+    top: 80px;
+    width:320px;
+    height:100px;
+    padding-left: 5px;
+    background-color: rgba(0,0,139,.7);
+    border-radius: 16px!important;
+    border: 4px #000000 solid!important;
+    cursor: pointer
+
+}
+INPUT#btn_controle_ttp:hover
+{
+ background-color: #555555; /* Preto */
+ color: white;
+}
+INPUT#btn_controle_ttp:active {
+  background-color: #00008B;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+
+INPUT#btn_gestao_bypass
+{
+    width: 190px;
+    height: 30px;
+    color: #FFFFFF;
+    margin-left: 0px;
+    position: absolute;
+    font: normal 13pt verdana;
+    left:1085px;
+    top: 80px;
+    width:320px;
+    height:100px;
+    padding-left: 5px;
+    background-color: rgba(0,0,139,.7);
+    border-radius: 16px!important;
+    border: 4px #000000 solid!important;
+    cursor: pointer
+
+}
+INPUT#btn_gestao_bypass:hover
+{
+ background-color: #555555; /* Preto */
+ color: white;
+}
+INPUT#btn_gestao_bypass:active {
+  background-color: #00008B;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+INPUT#btn_conferencia_automacao_recebimento_rom
+{
+    width: 190px;
+    height: 30px;
+    color: #FFFFFF;
+    margin-left: 0px;
+    position: absolute;
+    font: normal 13pt verdana;
+    left:425px;
+    top: 190px;
+    width:320px;
+    height:100px;
+    padding-left: 5px;
+    background-color: rgba(0,0,139,.7);
+    border-radius: 16px!important;
+    border: 4px #000000 solid!important;
+    cursor: pointer
+
+}
+INPUT#btn_conferencia_automacao_recebimento_rom:hover
+{
+ background-color: #555555; /* Preto */
+ color: white;
+}
+INPUT#btn_conferencia_automacao_recebimento_rom:active {
+  background-color: #00008B;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+
+
+INPUT#btn_conferencia_bruto_gagf
+{
+    width: 190px;
+    height: 30px;
+    color: #ffffff;
+    margin-left: 0px;
+    position: absolute;
+    font: normal 13pt verdana;
+    left:755px;
+    top: 190px;
+    width:320px;
+    height:100px;
+    padding-left: 5px;
+    background-color: rgba(0,0,139,.7);
+    border-radius: 16px!important;
+    border: 4px #000000 solid!important;
+    cursor: pointer
+
+}
+
+INPUT#btn_conferencia_bruto_gagf:hover
+{
+ background-color: #555555; /* Preto */
+ color: white;
+}
+INPUT#btn_conferencia_bruto_gagf:active {
+  background-color: #00008B;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+INPUT#btn_divergencia_pesagens
+{
+    width: 190px;
+    height: 30px;
+    color: #FFFFFF;
+    margin-left: 0px;
+    position: absolute;
+    font: normal 13pt verdana;
+    left:95px;
+    top: 190px;
+    width:320px;
+    height:100px;
+    padding-left: 5px;
+    background-color: rgba(0,0,139,.7);
+    border-radius: 16px!important;
+    border: 4px #000000 solid!important;
+    cursor: pointer;
+
+}
+INPUT#btn_divergencia_pesagens:hover
+{
+ background-color: #555555; /* Preto */
+ color: white;
+}
+INPUT#btn_divergencia_pesagens:active {
+  background-color: #00008B;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+INPUT#btn_controle_chamados
+{
+    width: 190px;
+    height: 30px;
+    color: #FFFFFF;
+    margin-left: 0px;
+    position: absolute;
+    font: normal 13pt verdana;
+    left:1085px;
+    top: 190px;
+    width:320px;
+    height:100px;
+    padding-left: 5px;
+    background-color: rgba(0,0,139,.7);
+    border-radius: 16px!important;
+    border: 4px #000000 solid!important;
+    cursor: pointer;
+
+}
+INPUT#btn_controle_chamados:hover
+{
+ background-color: #555555; /* Preto */
+ color: white;
+}
+INPUT#btn_controle_chamados:active {
+  background-color: #00008B;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+
+INPUT#btn_controle_maquinas
+{
+    width: 190px;
+    height: 30px;
+    color: #FFFFFF;
+    margin-left: 0px;
+    position: absolute;
+    font: normal 13pt verdana;
+    left:95px;
+    top: 300px;
+    width:320px;
+    height:100px;
+    padding-left: 5px;
+    background-color: rgba(0,0,139,.7);
+    border-radius: 16px!important;
+    border: 4px #000000 solid!important;
+    cursor: pointer;
+
+}
+INPUT#btn_controle_maquinas:hover
+{
+ background-color: #555555; /* Preto */
+ color: white;
+}
+INPUT#btn_controle_maquinas:active {
+  background-color: #00008B;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+INPUT#btn_controle_excesso
+{
+    width: 190px;
+    height: 30px;
+    color: #FFFFFF;
+    margin-left: 0px;
+    position: absolute;
+    font: normal 13pt verdana;
+    left:425px;
+    top: 300px;
+    width:320px;
+    height:100px;
+    padding-left: 5px;
+    background-color: rgba(0,0,139,.7);
+    border-radius: 16px!important;
+    border: 4px #000000 solid!important;
+    cursor: pointer;
+
+}
+INPUT#btn_controle_excesso:hover
+{
+ background-color: #555555; /* Preto */
+ color: white;
+}
+INPUT#btn_controle_excesso:active {
+  background-color: #00008B;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+
+INPUT#btn_pbt
+{
+    width: 190px;
+    height: 30px;
+    color: #FFFFFF;
+    margin-left: 0px;
+    position: absolute;
+    font: normal 13pt verdana;
+    left:755px;
+    top: 300px;
+    width:320px;
+    height:100px;
+    padding-left: 5px;
+    background-color: rgba(0,0,139,.7);
+    border-radius: 16px!important;
+    border: 4px #000000 solid!important;
+    cursor: pointer;
+
+}
+INPUT#btn_pbt:hover
+{
+ background-color: #555555; /* Preto */
+ color: white;
+}
+INPUT#btn_pbt:active {
+  background-color: #00008B;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+
+INPUT#btn_controle_ferias
+{
+    width: 190px;
+    height: 30px;
+    color: #FFFFFF;
+    margin-left: 0px;
+    position: absolute;
+    font: normal 13pt verdana;
+    left:1085px;
+    top: 300px;
+    width:320px;
+    height:100px;
+    padding-left: 5px;
+    background-color: rgba(0,0,139,.7);
+    border-radius: 16px!important;
+    border: 4px #000000 solid!important;
+    cursor: pointer;
+
+}
+INPUT#btn_controle_ferias:hover
+{
+ background-color: #555555; /* Preto */
+ color: white;
+}
+INPUT#btn_controle_ferias:active {
+  background-color: #00008B;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+
+
+
+INPUT#btn_df_balancas_rodoviarais
+{
+    width: 190px;
+    height: 30px;
+    color: #FFFFFF;
+    margin-left: 0px;
+    position: absolute;
+    font: normal 13pt verdana;
+    left:95px;
+    top: 410px;
+    width:320px;
+    height:100px;
+    padding-left: 5px;
+    background-color: rgba(0,0,139,.7);
+    border-radius: 16px!important;
+    border: 4px #000000 solid!important;
+    cursor: pointer;
+
+}
+INPUT#btn_df_balancas_rodoviarais:hover
+{
+ background-color: #555555; /* Preto */
+ color: white;
+}
+INPUT#btn_df_balancas_rodoviarais:active {
+  background-color: #00008B;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+INPUT#btn_contingencia
+{
+    width: 190px;
+    height: 30px;
+    color: #FFFFFF;
+    margin-left: 0px;
+    position: absolute;
+    font: normal 13pt verdana;
+    left:425px;
+    top: 410px;
+    width:320px;
+    height:100px;
+    padding-left: 5px;
+    background-color: rgba(0,0,139,.7);
+    border-radius: 16px!important;
+    border: 4px #000000 solid!important;
+    cursor: pointer;
+
+}
+INPUT#btn_contingencia:hover
+{
+ background-color: #555555; /* Preto */
+ color: white;
+}
+INPUT#btn_contingencia:active {
+  background-color: #00008B;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+
+
+INPUT#btn_fechamento_turno
+{
+    width: 190px;
+    height: 30px;
+    color: #FFFFFF;
+    margin-left: 0px;
+    position: absolute;
+    font: normal 13pt verdana;
+    left:755px;
+    top: 410px;
+    width:320px;
+    height:100px;
+    padding-left: 5px;
+    background-color: rgba(0,0,139,.7);
+    border-radius: 16px!important;
+    border: 4px #000000 solid!important;
+    cursor: pointer;
+
+}
+INPUT#btn_fechamento_turno:hover
+{
+ background-color: #555555; /* Preto */
+ color: white;
+}
+INPUT#btn_fechamento_turno:active {
+  background-color: #00008B;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+INPUT#btn_diversos
+{
+    width: 190px;
+    height: 30px;
+    color: #FFFFFF;
+    margin-left: 0px;
+    position: absolute;
+    font: normal 13pt verdana;
+    left:1085px;
+    top: 410px;
+    width:320px;
+    height:100px;
+    padding-left: 5px;
+    background-color: rgba(0,0,139,.7);
+    border-radius: 16px!important;
+    border: 4px #000000 solid!important;
+    cursor: pointer;
+
+}
+INPUT#btn_diversos:hover
+{
+ background-color: #555555; /* Preto */
+ color: white;
+}
+INPUT#btn_diversos:active {
+  background-color: #00008B;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+INPUT#btn_dashboard_carretas
+{
+    width: 190px;
+    height: 30px;
+    color: #FFFFFF;
+    margin-left: 0px;
+    position: absolute;
+    font: normal 13pt verdana;
+    left:95px;
+    top: 520px;
+    width:320px;
+    height:100px;
+    padding-left: 5px;
+    background-color: rgba(0,0,139,.7);
+    border-radius: 16px!important;
+    border: 4px #000000 solid!important;
+    cursor: pointer;
+
+}
+INPUT#btn_dashboard_carretas:hover
+{
+ background-color: #555555; /* Preto */
+ color: white;
+}
+INPUT#btn_dashboard_carretas:active {
+  background-color: #00008B;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+INPUT#btn_cancelas_mb
+{
+    width: 190px;
+    height: 30px;
+    color: #FFFFFF;
+    margin-left: 0px;
+    position: absolute;
+    font: normal 13pt verdana;
+    left:425px;
+    top: 520px;
+    width:320px;
+    height:100px;
+    padding-left: 5px;
+    background-color: rgba(0,0,139,.7);
+    border-radius: 16px!important;
+    border: 4px #000000 solid!important;
+    cursor: pointer;
+
+}
+INPUT#btn_cancelas_mb:hover
+{
+ background-color: #555555; /* Preto */
+ color: white;
+}
+INPUT#btn_cancelas_mb:active {
+  background-color: #00008B;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+
+
+
+
+IMG#voltar{
+    margin-left: 0px;
+    position: absolute;
+    left: 5px;
+    top: 2%;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+
+}
+IMG#home{
+    margin-left: 0px;
+    position: absolute;
+    left: 38px;
+    top:  2%;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+
+}
+
+
+#lb_desenvolvedor{
+    margin-left: 0px;
+    position: absolute;
+    left: 40%;
+    top: 91%;
+}
+
+
+#conexao{
+    margin-left: 0px;
+    position: absolute;
+    padding-left:10px;
+    padding-top:5px;
+    text-align:left;
+    font: normal 18pt verdana;
+    color:#ffffff;
+    left: 3.1%;
+    top: 0%;
+    width:93%;
+    height:4.2%;
+    background-color:#29A1AB;
+}
+#colaborador{
+    margin-left: 0px;
+    position: absolute;
+    padding-left:10px;
+    padding-top:5px;
+    text-align:left;
+    font: normal 11pt verdana;
+    color:#ffffff;
+    left: 5%;
+    top: 12%;
+}
+#funcao{
+    margin-left: 0px;
+    position: absolute;
+    padding-left:10px;
+    padding-top:5px;
+    text-align:left;
+    font: normal 11pt verdana;
+    color:#ffffff;
+    left: 75%;
+    top: 12%;
+}
+
+
+
+body{
+
+}
+html{
+background: url("./images/tela_gerdau.png");
+margin-top: -25px !important;
+background-size: 100%;
+}

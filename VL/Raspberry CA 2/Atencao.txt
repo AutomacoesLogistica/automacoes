@@ -1,0 +1,9 @@
+Criar o service para chamar o arquivo de automações
+
+codigo do script
+
+#!/bin/bash
+/usr/bin/python3 /home/pi/automacao/controle_2.py
+
+
+habilitar de iniciar sozinho!

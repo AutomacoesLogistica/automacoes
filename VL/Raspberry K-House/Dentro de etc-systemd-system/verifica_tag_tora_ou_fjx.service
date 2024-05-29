@@ -1,0 +1,13 @@
+[Unit]
+Description=Executa consultar se tag e tora ou fjx
+After=network.target
+
+[Service]
+ExecStart=/bin/bash -c 'python3 -u /home/pi/automacao/consulta_tag_tora_fjx.py'
+WorkingDirectory=/home/pi/automacao
+Restart=on-failure
+RestartSec=42s
+User=pi
+
+[Install]
+WantedBy=multi-user.target

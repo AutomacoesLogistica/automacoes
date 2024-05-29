@@ -1,0 +1,296 @@
+223
+
+
+
+
+<!--tentando div pessoas-->
+
+
+
+
+<div id="v_pessoas">
+
+
+
+<!-- Finaliza div pessoas-->
+
+****************************************
+
+
+
+
+<img id='pessoas_btn_calendario' src="./images/date_range.png" onclick="pessoas_clicou_exibir_calendario();"/>
+<img id='pessoas_clicou_btn_filtro' src="./images/local_bar.png" onclick="pessoas_clicou_filtrar();"/>
+
+<div id='dados'>
+<label id='pessoas_valor_registro'><b>Registro: </b></label>
+<input type='text' id='pessoas_v_registro' name='pessoas_v_registro' value='--'/>
+<label id='pessoas_valor_nome'><b>Nome: </b></label>
+<input type='text' id='pessoas_v_nome' name='pessoas_v_nome' value='--'/>
+<label id='pessoas_lb_valor_parecer'><b>Parecer: </b></label>
+<textarea id='pessoas_v_parecer' name='pessoas_v_parecer' name="Text1" cols="48" rows="4">--</textarea>
+</div>
+
+<label id='pessoas_info_eventos'>Eventos Detectados: 0 </label>
+<label id='pessoas_info_eventos2'>Eventos justitificados: 0 </label>
+<label id='pessoas_info_eventos3'>Aderência: 0% </label>
+<?php
+date_default_timezone_set('America/Sao_Paulo');
+
+$mensagem  = isset($_GET['data'])?$_GET['data']:"vazio2";
+
+if($mensagem == "vazio2")
+{
+ $data = date('d/m/Y');
+}
+else
+{
+  $data = $mensagem;
+}
+ 
+
+$mes = substr($data,3,2);
+
+
+
+
+
+include_once 'conexao_sva.php';
+$sql = $dbcon->query("SELECT * FROM pessoas ORDER BY id DESC LIMIT 1");
+if(mysqli_num_rows($sql)>0)
+{
+ while($dados = $sql->fetch_array())
+ {
+   $ultimo = $dados['id'];
+   $ultima_data = $dados['data_leitura'];
+ }
+}
+
+
+
+
+
+
+
+?>
+<label id='pessoas_titulo'> VA Pessoas MB - Eventos do dia  <?php print $data ?></label>
+<script>
+var data_selecionada = '<?php print $data ?>'; 
+</script>
+
+
+
+
+<label id='pessoas_titulo2'> Ultima detecção: <?php print $ultima_data ?></label>
+
+     <table id='tabela_pessoas'>
+        
+        <tbody id='t_pessoas'>
+            <?php
+            $text = '';
+            $url_do_arquivo = '';
+            $foto = '';
+            $registro = '';
+            $nome = '';
+            $justificativa = '';
+            $primeira_url = "";
+            $avaliado = 'NAO';
+            $encontrado = 0;
+            $hora_evento = '';
+            $evento_justificado = 0;
+            //$hora = date('H:i:s');
+            //Dados das cameras
+            //ms0742-cam08 - Abertura I e II
+            //ms0742-cam09 - Patio CCL
+            
+            $cameras  = isset($_GET['cameras'])?$_GET['cameras']:"todas";
+            $status  = isset($_GET['status'])?$_GET['status']:"todos";
+            $parecer  = isset($_GET['parecer'])?$_GET['parecer']:"todos";
+
+            if($cameras == "todas") // OK
+            {
+             // Todas as câmeras
+              $pesquisa = "data_leitura='$data'";
+            }
+                       
+            elseif($cameras == "ckb_1") // OK
+            {
+             //Atribui a pesquisa para Abertura I e II
+             //ms0742-cam08 - Abertura I e II
+             $pesquisa = "data_leitura='$data'"." AND (camera_id='ms0742-cam08')";
+            
+            }
+            elseif($cameras == "ckb_2") // OK
+            {
+             //Atribui a pesquisa para Patio CCL
+             //ms0742-cam09 - Patio CCL
+             $pesquisa = "data_leitura='$data'"." AND (camera_id='ms0742-cam09')";
+            }
+            
+            if($parecer == "todos")
+            {
+              $pesquisa = $pesquisa; // Faz nada
+            }
+            elseif($parecer == "ckb_6")
+            {
+              $pesquisa = $pesquisa. " AND justificado='SIM'";
+            }
+            else
+            {
+             $pesquisa = $pesquisa. " AND justificado!='SIM'";
+            }
+      
+            include_once 'conexao_sva.php';
+            $sql = $dbcon->query("SELECT * FROM pessoas WHERE ".$pesquisa." ORDER BY id DESC");
+            if(mysqli_num_rows($sql)>0)
+            {
+             while($dados = $sql->fetch_array())
+             {
+
+              $status_evento = $dados['text'];
+              $hora_evento = $dados['hora'];
+              $data_evento = $dados['data_leitura'];
+              $cam = $dados['camera_id'];
+              // Atualiza o nome das câmeras
+              //ms0742-cam08 - Abertura I e II
+              //ms0742-cam09 - Patio CCL
+              if($cam == 'ms0742-cam08'){$cam = 'Abertura I e II';}
+              else if ($cam == 'ms0742-cam09'){$cam = 'Pátio CCL';}
+             
+              
+
+
+
+
+              $url_do_arquivo = $dados['caminho'];
+              $foto = $dados['imagem'];
+              $avaliado = $ados['justificado'];
+              $justificado = $dados['justificado'];    
+              $registro = $dados['registro'];
+              $id = $dados['id'];
+              $nome = $dados['nome'];
+              $justificativa = $dados['justificativa'];
+              $justificativa = str_replace(">",",",$justificativa); // Troca a virgula por > por , para exibir normalmente
+              $url_video = $url_do_arquivo;
+               $encontrado = $encontrado+1; 
+              
+              if($encontrado == 1)
+              {
+               $primeira_url = $url_video; 
+               ?>
+                <script>
+                
+
+                if('<?php print $justificado?>' == "NAO" || '<?php print $justificado?>'=="")
+                {
+                 document.getElementById('pessoas_v_registro').value = "--";
+                 document.getElementById('pessoas_v_nome').value = "--";
+                 document.getElementById('pessoas_v_parecer').value = "Ainda não realizado ajustificativa";
+                }
+                else
+                {
+                 document.getElementById('pessoas_v_registro').value = '<?php print $registro ?>';
+                 document.getElementById('pessoas_v_nome').value = '<?php print $nome ?>';
+                 document.getElementById('pessoas_v_parecer').value = '<?php print $justificativa ?>';
+                }
+                </script>
+              <?php
+              }
+              else{
+                $id = $dados['id'];
+                
+              }   
+              ?>
+              <tr>
+                <td class="pessoas_th1">
+                  <div id='foto_pessoas'>
+                      <img id='foto_pessoas' src="data:image/jpeg;base64,<?php print $foto ?>";/>
+                      <label><b>Data Evento: </b> <?php print $data_evento ?></label>
+                      </br>
+                      <label><b>Horario Evento: </b> <?php print $hora_evento ?></label>
+                      </br>
+                      <label><b>Status Evento: </b><?php print $status_evento?></label>
+                      </br>
+                      <label><b>Câmera: </b><?php print $cam ?></label>
+                      </br>
+                      <a href="javascript:altera_video('<?php echo $url_do_arquivo ?>');" id='assistir'>Assistir</a>
+                      <?php
+                      if($justificado == "SIM")
+                      {
+                        $evento_justificado = $evento_justificado+1;  
+                          //COLOCA NA COR VERDE #228B22
+                       ?> 
+                       <a href="javascript:altera_justificar('<?php echo $id ?>');" style="background-color:#228B22;"  id='justificar' name='justificar'>Parecer Video</a>
+                       <script>
+                       //alert('verde');
+                       </script>
+                       <?php
+                      }
+                      else{
+                          //COLOCA NA COR VERMELHO #DC143C;
+                      ?>
+                      <a href="javascript:altera_justificar('<?php echo $id ?>');" style="background-color:#DC143C;"  id='justificar' name='justificar'>Parecer Video</a>
+                      <script>
+                       //alert('vermelho');
+                       </script>
+                      <?php
+                      }
+                      ?>
+                      <a href="javascript:deteccao_falsa('<?php echo $id ?>');" id='ignorar' name='ignorar'>Detecção Falsa</a>
+                      
+                  </div>
+
+                
+                  
+
+                </td>
+           
+              </tr>
+             <?php
+             }// Fecha o while 
+             ?>
+             <script>
+                n_encontrado = '<?php print $encontrado ?>';
+                n_justificado = '<?php print $evento_justificado ?>';
+                n_aderencia = (n_justificado/n_encontrado * 100).toFixed(1) + "%";
+                //alert(n_justificado);
+                document.getElementById('pessoas_info_eventos').innerHTML = 'Eventos Detectados : '+ n_encontrado;
+                document.getElementById('pessoas_info_eventos2').innerHTML = 'Eventos Justificados : '+ n_justificado; 
+                document.getElementById('pessoas_info_eventos3').innerHTML = 'Aderência : '+ n_aderencia; 
+              </script>
+             <?php
+            } // Fecha o if mysqli_num_rows($sql)>0
+            if($encontrado==0)
+             {
+              //INFORMA QUE NÃO ENCONTROU EVENTOS
+              ?>   
+              <tr>
+                <td class="pessoas_th1">
+                </br>
+                  <label><b>&nbsp&nbsp Não existe eventos para esta data! </b></label>
+                  
+                </td>
+              </tr>
+              
+
+              <?php   
+             }
+            ?>
+            
+        </tbody>
+    </table>
+
+
+
+<!-- HTML -->
+<div id='pessoas_player1'> 
+<video id='vpessoas_player1'  class="video-js vjs-default-skin"  controls autoplay>
+<source type="application/x-mpegURL" src="<?php print $primeira_url?>">
+</video>
+</div>
+<script>
+altera_video('<?php echo $primeira_url ?>');
+var player = videojs('vpessoas_player1');
+player.play();
+
+</script>

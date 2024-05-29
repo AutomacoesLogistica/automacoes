@@ -1,0 +1,14 @@
+ipaddress = 10.10.25.2
+gateway = 10.10.25.1
+dns = 8.8.8.8
+netmask = 255.255.255.0
+AntennaSequence = 0
+hostname = {{{{colocar o ca do reader}}}}}
+TagStreamAddress = SERIAL1
+TagStreamFormat = Custom
+TagStreamCustomFormat = epc=%k,ant=%a,host=%H,data=%D,hora=%T
+TagStreamMode = on
+Time = 2021/05/17 13:26:56   OBS Por os dados corretos
+TimeServer = 10.100.10.100
+save
+reboot

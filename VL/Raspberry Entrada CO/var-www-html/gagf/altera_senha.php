@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8"/>
+<title>Gerdau :: GAGF - Bruno Gonçalves</title>
+<link rel="shortcut icon" type="imagem/JPG" href="./images/gerdau.jpg";  id="favicon">
+</head>
+<body>
+<div id="conexao">
+<label id="colaborador"></label>
+<label id="funcao"></label>
+<img id="voltar" src="./images/btn_voltar.png" onclick="javascript: location.href=`login.php`;"/>
+<img id="home" src="./images/btn_home.png" onclick="javascript: location.href=`login.php`;"/>
+<input type="text" name="criptografia" id="criptografia" value="ssss" hidden="hidden"/>
+<input type="text" name="criptografia2" id="criptografia2" value="ssss" hidden="hidden"/>
+</div>
+<?php
+error_reporting(0);
+// Busca o usuario passado e verifica no sistema
+$usuario = "";
+$tipo = "";
+$criptografia = "";
+$usuario_criptografado = "";
+include_once 'conexao2.php';
+$complemento = $_GET['complemento'];
+$check = $_GET['check'];
+$registro = ceil((floatval($complemento))/1.5);
+$nome = "";
+// Desfazendo a criptografia
+for ($i=0; $i < strlen($check)-1; $i+=2)
+{
+ $nome .= chr(hexdec($check[$i].$check[$i+1]));
+}
+
+$sql = $dbcon->query("SELECT * FROM pessoas WHERE registro='$registro' AND nome='$nome'");
+if(mysqli_num_rows($sql)>0){
+while($dados = $sql->fetch_array()){
+$usuario = $dados['nome'];# Busca o Nome quando encontrar e coloca dentro do array, neste caso achará apenas 1
+$tipo = $dados['tipo_usuario'];
+$criptografia = $dados['criptografia'];
+}
+// deixa rodar
+?>
+<script>
+var usuario = window.document.getElementById('colaborador');
+var colaborador = "<?php print $usuario ?>";
+usuario.innerHTML = "Usuario : "  + colaborador;
+var lfuncao = window.document.getElementById('funcao');
+var funcao = "<?php print $tipo ?>";
+lfuncao.innerHTML = "Perfil : " + funcao;
+var lusuario_criptografado = "<?php print $check ?>";
+var link_criptografia = window.document.getElementById('criptografia');
+link_criptografia.value = lusuario_criptografado;
+var lcriptografia = "<?php print $criptografia ?>";
+var link_criptografia2 = window.document.getElementById('criptografia2');
+link_criptografia2.value = lcriptografia;
+</script>
+<?php
+
+
+}else{
+?>
+<script language="JavaScript">
+//window.Notification="Senha Incorreta!";
+//window.location="login.php";
+</script>
+<?php
+}
+?>
+
+<!-- AQUI ABAIXO ENTRA OS DADOS DA PAGINA  -->
+
+<?php
+$registro = isset($_GET['registro'])?$_GET['registro']:"vazio";
+$registro = $registro-155;
+$registro = $registro/2020;
+$registro = $registro/14;
+
+//$valor = (((int)$registro)*14)*2020+155;
+//echo"</BR></BR></BR></BR></BR></BR>";
+//echo $registro;
+$registro = trim($registro);
+include_once 'conexao2.php';
+$sql = $dbcon->query("SELECT * FROM pessoas WHERE registro='$registro' AND alterar ='1' ");
+if(mysqli_num_rows($sql)>0)
+{
+ while($dados = $sql->fetch_array())
+ {
+  $nome = $dados['nome'];
+  ?>
+  <script>
+  var nome ="";
+  nome = "<?php print $nome ?>";
+  </script>
+  <?php
+ }
+}
+
+?>
+
+
+<form method="post" action="verifica_senha.php" autocomplete="off">
+ <input id="registro" class="campos" type="text" name="registro" value="<?php echo $registro ?>" readonly/>
+ <label id="lb_pessoa"></label>
+ <input id="senha" class="campos" type="password" name="senha" value="" placeholder="Digite sua senha de acesso" autocomplete="off"/>
+ <input id="csenha" class="campos" type="password" name="csenha" value=""placeholder="Confirme sua senha de acesso" autocomplete="off"/>
+ <input type="submit"  name="b" id="b" value="Alterar Senha"/>
+
+ </form>
+
+<script>
+var l_nome = window.document.getElementById('lb_pessoa')
+l_nome.innerHTML = nome;
+
+// Utilizando JQuery
+jQuery('senha').attr('autocomplete','off');
+// Ou Javascript padrão
+senha.setAttribute('autocomplete','off');
+
+// Utilizando JQuery
+jQuery('csenha').attr('autocomplete','off');
+// Ou Javascript padrão
+senha.setAttribute('autocomplete','off');
+
+</script>
+
+
+
+
+
+
+<h3 id="lb_desenvolvedor">Desenvolvido por: Bruno Gonçalves </h3>
+
+</body>
+
+<style>
+
+.campos{
+    float:top;
+    margin-left:0px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:20px;
+    font-family: verdana;font-size: 10pt;
+    width:240px;
+    height:10px;
+    text-align:left;
+    border-radius: 9px!important;
+    border-color: #191970;
+    border-style: solid!important;
+}
+
+
+INPUT#registro{
+    position: absolute;
+    left:7%;
+    top: 8%;
+    cursor: pointer;
+
+}
+LABEL#lb_pessoa{
+    position: absolute;
+    left: 28%;
+    top: 9%;
+    font-family: verdana;font-size: 14pt;
+  
+}
+
+
+INPUT#senha{
+    position: absolute;
+    left:7%;
+    top: 26%;
+    cursor: pointer;
+
+}
+
+INPUT#csenha{
+    position: absolute;
+    left:7%;
+    top: 36%;
+    cursor: pointer;
+
+}
+
+
+
+
+INPUT#b
+{
+    color: #FFFFFF;
+    margin-left: 0px;
+    position: absolute;
+    font: normal 13pt verdana;
+    left:9%;
+    top: 47%;
+    width:210px;
+    height:50px;
+    padding-left: 5px;
+    background-color: #29A1AB;
+    border-radius: 16px!important;
+    border: 4px #000000 solid!important;
+    cursor: pointer;
+
+}
+INPUT#b:hover
+{
+ background-color: #555555; /* Preto */
+ color: white;
+}
+INPUT#b:active {
+  background-color: #00008B;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+IMG#voltar{
+    margin-left: 0px;
+    position: absolute;
+    left: 5px;
+    top: 2%;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+
+}
+IMG#home{
+    margin-left: 0px;
+    position: absolute;
+    left: 38px;
+    top:  2%;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+#lb_desenvolvedor{
+    margin-left: 0px;
+    position: absolute;
+    left: 40%;
+    top: 88%;
+}
+
+
+#conexao{
+    margin-left: 0px;
+    position: absolute;
+    padding-left:10px;
+    padding-top:5px;
+    text-align:left;
+    font: normal 18pt verdana;
+    color:#ffffff;
+    left: 3.1%;
+    top: 0%;
+    width:93%;
+    height:4.2%;
+    background-color:#29A1AB;
+}
+#colaborador{
+    margin-left: 0px;
+    position: absolute;
+    padding-left:10px;
+    padding-top:5px;
+    text-align:left;
+    font: normal 11pt verdana;
+    color:#ffffff;
+    left: 5%;
+    top: 12%;
+}
+#funcao{
+    margin-left: 0px;
+    position: absolute;
+    padding-left:10px;
+    padding-top:5px;
+    text-align:left;
+    font: normal 11pt verdana;
+    color:#ffffff;
+    left: 75%;
+    top: 12%;
+}
+
+INPUT#criptografia
+{
+    margin-left: 0px;
+    position: absolute;
+    padding-left:10px;
+    padding-top:5px;
+    text-align:left;
+    width: 300px;
+    font: normal 11pt verdana;
+    color:#000000;
+    left: 30%;
+    top: 5%;
+
+}
+INPUT#criptografia2
+{
+    margin-left: 0px;
+    position: absolute;
+    padding-left:10px;
+    padding-top:5px;
+    text-align:left;
+    width: 100px;
+    font: normal 11pt verdana;
+    color:#000000;
+    left: 55%;
+    top: 5%;
+
+}
+
+body{
+    font: normal 12pt times;
+}
+html{
+background: url("./images/tela_gerdau.png");
+margin-top: -25px !important;
+background-size: 100%;
+font: normal 12pt times;
+}
+</style>
+
+
+
+</html>

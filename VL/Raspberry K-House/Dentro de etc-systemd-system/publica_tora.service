@@ -1,0 +1,12 @@
+[Unit]
+Description=Executa publicar placas tora e fjx
+After=network.target
+
+[Service]
+ExecStart=/bin/bash -c 'python3 -u /home/pi/automacao/consulta_tag_publicar_tora_fjx.py'
+WorkingDirectory=/home/pi/automacao
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target

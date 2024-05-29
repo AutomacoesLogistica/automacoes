@@ -1,0 +1,135 @@
+﻿.sapMObjectMarker .sapUiIcon {
+    color: #f12a2a !important;
+}
+
+.fdtiTupleBox {
+    border: 1px !important;
+    border-style: solid !important;
+    border-color: #009de0 !important;
+    margin-top: 30px !important;
+}
+
+.fdtiMTupleHeader {
+    background-color: #009de0 !important;
+}
+
+.fdtiMTupleHeaderText {
+    color: white !important;
+    font-weight: bold !important;
+    font-size: large !important;
+}
+/**
+* DedicatedSearchSchedule \/
+*/
+.dedicatedObjectAttribute {
+    color : red !important;
+    /* background-color: red !important; */
+}
+
+.dedicatedObjectListItem{
+    color : red !important;
+}
+
+.dedicatedObjectListItem>div>div>div>div{
+    color : red !important;
+}
+
+.dedicatedObjectListItem>div>div>div>span{
+    color : red !important;
+}
+
+.dedicatedObjectListItem>div>div>div>div{
+    color : red !important;
+}
+
+.dedicatedIcon{
+    color : red !important;
+}
+
+/**
+* ScheduleGradeGantt
+*/
+
+.dedicatedAppointment{
+    background-color:#cc0000 !important;
+}
+.dedicatedAppointment>div>span{
+    color:white !important;
+}
+/**
+* ScheduleList
+*/
+
+/* listitem */
+.dedicatedListObjectItem>div>div>div>div{
+    color:red !important;
+}
+
+.dedicatedListObjectItem>div>div>div>span{
+    color:red !important;
+}
+
+.dedicatedListObjectItemAttribute{
+    color:red !important;
+}
+
+
+/* header */
+.dedicatedHeaderObject>div>div>span>h1>span{
+    color:red !important;
+}
+
+.dedicatedHeaderObject>div>div>div>span{
+    color:red !important;
+}
+
+.dedicatedHeaderObjectItemAttribute>span{
+    color:red !important;
+}
+
+.dedicatedHeaderObjectSecondStatus>span{
+    color:red !important;
+}
+
+/**
+* ScheduleQueueManager
+*/
+
+.dedicatedCell{
+    color:red !important;
+}
+
+.dedicatedIcon{
+    color:red !important;
+}
+
+.labelForm{
+    padding-top: 1.25em
+}
+
+.scheduleGanttHeaderInner{
+    padding: 1rem;
+    background-color: white !important;
+}
+
+.scheduleGanttHeader{
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  margin: 0px !important;
+  z-index:3;
+}
+
+.scheduleGanttHeaderBox{
+    padding: 1rem !important;
+    background-color: #ddeef1 !important;
+}
+
+.scheduleGantt{
+    position: sticky;
+    /* top: 2rem; */
+    top: 170px;
+    margin: 0px !important;
+    z-index: 5;
+    background-color: white !important;
+}

@@ -1,0 +1,232 @@
+<table border= 1px; >
+  <thead >
+    <tr>
+    	<th class="th1">Data</th>
+    	<th class="th2">Nº GSCS</th>
+    	<th class="th3">Placa</th>
+        <th class="th4">Capacidade</th>
+        <th class="th5">Bruto</th>
+        <th class="th6">Assertividade</th>
+        <th class="th7">Transportadora</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    	<td class="th1">10/02/2020 09:33:33</td>
+    	<td class="th2">1234567</td>
+    	<td class="th3">OGH-1234/RJ</td>
+        <td class="th4">41500</td>
+        <td class="th5">41235</td>
+        <td class="th6">92.33%</td>
+        <td class="th7">SILVANO SANTOS DA ROCHA EIRELI</td>
+    </tr>
+    <tr>
+    	<td class="th1">10/02/2020 09:33:33</td>
+    	<td class="th2">1234567</td>
+    	<td class="th3">OGH-1234/RJ</td>
+        <td class="th4">41500</td>
+        <td class="th5">41235</td>
+        <td class="th6">92.33%</td>
+        <td class="th7">SILVANO SANTOS DA ROCHA EIRELI</td>
+    </tr><tr>
+    	<td class="th1">10/02/2020 09:33:33</td>
+    	<td class="th2">1234567</td>
+    	<td class="th3">OGH-1234/RJ</td>
+        <td class="th4">41500</td>
+        <td class="th5">41235</td>
+        <td class="th6">92.33%</td>
+        <td class="th7">SILVANO SANTOS DA ROCHA EIRELI</td>
+
+    </tr><tr>
+    	<td class="th1">10/02/2020 09:33:33</td>
+    	<td class="th2">1234567</td>
+    	<td class="th3">OGH-1234/RJ</td>
+        <td class="th4">41500</td>
+        <td class="th5">41235</td>
+        <td class="th6">92.33%</td>
+        <td class="th7">SILVANO SANTOS DA ROCHA EIRELI</td>
+    </tr><tr>
+    	<td class="th1">10/02/2020 09:33:33</td>
+    	<td class="th2">1234567</td>
+    	<td class="th3">OGH-1234/RJ</td>
+        <td class="th4">41500</td>
+        <td class="th5">41235</td>
+        <td class="th6">92.33%</td>
+        <td class="th7">SILVANO SANTOS DA ROCHA EIRELI</td>
+    </tr><tr>
+    	<td class="th1">10/02/2020 09:33:33</td>
+    	<td class="th2">1234567</td>
+    	<td class="th3">OGH-1234/RJ</td>
+        <td class="th4">41500</td>
+        <td class="th5">41235</td>
+        <td class="th6">92.33%</td>
+        <td class="th7">SILVANO SANTOS DA ROCHA EIRELI</td>
+    </tr><tr>
+    	<td class="th1">10/02/2020 09:33:33</td>
+    	<td class="th2">1234567</td>
+    	<td class="th3">OGH-1234/RJ</td>
+        <td class="th4">41500</td>
+        <td class="th5">41235</td>
+        <td class="th6">92.33%</td>
+        <td class="th7">SILVANO SANTOS DA ROCHA EIRELI</td>
+    </tr><tr>
+    	<td class="th1">10/02/2020 09:33:33</td>
+    	<td class="th2">1234567</td>
+    	<td class="th3">OGH-1234/RJ</td>
+        <td class="th4">41500</td>
+        <td class="th5">41235</td>
+        <td class="th6">92.33%</td>
+        <td class="th7">SILVANO SANTOS DA ROCHA EIRELI</td>
+    </tr><tr>
+    	<td class="th1">10/02/2020 09:33:33</td>
+    	<td class="th2">1234567</td>
+    	<td class="th3">OGH-1234/RJ</td>
+        <td class="th4">41500</td>
+        <td class="th5">41235</td>
+        <td class="th6">92.33%</td>
+        <td class="th7">SILVANO SANTOS DA ROCHA EIRELI</td>
+    </tr><tr>
+    	<td class="th1">10/02/2020 09:33:33</td>
+    	<td class="th2">1234567</td>
+    	<td class="th3">OGH-1234/RJ</td>
+        <td class="th4">41500</td>
+        <td class="th5">41235</td>
+        <td class="th6">92.33%</td>
+        <td class="th7">SILVANO SANTOS DA ROCHA EIRELI</td>
+    </tr><tr>
+    	<td class="th1">10/02/2020 09:33:33</td>
+    	<td class="th2">1234567</td>
+    	<td class="th3">OGH-1234/RJ</td>
+        <td class="th4">41500</td>
+        <td class="th5">41235</td>
+        <td class="th6">92.33%</td>
+        <td class="th7">SILVANO SANTOS DA ROCHA EIRELI</td>
+    </tr><tr>
+    	<td class="th1">10/02/2020 09:33:33</td>
+    	<td class="th2">1234567</td>
+    	<td class="th3">OGH-1234/RJ</td>
+        <td class="th4">41500</td>
+        <td class="th5">41235</td>
+        <td class="th6">92.33%</td>
+        <td class="th7">SILVANO SANTOS DA ROCHA EIRELI</td>
+    </tr><tr>
+    	<td class="th1">10/02/2020 09:33:33</td>
+    	<td class="th2">1234567</td>
+    	<td class="th3">OGH-1234/RJ</td>
+        <td class="th4">41500</td>
+        <td class="th5">41235</td>
+        <td class="th6">92.33%</td>
+        <td class="th7">SILVANO SANTOS DA ROCHA EIRELI</td>
+    </tr><tr>
+    	<td class="th1">10/02/2020 09:33:33</td>
+    	<td class="th2">1234567</td>
+    	<td class="th3">OGH-1234/RJ</td>
+        <td class="th4">41500</td>
+        <td class="th5">41235</td>
+        <td class="th6">92.33%</td>
+        <td class="th7">SILVANO SANTOS DA ROCHA EIRELI</td>
+    </tr><tr>
+    	<td class="th1">10/02/2020 09:33:33</td>
+    	<td class="th2">1234567</td>
+    	<td class="th3">OGH-1234/RJ</td>
+        <td class="th4">41500</td>
+        <td class="th5">41235</td>
+        <td class="th6">92.33%</td>
+        <td class="th7">SILVANO SANTOS DA ROCHA EIRELI</td>
+    </tr><tr>
+    	<td class="th1">10/02/2020 09:33:33</td>
+    	<td class="th2">1234567</td>
+    	<td class="th3">OGH-1234/RJ</td>
+        <td class="th4">41500</td>
+        <td class="th5">41235</td>
+        <td class="th6">92.33%</td>
+        <td class="th7">SILVANO SANTOS DA ROCHA EIRELI</td>
+    </tr><tr>
+    	<td class="th1">10/02/2020 09:33:33</td>
+    	<td class="th2">1234567</td>
+    	<td class="th3">OGH-1234/RJ</td>
+        <td class="th4">41500</td>
+        <td class="th5">41235</td>
+        <td class="th6">92.33%</td>
+        <td class="th7">SILVANO SANTOS DA ROCHA EIRELI</td>
+    </tr><tr>
+    	<td class="th1">10/02/2020 09:33:33</td>
+    	<td class="th2">1234567</td>
+    	<td class="th3">OGH-1234/RJ</td>
+        <td class="th4">41500</td>
+        <td class="th5">41235</td>
+        <td class="th6">92.33%</td>
+        <td class="th7">SILVANO SANTOS DA ROCHA EIRELI</td>
+    </tr><tr>
+    	<td class="th1">10/02/2020 09:33:33</td>
+    	<td class="th2">1234567</td>
+    	<td class="th3">OGH-1234/RJ</td>
+        <td class="th4">41500</td>
+        <td class="th5">41235</td>
+        <td class="th6">92.33%</td>
+        <td class="th7">SILVANO SANTOS DA ROCHA EIRELI</td>
+    </tr><tr>
+    	<td class="th1">10/02/2020 09:33:33</td>
+    	<td class="th2">1234567</td>
+    	<td class="th3">OGH-1234/RJ</td>
+        <td class="th4">41500</td>
+        <td class="th5">41235</td>
+        <td class="th6">92.33%</td>
+        <td class="th7">SILVANO SANTOS DA ROCHA EIRELI</td>
+    </tr><tr>
+    	<td class="th1">10/02/2020 09:33:33</td>
+    	<td class="th2">1234567</td>
+    	<td class="th3">OGH-1234/RJ</td>
+        <td class="th4">41500</td>
+        <td class="th5">41235</td>
+        <td class="th6">92.33%</td>
+        <td class="th7">SILVANO SANTOS DA ROCHA EIRELI</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+
+9999999999999999999999999999999
+
+
+
+
+<?php
+ include_once(".\PHPMailer\PHPMailerAutoload.php");
+ $detinatario = 'brunogoncalves170889@gmail.com';
+ $dia = '05/08/2021';
+ $turno = 'Letra C';
+ // ENVIA O EMAIL
+ $mail = new PHPMailer();
+ $mail->isSMTP();
+ $mail->SMTPOptions = array('ssl'=>array('verify_peer'=> false,'verify_peer_name' => false,'allow_self_signed' => true));
+ $mail->SMTPDebug=2;
+ $mail->Host = 'smtp.gmail.com';
+ $mail->SMTPSecure = 'tls';
+ $mail->Port = 587;
+ $mail->SMTPAuth = true;
+ $mail->Username='automacaologistica2020@gmail.com';
+ $mail->Password='bruno2683@@';
+ $mail->WordWrap = 50; // Definição de quebra de linha
+ $mail->IsHTML(true); // envio como HTML se 'true'
+ $mail->setFrom($detinatario, 'Automação Logistica'); // 1 parametro mesmo para quem vai, 2 aparece ao lado de quem enviou
+ $mail->addAddress($detinatario); // Email Destinatario
+ $mail->Subject = 'Relatório Excesso VL'; // Titulo do Email
+ $mail->CharSet = 'utf-8';
+ $mail->Body = "<!DOCTYPE html>
+ <html lang='pt-br'>
+ <head>
+ <meta charset='utf-8'/>
+ <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'>
+ <title>Título da Página (Estrutura básica de uma página com HTML 5)</title>
+ <link href='css/seu-stylesheet.css' rel='stylesheet'/>
+ <script src='scripts/seu-script.js'></script>
+ </head>
+ <body>
+ <font color='black' face='arial'  size='4px'>Olá,$dia, $turno<p>
+ <h3>Recebemos o seu pedido!</h3><p> Deposite Nessa Conta o Valor da compra: 4752564814 01 Apos o deposito entraremos em contato para o envio!
+ </font>
+ </html>";
+?>
