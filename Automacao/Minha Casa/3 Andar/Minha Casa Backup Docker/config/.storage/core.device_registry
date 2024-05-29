@@ -1,0 +1,341 @@
+{
+  "version": 1,
+  "minor_version": 3,
+  "key": "core.device_registry",
+  "data": {
+    "devices": [
+      {
+        "area_id": null,
+        "config_entries": [
+          "2dd56a4e5225ed9a1f0ceb850cfee1ae"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "f5863f22b62c5ac51785d64ab94f5ef1",
+        "identifiers": [
+          [
+            "uptime",
+            "2dd56a4e5225ed9a1f0ceb850cfee1ae"
+          ]
+        ],
+        "manufacturer": null,
+        "model": null,
+        "name_by_user": null,
+        "name": "Time Online",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "testes",
+        "config_entries": [
+          "37318a88f7f947f7205110d13564115b"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "mac",
+            "00:e0:4c:68:19:7b"
+          ],
+          [
+            "mac",
+            "00:e0:4c:68:51:40"
+          ],
+          [
+            "mac",
+            "d0:df:9a:24:99:30"
+          ],
+          [
+            "mac",
+            "74:86:7a:f9:fe:45"
+          ],
+          [
+            "upnp",
+            "uuid:7ea58d46-22f5-4b12-ae22-f0325d5a1204"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "c9bc64c4102575ec3614cfd7ca2b43e6",
+        "identifiers": [
+          [
+            "dlna_dmr",
+            "uuid:7ea58d46-22f5-4b12-ae22-f0325d5a1204"
+          ]
+        ],
+        "manufacturer": "Microsoft Corporation",
+        "model": "Windows Digital Media Renderer",
+        "name_by_user": null,
+        "name": "DESKTOP-B3CIOAE",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "sala_de_estar",
+        "config_entries": [
+          "f1b936778ccdc1a44d74fc584de8ef85"
+        ],
+        "configuration_url": "http://192.168.3.220/",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "avr-x-2016",
+        "id": "08b42aa8d19afa4a1b815e42e4d8098d",
+        "identifiers": [
+          [
+            "denonavr",
+            "Denon AVR-S930H-ALT36180123026"
+          ]
+        ],
+        "manufacturer": "Denon",
+        "model": "Denon AVR-S930H",
+        "name_by_user": null,
+        "name": "HomeCinema",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "sala_de_estar",
+        "config_entries": [
+          "bccdde56b31b2f442ab939f1305d5689",
+          "90a1e3a341195f1d508e82fc19d866e6"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "upnp",
+            "uuid:060b7353-fca6-4070-85f4-1fbfb9add62c"
+          ],
+          [
+            "mac",
+            "64:66:b3:84:d2:06"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "6e0a12f9b90b0ef711fafaa5259a11b4",
+        "identifiers": [
+          [
+            "upnp_host",
+            "192.168.3.167"
+          ],
+          [
+            "upnp",
+            "uuid:060b7353-fca6-4070-85f4-1fbfb9add62c::urn:schemas-upnp-org:device:InternetGatewayDevice:1"
+          ],
+          [
+            "upnp_serial_number",
+            "none"
+          ]
+        ],
+        "manufacturer": "TP-LINK",
+        "model": "TL-WR740N",
+        "name_by_user": null,
+        "name": "Wireless Router TL-WR740N",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "sala_de_estar",
+        "config_entries": [
+          "d1451a05c1f768e46d65b6fd99a44c08"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "4cde26e20689e3f321b55b9e5088ee7e",
+        "identifiers": [
+          [
+            "heos",
+            1236141741
+          ]
+        ],
+        "manufacturer": "HEOS",
+        "model": "Denon AVR-S930H",
+        "name_by_user": null,
+        "name": "HomeCinema",
+        "sw_version": "3.1.232",
+        "via_device_id": null
+      },
+      {
+        "area_id": "sala_de_estar",
+        "config_entries": [
+          "35cbc6a566b997cd9a0950f69fecc888"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "upnp",
+            "uuid:bb5e-21ce-1111-11b2-f918-6023-a4c4-12fa-"
+          ],
+          [
+            "mac",
+            "78:d9:5e:5c:e0:65"
+          ],
+          [
+            "upnp",
+            "uuid:bb5e-21ce-1111-11b2-f918-0000-0000-0000-"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "ee4403549c6bdfd03830eb2e3c22c871",
+        "identifiers": [
+          [
+            "dlna_dmr",
+            "uuid:bb5e-21ce-1111-11b2-f918-0000-0000-0000-"
+          ]
+        ],
+        "manufacturer": "Hisilicon Technologies Co.,Ltd",
+        "model": "Hisilicon MediaRenderer",
+        "name_by_user": null,
+        "name": "FXLITE1_8010(HiDMR)",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "sala_de_estar",
+        "config_entries": [
+          "4cdc77914937f480b1e80f1c4e145750"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "mac",
+            "f0:a3:b2:a6:56:3b"
+          ],
+          [
+            "upnp",
+            "uuid:1396c880-d8b7-129d-ad5f-f0a3b2a6563b"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "1c0d0b4e5e41b3ca1c72580eddd0f02c",
+        "identifiers": [
+          [
+            "dlna_dmr",
+            "uuid:1396c880-d8b7-129d-ad5f-f0a3b2a6563b"
+          ]
+        ],
+        "manufacturer": "",
+        "model": "",
+        "name_by_user": null,
+        "name": "65PUG6794/78",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "testes",
+        "config_entries": [
+          "e925113ab363ea90318667748a9e8fa6"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:12:4b:00:1c:dc:ba:f5"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "c06038994a5e8a934eb17d1a123b0388",
+        "identifiers": [
+          [
+            "zha",
+            "00:12:4b:00:1c:dc:ba:f5"
+          ]
+        ],
+        "manufacturer": "ZHA",
+        "model": "ZNP = Texas Instruments Z-Stack ZNP protocol: CC253x, CC26x2, CC13x2",
+        "name_by_user": null,
+        "name": "Zigbee Coordinator",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "abdc9a1c894098415b826f7017cf3bf4"
+        ],
+        "configuration_url": "https://open.spotify.com",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "822ce37ffcef9c400a323136af41c2ad",
+        "identifiers": [
+          [
+            "spotify",
+            "brunogoncalves170889"
+          ]
+        ],
+        "manufacturer": "Spotify AB",
+        "model": "Spotify premium",
+        "name_by_user": null,
+        "name": "Spotify brunogoncalves170889",
+        "sw_version": null,
+        "via_device_id": null
+      }
+    ],
+    "deleted_devices": [
+      {
+        "config_entries": [],
+        "connections": [],
+        "identifiers": [
+          [
+            "tuya",
+            "ebc208f8168f1abe7awocv"
+          ]
+        ],
+        "id": "198a2b1f5399cf64ff14f997c148d1e1",
+        "orphaned_timestamp": 1714752333.3882341
+      },
+      {
+        "config_entries": [],
+        "connections": [],
+        "identifiers": [
+          [
+            "tuya",
+            "50133072d8bfc0576a6e"
+          ]
+        ],
+        "id": "fdf3002594d5713bdd112b64d9b9e87c",
+        "orphaned_timestamp": 1714752333.3882341
+      },
+      {
+        "config_entries": [],
+        "connections": [],
+        "identifiers": [
+          [
+            "tuya",
+            "ebe9a8b7aa1eaaf3f3lhyi"
+          ]
+        ],
+        "id": "79fe32fe48db5417ee2c651bac2816f6",
+        "orphaned_timestamp": 1714752333.3882341
+      },
+      {
+        "config_entries": [],
+        "connections": [],
+        "identifiers": [
+          [
+            "tuya",
+            "eb3a513180bf516d34kft5"
+          ]
+        ],
+        "id": "85b4f0b6528ddfd6f753bb719bbe788e",
+        "orphaned_timestamp": 1714752333.3882341
+      }
+    ]
+  }
+}

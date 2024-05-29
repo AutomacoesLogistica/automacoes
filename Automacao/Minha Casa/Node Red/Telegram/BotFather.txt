@@ -1,0 +1,5 @@
+https://api.telegram.org/bot1782396870:AAE5pe7apxbKMHsGmvdTg7ULho4acacra2s/getUpdates
+
+meu ID:-580259815
+
+https://api.telegram.org/bot1782396870:AAE5pe7apxbKMHsGmvdTg7ULho4acacra2s/sendMessage?chat_id=-580259815&text=Testando

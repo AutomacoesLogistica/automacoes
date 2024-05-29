@@ -1,0 +1,62 @@
+  - platform: openhardwaremonitor
+    host: 192.168.3.55
+
+
+  - platform: command_line
+    name: CPU Temp
+    command: "cat /sys/class/thermal/thermal_zone0/temp"
+    value_template: '{{ value | multiply(0.001) }}'
+
+
+  - platform: systemmonitor
+    resources:
+      - type: disk_free
+        arg: /
+      - type: disk_use
+        arg: /
+      - type: disk_use_percent
+        arg: /home
+      - type: memory_free
+      - type: memory_use
+      - type: memory_use_percent
+      - type: processor_use
+      - type: last_boot
+      - type: swap_use_percent
+      - type: swap_use
+      - type: swap_free
+      - type: throughput_network_in
+        arg: eth0
+      - type: throughput_network_out
+        arg: eth0
+      - type: network_in
+        arg: 'Local Area Connection'
+      - type: network_in
+        arg: eth0
+      - type: network_out
+        arg: eth0
+      - type: ipv4_address
+        arg: eth0
+      - type: packets_in
+        arg: eth0
+      - type: packets_out
+        arg: eth0
+      - type: process
+        arg: octave-cli
+      - type: load_1m
+      - type: load_5m
+      - type: load_15m
+    
+  - platform: command_line
+    name: HA Start
+    #icon: mdi:lastpass
+    command: grep -m1 'Home Assistant initialized' home-assistant.log | awk '{ print $6, $7, $8, $9, $10 }'
+
+  - platform: command_line
+    name: CPU Temperature
+    command: "cat /sys/class/thermal/thermal_zone0/temp"
+    value_template: '{{ value | multiply(0.001) | round(1) }}'
+
+  - platform: dnsip
+
+#  - platform: uptime DESATIVADO NESSA VERSAO!
+#    name: Time Online

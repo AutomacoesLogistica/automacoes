@@ -1,0 +1,94 @@
+
+
+#velociade_ar_sala:
+#  name: Vel. Ar da Sala
+#  min: 0
+#  max: 100
+#  step: 5
+#  unit_of_measurement: step
+#  icon: mdi:target
+
+
+tempo_modo_viagem:
+  name: Valor Selecionado
+  min: 0
+  max: 60
+  step: 5
+  unit_of_measurement: step
+  icon: mdi:target
+
+
+
+tempo_hora_inicial:
+  name: Hora Inicial
+  min: 0
+  max: 23
+  step: 1
+  unit_of_measurement: step
+  icon: mdi:target
+
+tempo_minuto_inicial:
+  name: Minuto Inicial
+  min: 1
+  max: 59
+  step: 1
+  unit_of_measurement: step
+  icon: mdi:target
+
+tempo_hora_final:
+  name: Hora final
+  min: 0
+  max: 23
+  step: 1
+  unit_of_measurement: step
+  icon: mdi:target
+
+
+
+tempo_minuto_final:
+  name: Minuto Final
+  min: 1
+  max: 59
+  step: 1
+  unit_of_measurement: step
+  icon: mdi:target
+
+
+
+hora_inicial_jardim:
+  name: Hora Inicial Jardim
+  min: 0
+  max: 23
+  step: 1
+  unit_of_measurement: step
+  icon: mdi:target
+
+
+
+minuto_inicial_jardim:
+  name: Minuto Inicial Jardim
+  min: 1
+  max: 59
+  step: 1
+  unit_of_measurement: step
+  icon: mdi:target
+
+
+
+hora_final_jardim:
+  name: Hora Final Jardim
+  min: 0
+  max: 23
+  step: 1
+  unit_of_measurement: step
+  icon: mdi:target
+
+
+
+minuto_final_jardim:
+  name: Minuto Final Jardim
+  min: 1
+  max: 59
+  step: 1
+  unit_of_measurement: step
+  icon: mdi:target
