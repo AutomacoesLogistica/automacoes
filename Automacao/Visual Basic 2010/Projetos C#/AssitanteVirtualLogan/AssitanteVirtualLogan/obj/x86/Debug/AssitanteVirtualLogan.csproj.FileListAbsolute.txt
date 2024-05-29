@@ -1,0 +1,10 @@
+G:\Setup\Arduino e Virtual Basic e Programacao\Visual Basic 2010\Projetos C#\AssitanteVirtualLogan\AssitanteVirtualLogan\obj\x86\Debug\AssitanteVirtualLogan.csprojResolveAssemblyReference.cache
+G:\Setup\Arduino e Virtual Basic e Programacao\Visual Basic 2010\Projetos C#\AssitanteVirtualLogan\AssitanteVirtualLogan\obj\x86\Debug\AssitanteVirtualLogan.Properties.Resources.resources
+G:\Setup\Arduino e Virtual Basic e Programacao\Visual Basic 2010\Projetos C#\AssitanteVirtualLogan\AssitanteVirtualLogan\obj\x86\Debug\AssitanteVirtualLogan.csproj.GenerateResource.Cache
+G:\Setup\Arduino e Virtual Basic e Programacao\Visual Basic 2010\Projetos C#\AssitanteVirtualLogan\AssitanteVirtualLogan\bin\Debug\AssitanteVirtualLogan.exe
+G:\Setup\Arduino e Virtual Basic e Programacao\Visual Basic 2010\Projetos C#\AssitanteVirtualLogan\AssitanteVirtualLogan\bin\Debug\AssitanteVirtualLogan.pdb
+G:\Setup\Arduino e Virtual Basic e Programacao\Visual Basic 2010\Projetos C#\AssitanteVirtualLogan\AssitanteVirtualLogan\obj\x86\Debug\AssitanteVirtualLogan.exe
+G:\Setup\Arduino e Virtual Basic e Programacao\Visual Basic 2010\Projetos C#\AssitanteVirtualLogan\AssitanteVirtualLogan\obj\x86\Debug\AssitanteVirtualLogan.pdb
+G:\Setup\Arduino e Virtual Basic e Programacao\Visual Basic 2010\Projetos C#\AssitanteVirtualLogan\AssitanteVirtualLogan\obj\x86\Debug\AssistanteVirtualLogan.Form1.resources
+G:\Setup\Arduino e Virtual Basic e Programacao\Visual Basic 2010\Projetos C#\AssitanteVirtualLogan\AssitanteVirtualLogan\obj\x86\Debug\AssitanteVirtualLogan.SelecionarVoz.resources
+G:\Setup\Arduino e Virtual Basic e Programacao\Visual Basic 2010\Projetos C#\AssitanteVirtualLogan\AssitanteVirtualLogan\bin\Debug\SelecionarVoz.Designer.cs

@@ -1,0 +1,8 @@
+G:\Setup\Arduino e Virtual Basic e Programacao\Visual Basic 2010\Projetos C#\Logan\Logan\obj\x86\Debug\Logan.csprojResolveAssemblyReference.cache
+G:\Setup\Arduino e Virtual Basic e Programacao\Visual Basic 2010\Projetos C#\Logan\Logan\obj\x86\Debug\Logan.Form1.resources
+G:\Setup\Arduino e Virtual Basic e Programacao\Visual Basic 2010\Projetos C#\Logan\Logan\obj\x86\Debug\Logan.Properties.Resources.resources
+G:\Setup\Arduino e Virtual Basic e Programacao\Visual Basic 2010\Projetos C#\Logan\Logan\obj\x86\Debug\Logan.csproj.GenerateResource.Cache
+G:\Setup\Arduino e Virtual Basic e Programacao\Visual Basic 2010\Projetos C#\Logan\Logan\bin\Debug\Logan.exe
+G:\Setup\Arduino e Virtual Basic e Programacao\Visual Basic 2010\Projetos C#\Logan\Logan\bin\Debug\Logan.pdb
+G:\Setup\Arduino e Virtual Basic e Programacao\Visual Basic 2010\Projetos C#\Logan\Logan\obj\x86\Debug\Logan.exe
+G:\Setup\Arduino e Virtual Basic e Programacao\Visual Basic 2010\Projetos C#\Logan\Logan\obj\x86\Debug\Logan.pdb

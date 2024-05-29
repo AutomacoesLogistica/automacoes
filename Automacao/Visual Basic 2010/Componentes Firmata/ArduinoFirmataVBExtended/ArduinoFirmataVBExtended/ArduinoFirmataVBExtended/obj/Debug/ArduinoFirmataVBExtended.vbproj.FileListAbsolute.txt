@@ -1,0 +1,23 @@
+C:\Documents and Settings\Andrew\Local Settings\Application Data\Temporary Projects\ArduinoFirmataVBExtended\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Andrew\Local Settings\Application Data\Temporary Projects\ArduinoFirmataVBExtended\obj\Debug\ArduinoFirmataVBExtended.Form1.resources
+C:\Documents and Settings\Andrew\Local Settings\Application Data\Temporary Projects\ArduinoFirmataVBExtended\obj\Debug\ArduinoFirmataVBExtended.Resources.resources
+C:\Documents and Settings\Andrew\Local Settings\Application Data\Temporary Projects\ArduinoFirmataVBExtended\obj\Debug\ArduinoFirmataVBExtended.vbproj.GenerateResource.Cache
+D:\Visual Studio 2008\Projects\ArduinoFirmataVBExtended\ArduinoFirmataVBExtended\bin\Debug\ArduinoFirmataVBExtended.exe
+D:\Visual Studio 2008\Projects\ArduinoFirmataVBExtended\ArduinoFirmataVBExtended\bin\Debug\ArduinoFirmataVBExtended.pdb
+D:\Visual Studio 2008\Projects\ArduinoFirmataVBExtended\ArduinoFirmataVBExtended\bin\Debug\ArduinoFirmataVBExtended.xml
+D:\Visual Studio 2008\Projects\ArduinoFirmataVBExtended\ArduinoFirmataVBExtended\bin\Debug\AnalogPinControl.dll
+D:\Visual Studio 2008\Projects\ArduinoFirmataVBExtended\ArduinoFirmataVBExtended\bin\Debug\DigitalPinControl.dll
+D:\Visual Studio 2008\Projects\ArduinoFirmataVBExtended\ArduinoFirmataVBExtended\bin\Debug\FirmataVB.dll
+D:\Visual Studio 2008\Projects\ArduinoFirmataVBExtended\ArduinoFirmataVBExtended\bin\Debug\DigitalPinControl.pdb
+D:\Visual Studio 2008\Projects\ArduinoFirmataVBExtended\ArduinoFirmataVBExtended\bin\Debug\DigitalPinControl.xml
+D:\Visual Studio 2008\Projects\ArduinoFirmataVBExtended\ArduinoFirmataVBExtended\bin\Debug\FirmataVB.pdb
+D:\Visual Studio 2008\Projects\ArduinoFirmataVBExtended\ArduinoFirmataVBExtended\bin\Debug\FirmataVB.xml
+D:\Visual Studio 2008\Projects\ArduinoFirmataVBExtended\ArduinoFirmataVBExtended\bin\Debug\AnalogPinControl.pdb
+D:\Visual Studio 2008\Projects\ArduinoFirmataVBExtended\ArduinoFirmataVBExtended\bin\Debug\AnalogPinControl.xml
+D:\Visual Studio 2008\Projects\ArduinoFirmataVBExtended\ArduinoFirmataVBExtended\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio 2008\Projects\ArduinoFirmataVBExtended\ArduinoFirmataVBExtended\obj\Debug\ArduinoFirmataVBExtended.Form1.resources
+D:\Visual Studio 2008\Projects\ArduinoFirmataVBExtended\ArduinoFirmataVBExtended\obj\Debug\ArduinoFirmataVBExtended.Resources.resources
+D:\Visual Studio 2008\Projects\ArduinoFirmataVBExtended\ArduinoFirmataVBExtended\obj\Debug\ArduinoFirmataVBExtended.vbproj.GenerateResource.Cache
+D:\Visual Studio 2008\Projects\ArduinoFirmataVBExtended\ArduinoFirmataVBExtended\obj\Debug\ArduinoFirmataVBExtended.exe
+D:\Visual Studio 2008\Projects\ArduinoFirmataVBExtended\ArduinoFirmataVBExtended\obj\Debug\ArduinoFirmataVBExtended.xml
+D:\Visual Studio 2008\Projects\ArduinoFirmataVBExtended\ArduinoFirmataVBExtended\obj\Debug\ArduinoFirmataVBExtended.pdb

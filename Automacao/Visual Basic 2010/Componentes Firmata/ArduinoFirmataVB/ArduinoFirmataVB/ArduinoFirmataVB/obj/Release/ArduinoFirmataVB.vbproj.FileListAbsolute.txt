@@ -1,0 +1,13 @@
+D:\Visual Studio 2008\Projects\ArduinoFirmataVB\ArduinoFirmataVB\bin\Release\ArduinoFirmataVB.exe
+D:\Visual Studio 2008\Projects\ArduinoFirmataVB\ArduinoFirmataVB\bin\Release\ArduinoFirmataVB.pdb
+D:\Visual Studio 2008\Projects\ArduinoFirmataVB\ArduinoFirmataVB\bin\Release\ArduinoFirmataVB.xml
+D:\Visual Studio 2008\Projects\ArduinoFirmataVB\ArduinoFirmataVB\bin\Release\AnalogPinControl.dll
+D:\Visual Studio 2008\Projects\ArduinoFirmataVB\ArduinoFirmataVB\bin\Release\DigitalPinControl.dll
+D:\Visual Studio 2008\Projects\ArduinoFirmataVB\ArduinoFirmataVB\bin\Release\FirmataVB.dll
+D:\Visual Studio 2008\Projects\ArduinoFirmataVB\ArduinoFirmataVB\obj\Release\ResolveAssemblyReference.cache
+D:\Visual Studio 2008\Projects\ArduinoFirmataVB\ArduinoFirmataVB\obj\Release\ArduinoFirmataVB.Form1.resources
+D:\Visual Studio 2008\Projects\ArduinoFirmataVB\ArduinoFirmataVB\obj\Release\ArduinoFirmataVB.Resources.resources
+D:\Visual Studio 2008\Projects\ArduinoFirmataVB\ArduinoFirmataVB\obj\Release\ArduinoFirmataVB.vbproj.GenerateResource.Cache
+D:\Visual Studio 2008\Projects\ArduinoFirmataVB\ArduinoFirmataVB\obj\Release\ArduinoFirmataVB.exe
+D:\Visual Studio 2008\Projects\ArduinoFirmataVB\ArduinoFirmataVB\obj\Release\ArduinoFirmataVB.xml
+D:\Visual Studio 2008\Projects\ArduinoFirmataVB\ArduinoFirmataVB\obj\Release\ArduinoFirmataVB.pdb
