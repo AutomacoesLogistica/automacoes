@@ -1,0 +1,10 @@
+[Unit]
+Description=Executar_o_gscs_sva
+
+[Service]
+Type=simple
+ExecStart=/home/pi/gscs.sh   
+
+[Install]
+WantedBy=multi-user.target
+

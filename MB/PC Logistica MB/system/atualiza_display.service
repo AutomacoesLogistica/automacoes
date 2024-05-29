@@ -1,0 +1,12 @@
+[Unit]
+Description=Executa atualizar o displat TCP IP via python
+After=network.target
+
+[Service]
+ExecStart=/bin/bash -c 'python3 -u /home/pc/automacao/atualiza_display_tcp.py'
+WorkingDirectory=/home/pc/automacao
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target

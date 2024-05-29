@@ -1,0 +1,15 @@
+ID 04
+
+
+04_msg_sva=ok,gscs=nao validou sva e aguarda gscs
+04_msg_sva=nao,gscs=ok erro // validou apenas gscs
+04_msg_sva=ok,gscs=ok comando abrir e aguarda caminhao sair do sensor
+
+04_msg_sva=bok,gscs=ok  abriu porem o sva esta com bypass
+04_msg_sva=ok,gscs=bok  abriu mais gscs esta com bypass
+
+04_msg_vmcnas   // Validado abrir mais caminhão nao esta na frente do sensor
+04_msg_limpar  // Volta tudo ao normal, foto 0 , sva = -- e gscs = --
+04_msg_normalizar // Caminhao ja entrando e normaliza a cancela
+
+

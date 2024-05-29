@@ -1,0 +1,38 @@
+Para rodar os codigos precisamos instalar a biblioteca no python e realizar algumas configuracoes
+
+Primeiro permitir conexoes no banco de dados vindas de qualquer ip
+
+abra o CMD e digite
+> sudo nano /etc/mysql/my.cnf
+apague qualquer coisa relacionado a bind-address
+
+>sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf   e dê enter
+retire o # de port e deixe conforme abaixo
+port = 3306
+procure por bind-address e caso não tenha acrescente da seguinte forma
+bind-address = 127.0.0.1 onde altere para
+bind-address = 0.0.0.0
+depois dê um control+X e confirme com S e dê enter para salvar
+agora reinicie o mysql com o comando
+>sudo /etc/init.d/mysql restart
+
+******************************************************************************
+
+Agora devemos instalar o conector mysql
+
+sudo apt-get -y install python3-mysql.connector
+******************************************************************************
+
+Agora devemos ativar os services
+
+Entrar na pasta
+> cd /lib/systemd/system
+OBS: Os arquivos ja devem estar dentro dessa pasta /lib/systemd/system
+
+Agora ative os serviços ja colocados dentro da pasta
+>sudo systemctl start lora.service
+>sudo systemctl gscs lora.service
+>sudo systemctl saidas lora.service
+
+
+Agora dê um sudo reboot!

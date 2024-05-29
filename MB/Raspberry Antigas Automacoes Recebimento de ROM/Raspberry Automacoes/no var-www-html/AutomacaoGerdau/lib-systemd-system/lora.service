@@ -1,0 +1,11 @@
+[Unit]
+Description=Executar_o_envio_lora
+Wants=network-online.target
+After=network.target network-online.target
+
+[Service]
+Type=simple
+ExecStart=/home/pi/lora.sh
+
+[Install]
+WantedBy=multi-user.target

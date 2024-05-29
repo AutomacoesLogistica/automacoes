@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram width="50" namealign="center">
+    <node>
+        Link RGTECH
+        <node name="MQTT_PHP" borderconnection="2" connectioncolor="#a00">
+            Publica dados
+            <node>just</node>
+            <node>just2</node>
+            <node>just4</node>
+            <node name="MQTT_PHP" borderconnection="2" connectioncolor="#a032">
+                a
+                <node>test</node>
+                <node>to</node>
+                <node name="MQTT_PHP" borderconnection="2" connectioncolor="#a00">check</node>
+            </node>
+        </node>
+        <node name="blue" borderconnection="2" connectioncolor="#00a">
+            that
+            <node>the</node>
+            <node name="blue" borderconnection="2" connectioncolor="#00a">
+                diagram
+                <node name="blue" borderconnection="2" connectioncolor="#00a">class</node>
+                <node>is</node>
+                <node name="green" borderconnection="2" connectioncolor="#0a0">really</node>
+                <node>working</node>
+            </node>
+        </node>
+    </node>
+</diagram>

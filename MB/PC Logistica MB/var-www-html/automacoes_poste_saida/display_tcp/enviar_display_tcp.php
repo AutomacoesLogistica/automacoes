@@ -1,0 +1,18 @@
+<html>
+    <head></head>
+    <body>
+    
+<?php
+    $address="192.168.10.100";
+    $port="2101";
+    $sock=socket_create(AF_INET,SOCK_STREAM,0) or die("Cannot create socket");
+    $con=socket_connect($sock,$address,$port) or die("Cannot connect to socket");
+
+    socket_write($sock,"\x01\x02\x50\x01\x01\xAA\x01\x01\x82\x01\x01\x00\x32\xAA\x10\xAA\x70\xAA\x01\x54\x65\x73\x74\x61\x6E\x64\x6F\x20\x76\x69\x61\x20\x70\x68\x70\x20\x20\x20\xAA\x10\xAA\x70\xAA\x02\x56\x61\x6C\x69\x64\x61\x6E\x64\x6F\x20\x74\x65\x73\x74\x65\x21\x20\x20\x20\x03\xB3\xB3");
+    //socket_write($sock,"@");
+    
+    socket_close($sock);
+    ?>
+     
+     </body>
+</html>

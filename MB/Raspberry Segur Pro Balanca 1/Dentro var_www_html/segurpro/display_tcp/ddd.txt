@@ -1,0 +1,35 @@
+$conteudo = '{'.
+    '"readings": ['.
+    ' { '. 
+    ' "readingId": "0",'.
+    '    "serialNumber": "'. $ca .'",'.
+    '   "date_time": "'. $horario .'",'.
+    '   "antenna": "'. $antena .'",'.
+    '    "epc": "'. $epc .'",'.
+    '    "note": "",'.
+    '    "message": "1"'.
+    ' }'.
+    '] '.
+'}';
+
+
+
+// Create the context for the request
+$context = stream_context_create(array(
+    'http' => array(
+        // http://www.php.net/manual/en/context.http.php
+        'method' => 'POST',
+        'header' => "Authorization: Basic WklPVDRERUNJU0lPTl9SRklEOkZpcnN0QDAx\r\n".
+        'Content-Type: text/plain\r\n'.
+        "Content-Length: " . strlen($conteudo) . "\r\n".
+        'User-Agent : PostmanRuntime/7.26.8\r\n'.
+        'Accept-Encoding : gzip, deflate, br\r\n'.
+        'Accept : */*\r\n'.
+        'Connection : keep-alive\r\n',
+        'content' => $conteudo
+    )
+));
+
+$response = file_get_contents($url_iot, FALSE, $context); // Envia os dados para o site iot
+$msg_resposta = $response; // Chega a resposta do site
+var_dump($msg_resposta);

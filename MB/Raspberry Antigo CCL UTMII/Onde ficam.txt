@@ -1,0 +1,3 @@
+O mysql fica em \var\lib
+
+o html fica em \var\www

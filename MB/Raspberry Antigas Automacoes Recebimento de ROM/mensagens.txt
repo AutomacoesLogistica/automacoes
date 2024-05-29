@@ -1,0 +1,28 @@
+
+
+Se validado SVA
+>muda sva para SVA: OK
+Aguardando validar GSCS!</BR>Mostre o cartão!
+
+Se validar GSCS
+> musa gscs para GSGS: OK
+muda foto para 2
+Descarga liberada!</BR>Aguardando o caminhão sair do sensor!
+
+
+
+Normalizado a cancela!   >>> delay(2000) e muda foto para 0 e muda info para Aguardando chegar caminhão! e sva = -- e gscs = --
+
+
+
+Caso valide GSCS e SVA nao
+sva = --
+gscs = ok
+Atenção!</BR>Não foi validado a carga,</BR>favor acionar CCL no interfone!
+muda foto para 01
+
+Depois CCL aciona e muda para
+foto 3
+Atenção!</BR>Descarga liberada!
+ou
+Atenção!</BR>Aguarde no local,</BR>não autorizado para descarga!

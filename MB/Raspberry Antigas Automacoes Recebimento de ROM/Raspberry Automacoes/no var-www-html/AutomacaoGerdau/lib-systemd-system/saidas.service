@@ -1,0 +1,10 @@
+[Unit]
+Description=Executar_o_script_das_cancelas_saidas
+
+[Service]
+Type=simple
+ExecStart=/home/pi/saidas.sh   
+
+[Install]
+WantedBy=multi-user.target
+

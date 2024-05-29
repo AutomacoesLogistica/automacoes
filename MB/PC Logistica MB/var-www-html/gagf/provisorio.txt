@@ -1,0 +1,20 @@
+if (link_desativada.value == "Desativar")
+ {
+  var r=confirm("Deseja realmente desativar a tag/equipamento?");
+  if (r==true)
+  {
+   // Clicou em OK
+   x="Você acabou de desativar a tag " + link_epc_atual.value + " ou equipamento com placa " + link_placa.value + "!";
+   alert(x);
+  }
+ }
+ else // Ta para ativar
+ {
+  var r=confirm("Deseja realmente ativar esta tag/equipamento?");
+  if (r==true)
+  {
+   // Clicou em OK
+   x="Você acabou de ativar a tag " + link_epc_atual.value + " ou equipamento com placa " + link_placa.value + "!";
+   alert(x);
+  }
+ }

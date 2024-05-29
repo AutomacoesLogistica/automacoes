@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+     <meta charset="utf-8"/>
+     <title>Teste Fluxograma</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {packages:["orgchart"]});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('string', 'Manager');
+        data.addColumn('string', 'ToolTip');
+        
+        
+
+        // For each orgchart box, provide the name, manager, and tooltip to show.
+        data.addRows([
+          [{'v':'RGTECH', 'f':'RGTECH<div style="color:blue; font-style:italic">Link Serra Ouro Branco</div>'},
+           '', 'The President',],
+          [{'v':'Link_VL', 'f':'Link_VL<div style="color:blue; font-style:italic">Link Mirante</div>'},
+           'RGTECH', 'VP'],
+           
+        //  Nome   conexao   info
+
+          [{'v':'Link_UTMI','f':'Link_UTMI<div id=ip_Link_UTMI style="color:blue; font-style:italic">Link Escritorio UTMI</div>'}, 'RGTECH', 'Dispositivo para automação da logistica \n Dispositivo Online'],
+          [{'v':'Link_Patio_UTMII','f':'Link_Patio_UTMII<div id=ip_Link_UTMI style="color:blue; font-style:italic">Link Patio Produto UTMII</div>'}, 'RGTECH', 'Dispositivo para automação da logistica \n Dispositivo Online'],
+          [{'v':'Link_CCL','f':'Link_CCL<div id=ip_Link_UTMI style="color:blue; font-style:italic">Link CCL</div>'}, 'RGTECH', 'Dispositivo para automação da logistica \n Dispositivo Online'],
+          [{'v':'Link_Patrag','f':'Link_Patrag<div id=ip_Link_Patrag style="color:blue; font-style:italic">Automação Patrag</div>'}, 'RGTECH', 'Dispositivo para automação da logistica \n Dispositivo Online'],
+          
+          // LINKS AUTOMACAO LOGISTICA
+          [{'v':'RB2011','f':'RB2011<div id=ip_Link_UTMI style="color:blue; font-style:italic">Routerborad RGTECH</div>'}, 'Link_UTMI', 'Routerboard RGETECH \n Dispositivo Online'],
+          [{'v':'Swtich TPLINK','f':'Swtich TPLINK<div id=ip_Link_UTMI style="color:blue; font-style:italic">Switch Sala Logistica</div>'}, 'RB2011', 'Não possui ip'],
+          [{'v':'MQTT_PHP','f':'MQTT_PHP<div id=ip_Link_UTMI style="color:blue; font-style:italic">Salva dados MQTT no PHP</div>'}, 'Swtich TPLINK', 'IP: 10.10.25.85 \n Dispositivo Online'],
+          [{'v':'PHP_MQTT','f':'PHP_MQT<div id=ip_Link_UTMI style="color:blue; font-style:italic">Publica dados banco no MQTT</div>'}, 'Swtich TPLINK', 'IP: 10.10.25.87 \n Dispositivo Online'],
+          [{'v':'Servidor PING','f':'Servidor PING<div id=ip_Link_UTMI style="color:blue; font-style:italic">Ping dos dispositivos da rede</div>'}, 'Swtich TPLINK', 'IP: 10.10.25.84 \n Dispositivo Online'],
+          [{'v':'Modem GAGF Logistica','f':'Modem GAGF Logistica<div id=ip_Link_UTMI style="color:blue; font-style:italic">Rede GAGF Automação Logística</div>'}, 'Swtich TPLINK', 'IP: 10.10.25.250 \n Dispositivo Online'],
+          [{'v':'Cria Link Automação/UTMI','f':'Cria Link Automação/UTMI<div id=ip_Link_UTMI style="color:blue; font-style:italic">Mikrotik Groove A-52hpn</div>'}, 'Swtich TPLINK', 'IP: 10.10.25.73 \n Dispositivo Online'],
+          [{'v':'Tablet Processador TAGs','f':'Tablet Processador TAGs<div id=ip_Link_UTMI style="color:blue; font-style:italic">Tablet Sansung</div>'}, 'Swtich TPLINK', 'IP: 10.10.25.91 \n Dispositivo Online'],
+          [{'v':'NVR Logistica','f':'NVR Logistica<div id=ip_Link_UTMI style="color:blue; font-style:italic">CFTV Logistica</div>'}, 'Swtich TPLINK', 'IP: 10.10.25.32 \n Dispositivo Online'],
+          [{'v':'Servidor Automação','f':'Servidor Automação<div id=ip_Link_UTMI style="color:blue; font-style:italic">Raspberry Pi</div>'}, 'Swtich TPLINK', 'IP: 10.10.25.200 \n Dispositivo Online'],
+
+          // LINKS PATIO EXCESSO
+          [{'v':'Patio Excesso','f':'Patio Excesso<div id=ip_Link_UTMI style="color:blue; font-style:italic">SXT Lite 5</div>'}, 'Cria Link Automação/UTMI', 'IP: 10.10.25.97 \n Dispositivo Online'],
+          [{'v':'Câmera Patio Excesso','f':'Câmera Patio Excesso<div id=ip_Link_UTMI style="color:blue; font-style:italic">Pelco</div>'}, 'Patio Excesso', 'IP: 10.10.25.113 \n Dispositivo Online'],
+
+          // LINKS UTMI
+          [{'v':'UTMI/Automação','f':'Link UTMI/Automação<div id=ip_Link_UTMI style="color:blue; font-style:italic">SXT Lite 5</div>'}, 'Cria Link Automação/UTMI', 'IP: 10.10.25.75 \n Dispositivo Online'],
+          [{'v':'Switch UTMI','f':'Switch UTMI<div id=ip_Link_UTMI style="color:blue; font-style:italic">Switch</div>'}, 'UTMI/Automação', 'Não possui IP'],
+          [{'v':'GAGF Patio UTMI','f':'GAGF Patio UTMI<div id=ip_Link_UTMI style="color:blue; font-style:italic">Groove A-52hpn</div>'}, 'Switch UTMI', 'IP: 10.10.25.233 \n Dispositivo Online'],
+          [{'v':'Câmera Patio UTMI','f':'Câmera Patio UTMI<div id=ip_Link_UTMI style="color:blue; font-style:italic">Câmera Intelbras VIP1020B G2</div>'}, 'Switch UTMI', 'IP: 10.10.25.43 \n Dispositivo Online'],
+
+          // LINKS UTMI
+          [{'v':'Balança 02 MB','f':'Balança 02 MB<div id=ip_Link_UTMI style="color:blue; font-style:italic">SXT Lite 2</div>'}, 'GAGF Patio UTMI', 'IP: 10.10.25.139 \n Dispositivo Online'],
+          [{'v':'Switch Balança 02 MB','f':'Switch Balança 02 MB<div id=ip_Link_UTMI style="color:blue; font-style:italic">Switch TPLINK</div>'}, 'Balança 02 MB', 'Não possui IP'],
+          [{'v':'DVR Balança 02 MB','f':'DVR Balança 02 MB<div id=ip_Link_UTMI style="color:blue; font-style:italic">DVR Intelbras</div>'}, 'Switch Balança 02 MB', 'IP: 10.10.25.227 \n Dispositivo Online'],
+          [{'v':'Câmera Testes Parafusos','f':'Câmera Testes Parafusos UTMI<div id=ip_Link_UTMI style="color:blue; font-style:italic">Câmera Hikivision</div>'}, 'Switch Balança 02 MB', 'IP: 10.10.25.46 \n Dispositivo Online'],
+
+
+
+
+
+
+
+
+
+        ]);
+
+        // Create the chart.
+        var chart = new google.visualization.OrgChart(document.getElementById('chart_div'));
+        // Draw the chart, setting the allowHtml option to true for the tooltips.
+        chart.draw(data, {'allowHtml':true, 'allowCollapse':true,size:'medium'});
+      }
+   </script>
+
+
+
+</head>
+<style>
+body{
+  background-color: rgb(44, 26, 26);
+
+}
+
+</style>
+  <body>
+    <input type="submit" name="btnVoltar" value="voltar" onclick="javascript: location.href='consultar_ca1.php';" />
+    <div id="chart_div"></div>
+    
+
+  </body>
+</html>

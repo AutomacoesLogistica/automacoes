@@ -1,0 +1,12 @@
+[Unit]
+Description=Executa o servidor socket do pires
+After=network.target
+
+[Service]
+ExecStart=/bin/bash -c 'python3 -u /home/pc/automacao/servidor_socket_pires.py'
+WorkingDirectory=/home/pc/automacao
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target

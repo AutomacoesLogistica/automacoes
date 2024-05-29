@@ -1,0 +1,12 @@
+[Unit]
+Description=Executa o finalizador JOB Herculano
+After=network.target
+
+[Service]
+ExecStart=/bin/bash -c 'python3 -u /home/pc/automacao/job_herculano.py'
+WorkingDirectory=/home/pc/automacao
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
