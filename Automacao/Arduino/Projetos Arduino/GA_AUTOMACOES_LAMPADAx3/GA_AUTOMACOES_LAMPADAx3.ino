@@ -1,0 +1,147 @@
+#include <SPI.h>
+#include <nRF24L01.h>
+#include <RF24.h>
+#define CE_PIN   9
+#define CSN_PIN 10
+const uint64_t pipe = 0xE8E8F0F0E1LL; // Define a frequencia de recepção, deve ser igual a do transmissor, em decimal, neste caso, equivale a 1000340517089
+RF24 radio(CE_PIN, CSN_PIN); // Cria o Radio e inicia a Recepção
+int SINAIS[30];  // usada para receber os comandos enviados
+int x;
+int Vezes1,Vezes2,Vezes3;
+void setup()
+{
+
+  radio.begin();
+  radio.openReadingPipe(1,pipe);
+  radio.startListening();;
+  pinMode(2,INPUT);
+  pinMode(3,INPUT);
+  pinMode(4,INPUT);
+  pinMode(5,OUTPUT);
+  pinMode(6,OUTPUT);
+  pinMode(7,OUTPUT);
+
+
+  
+  x=0;
+  Vezes1=0;
+  Vezes2=0;
+  Vezes3=0;
+}
+
+void loop()
+{
+      if(digitalRead(2)==1&&Vezes1==0) // 
+      {
+      
+      digitalWrite(5,!digitalRead(5));
+      Vezes1=1;
+      radio.stopListening();;  // para o recebimento
+      radio.openWritingPipe(pipe); // inicia envio
+      SINAIS[0]=33;// ATRIBUI 1 PARA ENVIAR PARA A LAMPADA 
+      radio.write(SINAIS,sizeof(SINAIS));
+      SINAIS[0]=9;// ATRIBUI 1 PARA ENVIAR PARA A LAMPADA 
+      radio.write(SINAIS,sizeof(SINAIS));
+      radio.openReadingPipe(1,pipe);// abre o recebimento
+      radio.startListening();; 
+      delay(250);
+      }
+      
+      if(digitalRead(2)==0&&Vezes1==1) // 
+      {
+      
+      digitalWrite(5,!digitalRead(5));
+      Vezes1 = 0;
+      radio.stopListening();;  // para o recebimento
+      radio.openWritingPipe(pipe); // inicia envio
+      SINAIS[0]=33;// ATRIBUI 1 PARA ENVIAR PARA A LAMPADA 
+      radio.write(SINAIS,sizeof(SINAIS));
+      SINAIS[0]=9;// ATRIBUI 1 PARA ENVIAR PARA A LAMPADA 
+      radio.write(SINAIS,sizeof(SINAIS));
+      radio.openReadingPipe(1,pipe);// abre o recebimento
+      radio.startListening();;
+      delay(250);
+      } 
+
+//********************************************************************
+      if(digitalRead(3)==1&&Vezes2==0) // 
+      {
+      
+      digitalWrite(6,!digitalRead(6));
+      Vezes2=1;
+      radio.stopListening();;  // para o recebimento
+      radio.openWritingPipe(pipe); // inicia envio
+      SINAIS[1]=33;// ATRIBUI 1 PARA ENVIAR PARA A LAMPADA 
+      radio.write(SINAIS,sizeof(SINAIS));
+      SINAIS[1]=9;// ATRIBUI 1 PARA ENVIAR PARA A LAMPADA 
+      radio.write(SINAIS,sizeof(SINAIS));
+      radio.openReadingPipe(1,pipe);// abre o recebimento
+      radio.startListening();; 
+      delay(250);
+      }
+      if(digitalRead(3)==0&&Vezes2==1) // 
+      {
+      
+      digitalWrite(6,!digitalRead(6));
+      Vezes2 = 0;
+      radio.stopListening();;  // para o recebimento
+      radio.openWritingPipe(pipe); // inicia envio
+      SINAIS[1]=33;// ATRIBUI 1 PARA ENVIAR PARA A LAMPADA 
+      radio.write(SINAIS,sizeof(SINAIS));
+      SINAIS[1]=9;// ATRIBUI 1 PARA ENVIAR PARA A LAMPADA 
+      radio.write(SINAIS,sizeof(SINAIS));
+      radio.openReadingPipe(1,pipe);// abre o recebimento
+      radio.startListening();; 
+      delay(250);
+      }
+//********************************************************************
+      if(digitalRead(4)==1&&Vezes3==0) // 
+      {
+      
+      digitalWrite(7,!digitalRead(7));
+      Vezes3=1;
+      radio.stopListening();;  // para o recebimento
+      radio.openWritingPipe(pipe); // inicia envio
+      SINAIS[2]=33;// ATRIBUI 1 PARA ENVIAR PARA A LAMPADA 
+      radio.write(SINAIS,sizeof(SINAIS));
+      SINAIS[2]=9;// ATRIBUI 1 PARA ENVIAR PARA A LAMPADA 
+      radio.write(SINAIS,sizeof(SINAIS));
+      radio.openReadingPipe(1,pipe);// abre o recebimento
+      radio.startListening();; 
+      delay(250);
+      }
+      if(digitalRead(4)==0&&Vezes3==1) // 
+      {
+      digitalWrite(7,!digitalRead(7));
+      Vezes3 = 0;
+      radio.stopListening();;  // para o recebimento
+      radio.openWritingPipe(pipe); // inicia envio
+      SINAIS[2]=33;// ATRIBUI 1 PARA ENVIAR PARA A LAMPADA 
+      radio.write(SINAIS,sizeof(SINAIS));
+      SINAIS[2]=9;// ATRIBUI 1 PARA ENVIAR PARA A LAMPADA 
+      radio.write(SINAIS,sizeof(SINAIS));
+      radio.openReadingPipe(1,pipe);// abre o recebimento
+      radio.startListening();; 
+      delay(250);
+      } 
+
+  if ( radio.available() ) // Se o Radio estiver disponivel, ou seja, recebendo informação do transmissor imprime as informações
+  {// ABRE O RECEBIMENT0
+     radio.read( SINAIS, sizeof(SINAIS) );
+   // SE RECEBER O VALOR EM 10 ENVIADO DA CENTRAL, DESLIGA TODAS AS LAMPADAS
+     // usado para sincronizar
+     if(SINAIS[0]==10){digitalWrite(5,LOW);}
+     if(SINAIS[1]==10){digitalWrite(6,LOW);}     
+     if(SINAIS[2]==10){digitalWrite(7,LOW);}
+
+   // SE RECEBER O VALOR EM 1000 ENVIADO DA CENTRAL, ALTERA O STATUS DA LAMPADA
+     if(SINAIS[0]==1000){digitalWrite(5,!digitalRead(5));}
+     if(SINAIS[1]==1000){digitalWrite(6,!digitalRead(6));}
+     if(SINAIS[2]==1000){digitalWrite(7,!digitalRead(7));}    
+     
+     SINAIS[0]=9;
+     SINAIS[1]=9;
+     SINAIS[2]=9;
+  } // FECHA O RECEBIMENTO
+} // fecha o loop
+ 

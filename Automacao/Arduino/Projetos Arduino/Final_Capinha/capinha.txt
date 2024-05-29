@@ -1,0 +1,186 @@
+DADOS
+
+SINAIS[0] = 1111 - SINCRONIZAR
+SINAIS[0] = 1023 - ALTERAR STATUS
+SINAIS[0] = 10 - SAI DO FOR PARA TER CERTEZA QUE ATUALIZA APENAS UMA VEZ
+
+RECEBER SINAIS[0]==100 - INDICA LIGADO
+RECEBER SINAIS[0]==50 - INDICA DESLIGADO
+
+
+
+
+
+
+entradas    SAIDAS
+A0 ---------- A0
+A1 ---------- A1
+A2 ---------- A2
+A3 ---------- A3
+A4 ---------- A4
+A5 ---------- A5
+2 ----------- 2
+3 ----------- 3
+4 ----------- 4
+5 ----------- 5
+6 ----------- 6
+7 ----------- 7
+8 ----------- 11 DO MESMO DE ENTRADA
+9 ----------- 12 DO MESMO DE ENTRADA
+10 ---------- 13 DO MESMO DE ENTRADA
+
+PINOS 
+8 SINAL LED RGB
+9 DEMAIS SAO PARA MODULO DE 2.4GHZ
+10
+11
+12
+13
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2 ANDAR
+
+QUARTO DA JULUANA
+
+- varanda quarto da juliana - sinal [0]  - entrada A0/SA0   SINAIS[14]==600
+- luz do teto - sinal[1] - entrada A1/SA1   SINAIS[14]==601
+-luz ambiente - sinais[2] - entrada A2/SA2   SINAIS[14]==602
+-fita de led - sinal[3] - entrada A3/SA3   SINAIS[14]==603
+-closed - sinal[4]  - entrada A4/SA4   SINAIS[14]==604
+-luz ambiente closed- sinais[5]  - entrada A5/SA5   SINAIS[14]==605
+
+
+SALA DE TV
+
+- luz do teto - sinais[6] - entrada 2/S2   SINAIS[14]==606
+- luz ambiente - sinais[7] - entrada 3/S3   SINAIS[14]==607
+- *
+luz teto acesso corredor capinha - sinais[8] - entrada 4/S4   SINAIS[14]==608
+
+QUARTO DO CAPINHA
+
+- luz teto corredor - sinais[9]  - entrada 5/S   SINAIS[14]==609
+- luz do teto quarto - sinais[10]  - entrada 6/S   SINAIS[14]==610
+- luz ambiente - sinais[11]- entrada 7/S   SINAIS[14]==611
+- luz varanda - sinais[12]- entrada 8/S   SINAIS[14]==612
+
+ESCADA
+
+- luz teto apos escada - sinais[13]- entrada 9/S   SINAIS[14]==613
+
+
+
+***************************************************************************************************************************************
+
+1 ANDAR LADO PORTA
+
+
+
+SALA
+
+- luz lustre - sinais[14]  - entrada A0/S2         SINAIS[14]==1000
+- luz ambiente - sinais[15]  - entrada A1/S3          SINAIS[14]==1001
+
+CORREDOR
+
+- luz corredor - sinais[16]  - entrada A2/S4         SINAIS[14]==1002
+- luz teto acesso quarto[17]  - entrada 17         SINAIS[14]==1003
+
+QUARTO
+
+-luz do teto - sinais[18]  - entrada A3/S5         SINAIS[14]==1004
+
+GARAGEM
+
+- luz garagem - sinais[19]  - entrada A4/S6         SINAIS[14]==1005
+
+
+1 ANDAR LADO COZINHA
+
+
+
+SINCRONIZAR          SINAIS[14]==1006
+ATUALIZAR            SINAIS[14]==1007
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SALA TV
+
+- luz do teto - sinais[20]  - entrada A0/S2        SINAIS[14]==1008
+- luz ambiente- sinais[21]  - entrada A1/S3        SINAIS[14]==1009
+
+COZINHA
+
+- luz teto - sinais[22]  - entrada A2/S4            SINAIS[14]==1010
+- luz ambiente - sinais[23]  - entrada A3/S5        SINAIS[14]==1011
+
+
+
+CORREDOR EXTERNO
+
+- luz do corredor(muro) - sinais[25]  - entrada A5/S7        SINAIS[14]==1013
+**************************************************************************************************
+
+
+
+
+
+
+
+
+
++ RX/TX
+
+REFLETOR
+-luz refletor piscina - sinais[26]  - entrada A0/S2        SINAIS[14]==1014
+
+AREA DE CHURRASCO
+-luz do teto - sinais[27]  - entrada A1/S3        SINAIS[14]==1015
+- luz do muro - sinais[28]  - entrada A2/S4       SINAIS[14]==1016
+AREA
+
+- luz teto - sinais[24]  - entrada A3/S7        SINAIS[14]==1012
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
