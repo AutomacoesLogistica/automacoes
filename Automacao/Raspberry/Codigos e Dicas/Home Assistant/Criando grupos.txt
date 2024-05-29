@@ -1,0 +1,7 @@
+sala:
+  name: Sala
+  view: yes
+  control: hidden
+  entities:
+    - light.lampada
+	

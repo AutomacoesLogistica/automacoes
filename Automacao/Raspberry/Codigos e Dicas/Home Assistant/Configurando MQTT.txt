@@ -1,0 +1,22 @@
+# Configurando MQTT - Mosquito na raspberry
+mqtt:
+  broker: 192.168.2.200        # Seu ip do raspberry
+  port: 1883                   # porta de MQTT configurada pelo mosquitto
+  client_id: central_controle  # ID individual
+  username: brunogon           # Usuario do mosquitto
+  password: 268300             # Senha do mosquito
+
+
+Ou pode usar CLoud MQTT
+
+mqtt:
+
+  broker: m11.cloudmqtt.com    # Seu broker, neste caso do Cloud MQTT
+  port: 10671                  # porta do brokerde MQTT criado no cadastro do Cloud MQTT
+  client_id: central_controle  # ID individual 
+  username: qjuidpsd           # Usuario do Cloud MQTT
+  password: bUA07u8vEsPj       # Senha do Cloud MQTT
+
+
+
+

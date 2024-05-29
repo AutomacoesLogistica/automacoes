@@ -1,0 +1,25 @@
+http:
+frontend:
+#  javascript_version : latest
+config:
+ios:
+updater:
+discovery:
+conversation:
+#history:
+logbook:
+sun:
+# Text to speech
+tts:
+  - platform: google_translate
+
+mqtt:
+  broker: 127.0.0.1
+  port: 1883
+  client_id: central_controle
+  username: logistica
+  password: logistica2019@@
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml

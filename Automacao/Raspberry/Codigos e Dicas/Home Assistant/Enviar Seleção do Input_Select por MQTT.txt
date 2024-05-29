@@ -1,0 +1,25 @@
+- alias: Sky da Sala
+  trigger:
+    platform: state
+    entity_id: input_select.canal
+  action:
+    service: mqtt.publish
+    data_template:
+      topic: "dev/test/minhacasa/sala"
+      payload: "{{ states('input_select.canal') }}"
+
+
+
+# Esse codigo recebe o selecionado e troca por algum valor para ser enviado no MQTT
+- alias: Sky da Sala
+  trigger:
+    platform: state
+    entity_id: input_select.canal
+  action:
+    service: mqtt.publish
+    data_template:
+      topic: "dev/test/minhacasa/sala"
+      payload: >
+        {%- if is_state('input_select.canal', 'MTV') -%} sky_540_sky
+        {%- elif is_state('input_select.canal', 'RTP 1') -%} sky_542_sky
+        {%- endif -%}

@@ -1,0 +1,29 @@
+- alias: Enviando notificacao caso receba mensagem de status mqtt
+
+  hide_entity: True
+
+  trigger:
+
+    platform: mqtt
+
+    topic: dev/test/garagem/externa/central
+
+    payload: ja
+
+  condition:
+
+    condition: time
+
+    after: '18:00:00'      # Depois de
+
+    before: '21:00:00'     # Antes de
+
+  action:
+
+    service: mqtt.publish
+
+    data:
+
+      topic: dev/test
+
+      payload: testando

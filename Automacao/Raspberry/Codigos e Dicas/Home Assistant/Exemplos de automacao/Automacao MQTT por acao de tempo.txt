@@ -1,0 +1,11 @@
+- alias: Enviando MQTT por tempo
+  hide_entity: True
+  trigger:
+    platform: time
+    at: '16:52:00'
+  action:
+    service: mqtt.publish
+    data_template:
+      topic: "dev/test/minhacasa/arvore"
+      retain: true
+      payload: "ligar"

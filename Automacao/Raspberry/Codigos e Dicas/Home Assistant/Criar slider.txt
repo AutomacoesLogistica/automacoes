@@ -1,0 +1,21 @@
+no grupo
+    - input_slider.velociade_ar_sala
+
+criar o arquivo input_slider.yaml
+
+e a configuracao
+velociade_ar_sala:
+
+  name: Vel. Ar da Sala
+  
+  min: 0
+
+  max: 100
+
+  step: 5
+
+  unit_of_measurement: step
+
+  icon: mdi:target
+
+

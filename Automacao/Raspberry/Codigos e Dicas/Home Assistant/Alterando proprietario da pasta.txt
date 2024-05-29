@@ -1,0 +1,16 @@
+
+Alterando a permissao para o arquivo configuration.yaml
+sudo chown -R homeassistant:homeassistant /home/homeassistant/.homeassistant/configuration.yaml
+
+Alterando a permissao para o arquivo sensor.yaml
+sudo chown -R homeassistant:homeassistant /home/homeassistant/.homeassistant/sensor.yaml
+
+Alterando a permissao para o arquivo light.yaml
+sudo chown -R homeassistant:homeassistant /home/homeassistant/.homeassistant/light.yaml
+
+Alterando a permissao para o arquivo cover.yaml
+sudo chown -R homeassistant:homeassistant /home/homeassistant/.homeassistant/cover.yaml
+
+Alterando a permissao para o arquivo groups.yamls
+sudo chown -R homeassistant:homeassistant /home/homeassistant/.homeassistant/groups.yaml
+

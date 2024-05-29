@@ -1,0 +1,33 @@
+>Configurando o IP
+sudo nano /etc/dhcpcd.conf
+
+>Configurando o IP Fixo para RJ45   OBS: Para usar Wirelles, mudar eth0 para wlan0
+interface eth0
+static ip_address=10.10.25.200/24
+static routers=10.10.25.1
+static domain_name_servers=10.10.25.1 8.8.8.8 8.8.4.4
+
+>Reinicie o Raspberry
+sudo reboot
+
+> Baixa e atualiza o Raspberry
+ sudo apt-get update
+
+ sudo apt-get upgrade
+
+> Configure o raspberry, digite no console e irá abrir uma tela de configurações
+sudo raspi-config
+
+> Entre em advanced options e depois em Expand The File System e em seguida clique em finsh e restart
+
+>Instalar o Python
+ sudo apt-get install python3
+
+ sudo apt-get install python
+
+> Instalar o PIP Fabric
+ sudo pip install fabric==1.13.1
+
+> Instalar o homeassistant, basta colar o codigo no console e dar enter e aguardar
+OBS: Demora em torno de 15 minutos
+wget -Nnv https://raw.githubusercontent.com/home-assistant/fabric-home-assistant/master/hass_rpi_installer.sh && chown pi:pi hass_rpi_installer.sh && bash hass_rpi_installer.sh

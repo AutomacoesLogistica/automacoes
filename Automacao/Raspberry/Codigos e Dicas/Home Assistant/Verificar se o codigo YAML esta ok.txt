@@ -1,0 +1,6 @@
+Entrar neste site
+
+http://www.yamllint.com/
+
+
+e colar seu codigo yaml e clicar em ir

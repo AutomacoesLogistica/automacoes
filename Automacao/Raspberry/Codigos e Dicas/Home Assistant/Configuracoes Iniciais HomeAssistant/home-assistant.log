@@ -1,0 +1,2 @@
+2019-09-23 13:44:38 ERROR (Thread-2) [homeassistant.components.mqtt] Unable to connect to the MQTT broker: Connection Refused: not authorised.
+2019-09-23 13:44:49 WARNING (MainThread) [homeassistant.components.weather] Setup of platform met is taking over 10 seconds.

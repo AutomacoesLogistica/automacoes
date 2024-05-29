@@ -1,0 +1,45 @@
+Lampada simples
+
+light:
+  - platform: mqtt
+    command_topic: "office/rgb1/light/switch"
+
+
+
+*************************************************************************************************************************
+
+Lampada com status e resposta do MQTT
+
+light:
+  - platform: mqtt
+    name: "Lampada da Sala"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+
+**************************************************************************************************************************
+
+Lampada com status, brilho e cor RBG no MQTT
+
+light:
+  - platform: mqtt
+    name: "Iluminacao Ambiente"
+    state_topic: "dev/test/minhacasa/supervisorio"
+    command_topic: "dev/test/minhacasa/central"
+    brightness_state_topic: 'dev/test/minhacasa/central'
+    brightness_command_topic: 'dev/test/minhacasa/central'
+    rgb_state_topic: 'dev/test/minhacasa/quartoc/rgb1/set'
+    rgb_command_topic: 'dev/test/minhacasa/quartoc/rgb1/set'
+    brightness_scale: 100
+    state_value_template: "{{ value_json.state }}"
+    brightness_value_template: "{{ value_json.brightness }}"
+    rgb_value_template: "{{ value_json.rgb | join(',') }}"
+    qos: 1
+    payload_on: "clinter_1"
+    payload_off: "clinter_0"
+    optimistic: false 
+
+****************************************************************************************************************************

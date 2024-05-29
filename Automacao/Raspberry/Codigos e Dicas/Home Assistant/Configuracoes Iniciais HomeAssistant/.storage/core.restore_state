@@ -1,0 +1,27 @@
+{
+    "data": [
+        {
+            "last_seen": "2019-09-23T16:44:49.063516+00:00",
+            "state": {
+                "attributes": {
+                    "editable": true,
+                    "friendly_name": "Automa\u00e7\u00e3o Log\u00edstica",
+                    "id": "b57204516d544692beb85b7c30ebb72d",
+                    "source": "person.automacao_logistica",
+                    "user_id": "f2108ef81c894ff493c070eab49d0058"
+                },
+                "context": {
+                    "id": "864e5b9dc09344c1a2e7f532b7713df8",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "person.automacao_logistica",
+                "last_changed": "2019-09-23T16:44:42.037568+00:00",
+                "last_updated": "2019-09-23T16:44:42.037568+00:00",
+                "state": "unknown"
+            }
+        }
+    ],
+    "key": "core.restore_state",
+    "version": 1
+}

@@ -1,0 +1,14 @@
+{
+    "data": {
+        "persons": [
+            {
+                "device_trackers": [],
+                "id": "b57204516d544692beb85b7c30ebb72d",
+                "name": "Automa\u00e7\u00e3o Log\u00edstica",
+                "user_id": "f2108ef81c894ff493c070eab49d0058"
+            }
+        ]
+    },
+    "key": "person",
+    "version": 1
+}

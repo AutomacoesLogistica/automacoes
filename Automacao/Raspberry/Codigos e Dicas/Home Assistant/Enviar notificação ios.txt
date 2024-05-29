@@ -1,0 +1,10 @@
+Ir em serviços
+
+em Domain coloque: notify
+em Service coloque: ios_bruno ou o telefone a enviar mensagem
+em ServiceData
+
+{
+"message":"Acabou de ligar as lampadas do jardim!",
+"title":"Alerta"
+}

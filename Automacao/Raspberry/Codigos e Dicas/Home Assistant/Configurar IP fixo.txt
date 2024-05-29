@@ -1,0 +1,27 @@
+Abra o terminal e digite
+
+sudo nano /etc/dhcpcd.conf e de enter
+ira abrir um arquivo
+
+cole no inicio dessa forma
+
+# Conexao via cabo de rede
+interface eth0
+static routers=192.168.2.1 # define o ip do rotiador
+static domain_name_servers=192.168.2.1 8.8.8.8 8.8.4.4 # define os dns , primeiro e o do roteador e os outros 2 do google
+static ip_address=192.168.2.200 # define o ip que deseja que o raspberry assuma
+
+# Conexao via wifi
+interface wlan0
+static routers=192.168.2.1 # define o ip do rotiador
+static domain_name_servers=192.168.2.1 8.8.8.8 8.8.4.4 # define os dns , primeiro e o do roteador e os outros 2 do google
+static ip_address=192.168.2.200 # define o ip que deseja que o raspberry assuma
+
+
+em seguida de control+x , depois aperte Y ou S para salvar e de enter
+
+Depois é necessario reiniciar o rapsberry com o comando
+
+sudo reboot
+
+

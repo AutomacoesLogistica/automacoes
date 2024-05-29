@@ -1,0 +1,12 @@
+- alias: Enviando notificacao por tempo
+  hide_entity: True
+  trigger:
+    platform: time
+    at: '00:10:00'
+  action:
+    service: notify.ios_bruno
+    data:
+      title: "Automacao Residencial"
+      message: "A iluminacao do jardim foi acesa!"
+      data:
+        subtitle: "Bruno Goncalves"

@@ -1,0 +1,4 @@
+Abrir terminal e colar tudo de uma vez so e dar enter, ira iniciar o instalador, demora pois instala bastente coisa.
+
+wget -Nnv https://raw.githubusercontent.com/home-assistant/fabric-home-assistant/master/hass_rpi_installer.sh && chown pi:pi hass_rpi_installer.sh && bash hass_rpi_installer.sh 
+

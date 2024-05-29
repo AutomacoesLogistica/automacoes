@@ -1,0 +1,13 @@
+Restart no sistema home assistant
+>   systemctl restart home-assistant
+
+Pode reiniciar como root e sem senha
+ou logue como sudo su   ou envier
+> sudo systemctl restart home-assistant
+
+
+
+Checando se o sistema está rodando
+>   systemctl check home-assistant
+ obs: retorna active
+

@@ -1,0 +1,12 @@
+Entrar como root
+
+> sudo su
+
+entrar no diretorio com os comandos cd, ls , ls -a
+
+
+para apagar o diretorio por exemplo config.txt
+
+usar o comando sudo rm -rf config.txt
+
+e dar enter

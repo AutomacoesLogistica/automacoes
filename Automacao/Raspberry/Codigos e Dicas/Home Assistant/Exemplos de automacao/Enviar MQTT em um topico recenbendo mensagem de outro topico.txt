@@ -1,0 +1,24 @@
+- alias: Enviando notificacao caso receba mensagem de status mqtt
+
+  hide_entity: True
+  
+  trigger:
+    
+    platform: mqtt
+
+    topic: dev/test
+    payload: testando
+  action:
+
+    service: mqtt.publish
+
+    data:
+
+      topic: dev/test
+/novo_topico
+      payload: Deu certo!
+
+
+
+
+Obs: Se chegar mensagem testando no topico dev/test , envia "Deu certo!" no topico dev/test/novo_topico

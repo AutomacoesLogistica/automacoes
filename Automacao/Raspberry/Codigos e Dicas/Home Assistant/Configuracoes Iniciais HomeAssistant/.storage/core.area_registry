@@ -1,0 +1,20 @@
+{
+    "data": {
+        "areas": [
+            {
+                "id": "e1f2eaf44cb944449887764e337f22c6",
+                "name": "Sala de estar"
+            },
+            {
+                "id": "cbc33bcf65f84873be3e50e7567b66b6",
+                "name": "Cozinha"
+            },
+            {
+                "id": "966cb8e47b4b4c339fc7d3bb98fd5bc5",
+                "name": "Quarto"
+            }
+        ]
+    },
+    "key": "core.area_registry",
+    "version": 1
+}
