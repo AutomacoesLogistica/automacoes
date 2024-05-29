@@ -1,0 +1,12 @@
+Abrir a IDE
+
+ir em Preferencias
+
+colar o link e dar ok
+http://arduino.esp8266.com/stable/package_esp8266com_index.json
+
+
+depois ir em ferramentas e gerenciador de placas
+
+instalar esp8266 Community
+instalar a versão 2.2.0
