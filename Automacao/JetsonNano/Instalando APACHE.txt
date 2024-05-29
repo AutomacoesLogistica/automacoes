@@ -1,0 +1,13 @@
+Abra o terminal 
+
+Atualize o sistema
+>sudo apt update && sudo apt upgrade -y
+
+>sudo apt install apache2 -y
+
+Apos instalado verifique se esta correto e tem o index.html
+
+> cd /var/www/html 
+> ls
+
+Basta acessar o IP no navegador e deverar abrir o servidor apache

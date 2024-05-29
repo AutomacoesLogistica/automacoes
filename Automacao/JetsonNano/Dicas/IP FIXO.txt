@@ -1,0 +1,38 @@
+Abra o cmd e digite
+
+>sudo nano /etc/default/networking
+
+procure por *CONFIGURE_INTERFACES=no e apague o comentario deixando assim
+
+CONFIGURE_INTERFACES=no
+
+
+Dê um control +x e salve
+
+Agora entre com o comando abaixo, comente source_directory e adicione o restante colocando os dados desejados
+
+> sudo nano /etc/network/interfaces
+
+**************************************
+
+# interfaces(5) file used by ifup(8) and ifdown(8)
+# Include files from /etc/network/interfaces.d:
+auto eth0
+iface eth0 inet static
+  address 192.168.3.250
+  netmask 255.255.255.0
+  gateway 192.168.3.1
+#source-directory /etc/network/interfaces.d
+
+
+**************************
+
+
+Dê um control +x e salve
+
+So dar um sudo reboot
+Feito!
+
+
+
+

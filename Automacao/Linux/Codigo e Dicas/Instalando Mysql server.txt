@@ -1,0 +1,43 @@
+> sudo apt autoremove --purge mysql-server\* mariadb-server\*
+
+> sudo rm -rf /var/lib/mysql
+
+> sudo rm -rf /etc/mysql/
+
+> sudo mkdir -p /etc/mysql/conf.d
+
+> sudo apt install mysql-server
+
+> sudo systemctl start mysql.service
+
+> sudo mysql
+
+> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Logistica2019@@';
+
+Dê um exit para sair
+
+> sudo mysql_secure_installation
+Digite a senha do root acima...... Logistica2019@@
+se perguntar opção da senha confirme 2 independente da sua senha
+Digite uma senha que atenda os criterios exigidos, no exemplo usarei Logistica2019@@
+e em seguida so ir aceitando tudo com Y
+
+Agora vamos criar os usuarios
+
+> mysql -u root -p     ai digite a senha root criada acima nesse caso Logistica2019@@
+
+
+CREATE USER 'admin'@'localhost' IDENTIFIED BY 'Logistica2019@@';GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost' WITH GRANT OPTION;FLUSH PRIVILEGES;
+CREATE USER 'admin'@'%' IDENTIFIED BY 'Logistica2019@@';GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%' WITH GRANT OPTION;FLUSH PRIVILEGES;
+
+Digite exit ou Control+C para sair
+
+sudo service apache2 restart 
+sudo apt install phpmyadmin -y && sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin && ls && ls -lh /var/www/ && sudo chown -R pc:www-data /var/www/html/ && sudo chmod -R 770 /var/www/html/
+
+
+>sudo nano /etc/dbconfig-common/phpmyadmin.conf
+
+Procure por dbc_dbuser='phpmyadmin' e altere para dbc_dbuser='admin'
+
+A senha ja definida fica em dbc_dbpass='Logistica2019@@'

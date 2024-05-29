@@ -1,0 +1,10 @@
+sudo apt update
+
+sudo apt install apache2
+
+sudo ufw app list
+
+sudo ufw allow 'Apache'
+
+sudo systemctl status apache2      
+> Deve retornar ativo

@@ -1,0 +1,6 @@
+
+docker run --name some-zabbix-web-nginx-mysql -p 7000:7000 -p 7001:7001 -e DB_SERVER_HOST="localhost" -e MYSQL_USER="root" -e MYSQL_PASSWORD="root" -e ZBX_SERVER_HOST="some-zabbix-server" -e PHP_TZ="America/Argentina/Buenos_Aires" -d zabbix/zabbix-web-nginx-mysql
+docker run --name some-zabbix-appliance -p 80:80 -p 10051:10051 -d zabbix/zabbix-appliance --platform linux/amd64
+
+
+docker pull zabbix/zabbix-web-nginx-mysql

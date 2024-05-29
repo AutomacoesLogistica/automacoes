@@ -1,0 +1,9 @@
+Abra o terminal e digite
+
+
+> sudo apt-get install python3-pip
+
+
+agora para verificar se deu certo
+
+pip3 --version

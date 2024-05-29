@@ -1,0 +1,8 @@
+Corrigindo o erro python setup.py egg_info" failed with error code 1 in....
+
+Instale
+
+
+>pip3 install pyrebase
+
+>pip3 install --upgrade setuptools

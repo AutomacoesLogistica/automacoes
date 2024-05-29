@@ -1,0 +1,26 @@
+Primeiro procure pelo arquivo para localizar o caminho
+ sudo find / -name "php.ini"    >>>>>>>>> isso localiza por php.ini
+
+No meu caso tive essas resposta, entao vamos tentar localizar
+
+/etc/php/7.3/apache2/php.ini
+/etc/php/7.3/cli/php.ini
+/etc/php/8.1/apache2/php.ini
+
+Entre em
+
+sudo nano /etc/php/7.3/apache2/php.ini
+
+sudo nano /etc/php/8.1/apache2/php.ini
+
+Agora dê um Control + W e vamos procurar por upload_max_filesize
+
+
+altere o valor para o que deseja!
+
+
+Agora reinicie o apache
+
+sudo service apache2 restart
+
+

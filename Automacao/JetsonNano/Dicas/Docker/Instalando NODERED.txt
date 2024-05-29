@@ -1,0 +1,13 @@
+Abra o terminal
+
+
+OBS: Ja precisa ter o docker instalado
+
+
+cole o codigo abaixo e dê enter
+
+docker run -it -p 1880:1880 -v node_red_data:/data --name mynodered nodered/node-red
+
+Para acessar basta usar  localhost:9880
+
+Feito!

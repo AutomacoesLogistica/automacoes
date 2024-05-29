@@ -1,0 +1,51 @@
+Video referenca: https://www.youtube.com/watch?v=AXUuRrXLaic&ab_channel=LNPBR
+
+OBS: O docker ja vem instalado no jetson nano
+
+Para verificar basta digitar
+
+sudo systemctl status docker
+
+tem que retornar active, caso contrario, precisamos instalar
+
+Agora podemos verificar os containers com o comando
+
+>docker container ls
+
+
+
+
+
+Adicionando o homeassistant container
+
+Abra o site "https://www.home-assistant.io/installation/raspberrypi" e procure a instalacao via docker, abaixo tera o codigo proximo a este abaixo aqui
+
+docker run -d \
+  --name homeassistant \
+  --privileged \
+  --restart=unless-stopped \
+  -e TZ=America/Sao_Paulo \
+  -v /root/homeassistant/config:/config \
+  --network=host \
+  ghcr.io/home-assistant/home-assistant:stable
+
+
+
+docker run -d \
+  --name homeassistant2 \
+  --privileged \
+  --restart=unless-stopped \
+  -e TZ=America/Sao_Paulo \
+  -v /root/homeassistant2/config:/config \
+  --network=host \
+  ghcr.io/home-assistant/home-assistant:latest
+
+
+Cole ele no terminal e dê enter e aguarde finalizar 
+
+
+Para verificar se o docker subir basta digitar
+
+docker container ls
+
+OBS: O homeassistant deve aparecer com UP

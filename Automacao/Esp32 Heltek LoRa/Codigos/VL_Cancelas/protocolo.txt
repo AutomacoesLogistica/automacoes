@@ -1,0 +1,22 @@
+ID Cancelas
+01 - Entrada CO
+02 - Saida BH
+03 - Entrada BH
+04 - Saida CO LE
+05 - Saida CO LD 
+06 - 
+07 - 
+08 - 
+09 - 
+
+
+Comandos **********************************************************************
+
+XX_pulso : Comando para abrir a cancela
+XX_manter : Comando para manter aberta a cancela
+XX_normalizar : Comando para normalizar a cancela
+XX_totem : Comando lido que a cancela foi abeta via cracha no totem
+XX_Aberta : Cancela Aberta
+XX_Fechada : Cancela Fechada
+XX_Vandalismo : Vandalismo
+XX_Limpar : Para sair de qualquer possivel comando/status leitura

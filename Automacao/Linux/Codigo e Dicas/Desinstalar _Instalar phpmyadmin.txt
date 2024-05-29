@@ -1,0 +1,16 @@
+//Desisntalar
+
+sudo apt  remove phpmyadmin && sudo apt purge phpmyadmin && sudo apt autoremove
+
+
+
+//Instalar
+ATENÇÃO: Instalar antes o APACHE!
+
+sudo apt update && sudo apt upgrade -y
+
+sudo apt install php -y
+
+sudo service apache2 restart 
+
+sudo apt install phpmyadmin -y && sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin && ls && ls -lh /var/www/ && sudo chown -R pc:www-data /var/www/html/ && sudo chmod -R 770 /var/www/html/

@@ -1,0 +1,23 @@
+abra o CMD e digite
+
+>sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf   e dê enter
+
+retire o # de port e deixe conforme abaixo
+
+port = 3306
+
+procure por bind-address e caso não tenha acrescente da seguinte forma
+
+bind-address = 127.0.0.1 onde altere para
+
+bind-address = 0.0.0.0
+
+
+mysqlx-bind-address = 127.0.0.1 alere tambem para 0.0.0.0
+
+depois dê um control+X e confirme com S e dê enter para salvar
+
+
+agora reinicie o mysql com o comando
+
+>sudo /etc/init.d/mysql restart

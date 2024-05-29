@@ -1,0 +1,5 @@
+Abra o terminal e digite
+
+sudo apt-get install iptables
+
+

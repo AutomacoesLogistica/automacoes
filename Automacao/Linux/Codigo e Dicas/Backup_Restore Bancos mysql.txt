@@ -1,0 +1,57 @@
+Para realizar o backup abra o terminal
+
+
+Vamos simular o exemplo da realizacao do backup do banco "radius" e salvar dentro da pasta 
+/home/pc/backups/
+
+OBS: use o mesmo nome do banco +  a extensão .sql para facilitar localizar depois
+
+Vamos criar primeiro a pasta de backup dentro de /home/pc com o comando
+
+>sudo mkdir /home/pc/backups
+
+
+>sudo nano ~/.my.cnf
+
+Insira os dados abaixo
+
+[mysqldump]
+host=localhost
+user=root
+password=Logistica2019@@
+
+
+Dê um control + X para salvar
+
+Agora mude a permissao do arquivo
+
+>sudo chmod 600 ~/.my.cnf
+
+>sudo chmod 600 ~/.mysql_history
+
+>mysqldump -u -p radius > /home/pc/backups/radius.sql
+
+
+Agora conferindo se deu certo
+
+Pelo terminal digital digite
+
+> ls /home/pc/backups 
+
+Se tudo deu certo vai aparecer o arquivo radius.sql
+
+
+Agora vamos fazer o restore
+
+NAO existindo o banco radius no mysql , crie ele
+
+Entre no terminal e execute o comando para realizar o backup
+
+OBS: A pasta /home/pc/backup e o arquivo radius.sql devem existir 
+
+>mysql -u root -p radius < /home/pc/backups/radius.sql
+
+Caso tudo tenha dado correto, o banco foi restaurado no mysql. Use o phpmyadmin para verificar!
+
+
+Feito!

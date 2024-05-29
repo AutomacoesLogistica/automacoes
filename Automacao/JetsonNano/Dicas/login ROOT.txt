@@ -1,0 +1,16 @@
+Abra o terminal, logue com usuario user rock e senha rock
+
+>sudo nano /etc/ssh/sshd_config
+
+procure por #PermitRootLogin Proibe password e altere para PermitRootLogin yes 
+
+Agora reinicie o serviço com o comando
+
+>sudo /etc/init.d/ssh restart
+
+Agora alterade a senha do root digite
+
+>sudo passwd root e dê enter, digite e confirme a senha
+
+
+Pronto, agora pode logar via shh em modo root!

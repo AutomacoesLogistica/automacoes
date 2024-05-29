@@ -1,0 +1,17 @@
+mysql
+> sudo apt-get -y install python3-mysql.connector
+
+numpy
+> sudo apt-get install python3-numpy
+
+opencv
+>sudo apt install python3-opencv
+
+serial
+> sudo apt install python3-serial
+
+plotly
+>sudo apt-get install python3-plotly
+
+pygame
+> sudo apt-get install python3-pygame

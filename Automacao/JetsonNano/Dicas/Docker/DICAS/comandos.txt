@@ -1,0 +1,18 @@
+Para buscar informacoes do docker
+
+precisamos passar um nome de algum container, nesse exemplo sera mysql
+
+
+Retornar todas as informacoes do container
+> docker inspect mysql
+
+filtrar apenas o ip por exemplo
+> docker inspect mysql | grep IPAddress
+
+
+Desinstalar docker
+> docker rm -f mysql
+Onde:
+ rm = remove
+ -f = força parada
+

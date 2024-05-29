@@ -1,0 +1,37 @@
+Abra o terminal e digite
+
+> docker pull phpmyadmin
+
+Aguarda a instalação
+
+Agora digite 
+
+> docker run --name phpmyadmin -e MYSQL_ROOT_PASSWORD=Bru2683@  -d --link mysql:db -p 8007:80 phpmyadmin 
+
+Onde rodamos na porta 8007 externa para 80/phpmyadmin interna com usuario root : root
+
+
+
+
+Agora podemos verificar se esta ok com 
+
+> docker container ls
+
+O container msyql deve estar criado e UP
+
+
+Para acessar basta utilizar  http://localhost:8007 
+
+logar com : usuario: root
+              senha: Bru2683@ ( caso de erro tente root )
+
+****************************************************
+Para remover esse docker basta fazer
+
+Entre no portainer e remova la primeiro, sem seguida
+Entre com o comando 
+> docker images -a
+
+verifique se o nome esta correto e dê o comando abaixo para remover
+
+> docker rmi phpmyadmin
