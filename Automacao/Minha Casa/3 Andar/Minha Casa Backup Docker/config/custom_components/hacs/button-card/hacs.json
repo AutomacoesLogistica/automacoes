@@ -1,7 +1,0 @@
-{
-  "name": "button-card",
-  "content_in_root": false,
-  "render_readme": true,
-  "filename": "button-card.js",
-  "homeassistant": "2023.7.0"
-}

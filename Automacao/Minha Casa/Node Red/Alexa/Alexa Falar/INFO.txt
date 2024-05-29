@@ -1,1 +1,0 @@
-Ela fala o que chega no topico , basta enviar uma mensagem no topico que ela vai falar!
