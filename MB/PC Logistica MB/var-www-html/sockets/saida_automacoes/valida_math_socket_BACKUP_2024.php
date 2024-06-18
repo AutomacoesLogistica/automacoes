@@ -376,7 +376,7 @@ function insere___lidar_excesso($id_lidar,$id_cheio_vazio,$id_historico,$epc_exc
 
 
 
-function atualiza___viajem($concluido1,$tratado_por_segurpro,$tratado_por_ccl,$vconcluido,$crc_display,$mensagem1,$mensagem2,$id_historico_display,$id_cheio_vazio,$status_api_cheio_vazio,$id_lidar,$sigla,$veiculo,$condicao_veiculo,$tag_da_carreta,$tag_do_cavalo,$placa_da_carreta,$placa_do_cavalo)
+function atualiza___viajem($concluido1,$tratado_por_segurpro,$tratado_por_ccl,$vconcluido,$crc_display,$mensagem1,$mensagem2,$id_historico_display,$id_cheio_vazio,$status_api_cheio_vazio,$id_lidar,$sigla,$veiculo,$condicao_veiculo)
 {
  echo "</BR>Entrou na function >> atualiza___viajem << <BR/>"; 
 
@@ -400,7 +400,7 @@ function atualiza___viajem($concluido1,$tratado_por_segurpro,$tratado_por_ccl,$v
  $sql = $dbcon->query("UPDATE historico_display_2024 SET condicao1='$concluido1',tratado_por_segurpro='$tratado_por_segurpro',tratado_por_ccl='$tratado_por_ccl',concluido='$vconcluido',data_aqui1='$data',hora_aqui1='$hora',crc_display='$crc_display',mensagem='$mensagem1',mensagem2='$mensagem2',id_cheio_vazio='$id_cheio_vazio',api_cheio_vazio='$status_api_cheio_vazio',id_lidar='$id_lidar',sigla_transportadora='$sigla',veiculo='$veiculo',condicao_veiculo='$condicao_veiculo'  WHERE id='$id_historico_display'");
           
  //SE A VIAJEM FOR CONCLUÍDO
- if($concluido1 == "Concluído" || $concluido1 == "Concluído!")
+ if($concluido1 == "Concluído")
  {
   include_once 'conexao_dashboard___atualiza___viajem.php';
   date_default_timezone_set('America/Sao_Paulo');
@@ -642,45 +642,7 @@ function atualiza___viajem($concluido1,$tratado_por_segurpro,$tratado_por_ccl,$v
   }
  }
  echo "</BR>Saiu da function >> atualiza___viajem << <BR/>";
- 
- //consulto os dados do historico_display para buscar os valores
- include_once 'conexao_saida_automacoes___atualiza_cheio_vazio__display_balanca1.php';
- $sql = $dbcon->query("SELECT * FROM 'display_balanca1' WHERE id='1'");
- {
-  $dados = $sql->fetch_array(); 
-  $dlc = $dados['dlc'];
-  $dtc = $dados['dtc'];
-  $alerta2 = $dados['alerta2'];
-  $id_lidar = $dados['api_lidar'];
-  $condicao_lidar = $dados['condicao_veiculo'];
-  $veiculo = $dados['veiculo'];
- }
- 
- //agora chamo para atualizar o cheio / vazio
- if($dlc == ""){$dlc='-';}
- if($dtc == ""){$dtc='-';}
- if($alerta2 == ""){$alerta2 = '-';}
- if($tag_da_carreta == ""){$tag_da_carreta = '-';}
- if($tag_do_cavalo == ""){$tag_do_cavalo = '-';}
- if($placa_da_carreta == ""){$placa_da_carreta = '-';}
- if($placa_do_cavalo == ""){$placa_do_cavalo = '-';}
-  
- atualiza__cheio_vazio($id_lidar,$dlc,$dtc,$condicao_lidar,$alerta2,$id_historico_display,$tag_da_carreta,$tag_do_cavalo,$placa_da_carreta,$placa_do_cavalo,$veiculo,$id_cheio_vazio);
-
 }
-
-function atualiza__cheio_vazio($id_lidar,$dlc,$dtc,$condicao_lidar,$alerta2,$id_historico_display,$tag_da_carreta,$tag_do_cavalo,$placa_da_carreta,$placa_do_cavalo,$veiculo,$id_cheio_vazio)
-{
- echo "</BR>Entrou na function >> atualiza___cheio_vazio << <BR/>"; 
- 
- //Agora sincroniza com o cheio /vazio
- include_once 'conexao_saida_automacoes_cheio_vazio___atualiza___viajem.php';
- $sql = $dbcon->query("UPDATE deteccao SET tratado_automacao='Sim',id_lidar='$id_lidar',dlc='$dlc',dtc='$dtc',condicao_lidar='$condicao_lidar',alerta2='$alerta2',id_historico_display='$id_historico_display',epc_carreta='$tag_da_carreta',epc_cavalo='$tag_do_cavalo',placa_carreta='$placa_da_carreta',placa_cavalo='$placa_do_cavalo',veiculo='$veiculo'   WHERE id='$id_cheio_vazio'");
- 
- echo "</BR>Saiu da function >> atualiza___cheio_vazio << <BR/>"; 
-}
-
-
 
 
 function atualiza___semaforos($mensagem_lora)
@@ -916,7 +878,7 @@ function busca_dados_banco($tag)
   $encontrado = 1;
   $id = trim($dados['id']);
   $concluido = trim($dados['concluido']);
-  $status_gagf = trim($dados['condicao2']);
+  $status_gagf = trim($dados['condicao1']);
   $epc_cavalo = trim($dados['epc_cavalo']);
   $epc_carreta = trim($dados['epc_carreta']);
   $placa_cavalo = trim($dados['placa_cavalo']);
@@ -1027,7 +989,7 @@ function busca_dados_banco($tag)
      if($status_gagf == "Concluído")
      {
       $sql = $dbcon->query("INSERT INTO historico_display_2024(data_aqui1,hora_aqui1,epc_cavalo,epc_carreta,placa_cavalo,placa_carreta,condicao1,condicao2,motorista,telefone,transportadora,destino,ponto,material,concluido,tratado_por_segurpro,tratado_por_ccl)
-      VALUES('$data','$hora','$epc_cavalo','$epc_carreta','$placa_cavalo','$placa_carreta','Concluída!','$status_gagf','$nome_completo','$telefone','$transportadora','$destino','$saida','$material','-','Não necessario!','Não necessario!')"); 
+      VALUES('$data','$hora','$epc_cavalo','$epc_carreta','$placa_cavalo','$placa_carreta','Validada!','$status_gagf','$nome_completo','$telefone','$transportadora','$destino','$saida','$material','-','Não necessario!','Não necessario!')"); 
      }
      else
      {
@@ -1219,7 +1181,7 @@ function busca_dados_banco($tag)
     $encontrado = 1;
     $id = trim($dados['id']);
     $concluido = trim($dados['concluido']);
-    $status_gagf = trim($dados['condicao2']);
+    $status_gagf = trim($dados['condicao1']);
     $epc_cavalo = trim($dados['epc_cavalo']);
     $epc_carreta = trim($dados['epc_carreta']);
     $placa_cavalo = trim($dados['placa_cavalo']);
@@ -1731,7 +1693,7 @@ if ( $pode_seguir_fluxo == "sim")
      
      $id_historico_display = $id;
    
-     if($status_gagf == "Concluído" || $status_gagf == "Saindo da Planta" || $status_gagf =="Pesou!" || $status_gagf == "Finalizada" || $status_gagf == "Finalizada!")
+     if($status_gagf == "Concluído" || $status_gagf == "Saindo da Planta" )
      {
       echo "Entrou para tratar como CONCLUIDO ou SAINDO DA PLANTA!</BR>";
       echo '</BR>$status_api_cheio_vazio > ' .$status_api_cheio_vazio.'</BR>';
@@ -1769,14 +1731,7 @@ if ( $pode_seguir_fluxo == "sim")
        $tratado_por_segurpro = "Não necessário!";
        $tratado_por_ccl = "Não necessário!";
        $vconcluido = "Sim";
-
-
-       if($tag_da_carreta == ""){$tag_da_carreta = '-';}
-       if($tag_do_cavalo == ""){$tag_do_cavalo = '-';}
-       if($placa_da_carreta == ""){$placa_da_carreta = '-';}
-       if($placa_do_cavalo == ""){$placa_do_cavalo = "-";}
-
-       atualiza___viajem($concluido1,$tratado_por_segurpro,$tratado_por_ccl,$vconcluido,$crc_display,$mensagem1,$mensagem2,$id_historico_display,$id_cheio_vazio,$status_api_cheio_vazio,$id_lidar,$sigla,$veiculo,$condicao_veiculo,$tag_da_carreta,$tag_do_cavalo,$placa_da_carreta,$placa_do_cavalo);
+       atualiza___viajem($concluido1,$tratado_por_segurpro,$tratado_por_ccl,$vconcluido,$crc_display,$mensagem1,$mensagem2,$id_historico_display,$id_cheio_vazio,$status_api_cheio_vazio,$id_lidar,$sigla,$veiculo,$condicao_veiculo);
    
        //Notificação no BeTruck *****************************************************************
        if($valor == "Encontrado" && $publica_betruck == "sim")
@@ -1822,14 +1777,7 @@ if ( $pode_seguir_fluxo == "sim")
         $tratado_por_segurpro = "Não necessário!";
         $tratado_por_ccl = "Não necessário!";
         $vconcluido = "Sim";
-       
-        if($tag_da_carreta == ""){$tag_da_carreta = '-';}
-        if($tag_do_cavalo == ""){$tag_do_cavalo = '-';}
-        if($placa_da_carreta == ""){$placa_da_carreta = '-';}
-        if($placa_do_cavalo == ""){$placa_do_cavalo = "-";}
-
-       
-        atualiza___viajem($concluido1,$tratado_por_segurpro,$tratado_por_ccl,$vconcluido,$crc_display,$mensagem1,$mensagem2,$id_historico_display,$id_cheio_vazio,$status_api_cheio_vazio,$id_lidar,$sigla,$veiculo,$condicao_veiculo,$tag_da_carreta,$tag_do_cavalo,$placa_da_carreta,$placa_do_cavalo);
+        atualiza___viajem($concluido1,$tratado_por_segurpro,$tratado_por_ccl,$vconcluido,$crc_display,$mensagem1,$mensagem2,$id_historico_display,$id_cheio_vazio,$status_api_cheio_vazio,$id_lidar,$sigla,$veiculo,$condicao_veiculo);
         
         //Notificação no BeTruck *****************************************************************
         if($valor == "Encontrado" && $publica_betruck =="sim")
@@ -1870,14 +1818,7 @@ if ( $pode_seguir_fluxo == "sim")
         $tratado_por_segurpro = "Não necessário!";
         $tratado_por_ccl = "Não";
         $vconcluido = "Sim";
-       
-        if($tag_da_carreta == ""){$tag_da_carreta = '-';}
-        if($tag_do_cavalo == ""){$tag_do_cavalo = '-';}
-        if($placa_da_carreta == ""){$placa_da_carreta = '-';}
-        if($placa_do_cavalo == ""){$placa_do_cavalo = "-";}
-
-       
-        atualiza___viajem($concluido1,$tratado_por_segurpro,$tratado_por_ccl,$vconcluido,$crc_display,$mensagem1,$mensagem2,$id_historico_display,$id_cheio_vazio,$status_api_cheio_vazio,$id_lidar,$sigla,$veiculo,$condicao_veiculo,$tag_da_carreta,$tag_do_cavalo,$placa_da_carreta,$placa_do_cavalo);
+        atualiza___viajem($concluido1,$tratado_por_segurpro,$tratado_por_ccl,$vconcluido,$crc_display,$mensagem1,$mensagem2,$id_historico_display,$id_cheio_vazio,$status_api_cheio_vazio,$id_lidar,$sigla,$veiculo,$condicao_veiculo);
    
         //Insere lidar_excesso
         $placa = $placa_carreta;
@@ -1931,14 +1872,7 @@ if ( $pode_seguir_fluxo == "sim")
        $tratado_por_ccl = "Não necessário!";
        $vconcluido = "Sim";
        //condicao1='Saindo Vazio'
-       
-       if($tag_da_carreta == ""){$tag_da_carreta = '-';}
-       if($tag_do_cavalo == ""){$tag_do_cavalo = '-';}
-       if($placa_da_carreta == ""){$placa_da_carreta = '-';}
-       if($placa_do_cavalo == ""){$placa_do_cavalo = "-";}
-
-       
-       atualiza___viajem($concluido1,$tratado_por_segurpro,$tratado_por_ccl,$vconcluido,$crc_display,$mensagem1,$mensagem2,$id_historico_display,$id_cheio_vazio,$status_api_cheio_vazio,$id_lidar,$sigla,$veiculo,$condicao_veiculo,$tag_da_carreta,$tag_do_cavalo,$placa_da_carreta,$placa_do_cavalo);
+       atualiza___viajem($concluido1,$tratado_por_segurpro,$tratado_por_ccl,$vconcluido,$crc_display,$mensagem1,$mensagem2,$id_historico_display,$id_cheio_vazio,$status_api_cheio_vazio,$id_lidar,$sigla,$veiculo,$condicao_veiculo);
        
        //Notificação no BeTruck *****************************************************************
        if($valor == "Encontrado" && $publica_betruck =="sim")
@@ -1976,14 +1910,7 @@ if ( $pode_seguir_fluxo == "sim")
         $tratado_por_segurpro = "Não";
         $tratado_por_ccl = "Não necessário!";
         $vconcluido = "Sim";
-        
-        if($tag_da_carreta == ""){$tag_da_carreta = '-';}
-        if($tag_do_cavalo == ""){$tag_do_cavalo = '-';}
-        if($placa_da_carreta == ""){$placa_da_carreta = '-';}
-        if($placa_do_cavalo == ""){$placa_do_cavalo = "-";}
-
-       
-        atualiza___viajem($concluido1,$tratado_por_segurpro,$tratado_por_ccl,$vconcluido,$crc_display,$mensagem1,$mensagem2,$id_historico_display,$id_cheio_vazio,$status_api_cheio_vazio,$id_lidar,$sigla,$veiculo,$condicao_veiculo,$tag_da_carreta,$tag_do_cavalo,$placa_da_carreta,$placa_do_cavalo);
+        atualiza___viajem($concluido1,$tratado_por_segurpro,$tratado_por_ccl,$vconcluido,$crc_display,$mensagem1,$mensagem2,$id_historico_display,$id_cheio_vazio,$status_api_cheio_vazio,$id_lidar,$sigla,$veiculo,$condicao_veiculo);
         
         //Notificação no BeTruck *****************************************************************
         if($valor == "Encontrado" && $publica_betruck =="sim")
@@ -2042,14 +1969,7 @@ if ( $pode_seguir_fluxo == "sim")
          $tratado_por_ccl = "Não necessário!";
          $vconcluido = "Sim";
          //condicao1='Saindo Vazio'
-        
-         if($tag_da_carreta == ""){$tag_da_carreta = '-';}
-         if($tag_do_cavalo == ""){$tag_do_cavalo = '-';}
-         if($placa_da_carreta == ""){$placa_da_carreta = '-';}
-         if($placa_do_cavalo == ""){$placa_do_cavalo = "-";}
-
-       
-         atualiza___viajem($concluido1,$tratado_por_segurpro,$tratado_por_ccl,$vconcluido,$crc_display,$mensagem1,$mensagem2,$id_historico_display,$id_cheio_vazio,$status_api_cheio_vazio,$id_lidar,$sigla,$veiculo,$condicao_veiculo,$tag_da_carreta,$tag_do_cavalo,$placa_da_carreta,$placa_do_cavalo);
+         atualiza___viajem($concluido1,$tratado_por_segurpro,$tratado_por_ccl,$vconcluido,$crc_display,$mensagem1,$mensagem2,$id_historico_display,$id_cheio_vazio,$status_api_cheio_vazio,$id_lidar,$sigla,$veiculo,$condicao_veiculo);
          
          //Notificação no BeTruck *****************************************************************
          if($valor == "Encontrado" && $publica_betruck =="sim")
@@ -2085,13 +2005,7 @@ if ( $pode_seguir_fluxo == "sim")
          $tratado_por_segurpro = "Não";
          $tratado_por_ccl = "Não necessário!";
          $vconcluido = "Sim";
-
-         if($tag_da_carreta == ""){$tag_da_carreta = '-';}
-         if($tag_do_cavalo == ""){$tag_do_cavalo = '-';}
-         if($placa_da_carreta == ""){$placa_da_carreta = '-';}
-         if($placa_do_cavalo == ""){$placa_do_cavalo = "-";}
-       
-         atualiza___viajem($concluido1,$tratado_por_segurpro,$tratado_por_ccl,$vconcluido,$crc_display,$mensagem1,$mensagem2,$id_historico_display,$id_cheio_vazio,$status_api_cheio_vazio,$id_lidar,$sigla,$veiculo,$condicao_veiculo,$tag_da_carreta,$tag_do_cavalo,$placa_da_carreta,$placa_do_cavalo);
+         atualiza___viajem($concluido1,$tratado_por_segurpro,$tratado_por_ccl,$vconcluido,$crc_display,$mensagem1,$mensagem2,$id_historico_display,$id_cheio_vazio,$status_api_cheio_vazio,$id_lidar,$sigla,$veiculo,$condicao_veiculo);
          
          //Notificação no BeTruck *****************************************************************
          if($valor == "Encontrado" && $publica_betruck =="sim")
@@ -2127,12 +2041,7 @@ if ( $pode_seguir_fluxo == "sim")
         $tratado_por_ccl = "Não necessário!";
         $vconcluido = "Sim";
         
-        if($tag_da_carreta == ""){$tag_da_carreta = '-';}
-        if($tag_do_cavalo == ""){$tag_do_cavalo = '-';}
-        if($placa_da_carreta == ""){$placa_da_carreta = '-';}
-        if($placa_do_cavalo == ""){$placa_do_cavalo = "-";}
-       
-        atualiza___viajem($concluido1,$tratado_por_segurpro,$tratado_por_ccl,$vconcluido,$crc_display,$mensagem1,$mensagem2,$id_historico_display,$id_cheio_vazio,$status_api_cheio_vazio,$id_lidar,$sigla,$veiculo,$condicao_veiculo,$tag_da_carreta,$tag_do_cavalo,$placa_da_carreta,$placa_do_cavalo);
+        atualiza___viajem($concluido1,$tratado_por_segurpro,$tratado_por_ccl,$vconcluido,$crc_display,$mensagem1,$mensagem2,$id_historico_display,$id_cheio_vazio,$status_api_cheio_vazio,$id_lidar,$sigla,$veiculo,$condicao_veiculo);
     
         //Insere lidar_excesso
         $placa = $placa_carreta;

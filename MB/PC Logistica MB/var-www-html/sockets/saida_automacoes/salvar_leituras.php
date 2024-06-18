@@ -1,4 +1,8 @@
 <?php
+
+
+///var/www/html/sockets/saida_automacoes
+
 $mensagem = isset($_GET['mensagem'])?$_GET['mensagem']:"vazio";
 
 if($mensagem !="vazio" && strlen($mensagem)>30)
