@@ -1,0 +1,10 @@
+não esquecer de ativer o service do nodered para iniciar sozinho
+
+
+sudo systemctl enable node-red.service
+
+
+sudo systemctl start node-red.service
+
+
+sudo systemctl status node-red.service
